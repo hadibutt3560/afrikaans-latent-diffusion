@@ -45,9 +45,9 @@ PowerShell on this computer:
 Set-Location C:\Users\SCIENTIST\Documents\GitHub\research\swahili_72h\transfer
 Get-FileHash .\swahili72-transfer.tar -Algorithm SHA256
 Get-Content .\swahili72-transfer.tar.sha256
-ssh hbutt@146.141.21.100 "mkdir -p /datasets/hbutt/swahili72/slurm"
-scp .\swahili72-transfer.tar .\swahili72-transfer.tar.sha256 hbutt@146.141.21.100:/datasets/hbutt/swahili72/
-ssh hbutt@146.141.21.100
+ssh USER@CLUSTER_HOST "mkdir -p /datasets/hbutt/swahili72/slurm"
+scp .\swahili72-transfer.tar .\swahili72-transfer.tar.sha256 USER@CLUSTER_HOST:/datasets/hbutt/swahili72/
+ssh USER@CLUSTER_HOST
 ```
 
 Then on the login node, file management/environment assembly only:
@@ -98,8 +98,8 @@ PowerShell download:
 ```powershell
 New-Item -ItemType Directory -Force C:\Users\SCIENTIST\Documents\GitHub\research\swahili_72h\downloaded | Out-Null
 Set-Location C:\Users\SCIENTIST\Documents\GitHub\research\swahili_72h\downloaded
-scp hbutt@146.141.21.100:/datasets/hbutt/swahili72/results/results.tar .
-scp hbutt@146.141.21.100:/datasets/hbutt/swahili72/results/results.tar.sha256 .
+scp USER@CLUSTER_HOST:/datasets/hbutt/swahili72/results/results.tar .
+scp USER@CLUSTER_HOST:/datasets/hbutt/swahili72/results/results.tar.sha256 .
 Get-FileHash .\results.tar -Algorithm SHA256
 Get-Content .\results.tar.sha256
 tar -xf .\results.tar

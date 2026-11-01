@@ -337,7 +337,7 @@ On Windows, replace the persistent cluster path with the exact `WORKSPACE`:
 
 ```powershell
 New-Item -ItemType Directory -Force outputs\cluster-results\longrun-20261002 | Out-Null
-scp -o ServerAliveInterval=60 "hbutt@146.141.21.100:REPLACE_WITH_ABSOLUTE_WORKSPACE/results-without-weights.tar.gz" outputs/cluster-results/longrun-20261002/
+scp -o ServerAliveInterval=60 "USER@CLUSTER_HOST:REPLACE_WITH_ABSOLUTE_WORKSPACE/results-without-weights.tar.gz" outputs/cluster-results/longrun-20261002/
 ```
 
 Provide `blind-review.csv` without `review-key.csv` to fluent reviewers. Report
