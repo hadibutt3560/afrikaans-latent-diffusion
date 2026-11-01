@@ -139,7 +139,7 @@ To cite the Afrikaans study:
 
 ```bibtex
 @misc{butt2026afrikaans,
-  title={Reconstruction Fidelity and Perplexity Reliability in Afrikaans Latent Text Diffusion},
+  title={A Representation-Centred Evaluation of Latent Diffusion for Afrikaans Text Generation},
   author={Butt, Hadi},
   year={2026},
   howpublished={\url{https://github.com/hadibutt3560/afrikaans-latent-diffusion}}
