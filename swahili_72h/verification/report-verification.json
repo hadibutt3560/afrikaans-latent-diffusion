@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "archive_members_verified": 27,
+  "png": true,
+  "pdf": true,
+  "blinded_sheet": true,
+  "key": true,
+  "pdf_fonts": "standard core fonts"
+}

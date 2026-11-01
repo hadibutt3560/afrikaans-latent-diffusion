@@ -1,0 +1,29 @@
+{
+ "reader": "AI-assisted reading (Claude); reader knew the study aims; human manual check not conducted",
+ "labels_sha256": "958a9207612fcc71d9549ffb756ab760c51058633bf4ce09b050531214126bd3",
+ "counts": {
+  "AR": {
+   "not Afrikaans": 8,
+   "valid Afrikaans": 29,
+   "misspelt or malformed": 12,
+   "cannot tell": 1
+  },
+  "diffusion": {
+   "valid Afrikaans": 19,
+   "misspelt or malformed": 22,
+   "cannot tell": 6,
+   "not Afrikaans": 3
+  },
+  "HL": {
+   "valid Afrikaans": 39,
+   "misspelt or malformed": 8,
+   "cannot tell": 1,
+   "not Afrikaans": 2
+  }
+ },
+ "n": {
+  "AR": 50,
+  "diffusion": 50,
+  "HL": 50
+ }
+}

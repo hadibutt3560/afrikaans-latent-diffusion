@@ -1,0 +1,14 @@
+{
+  "engine.py": {
+    "source": "outputs\\cluster-results\\job-74177-review\\protocol\\engine.py",
+    "sha256": "02d5b1d6e9c58d6684dd36a9da21848e2331dfe22ec625d6c63318321953be79"
+  },
+  "training_support.py": {
+    "source": "docs\\research\\full_decoder_12h_2026-10-24\\job\\train_full.py",
+    "sha256": "0e0f6420e7a0f8cce0bcb48a989bb31d8647a328d34982c98c1057cd9c5d085a"
+  },
+  "transfer_eval.py": {
+    "source": "docs\\research\\full_decoder_12h_2026-10-24\\job\\transfer_eval.py",
+    "sha256": "299a128ff0dbef6c128029601d639e025af3bba2a71e989280a9c6240e59644d"
+  }
+}

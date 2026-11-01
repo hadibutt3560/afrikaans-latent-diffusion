@@ -1,9 +1,10 @@
-from multiprocessing.spawn import prepare
 import os
 import json
+from pathlib import Path
 
-from datasets import load_dataset, Value
-from torch.utils.data import Dataset, DataLoader
+import torch
+from datasets import load_dataset
+from torch.utils.data import DataLoader
 from transformers import PreTrainedTokenizerBase, default_data_collator
 
 from dataset_utils.denoising_collator import DataCollatorForBartDenoisingLM
@@ -13,7 +14,28 @@ def exists(x):
     return x is not None
 
 
-def get_dataset(dataset_name, metadata=False, synthetic_train_path=None):
+def make_dataloader_generator(seed):
+    generator = torch.Generator()
+    generator.manual_seed(seed)
+    return generator
+
+
+def get_batch_size(args, is_train):
+    return args.train_batch_size if is_train else args.eval_batch_size
+
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_NCHLT_AFRIKAANS_DIR = (
+    REPO_ROOT / "data" / "nchlt_afrikaans" / "processed" / "stage_5_7"
+)
+
+
+def get_dataset(
+    dataset_name,
+    metadata=False,
+    synthetic_train_path=None,
+    dataset_dir=None,
+):
     if dataset_name == 'roc':
         roc_data_path = 'datasets/ROCstory'
         dataset = load_dataset("text", data_files={f'{split}': os.path.join(roc_data_path, f'roc_{split}.json') for split in ['train', 'valid']})
@@ -54,6 +76,20 @@ def get_dataset(dataset_name, metadata=False, synthetic_train_path=None):
         dataset['valid'] = dataset['validation']
         del(dataset['validation'])
         dataset = process_wmt14_dataset(dataset, 'en-en')
+    elif dataset_name in {'nchlt_afrikaans', 'nchlt-afrikaans'}:
+        data_dir = Path(dataset_dir) if dataset_dir else DEFAULT_NCHLT_AFRIKAANS_DIR
+        data_files = {
+            split: str(data_dir / f'{split}.jsonl')
+            for split in ('train', 'valid', 'test')
+        }
+        missing = [path for path in data_files.values() if not Path(path).is_file()]
+        if missing:
+            raise FileNotFoundError(
+                f'Missing processed NCHLT Afrikaans split files: {missing}'
+            )
+        dataset = load_dataset('json', data_files=data_files)
+        if not metadata:
+            dataset = dataset.select_columns(['text'])
     else:
         raise NotImplementedError
     return dataset
@@ -118,7 +154,17 @@ def parse_metadata(metadata):
         return 'Positive' if metadata > 0.5 else 'Negative'
 
 
-def get_dataloader(args, dataset, model_config, tokenizer, max_seq_len, mode='diffusion', shuffle=True, context_tokenizer=None):
+def get_dataloader(
+    args,
+    dataset,
+    model_config,
+    tokenizer,
+    max_seq_len,
+    mode='diffusion',
+    shuffle=True,
+    context_tokenizer=None,
+    is_train=None,
+):
     def tokenization(example):
         # print('EXAMPLE: ', example)
         if mode == 'diffusion' and args.dataset_name in {'xsum', 'qqp',  'wmt14-en-de', 'wmt14-de-en'}:
@@ -159,13 +205,19 @@ def get_dataloader(args, dataset, model_config, tokenizer, max_seq_len, mode='di
     else:
         dataset = dataset.map(tokenization, remove_columns='text')
             
+    if is_train is None:
+        is_train = shuffle
+    batch_size = get_batch_size(args, is_train)
+    generator = make_dataloader_generator(getattr(args, "seed", 42))
+
     dl = DataLoader(
             dataset,
             collate_fn=collate_fn,
-            batch_size=args.train_batch_size,
+            batch_size=batch_size,
             shuffle=shuffle,
             pin_memory = True,
-            num_workers = 4
+            num_workers = getattr(args, "dataloader_num_workers", 4),
+            generator=generator,
         )
     return dl
 

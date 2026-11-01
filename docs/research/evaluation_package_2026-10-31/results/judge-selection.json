@@ -1,0 +1,76 @@
+{
+ "skipped": {
+  "selection": 0,
+  "confirmation": 0
+ },
+ "candidates": {
+  "gemma": {
+   "seconds_per_rating": 1.2316771350015188,
+   "peak_mib": 7650,
+   "clean_flag_rate": 0.15333333333333332,
+   "detection": {
+    "shuffle": 0.9933333333333333,
+    "morphology": 0.7,
+    "repeat": 1.0,
+    "truncate": 0.82,
+    "splice": 0.9933333333333333
+   },
+   "target_item": {
+    "shuffle": 0.9933333333333333,
+    "morphology": 0.6533333333333333,
+    "repeat": 1.0,
+    "truncate": 0.8066666666666666,
+    "splice": 0.8
+   },
+   "unparsed_rate": 0.0,
+   "c1_flag_rate": 1.0,
+   "c1_minus_clean": [
+    0.7758703973470875,
+    0.8956004626145764
+   ],
+   "conditions": {
+    "detection": false,
+    "clean": true,
+    "unparsed": true,
+    "c1": true
+   },
+   "passed": false,
+   "score": 0.748
+  },
+  "qwen": {
+   "seconds_per_rating": 0.8801787100004731,
+   "peak_mib": 5223,
+   "clean_flag_rate": 0.21333333333333335,
+   "detection": {
+    "shuffle": 0.9866666666666667,
+    "morphology": 0.8666666666666667,
+    "repeat": 0.9533333333333334,
+    "truncate": 0.8,
+    "splice": 0.9733333333333334
+   },
+   "target_item": {
+    "shuffle": 0.9866666666666667,
+    "morphology": 0.86,
+    "repeat": 0.86,
+    "truncate": 0.7733333333333333,
+    "splice": 0.8666666666666667
+   },
+   "unparsed_rate": 0.0,
+   "c1_flag_rate": 1.0,
+   "c1_minus_clean": [
+    0.7101881789383849,
+    0.8446376392021363
+   ],
+   "conditions": {
+    "detection": true,
+    "clean": false,
+    "unparsed": true,
+    "c1": true
+   },
+   "passed": false,
+   "score": 0.7026666666666667
+  }
+ },
+ "final": "not reported",
+ "reason": "no candidate passed the selection half"
+}

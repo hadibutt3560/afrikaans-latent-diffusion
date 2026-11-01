@@ -1,0 +1,6860 @@
+{
+ "protocol_sha256_lf": "3361ee2f40a534431e658c0ee77520f83a0cd374fa050285b553cedc7ec402c7",
+ "banks": {
+  "AR-grid-t0.8-p0.90-off": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.985,
+     "nld_top": 0.011,
+     "other_top": 0.004,
+     "mean_p_afr": 0.9788386792391793,
+     "by_band": [
+      {
+       "n": 253,
+       "afr_top": 0.9446640316205533,
+       "nld_top": 0.043478260869565216
+      },
+      {
+       "n": 504,
+       "afr_top": 0.998015873015873,
+       "nld_top": 0.0
+      },
+      {
+       "n": 182,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 61,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 15559,
+     "unrecognised_tokens": 344,
+     "token_rate": 0.02210939006362877,
+     "checked_types": 1890,
+     "type_rate": 0.12063492063492064,
+     "acronyms": 57,
+     "acronym_fraction": 0.0036501024590163936,
+     "token_rate_with_acronyms": 0.02497438524590164,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "skakelkode",
+       14
+      ],
+      [
+       "besigheidsadres",
+       14
+      ],
+      [
+       "paspoortnommer",
+       12
+      ],
+      [
+       "regtehouers",
+       8
+      ],
+      [
+       "persal-nommer",
+       6
+      ],
+      [
+       "vuurwapenlisensie",
+       5
+      ],
+      [
+       "vaaldriehoekkampus",
+       5
+      ],
+      [
+       "omgewingsvolhoubaarheid",
+       5
+      ],
+      [
+       "beskermingsbevel",
+       4
+      ],
+      [
+       "speaker",
+       4
+      ],
+      [
+       "vuurwapenbeampte",
+       4
+      ],
+      [
+       "stasiekommissaris",
+       4
+      ],
+      [
+       "vangslimiet",
+       4
+      ],
+      [
+       "blouvintuna",
+       4
+      ],
+      [
+       "polisiedossier",
+       3
+      ],
+      [
+       "werktelefoonnommer",
+       3
+      ],
+      [
+       "polisieklaringsertifikaat",
+       3
+      ],
+      [
+       "mafikengkampus",
+       3
+      ],
+      [
+       "me",
+       3
+      ],
+      [
+       "potchefstroomkampus",
+       3
+      ]
+     ],
+     "excess_over_HL": -0.021378786919160044
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 16.564,
+    "distinct2": 0.46652531482909276,
+    "unigram_entropy_bits": 8.236257880543619,
+    "training_copies": 105,
+    "fourgram_overlap": 0.3881312200516034,
+    "fourgram_total": 13565,
+    "fourgram_row_share_quartiles": [
+     0.1111111111111111,
+     0.3198051948051948,
+     0.9166666666666666
+    ],
+    "high_overlap_rows": 210.0,
+    "rows_under_4_words": 24,
+    "eightgram_overlap": 0.13556924941913326,
+    "eightgram_total": 9899,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 46.306878418651316,
+    "band_counts": [
+     253,
+     504,
+     182,
+     61
+    ],
+    "support": "ok",
+    "standardised": 43.359359799289095
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 70.9713976932618,
+    "band_counts": [
+     253,
+     504,
+     182,
+     61
+    ],
+    "support": "ok",
+    "standardised": 68.43821696087915
+   }
+  },
+  "AR-grid-t0.8-p0.90-on": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.985,
+     "nld_top": 0.012,
+     "other_top": 0.003,
+     "mean_p_afr": 0.9776578649506228,
+     "by_band": [
+      {
+       "n": 243,
+       "afr_top": 0.9382716049382716,
+       "nld_top": 0.04938271604938271
+      },
+      {
+       "n": 546,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 190,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 21,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 14991,
+     "unrecognised_tokens": 365,
+     "token_rate": 0.02434794209859249,
+     "checked_types": 2008,
+     "type_rate": 0.13695219123505975,
+     "acronyms": 69,
+     "acronym_fraction": 0.004581673306772908,
+     "token_rate_with_acronyms": 0.02808764940239044,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "paspoortnommer",
+       17
+      ],
+      [
+       "skakelkode",
+       14
+      ],
+      [
+       "besigheidsadres",
+       8
+      ],
+      [
+       "persal-nommer",
+       7
+      ],
+      [
+       "vuurwapenbeampte",
+       5
+      ],
+      [
+       "stasiekommissaris",
+       5
+      ],
+      [
+       "potchefstroomkampus",
+       4
+      ],
+      [
+       "proefhandtekening",
+       3
+      ],
+      [
+       "werktelefoonnommer",
+       3
+      ],
+      [
+       "subregulasie",
+       3
+      ],
+      [
+       "aange-teken",
+       3
+      ],
+      [
+       "beskermingsbevel",
+       3
+      ],
+      [
+       "me",
+       3
+      ],
+      [
+       "tydsraamwerk",
+       3
+      ],
+      [
+       "suidstraat",
+       2
+      ],
+      [
+       "werkloosheidversekering",
+       2
+      ],
+      [
+       "vroeërskool",
+       2
+      ],
+      [
+       "enswaardigheid",
+       2
+      ],
+      [
+       "robert",
+       2
+      ],
+      [
+       "ross",
+       2
+      ]
+     ],
+     "excess_over_HL": -0.019140234884196323
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 15.621,
+    "distinct2": 0.5036591204431982,
+    "unigram_entropy_bits": 8.39186233845327,
+    "training_copies": 112,
+    "fourgram_overlap": 0.38689485777672133,
+    "fourgram_total": 12621,
+    "fourgram_row_share_quartiles": [
+     0.1111111111111111,
+     0.3076923076923077,
+     0.86875
+    ],
+    "high_overlap_rows": 199.0,
+    "rows_under_4_words": 24,
+    "eightgram_overlap": 0.13736017897091723,
+    "eightgram_total": 8940,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 56.23035762586811,
+    "band_counts": [
+     243,
+     546,
+     190,
+     21
+    ],
+    "support": "ok",
+    "standardised": 55.00918118973075
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 92.55484927764454,
+    "band_counts": [
+     243,
+     546,
+     190,
+     21
+    ],
+    "support": "ok",
+    "standardised": 99.15737743842644
+   }
+  },
+  "AR-grid-t0.8-p0.95-off": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.979,
+     "nld_top": 0.016,
+     "other_top": 0.005,
+     "mean_p_afr": 0.9747142487981164,
+     "by_band": [
+      {
+       "n": 259,
+       "afr_top": 0.9343629343629344,
+       "nld_top": 0.05405405405405406
+      },
+      {
+       "n": 473,
+       "afr_top": 0.9957716701902748,
+       "nld_top": 0.0021141649048625794
+      },
+      {
+       "n": 199,
+       "afr_top": 0.9899497487437185,
+       "nld_top": 0.005025125628140704
+      },
+      {
+       "n": 69,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 16155,
+     "unrecognised_tokens": 431,
+     "token_rate": 0.02667904673475704,
+     "checked_types": 2153,
+     "type_rate": 0.14166279609846724,
+     "acronyms": 66,
+     "acronym_fraction": 0.004068799704087294,
+     "token_rate_with_acronyms": 0.029776216016275198,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "skakelkode",
+       16
+      ],
+      [
+       "besigheidsadres",
+       12
+      ],
+      [
+       "paspoortnommer",
+       11
+      ],
+      [
+       "omgewingsvolhoubaarheid",
+       7
+      ],
+      [
+       "potchefstroomkampus",
+       7
+      ],
+      [
+       "vuurwapenlisensie",
+       5
+      ],
+      [
+       "regtehouers",
+       5
+      ],
+      [
+       "persal-nommer",
+       5
+      ],
+      [
+       "vangslimiet",
+       5
+      ],
+      [
+       "tourism",
+       5
+      ],
+      [
+       "the",
+       4
+      ],
+      [
+       "werktelefoonnommer",
+       4
+      ],
+      [
+       "vuurwapenbeampte",
+       4
+      ],
+      [
+       "stasiekommissaris",
+       4
+      ],
+      [
+       "du",
+       4
+      ],
+      [
+       "blouvintuna",
+       4
+      ],
+      [
+       "design",
+       4
+      ],
+      [
+       "mafikengkampus",
+       3
+      ],
+      [
+       "plaaswerkergemeenskap",
+       3
+      ],
+      [
+       "beskermingsbevel",
+       3
+      ]
+     ],
+     "excess_over_HL": -0.01680913024803177
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 17.066,
+    "distinct2": 0.5082783517988299,
+    "unigram_entropy_bits": 8.404217745242395,
+    "training_copies": 87,
+    "fourgram_overlap": 0.3421239692920102,
+    "fourgram_total": 14068,
+    "fourgram_row_share_quartiles": [
+     0.07142857142857142,
+     0.23529411764705882,
+     0.8235294117647058
+    ],
+    "high_overlap_rows": 182.0,
+    "rows_under_4_words": 24,
+    "eightgram_overlap": 0.11650485436893204,
+    "eightgram_total": 10403,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 48.685102380869466,
+    "band_counts": [
+     259,
+     473,
+     199,
+     69
+    ],
+    "support": "ok",
+    "standardised": 46.774914215163854
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 80.4882708788747,
+    "band_counts": [
+     259,
+     473,
+     199,
+     69
+    ],
+    "support": "ok",
+    "standardised": 80.46661927865885
+   }
+  },
+  "AR-grid-t0.8-p0.95-on": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.981,
+     "nld_top": 0.015,
+     "other_top": 0.004,
+     "mean_p_afr": 0.9747975190416055,
+     "by_band": [
+      {
+       "n": 251,
+       "afr_top": 0.9282868525896414,
+       "nld_top": 0.05976095617529881
+      },
+      {
+       "n": 515,
+       "afr_top": 0.9980582524271845,
+       "nld_top": 0.0
+      },
+      {
+       "n": 197,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 37,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 15366,
+     "unrecognised_tokens": 408,
+     "token_rate": 0.026552128074970715,
+     "checked_types": 2190,
+     "type_rate": 0.14885844748858448,
+     "acronyms": 73,
+     "acronym_fraction": 0.004728285510719606,
+     "token_rate_with_acronyms": 0.030442386164907055,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "paspoortnommer",
+       13
+      ],
+      [
+       "skakelkode",
+       12
+      ],
+      [
+       "besigheidsadres",
+       8
+      ],
+      [
+       "persal-nommer",
+       5
+      ],
+      [
+       "vuurwapenbeampte",
+       4
+      ],
+      [
+       "stasiekommissaris",
+       4
+      ],
+      [
+       "arbeidsverhoudinge",
+       4
+      ],
+      [
+       "potchefstroomkampus",
+       4
+      ],
+      [
+       "regtehouers",
+       3
+      ],
+      [
+       "visvangreg",
+       3
+      ],
+      [
+       "werktelefoonnommer",
+       3
+      ],
+      [
+       "aange-teken",
+       3
+      ],
+      [
+       "beskermingsbevel",
+       3
+      ],
+      [
+       "tydsraamwerk",
+       3
+      ],
+      [
+       "svwr-beampte",
+       3
+      ],
+      [
+       "bb",
+       2
+      ],
+      [
+       "iii",
+       2
+      ],
+      [
+       "suidstraat",
+       2
+      ],
+      [
+       "oortredingskennisgewing",
+       2
+      ],
+      [
+       "robert",
+       2
+      ]
+     ],
+     "excess_over_HL": -0.016936048907818097
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 16.009,
+    "distinct2": 0.5401425811179958,
+    "unigram_entropy_bits": 8.54742206081234,
+    "training_copies": 89,
+    "fourgram_overlap": 0.3401229823212913,
+    "fourgram_total": 13010,
+    "fourgram_row_share_quartiles": [
+     0.07923076923076923,
+     0.23529411764705882,
+     0.75
+    ],
+    "high_overlap_rows": 173.0,
+    "rows_under_4_words": 24,
+    "eightgram_overlap": 0.11000428449014567,
+    "eightgram_total": 9336,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 59.53757539986473,
+    "band_counts": [
+     251,
+     515,
+     197,
+     37
+    ],
+    "support": "ok",
+    "standardised": 58.680538522144026
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 101.29009987820677,
+    "band_counts": [
+     251,
+     515,
+     197,
+     37
+    ],
+    "support": "ok",
+    "standardised": 106.98851050970936
+   }
+  },
+  "AR-grid-t0.8-p1.00-off": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.972,
+     "nld_top": 0.014,
+     "other_top": 0.014,
+     "mean_p_afr": 0.9679359519376967,
+     "by_band": [
+      {
+       "n": 235,
+       "afr_top": 0.8978723404255319,
+       "nld_top": 0.05531914893617021
+      },
+      {
+       "n": 455,
+       "afr_top": 0.9978021978021978,
+       "nld_top": 0.0
+      },
+      {
+       "n": 245,
+       "afr_top": 0.9877551020408163,
+       "nld_top": 0.004081632653061225
+      },
+      {
+       "n": 65,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 16763,
+     "unrecognised_tokens": 594,
+     "token_rate": 0.03543518463282229,
+     "checked_types": 2568,
+     "type_rate": 0.17873831775700935,
+     "acronyms": 78,
+     "acronym_fraction": 0.004631553945727688,
+     "token_rate_with_acronyms": 0.03936820853868535,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "skakelkode",
+       12
+      ],
+      [
+       "paspoortnommer",
+       10
+      ],
+      [
+       "besigheidsadres",
+       10
+      ],
+      [
+       "vuurwapenlisensie",
+       7
+      ],
+      [
+       "vangslimiet",
+       7
+      ],
+      [
+       "the",
+       6
+      ],
+      [
+       "for",
+       6
+      ],
+      [
+       "potchefstroomkampus",
+       6
+      ],
+      [
+       "regtehouers",
+       5
+      ],
+      [
+       "du",
+       5
+      ],
+      [
+       "design",
+       5
+      ],
+      [
+       "or",
+       4
+      ],
+      [
+       "specified",
+       4
+      ],
+      [
+       "aange-teken",
+       4
+      ],
+      [
+       "vaaldriehoekkampus",
+       4
+      ],
+      [
+       "persal-nommer",
+       4
+      ],
+      [
+       "para-graaf",
+       4
+      ],
+      [
+       "blouvintuna",
+       4
+      ],
+      [
+       "tourism",
+       4
+      ],
+      [
+       "verkeerskantoor",
+       3
+      ]
+     ],
+     "excess_over_HL": -0.008052992349966523
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 17.736,
+    "distinct2": 0.5573613766730402,
+    "unigram_entropy_bits": 8.629837176169085,
+    "training_copies": 68,
+    "fourgram_overlap": 0.2970424637091304,
+    "fourgram_total": 14742,
+    "fourgram_row_share_quartiles": [
+     0.05555555555555555,
+     0.2,
+     0.6666666666666666
+    ],
+    "high_overlap_rows": 143.0,
+    "rows_under_4_words": 32,
+    "eightgram_overlap": 0.087278641127575,
+    "eightgram_total": 11068,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 54.31357160119335,
+    "band_counts": [
+     235,
+     455,
+     245,
+     65
+    ],
+    "support": "ok",
+    "standardised": 55.026686015651535
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 100.39836177007153,
+    "band_counts": [
+     235,
+     455,
+     245,
+     65
+    ],
+    "support": "ok",
+    "standardised": 105.80798741662898
+   }
+  },
+  "AR-grid-t0.8-p1.00-on": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.977,
+     "nld_top": 0.01,
+     "other_top": 0.013,
+     "mean_p_afr": 0.9716004693570031,
+     "by_band": [
+      {
+       "n": 250,
+       "afr_top": 0.92,
+       "nld_top": 0.036
+      },
+      {
+       "n": 490,
+       "afr_top": 0.9959183673469387,
+       "nld_top": 0.0
+      },
+      {
+       "n": 207,
+       "afr_top": 0.9951690821256038,
+       "nld_top": 0.004830917874396135
+      },
+      {
+       "n": 53,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 16022,
+     "unrecognised_tokens": 567,
+     "token_rate": 0.03538884034452627,
+     "checked_types": 2643,
+     "type_rate": 0.18123344684071133,
+     "acronyms": 72,
+     "acronym_fraction": 0.00447371691313533,
+     "token_rate_with_acronyms": 0.039145022989934136,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "paspoortnommer",
+       13
+      ],
+      [
+       "skakelkode",
+       10
+      ],
+      [
+       "besigheidsadres",
+       7
+      ],
+      [
+       "potchefstroomkampus",
+       6
+      ],
+      [
+       "the",
+       5
+      ],
+      [
+       "aange-teken",
+       4
+      ],
+      [
+       "persal-nommer",
+       4
+      ],
+      [
+       "specified",
+       3
+      ],
+      [
+       "regtehouers",
+       3
+      ],
+      [
+       "werktelefoonnommer",
+       3
+      ],
+      [
+       "vuurwapenbeampte",
+       3
+      ],
+      [
+       "stasiekommissaris",
+       3
+      ],
+      [
+       "beskermingsbevel",
+       3
+      ],
+      [
+       "svwr-beampte",
+       3
+      ],
+      [
+       "technology",
+       2
+      ],
+      [
+       "for",
+       2
+      ],
+      [
+       "or",
+       2
+      ],
+      [
+       "software",
+       2
+      ],
+      [
+       "onregverdigting",
+       2
+      ],
+      [
+       "kleinskaal",
+       2
+      ]
+     ],
+     "excess_over_HL": -0.008099336638262539
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 16.697,
+    "distinct2": 0.5924061922660381,
+    "unigram_entropy_bits": 8.810331168468748,
+    "training_copies": 68,
+    "fourgram_overlap": 0.282992700729927,
+    "fourgram_total": 13700,
+    "fourgram_row_share_quartiles": [
+     0.041666666666666664,
+     0.17391304347826086,
+     0.6
+    ],
+    "high_overlap_rows": 132.0,
+    "rows_under_4_words": 31,
+    "eightgram_overlap": 0.08341648373578128,
+    "eightgram_total": 10022,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 66.22382785823794,
+    "band_counts": [
+     250,
+     490,
+     207,
+     53
+    ],
+    "support": "ok",
+    "standardised": 65.08976183697692
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 129.90103153101268,
+    "band_counts": [
+     250,
+     490,
+     207,
+     53
+    ],
+    "support": "ok",
+    "standardised": 137.05649643824876
+   }
+  },
+  "AR-grid-t0.9-p0.90-off": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.967,
+     "nld_top": 0.022,
+     "other_top": 0.011,
+     "mean_p_afr": 0.9602186200700434,
+     "by_band": [
+      {
+       "n": 283,
+       "afr_top": 0.901060070671378,
+       "nld_top": 0.0706713780918728
+      },
+      {
+       "n": 406,
+       "afr_top": 0.9950738916256158,
+       "nld_top": 0.0024630541871921183
+      },
+      {
+       "n": 225,
+       "afr_top": 0.9866666666666667,
+       "nld_top": 0.0044444444444444444
+      },
+      {
+       "n": 86,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 16704,
+     "unrecognised_tokens": 493,
+     "token_rate": 0.029513888888888888,
+     "checked_types": 2431,
+     "type_rate": 0.15590292060880295,
+     "acronyms": 56,
+     "acronym_fraction": 0.003341288782816229,
+     "token_rate_with_acronyms": 0.032100238663484486,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "skakelkode",
+       9
+      ],
+      [
+       "tourism",
+       8
+      ],
+      [
+       "regtehouers",
+       8
+      ],
+      [
+       "me",
+       6
+      ],
+      [
+       "paspoortnommer",
+       6
+      ],
+      [
+       "besigheidsadres",
+       6
+      ],
+      [
+       "annette",
+       6
+      ],
+      [
+       "combrink",
+       6
+      ],
+      [
+       "vaaldriehoekkampus",
+       6
+      ],
+      [
+       "robert",
+       5
+      ],
+      [
+       "mafikengkampus",
+       5
+      ],
+      [
+       "potchefstroomkampus",
+       5
+      ],
+      [
+       "ross",
+       4
+      ],
+      [
+       "beskermingsbevel",
+       4
+      ],
+      [
+       "vuurwapenlisensie",
+       4
+      ],
+      [
+       "market",
+       3
+      ],
+      [
+       "du",
+       3
+      ],
+      [
+       "werktelefoonnommer",
+       3
+      ],
+      [
+       "vuurwapenbeampte",
+       3
+      ],
+      [
+       "stasiekommissaris",
+       3
+      ]
+     ],
+     "excess_over_HL": -0.013974288093899924
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 17.567,
+    "distinct2": 0.5670912054083419,
+    "unigram_entropy_bits": 8.677886094921078,
+    "training_copies": 84,
+    "fourgram_overlap": 0.27119225753311826,
+    "fourgram_total": 14569,
+    "fourgram_row_share_quartiles": [
+     0.02857142857142857,
+     0.16666666666666666,
+     0.5555555555555556
+    ],
+    "high_overlap_rows": 127.0,
+    "rows_under_4_words": 31,
+    "eightgram_overlap": 0.07721125730994152,
+    "eightgram_total": 10944,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 51.99719727391667,
+    "band_counts": [
+     283,
+     406,
+     225,
+     86
+    ],
+    "support": "ok",
+    "standardised": 50.733772954862765
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 91.47363745446604,
+    "band_counts": [
+     283,
+     406,
+     225,
+     86
+    ],
+    "support": "ok",
+    "standardised": 91.1791445722305
+   }
+  },
+  "AR-grid-t0.9-p0.90-on": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.968,
+     "nld_top": 0.019,
+     "other_top": 0.013,
+     "mean_p_afr": 0.9595494800755651,
+     "by_band": [
+      {
+       "n": 280,
+       "afr_top": 0.8892857142857142,
+       "nld_top": 0.06785714285714285
+      },
+      {
+       "n": 440,
+       "afr_top": 0.9977272727272727,
+       "nld_top": 0.0
+      },
+      {
+       "n": 222,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 58,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 16137,
+     "unrecognised_tokens": 486,
+     "token_rate": 0.03011712214166202,
+     "checked_types": 2575,
+     "type_rate": 0.1553398058252427,
+     "acronyms": 56,
+     "acronym_fraction": 0.0034582844438955105,
+     "token_rate_with_acronyms": 0.03279194713765207,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "skakelkode",
+       8
+      ],
+      [
+       "paspoortnommer",
+       7
+      ],
+      [
+       "beskermingsbevel",
+       6
+      ],
+      [
+       "robert",
+       5
+      ],
+      [
+       "besigheidsadres",
+       5
+      ],
+      [
+       "tourism",
+       4
+      ],
+      [
+       "ross",
+       4
+      ],
+      [
+       "me",
+       4
+      ],
+      [
+       "vuurwapenbeampte",
+       4
+      ],
+      [
+       "stasiekommissaris",
+       4
+      ],
+      [
+       "visekanselier",
+       4
+      ],
+      [
+       "potchefstroomkampus",
+       4
+      ],
+      [
+       "the",
+       3
+      ],
+      [
+       "regtehouers",
+       3
+      ],
+      [
+       "werktelefoonnommer",
+       3
+      ],
+      [
+       "subregulasie",
+       3
+      ],
+      [
+       "enswaardigheid",
+       3
+      ],
+      [
+       "theuns",
+       3
+      ],
+      [
+       "vaaldriehoekkampus",
+       3
+      ],
+      [
+       "market",
+       2
+      ]
+     ],
+     "excess_over_HL": -0.013371054841126793
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 16.741,
+    "distinct2": 0.6126675560637824,
+    "unigram_entropy_bits": 8.896121446611135,
+    "training_copies": 76,
+    "fourgram_overlap": 0.2500181910790948,
+    "fourgram_total": 13743,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.14705882352941177,
+     0.5
+    ],
+    "high_overlap_rows": 109.0,
+    "rows_under_4_words": 33,
+    "eightgram_overlap": 0.06517874777799723,
+    "eightgram_total": 10126,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 64.9037618844531,
+    "band_counts": [
+     280,
+     440,
+     222,
+     58
+    ],
+    "support": "ok",
+    "standardised": 64.23802638997475
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 124.8685317418054,
+    "band_counts": [
+     280,
+     440,
+     222,
+     58
+    ],
+    "support": "ok",
+    "standardised": 130.0568743653966
+   }
+  },
+  "AR-grid-t0.9-p0.95-off": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.959,
+     "nld_top": 0.022,
+     "other_top": 0.019,
+     "mean_p_afr": 0.953753752832893,
+     "by_band": [
+      {
+       "n": 282,
+       "afr_top": 0.8794326241134752,
+       "nld_top": 0.07092198581560284
+      },
+      {
+       "n": 399,
+       "afr_top": 0.9874686716791979,
+       "nld_top": 0.002506265664160401
+      },
+      {
+       "n": 219,
+       "afr_top": 0.9908675799086758,
+       "nld_top": 0.0045662100456621
+      },
+      {
+       "n": 100,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 17096,
+     "unrecognised_tokens": 622,
+     "token_rate": 0.03638277959756668,
+     "checked_types": 2769,
+     "type_rate": 0.17659804983748645,
+     "acronyms": 73,
+     "acronym_fraction": 0.004251849263206943,
+     "token_rate_with_acronyms": 0.039722756130234724,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       8
+      ],
+      [
+       "potchefstroomkampus",
+       8
+      ],
+      [
+       "skakelkode",
+       7
+      ],
+      [
+       "for",
+       7
+      ],
+      [
+       "me",
+       6
+      ],
+      [
+       "du",
+       6
+      ],
+      [
+       "regtehouers",
+       6
+      ],
+      [
+       "annette",
+       5
+      ],
+      [
+       "combrink",
+       5
+      ],
+      [
+       "design",
+       5
+      ],
+      [
+       "besigheidsadres",
+       5
+      ],
+      [
+       "aange-teken",
+       4
+      ],
+      [
+       "robert",
+       4
+      ],
+      [
+       "ross",
+       4
+      ],
+      [
+       "paspoortnommer",
+       4
+      ],
+      [
+       "vuurwapenlisensie",
+       4
+      ],
+      [
+       "vuurwapenbeampte",
+       4
+      ],
+      [
+       "stasiekommissaris",
+       4
+      ],
+      [
+       "werktelefoonnommer",
+       3
+      ],
+      [
+       "persal-nommer",
+       3
+      ]
+     ],
+     "excess_over_HL": -0.007105397385222131
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 17.984,
+    "distinct2": 0.6087494112105512,
+    "unigram_entropy_bits": 8.851562720028701,
+    "training_copies": 68,
+    "fourgram_overlap": 0.23563563563563564,
+    "fourgram_total": 14985,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.14285714285714285,
+     0.44
+    ],
+    "high_overlap_rows": 105.0,
+    "rows_under_4_words": 31,
+    "eightgram_overlap": 0.060742308031384994,
+    "eightgram_total": 11343,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 57.1932173879601,
+    "band_counts": [
+     282,
+     399,
+     219,
+     100
+    ],
+    "support": "ok",
+    "standardised": 56.588335234529296
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 111.18832699830311,
+    "band_counts": [
+     282,
+     399,
+     219,
+     100
+    ],
+    "support": "ok",
+    "standardised": 111.45288260670306
+   }
+  },
+  "AR-grid-t0.9-p0.95-on": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.963,
+     "nld_top": 0.019,
+     "other_top": 0.018,
+     "mean_p_afr": 0.9548459563562829,
+     "by_band": [
+      {
+       "n": 292,
+       "afr_top": 0.886986301369863,
+       "nld_top": 0.06506849315068493
+      },
+      {
+       "n": 434,
+       "afr_top": 0.9907834101382489,
+       "nld_top": 0.0
+      },
+      {
+       "n": 207,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 67,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 16314,
+     "unrecognised_tokens": 606,
+     "token_rate": 0.03714600956233909,
+     "checked_types": 2794,
+     "type_rate": 0.18360773085182533,
+     "acronyms": 69,
+     "acronym_fraction": 0.004211682841970335,
+     "token_rate_with_acronyms": 0.040346700848440456,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "skakelkode",
+       7
+      ],
+      [
+       "the",
+       6
+      ],
+      [
+       "paspoortnommer",
+       5
+      ],
+      [
+       "beskermingsbevel",
+       5
+      ],
+      [
+       "aange-teken",
+       4
+      ],
+      [
+       "regtehouers",
+       4
+      ],
+      [
+       "for",
+       4
+      ],
+      [
+       "robert",
+       4
+      ],
+      [
+       "ross",
+       4
+      ],
+      [
+       "uys",
+       4
+      ],
+      [
+       "vuurwapenbeampte",
+       4
+      ],
+      [
+       "stasiekommissaris",
+       4
+      ],
+      [
+       "besigheidsadres",
+       4
+      ],
+      [
+       "tourism",
+       3
+      ],
+      [
+       "werktelefoonnommer",
+       3
+      ],
+      [
+       "me",
+       3
+      ],
+      [
+       "potchefstroomkampus",
+       3
+      ],
+      [
+       "annette",
+       3
+      ],
+      [
+       "combrink",
+       3
+      ],
+      [
+       "omgewingsvolhoubaarheid",
+       3
+      ]
+     ],
+     "excess_over_HL": -0.006342167420449719
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 16.933,
+    "distinct2": 0.6457038850185151,
+    "unigram_entropy_bits": 9.04328091412505,
+    "training_copies": 64,
+    "fourgram_overlap": 0.21535701471115895,
+    "fourgram_total": 13935,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.11764705882352941,
+     0.39722222222222225
+    ],
+    "high_overlap_rows": 94.0,
+    "rows_under_4_words": 34,
+    "eightgram_overlap": 0.05565251114989335,
+    "eightgram_total": 10314,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 72.05522774314886,
+    "band_counts": [
+     292,
+     434,
+     207,
+     67
+    ],
+    "support": "ok",
+    "standardised": 71.47956785862527
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 155.41658734702833,
+    "band_counts": [
+     292,
+     434,
+     207,
+     67
+    ],
+    "support": "ok",
+    "standardised": 164.7975936130537
+   }
+  },
+  "AR-grid-t0.9-p1.00-off": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.954,
+     "nld_top": 0.024,
+     "other_top": 0.022,
+     "mean_p_afr": 0.9494937776593115,
+     "by_band": [
+      {
+       "n": 279,
+       "afr_top": 0.8602150537634409,
+       "nld_top": 0.07885304659498207
+      },
+      {
+       "n": 354,
+       "afr_top": 0.9830508474576272,
+       "nld_top": 0.005649717514124294
+      },
+      {
+       "n": 254,
+       "afr_top": 0.9960629921259843,
+       "nld_top": 0.0
+      },
+      {
+       "n": 113,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 17854,
+     "unrecognised_tokens": 870,
+     "token_rate": 0.04872857622941638,
+     "checked_types": 3267,
+     "type_rate": 0.22252831343740434,
+     "acronyms": 79,
+     "acronym_fraction": 0.004405286343612335,
+     "token_rate_with_acronyms": 0.05180393687615011,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       8
+      ],
+      [
+       "regtehouers",
+       8
+      ],
+      [
+       "potchefstroomkampus",
+       7
+      ],
+      [
+       "or",
+       6
+      ],
+      [
+       "specified",
+       6
+      ],
+      [
+       "mafikengkampus",
+       6
+      ],
+      [
+       "annette",
+       6
+      ],
+      [
+       "combrink",
+       6
+      ],
+      [
+       "for",
+       5
+      ],
+      [
+       "me",
+       5
+      ],
+      [
+       "production",
+       4
+      ],
+      [
+       "software",
+       4
+      ],
+      [
+       "aange-teken",
+       4
+      ],
+      [
+       "robert",
+       4
+      ],
+      [
+       "ross",
+       4
+      ],
+      [
+       "vuurwapenlisensie",
+       4
+      ],
+      [
+       "vuurwapenbeampte",
+       4
+      ],
+      [
+       "stasiekommissaris",
+       4
+      ],
+      [
+       "du",
+       4
+      ],
+      [
+       "permitvoorwaardes",
+       3
+      ]
+     ],
+     "excess_over_HL": 0.005240399246627565
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 18.724,
+    "distinct2": 0.6510381403746333,
+    "unigram_entropy_bits": 9.06914226637432,
+    "training_copies": 49,
+    "fourgram_overlap": 0.19554990464081373,
+    "fourgram_total": 15730,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.1,
+     0.3076923076923077
+    ],
+    "high_overlap_rows": 75.0,
+    "rows_under_4_words": 40,
+    "eightgram_overlap": 0.04329147389292796,
+    "eightgram_total": 12104,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 70.16486857861017,
+    "band_counts": [
+     279,
+     354,
+     254,
+     113
+    ],
+    "support": "ok",
+    "standardised": 72.01245352382358
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 157.2617181299957,
+    "band_counts": [
+     279,
+     354,
+     254,
+     113
+    ],
+    "support": "ok",
+    "standardised": 160.8957236720438
+   }
+  },
+  "AR-grid-t0.9-p1.00-on": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.96,
+     "nld_top": 0.018,
+     "other_top": 0.022,
+     "mean_p_afr": 0.9535027005486,
+     "by_band": [
+      {
+       "n": 293,
+       "afr_top": 0.8771331058020477,
+       "nld_top": 0.06143344709897611
+      },
+      {
+       "n": 391,
+       "afr_top": 0.989769820971867,
+       "nld_top": 0.0
+      },
+      {
+       "n": 240,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 76,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 16886,
+     "unrecognised_tokens": 868,
+     "token_rate": 0.05140352955110743,
+     "checked_types": 3300,
+     "type_rate": 0.23424242424242425,
+     "acronyms": 86,
+     "acronym_fraction": 0.005067169455573887,
+     "token_rate_with_acronyms": 0.05485505538534056,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       9
+      ],
+      [
+       "for",
+       5
+      ],
+      [
+       "specified",
+       5
+      ],
+      [
+       "paspoortnommer",
+       5
+      ],
+      [
+       "or",
+       4
+      ],
+      [
+       "software",
+       4
+      ],
+      [
+       "aange-teken",
+       4
+      ],
+      [
+       "robert",
+       4
+      ],
+      [
+       "ross",
+       4
+      ],
+      [
+       "vuurwapenbeampte",
+       4
+      ],
+      [
+       "stasiekommissaris",
+       4
+      ],
+      [
+       "beskermingsbevel",
+       4
+      ],
+      [
+       "potchefstroomkampus",
+       4
+      ],
+      [
+       "specially",
+       4
+      ],
+      [
+       "regtehouers",
+       3
+      ],
+      [
+       "konfiskering",
+       3
+      ],
+      [
+       "uys",
+       3
+      ],
+      [
+       "lp's",
+       3
+      ],
+      [
+       "equipment",
+       3
+      ],
+      [
+       "designed",
+       3
+      ]
+     ],
+     "excess_over_HL": 0.007915352568318615
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 17.528,
+    "distinct2": 0.6906461761858664,
+    "unigram_entropy_bits": 9.253884424636842,
+    "training_copies": 46,
+    "fourgram_overlap": 0.17511869538292163,
+    "fourgram_total": 14533,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.08333333333333333,
+     0.2596153846153846
+    ],
+    "high_overlap_rows": 71.0,
+    "rows_under_4_words": 41,
+    "eightgram_overlap": 0.03930010993037743,
+    "eightgram_total": 10916,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 88.67439101273187,
+    "band_counts": [
+     293,
+     391,
+     240,
+     76
+    ],
+    "support": "ok",
+    "standardised": 89.69609144898232
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 215.84193919895995,
+    "band_counts": [
+     293,
+     391,
+     240,
+     76
+    ],
+    "support": "ok",
+    "standardised": 228.75719633571202
+   }
+  },
+  "AR-grid-t1.0-p0.90-off": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.966,
+     "nld_top": 0.016,
+     "other_top": 0.018,
+     "mean_p_afr": 0.9610376701490541,
+     "by_band": [
+      {
+       "n": 288,
+       "afr_top": 0.8993055555555556,
+       "nld_top": 0.052083333333333336
+      },
+      {
+       "n": 352,
+       "afr_top": 0.9886363636363636,
+       "nld_top": 0.002840909090909091
+      },
+      {
+       "n": 236,
+       "afr_top": 0.9957627118644068,
+       "nld_top": 0.0
+      },
+      {
+       "n": 124,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 18175,
+     "unrecognised_tokens": 651,
+     "token_rate": 0.035818431911966986,
+     "checked_types": 3049,
+     "type_rate": 0.1816989176779272,
+     "acronyms": 76,
+     "acronym_fraction": 0.004164155388745822,
+     "token_rate_with_acronyms": 0.0390115610103556,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       6
+      ],
+      [
+       "verkeersboete",
+       5
+      ],
+      [
+       "or",
+       5
+      ],
+      [
+       "skakelkode",
+       5
+      ],
+      [
+       "besigheidsadres",
+       4
+      ],
+      [
+       "robert",
+       4
+      ],
+      [
+       "ross",
+       4
+      ],
+      [
+       "specified",
+       4
+      ],
+      [
+       "paspoortnommer",
+       4
+      ],
+      [
+       "du",
+       4
+      ],
+      [
+       "me",
+       4
+      ],
+      [
+       "annette",
+       4
+      ],
+      [
+       "combrink",
+       4
+      ],
+      [
+       "vangslimiet",
+       4
+      ],
+      [
+       "potchefstroomkampus",
+       4
+      ],
+      [
+       "aange-teken",
+       3
+      ],
+      [
+       "permitvoorwaardes",
+       3
+      ],
+      [
+       "uys",
+       3
+      ],
+      [
+       "papierkwota's",
+       3
+      ],
+      [
+       "omgewingsvolhoubaarheid",
+       3
+      ]
+     ],
+     "excess_over_HL": -0.007669745070821826
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 19.034,
+    "distinct2": 0.650937118775646,
+    "unigram_entropy_bits": 9.065122479425249,
+    "training_copies": 58,
+    "fourgram_overlap": 0.1827648562698759,
+    "fourgram_total": 16037,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.1,
+     0.2857142857142857
+    ],
+    "high_overlap_rows": 74.0,
+    "rows_under_4_words": 35,
+    "eightgram_overlap": 0.03942594533580585,
+    "eightgram_total": 12403,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 63.94028368613325,
+    "band_counts": [
+     288,
+     352,
+     236,
+     124
+    ],
+    "support": "ok",
+    "standardised": 65.64910150979561
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 139.28215785193584,
+    "band_counts": [
+     288,
+     352,
+     236,
+     124
+    ],
+    "support": "ok",
+    "standardised": 142.03091379552242
+   }
+  },
+  "AR-grid-t1.0-p0.90-on": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.968,
+     "nld_top": 0.018,
+     "other_top": 0.014,
+     "mean_p_afr": 0.9610830313279821,
+     "by_band": [
+      {
+       "n": 313,
+       "afr_top": 0.9105431309904153,
+       "nld_top": 0.054313099041533544
+      },
+      {
+       "n": 375,
+       "afr_top": 0.992,
+       "nld_top": 0.0
+      },
+      {
+       "n": 234,
+       "afr_top": 0.9957264957264957,
+       "nld_top": 0.004273504273504274
+      },
+      {
+       "n": 78,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 16805,
+     "unrecognised_tokens": 714,
+     "token_rate": 0.042487354953882776,
+     "checked_types": 3108,
+     "type_rate": 0.20398970398970398,
+     "acronyms": 66,
+     "acronym_fraction": 0.00391203840910438,
+     "token_rate_with_acronyms": 0.04546262817853121,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       5
+      ],
+      [
+       "beskermingsbevel",
+       5
+      ],
+      [
+       "robert",
+       4
+      ],
+      [
+       "ross",
+       4
+      ],
+      [
+       "skakelkode",
+       4
+      ],
+      [
+       "paspoortnommer",
+       4
+      ],
+      [
+       "uys",
+       4
+      ],
+      [
+       "agribesighede",
+       3
+      ],
+      [
+       "besigheidsadres",
+       3
+      ],
+      [
+       "aange-teken",
+       3
+      ],
+      [
+       "permitvoorwaardes",
+       3
+      ],
+      [
+       "specified",
+       3
+      ],
+      [
+       "regeringsfere",
+       3
+      ],
+      [
+       "verkeersboete",
+       3
+      ],
+      [
+       "annette",
+       3
+      ],
+      [
+       "combrink",
+       3
+      ],
+      [
+       "potchefstroomkampus",
+       3
+      ],
+      [
+       "software",
+       3
+      ],
+      [
+       "or",
+       3
+      ],
+      [
+       "waterlekkasies",
+       2
+      ]
+     ],
+     "excess_over_HL": -0.0010008220289060357
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 17.363,
+    "distinct2": 0.6946159017295117,
+    "unigram_entropy_bits": 9.255919892139884,
+    "training_copies": 55,
+    "fourgram_overlap": 0.16442742777584407,
+    "fourgram_total": 14365,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.07692307692307693,
+     0.23076923076923078
+    ],
+    "high_overlap_rows": 64.0,
+    "rows_under_4_words": 36,
+    "eightgram_overlap": 0.03524270039055235,
+    "eightgram_total": 10754,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 81.15736746826785,
+    "band_counts": [
+     313,
+     375,
+     234,
+     78
+    ],
+    "support": "ok",
+    "standardised": 81.07375194745458
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 194.2195752006661,
+    "band_counts": [
+     313,
+     375,
+     234,
+     78
+    ],
+    "support": "ok",
+    "standardised": 202.1579978530436
+   }
+  },
+  "AR-grid-t1.0-p0.95-off": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.958,
+     "nld_top": 0.023,
+     "other_top": 0.019,
+     "mean_p_afr": 0.9503987164008059,
+     "by_band": [
+      {
+       "n": 300,
+       "afr_top": 0.8766666666666667,
+       "nld_top": 0.07666666666666666
+      },
+      {
+       "n": 343,
+       "afr_top": 0.9883381924198251,
+       "nld_top": 0.0
+      },
+      {
+       "n": 237,
+       "afr_top": 0.9957805907172996,
+       "nld_top": 0.0
+      },
+      {
+       "n": 120,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 17957,
+     "unrecognised_tokens": 821,
+     "token_rate": 0.04572033190399287,
+     "checked_types": 3436,
+     "type_rate": 0.20779976717112922,
+     "acronyms": 76,
+     "acronym_fraction": 0.004214495646869628,
+     "token_rate_with_acronyms": 0.0485776077191815,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       10
+      ],
+      [
+       "for",
+       8
+      ],
+      [
+       "or",
+       6
+      ],
+      [
+       "annette",
+       6
+      ],
+      [
+       "combrink",
+       6
+      ],
+      [
+       "specially",
+       5
+      ],
+      [
+       "designed",
+       5
+      ],
+      [
+       "specified",
+       4
+      ],
+      [
+       "robert",
+       4
+      ],
+      [
+       "ross",
+       4
+      ],
+      [
+       "vangslimiet",
+       4
+      ],
+      [
+       "software",
+       4
+      ],
+      [
+       "technology",
+       3
+      ],
+      [
+       "modified",
+       3
+      ],
+      [
+       "systems",
+       3
+      ],
+      [
+       "arbeidshof",
+       3
+      ],
+      [
+       "paspoortnommer",
+       3
+      ],
+      [
+       "verkeersboete",
+       3
+      ],
+      [
+       "mafikengkampus",
+       3
+      ],
+      [
+       "me",
+       3
+      ]
+     ],
+     "excess_over_HL": 0.0022321549212040576
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 18.717,
+    "distinct2": 0.6913134277812271,
+    "unigram_entropy_bits": 9.229225077477981,
+    "training_copies": 46,
+    "fourgram_overlap": 0.15733909946578478,
+    "fourgram_total": 15724,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.07407407407407407,
+     0.23809523809523808
+    ],
+    "high_overlap_rows": 58.0,
+    "rows_under_4_words": 47,
+    "eightgram_overlap": 0.033078252283386816,
+    "eightgram_total": 12153,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 77.86216295264862,
+    "band_counts": [
+     300,
+     343,
+     237,
+     120
+    ],
+    "support": "ok",
+    "standardised": 79.59767969851865
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 184.91529297039688,
+    "band_counts": [
+     300,
+     343,
+     237,
+     120
+    ],
+    "support": "ok",
+    "standardised": 189.5686668154581
+   }
+  },
+  "AR-grid-t1.0-p0.95-on": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.958,
+     "nld_top": 0.023,
+     "other_top": 0.019,
+     "mean_p_afr": 0.9502296499224958,
+     "by_band": [
+      {
+       "n": 314,
+       "afr_top": 0.8789808917197452,
+       "nld_top": 0.0732484076433121
+      },
+      {
+       "n": 376,
+       "afr_top": 0.9893617021276596,
+       "nld_top": 0.0
+      },
+      {
+       "n": 222,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 88,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 16973,
+     "unrecognised_tokens": 871,
+     "token_rate": 0.05131679726624639,
+     "checked_types": 3461,
+     "type_rate": 0.2279687951459116,
+     "acronyms": 73,
+     "acronym_fraction": 0.004282529625718644,
+     "token_rate_with_acronyms": 0.054088935820720406,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       8
+      ],
+      [
+       "robert",
+       4
+      ],
+      [
+       "ross",
+       4
+      ],
+      [
+       "specified",
+       4
+      ],
+      [
+       "specially",
+       4
+      ],
+      [
+       "for",
+       4
+      ],
+      [
+       "beskermingsbevel",
+       3
+      ],
+      [
+       "permitvoorwaardes",
+       3
+      ],
+      [
+       "oorenkomstig",
+       3
+      ],
+      [
+       "regeringsfere",
+       3
+      ],
+      [
+       "paspoortnommer",
+       3
+      ],
+      [
+       "combrink",
+       3
+      ],
+      [
+       "verkeersboete",
+       3
+      ],
+      [
+       "vangslimiet",
+       3
+      ],
+      [
+       "software",
+       3
+      ],
+      [
+       "equipment",
+       3
+      ],
+      [
+       "designed",
+       3
+      ],
+      [
+       "or",
+       3
+      ],
+      [
+       "regtehouers",
+       3
+      ],
+      [
+       "and",
+       2
+      ]
+     ],
+     "excess_over_HL": 0.007828620283457578
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 17.527,
+    "distinct2": 0.7226356870575422,
+    "unigram_entropy_bits": 9.422514042897193,
+    "training_copies": 46,
+    "fourgram_overlap": 0.13852188274153593,
+    "fourgram_total": 14532,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.05555555555555555,
+     0.19516129032258064
+    ],
+    "high_overlap_rows": 52.0,
+    "rows_under_4_words": 48,
+    "eightgram_overlap": 0.02834487787094422,
+    "eightgram_total": 10972,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 93.40379225904667,
+    "band_counts": [
+     314,
+     376,
+     222,
+     88
+    ],
+    "support": "ok",
+    "standardised": 93.80679035683411
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 252.5173914925634,
+    "band_counts": [
+     314,
+     376,
+     222,
+     88
+    ],
+    "support": "ok",
+    "standardised": 264.75112172019965
+   }
+  },
+  "AR-grid-t1.0-p1.00-off": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.954,
+     "nld_top": 0.025,
+     "other_top": 0.021,
+     "mean_p_afr": 0.9483345700455275,
+     "by_band": [
+      {
+       "n": 296,
+       "afr_top": 0.8614864864864865,
+       "nld_top": 0.08108108108108109
+      },
+      {
+       "n": 312,
+       "afr_top": 0.9839743589743589,
+       "nld_top": 0.003205128205128205
+      },
+      {
+       "n": 254,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 138,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 18805,
+     "unrecognised_tokens": 1255,
+     "token_rate": 0.06673756979526721,
+     "checked_types": 4157,
+     "type_rate": 0.2797690642290113,
+     "acronyms": 90,
+     "acronym_fraction": 0.004763164858428155,
+     "token_rate_with_acronyms": 0.06954220693305108,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "for",
+       7
+      ],
+      [
+       "the",
+       7
+      ],
+      [
+       "potchefstroomkampus",
+       5
+      ],
+      [
+       "specially",
+       4
+      ],
+      [
+       "designed",
+       4
+      ],
+      [
+       "or",
+       4
+      ],
+      [
+       "and",
+       4
+      ],
+      [
+       "mafikengkampus",
+       4
+      ],
+      [
+       "huurgrond",
+       4
+      ],
+      [
+       "specified",
+       3
+      ],
+      [
+       "be",
+       3
+      ],
+      [
+       "robert",
+       3
+      ],
+      [
+       "ross",
+       3
+      ],
+      [
+       "gemeenskaps",
+       3
+      ],
+      [
+       "paspoortnommer",
+       3
+      ],
+      [
+       "design",
+       3
+      ],
+      [
+       "vangslimiet",
+       3
+      ],
+      [
+       "software",
+       3
+      ],
+      [
+       "iii",
+       2
+      ],
+      [
+       "technology",
+       2
+      ]
+     ],
+     "excess_over_HL": 0.023249392812478398
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 19.596,
+    "distinct2": 0.7346203484620348,
+    "unigram_entropy_bits": 9.528756226438318,
+    "training_copies": 37,
+    "fourgram_overlap": 0.12362256879629072,
+    "fourgram_total": 16607,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.043478260869565216,
+     0.16666666666666666
+    ],
+    "high_overlap_rows": 35.0,
+    "rows_under_4_words": 50,
+    "eightgram_overlap": 0.02126679462571977,
+    "eightgram_total": 13025,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 102.64050354876557,
+    "band_counts": [
+     296,
+     312,
+     254,
+     138
+    ],
+    "support": "ok",
+    "standardised": 107.69999042021394
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 281.90826389813196,
+    "band_counts": [
+     296,
+     312,
+     254,
+     138
+    ],
+    "support": "ok",
+    "standardised": 287.27689877762526
+   }
+  },
+  "AR-grid-t1.0-p1.00-on": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.954,
+     "nld_top": 0.027,
+     "other_top": 0.019,
+     "mean_p_afr": 0.9464397018788513,
+     "by_band": [
+      {
+       "n": 324,
+       "afr_top": 0.8703703703703703,
+       "nld_top": 0.08024691358024691
+      },
+      {
+       "n": 350,
+       "afr_top": 0.9885714285714285,
+       "nld_top": 0.002857142857142857
+      },
+      {
+       "n": 224,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 102,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 17320,
+     "unrecognised_tokens": 1283,
+     "token_rate": 0.07407621247113164,
+     "checked_types": 4079,
+     "type_rate": 0.29173817112037265,
+     "acronyms": 97,
+     "acronym_fraction": 0.0055692714015042775,
+     "token_rate_with_acronyms": 0.07745306309927083,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "and",
+       9
+      ],
+      [
+       "the",
+       7
+      ],
+      [
+       "ge",
+       5
+      ],
+      [
+       "vaaldriehoekkampus",
+       5
+      ],
+      [
+       "specified",
+       4
+      ],
+      [
+       "for",
+       4
+      ],
+      [
+       "south",
+       3
+      ],
+      [
+       "africa",
+       3
+      ],
+      [
+       "permitvoorwaardes",
+       3
+      ],
+      [
+       "robert",
+       3
+      ],
+      [
+       "ross",
+       3
+      ],
+      [
+       "be",
+       3
+      ],
+      [
+       "with",
+       3
+      ],
+      [
+       "design",
+       3
+      ],
+      [
+       "du",
+       3
+      ],
+      [
+       "potchefstroomkampus",
+       3
+      ],
+      [
+       "verkeersboete",
+       3
+      ],
+      [
+       "to",
+       3
+      ],
+      [
+       "technology",
+       2
+      ],
+      [
+       "suksesvolhoubaarheid",
+       2
+      ]
+     ],
+     "excess_over_HL": 0.030588035488342824
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 17.887,
+    "distinct2": 0.7612364540771007,
+    "unigram_entropy_bits": 9.65620074007067,
+    "training_copies": 36,
+    "fourgram_overlap": 0.11628063108425646,
+    "fourgram_total": 14895,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.0339080459770115,
+     0.14285714285714285
+    ],
+    "high_overlap_rows": 35.0,
+    "rows_under_4_words": 52,
+    "eightgram_overlap": 0.019378137937109133,
+    "eightgram_total": 11353,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 123.38714783907233,
+    "band_counts": [
+     324,
+     350,
+     224,
+     102
+    ],
+    "support": "ok",
+    "standardised": 125.03561506708681
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 360.7552116381391,
+    "band_counts": [
+     324,
+     350,
+     224,
+     102
+    ],
+    "support": "ok",
+    "standardised": 373.11770892687036
+   }
+  },
+  "AR-hist": {
+   "part_a": {
+    "lid": {
+     "n": 256,
+     "empty": 0,
+     "afr_top": 0.953125,
+     "nld_top": 0.01171875,
+     "other_top": 0.03515625,
+     "mean_p_afr": 0.9454539150042649,
+     "by_band": [
+      {
+       "n": 90,
+       "afr_top": 0.8888888888888888,
+       "nld_top": 0.03333333333333333
+      },
+      {
+       "n": 84,
+       "afr_top": 0.9880952380952381,
+       "nld_top": 0.0
+      },
+      {
+       "n": 54,
+       "afr_top": 0.9814814814814815,
+       "nld_top": 0.0
+      },
+      {
+       "n": 28,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 4308,
+     "unrecognised_tokens": 227,
+     "token_rate": 0.05269266480965645,
+     "checked_types": 1401,
+     "type_rate": 0.14917915774446824,
+     "acronyms": 19,
+     "acronym_fraction": 0.004391033048301364,
+     "token_rate_with_acronyms": 0.055465680610122484,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       7
+      ],
+      [
+       "technology",
+       3
+      ],
+      [
+       "for",
+       3
+      ],
+      [
+       "robert",
+       3
+      ],
+      [
+       "ross",
+       3
+      ],
+      [
+       "not",
+       2
+      ],
+      [
+       "or",
+       2
+      ],
+      [
+       "specified",
+       2
+      ],
+      [
+       "aange-teken",
+       2
+      ],
+      [
+       "gemeenskapslede",
+       1
+      ],
+      [
+       "aangewysevoegde",
+       1
+      ],
+      [
+       "landboukontrakteurs",
+       1
+      ],
+      [
+       "tussengethede",
+       1
+      ],
+      [
+       "control",
+       1
+      ],
+      [
+       "specially",
+       1
+      ],
+      [
+       "designed",
+       1
+      ],
+      [
+       "modified",
+       1
+      ],
+      [
+       "which",
+       1
+      ],
+      [
+       "regard",
+       1
+      ],
+      [
+       "exceed",
+       1
+      ]
+     ],
+     "excess_over_HL": 0.009204487826867641
+    }
+   },
+   "part_b": {
+    "n": 256,
+    "mean_words": 17.52734375,
+    "distinct2": 0.8144646655636966,
+    "unigram_entropy_bits": 8.768358604402172,
+    "training_copies": 11,
+    "fourgram_overlap": 0.15824825362708222,
+    "fourgram_total": 3722,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.05555555555555555,
+     0.25
+    ],
+    "high_overlap_rows": 14.0,
+    "rows_under_4_words": 11,
+    "eightgram_overlap": 0.034409365023057824,
+    "eightgram_total": 2819,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 256,
+    "raw": 82.17857453663238,
+    "band_counts": [
+     90,
+     84,
+     54,
+     28
+    ],
+    "support": "ok",
+    "standardised": 80.51598116247571
+   },
+   "goldfish": {
+    "scored": 256,
+    "raw": 202.28687680743332,
+    "band_counts": [
+     90,
+     84,
+     54,
+     28
+    ],
+    "support": "ok",
+    "standardised": 203.7186910188993
+   }
+  },
+  "C1": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.055,
+     "nld_top": 0.264,
+     "other_top": 0.681,
+     "mean_p_afr": 0.04942444022513336,
+     "by_band": [
+      {
+       "n": 105,
+       "afr_top": 0.05714285714285714,
+       "nld_top": 0.24761904761904763
+      },
+      {
+       "n": 239,
+       "afr_top": 0.04602510460251046,
+       "nld_top": 0.27615062761506276
+      },
+      {
+       "n": 231,
+       "afr_top": 0.05627705627705628,
+       "nld_top": 0.2813852813852814
+      },
+      {
+       "n": 425,
+       "afr_top": 0.058823529411764705,
+       "nld_top": 0.25176470588235295
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 41108,
+     "unrecognised_tokens": 28977,
+     "token_rate": 0.7048992896759755,
+     "checked_types": 9393,
+     "type_rate": 0.8890663259874374,
+     "acronyms": 1010,
+     "acronym_fraction": 0.023980245975592382,
+     "token_rate_with_acronyms": 0.7041644902417019,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "id",
+       5965
+      ],
+      [
+       "extra",
+       5953
+      ],
+      [
+       "kwa",
+       326
+      ],
+      [
+       "ya",
+       213
+      ],
+      [
+       "nga",
+       141
+      ],
+      [
+       "the",
+       137
+      ],
+      [
+       "and",
+       131
+      ],
+      [
+       "le",
+       125
+      ],
+      [
+       "on",
+       119
+      ],
+      [
+       "sa",
+       98
+      ],
+      [
+       "на",
+       91
+      ],
+      [
+       "to",
+       86
+      ],
+      [
+       "for",
+       79
+      ],
+      [
+       "code",
+       78
+      ],
+      [
+       "za",
+       76
+      ],
+      [
+       "ho",
+       72
+      ],
+      [
+       "re",
+       68
+      ],
+      [
+       "ne",
+       64
+      ],
+      [
+       "а",
+       62
+      ],
+      [
+       "er",
+       51
+      ]
+     ],
+     "excess_over_HL": 0.6614111126931866
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 37.341,
+    "distinct2": 0.8674224704878787,
+    "unigram_entropy_bits": 11.483427088931942,
+    "training_copies": 0,
+    "fourgram_overlap": 0.0,
+    "fourgram_total": 34341,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "high_overlap_rows": 0.0,
+    "rows_under_4_words": 4,
+    "eightgram_overlap": 0.0,
+    "eightgram_total": 30395,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 50.362266058299376,
+    "band_counts": [
+     105,
+     239,
+     231,
+     425
+    ],
+    "support": "ok",
+    "standardised": 107.639788051843
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 56.12733990359385,
+    "band_counts": [
+     105,
+     239,
+     231,
+     425
+    ],
+    "support": "ok",
+    "standardised": 98.40876284348529
+   }
+  },
+  "C2": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.997,
+     "nld_top": 0.003,
+     "other_top": 0.0,
+     "mean_p_afr": 0.9945739018910099,
+     "by_band": [
+      {
+       "n": 101,
+       "afr_top": 0.9702970297029703,
+       "nld_top": 0.0297029702970297
+      },
+      {
+       "n": 304,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 376,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 219,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 25041,
+     "unrecognised_tokens": 1151,
+     "token_rate": 0.04596461802643664,
+     "checked_types": 4388,
+     "type_rate": 0.25546946216955335,
+     "acronyms": 106,
+     "acronym_fraction": 0.00421521453851354,
+     "token_rate_with_acronyms": 0.048634031892472264,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       3
+      ],
+      [
+       "residue",
+       3
+      ],
+      [
+       "extra",
+       3
+      ],
+      [
+       "id",
+       3
+      ],
+      [
+       "gesondheids",
+       2
+      ],
+      [
+       "magteis",
+       2
+      ],
+      [
+       "hule",
+       2
+      ],
+      [
+       "proefproses",
+       2
+      ],
+      [
+       "venue",
+       2
+      ],
+      [
+       "we",
+       2
+      ],
+      [
+       "publiekediens",
+       2
+      ],
+      [
+       "polisieraad",
+       2
+      ],
+      [
+       "lonerige",
+       2
+      ],
+      [
+       "lospryse",
+       2
+      ],
+      [
+       "david",
+       2
+      ],
+      [
+       "print",
+       2
+      ],
+      [
+       "verdui",
+       2
+      ],
+      [
+       "nwu-lid",
+       2
+      ],
+      [
+       "vodacom",
+       2
+      ],
+      [
+       "n-west",
+       2
+      ]
+     ],
+     "excess_over_HL": 0.0024764410436478312
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 25.848,
+    "distinct2": 0.6285817772054089,
+    "unigram_entropy_bits": 8.803229621800536,
+    "training_copies": 0,
+    "fourgram_overlap": 0.08307072829131652,
+    "fourgram_total": 22848,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.05555555555555555,
+     0.11764705882352941
+    ],
+    "high_overlap_rows": 0.0,
+    "rows_under_4_words": 1,
+    "eightgram_overlap": 5.2946471117700005e-05,
+    "eightgram_total": 18887,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 52.54134489340507,
+    "band_counts": [
+     101,
+     304,
+     376,
+     219
+    ],
+    "support": "ok",
+    "standardised": 63.56856177332133
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 154.58224807177263,
+    "band_counts": [
+     101,
+     304,
+     376,
+     219
+    ],
+    "support": "ok",
+    "standardised": 172.48023235151183
+   }
+  },
+  "C3": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.989,
+     "nld_top": 0.0,
+     "other_top": 0.011,
+     "mean_p_afr": 0.987953918533195,
+     "by_band": [
+      {
+       "n": 2,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 278,
+       "afr_top": 0.9964028776978417,
+       "nld_top": 0.0
+      },
+      {
+       "n": 666,
+       "afr_top": 0.987987987987988,
+       "nld_top": 0.0
+      },
+      {
+       "n": 54,
+       "afr_top": 0.9629629629629629,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 23938,
+     "unrecognised_tokens": 1205,
+     "token_rate": 0.05033837413317738,
+     "checked_types": 4479,
+     "type_rate": 0.24402768475106051,
+     "acronyms": 139,
+     "acronym_fraction": 0.005773144494746023,
+     "token_rate_with_acronyms": 0.05457490551148399,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       39
+      ],
+      [
+       "to",
+       12
+      ],
+      [
+       "that",
+       5
+      ],
+      [
+       "be",
+       4
+      ],
+      [
+       "and",
+       4
+      ],
+      [
+       "for",
+       4
+      ],
+      [
+       "on",
+       4
+      ],
+      [
+       "it",
+       4
+      ],
+      [
+       "landbouprojek",
+       3
+      ],
+      [
+       "potchefstroomkampus",
+       3
+      ],
+      [
+       "madiba",
+       3
+      ],
+      [
+       "following",
+       3
+      ],
+      [
+       "this",
+       3
+      ],
+      [
+       "aa",
+       3
+      ],
+      [
+       "ho",
+       3
+      ],
+      [
+       "go",
+       3
+      ],
+      [
+       "national",
+       2
+      ],
+      [
+       "du",
+       2
+      ],
+      [
+       "or",
+       2
+      ],
+      [
+       "cape",
+       2
+      ]
+     ],
+     "excess_over_HL": 0.006850197150388565
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 24.803,
+    "distinct2": 0.6952484980884762,
+    "unigram_entropy_bits": 9.173012518999409,
+    "training_copies": 0,
+    "fourgram_overlap": 0.0724212264367289,
+    "fourgram_total": 21803,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.05798319327731093,
+     0.10813492063492063
+    ],
+    "high_overlap_rows": 0.0,
+    "rows_under_4_words": 0,
+    "eightgram_overlap": 0.00039319215862495085,
+    "eightgram_total": 17803,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 67.8597081014261,
+    "band_counts": [
+     2,
+     278,
+     666,
+     54
+    ],
+    "support": "insufficient_support",
+    "standardised": null
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 219.68114433450958,
+    "band_counts": [
+     2,
+     278,
+     666,
+     54
+    ],
+    "support": "insufficient_support",
+    "standardised": null
+   }
+  },
+  "H": {
+   "part_a": {
+    "lid": {
+     "n": 811,
+     "empty": 0,
+     "afr_top": 0.9790382244143033,
+     "nld_top": 0.012330456226880395,
+     "other_top": 0.008631319358816275,
+     "mean_p_afr": 0.974055316791544,
+     "by_band": [
+      {
+       "n": 109,
+       "afr_top": 0.8532110091743119,
+       "nld_top": 0.08256880733944955
+      },
+      {
+       "n": 191,
+       "afr_top": 0.9947643979057592,
+       "nld_top": 0.005235602094240838
+      },
+      {
+       "n": 282,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 229,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 20574,
+     "unrecognised_tokens": 854,
+     "token_rate": 0.04150870030135122,
+     "checked_types": 3888,
+     "type_rate": 0.16126543209876543,
+     "acronyms": 105,
+     "acronym_fraction": 0.005077614971710431,
+     "token_rate_with_acronyms": 0.04448957879974854,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "speaker",
+       23
+      ],
+      [
+       "voorsittende",
+       14
+      ],
+      [
+       "regtehouers",
+       13
+      ],
+      [
+       "drankraad",
+       10
+      ],
+      [
+       "visvangregte",
+       8
+      ],
+      [
+       "regtetoekenning",
+       7
+      ],
+      [
+       "hoofwet",
+       7
+      ],
+      [
+       "parlementswet",
+       5
+      ],
+      [
+       "inkomstefonds",
+       5
+      ],
+      [
+       "nisie",
+       5
+      ],
+      [
+       "geslagsgelykheid",
+       5
+      ],
+      [
+       "the",
+       4
+      ],
+      [
+       "contact",
+       4
+      ],
+      [
+       "person",
+       4
+      ],
+      [
+       "appèltribunaal",
+       4
+      ],
+      [
+       "drankbeampte",
+       4
+      ],
+      [
+       "beplanninghersieningsraad",
+       4
+      ],
+      [
+       "handelsure",
+       4
+      ],
+      [
+       "geldwetsontwerp",
+       4
+      ],
+      [
+       "grondontwikkeling",
+       4
+      ]
+     ],
+     "excess_over_HL": -0.0019794766814375947
+    }
+   },
+   "part_b": {
+    "n": 811,
+    "mean_words": 26.55363748458693,
+    "distinct2": 0.6721192819918934,
+    "unigram_entropy_bits": 9.300179892682054,
+    "training_copies": 0,
+    "fourgram_overlap": 0.15705161763166162,
+    "fourgram_total": 19102,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.09523809523809523,
+     0.19169394435351883
+    ],
+    "high_overlap_rows": 12.0,
+    "rows_under_4_words": 11,
+    "eightgram_overlap": 0.03376477208778841,
+    "eightgram_total": 15993,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 811,
+    "raw": 32.04126981701717,
+    "band_counts": [
+     109,
+     191,
+     282,
+     229
+    ],
+    "support": "ok",
+    "standardised": 41.545814919108984
+   },
+   "goldfish": {
+    "scored": 811,
+    "raw": 54.91159843029125,
+    "band_counts": [
+     109,
+     191,
+     282,
+     229
+    ],
+    "support": "ok",
+    "standardised": 64.59933870855191
+   }
+  },
+  "HL": {
+   "part_a": {
+    "lid": {
+     "n": 4825,
+     "empty": 0,
+     "afr_top": 0.9815544041450778,
+     "nld_top": 0.008911917098445596,
+     "other_top": 0.009533678756476684,
+     "mean_p_afr": 0.9775346782069697,
+     "by_band": [
+      {
+       "n": 620,
+       "afr_top": 0.8870967741935484,
+       "nld_top": 0.06290322580645161
+      },
+      {
+       "n": 1173,
+       "afr_top": 0.9889173060528559,
+       "nld_top": 0.0034100596760443308
+      },
+      {
+       "n": 1677,
+       "afr_top": 0.9964221824686941,
+       "nld_top": 0.0
+      },
+      {
+       "n": 1355,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 122769,
+     "unrecognised_tokens": 5339,
+     "token_rate": 0.04348817698278881,
+     "checked_types": 11056,
+     "type_rate": 0.27433068017366136,
+     "acronyms": 566,
+     "acronym_fraction": 0.004589127173957108,
+     "token_rate_with_acronyms": 0.04632099566222078,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "speaker",
+       108
+      ],
+      [
+       "hoofwet",
+       56
+      ],
+      [
+       "voorsittende",
+       55
+      ],
+      [
+       "regtehouers",
+       48
+      ],
+      [
+       "parlementswet",
+       41
+      ],
+      [
+       "visvangregte",
+       39
+      ],
+      [
+       "visvangbedryf",
+       30
+      ],
+      [
+       "beplanninghersieningsraad",
+       29
+      ],
+      [
+       "nisie",
+       28
+      ],
+      [
+       "gt",
+       28
+      ],
+      [
+       "adjunkspeaker",
+       27
+      ],
+      [
+       "drankraad",
+       26
+      ],
+      [
+       "inkomstefonds",
+       21
+      ],
+      [
+       "geldwetsontwerp",
+       21
+      ],
+      [
+       "appèltribunaal",
+       21
+      ],
+      [
+       "regtetoekenning",
+       21
+      ],
+      [
+       "nansiële",
+       20
+      ],
+      [
+       "the",
+       19
+      ],
+      [
+       "aansoekgelde",
+       19
+      ],
+      [
+       "drankbeampte",
+       18
+      ]
+     ],
+     "excess_over_HL": 0.0
+    }
+   },
+   "part_b": {
+    "n": 4825,
+    "mean_words": 26.624870466321244,
+    "distinct2": 0.4931656421869945,
+    "unigram_entropy_bits": 9.774028901803437,
+    "training_copies": 0,
+    "fourgram_overlap": 0.14385472409860514,
+    "fourgram_total": 113990,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.08695652173913043,
+     0.17857142857142858
+    ],
+    "high_overlap_rows": 71.0,
+    "rows_under_4_words": 56,
+    "eightgram_overlap": 0.029678258316204537,
+    "eightgram_total": 95356,
+    "empty": 0
+   }
+  },
+  "R": {
+   "part_a": {
+    "lid": {
+     "n": 811,
+     "empty": 0,
+     "afr_top": 0.9852034525277436,
+     "nld_top": 0.008631319358816275,
+     "other_top": 0.006165228113440197,
+     "mean_p_afr": 0.9804168946909901,
+     "by_band": [
+      {
+       "n": 109,
+       "afr_top": 0.926605504587156,
+       "nld_top": 0.03669724770642202
+      },
+      {
+       "n": 212,
+       "afr_top": 0.9811320754716981,
+       "nld_top": 0.014150943396226415
+      },
+      {
+       "n": 303,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      },
+      {
+       "n": 187,
+       "afr_top": 1.0,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 19692,
+     "unrecognised_tokens": 953,
+     "token_rate": 0.048395287426366035,
+     "checked_types": 3879,
+     "type_rate": 0.21680845578757413,
+     "acronyms": 100,
+     "acronym_fraction": 0.0050525464834276475,
+     "token_rate_with_acronyms": 0.051485448666127726,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "speaker",
+       19
+      ],
+      [
+       "regtehouers",
+       9
+      ],
+      [
+       "voorsittende",
+       8
+      ],
+      [
+       "visvangregte",
+       6
+      ],
+      [
+       "hoofwet",
+       6
+      ],
+      [
+       "regtetoekenning",
+       5
+      ],
+      [
+       "inkomstefonds",
+       4
+      ],
+      [
+       "ne",
+       4
+      ],
+      [
+       "the",
+       3
+      ],
+      [
+       "regsontwerp",
+       3
+      ],
+      [
+       "grondontwikkeling",
+       3
+      ],
+      [
+       "subitem",
+       3
+      ],
+      [
+       "ede",
+       3
+      ],
+      [
+       "ii",
+       3
+      ],
+      [
+       "aansoekgelde",
+       3
+      ],
+      [
+       "gt",
+       3
+      ],
+      [
+       "visvangbedryf",
+       3
+      ],
+      [
+       "permits",
+       2
+      ],
+      [
+       "hoffman",
+       2
+      ],
+      [
+       "ruimteplan",
+       2
+      ]
+     ],
+     "excess_over_HL": 0.004907110443577223
+    }
+   },
+   "part_b": {
+    "n": 811,
+    "mean_words": 25.160295930949445,
+    "distinct2": 0.6975604776972543,
+    "unigram_entropy_bits": 9.207075540410534,
+    "training_copies": 0,
+    "fourgram_overlap": 0.11278655686623637,
+    "fourgram_total": 17972,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.07894736842105263,
+     0.15384615384615385
+    ],
+    "high_overlap_rows": 5.0,
+    "rows_under_4_words": 12,
+    "eightgram_overlap": 0.009087237479806139,
+    "eightgram_total": 14856,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 811,
+    "raw": 43.17031603728365,
+    "band_counts": [
+     109,
+     212,
+     303,
+     187
+    ],
+    "support": "ok",
+    "standardised": 51.996011167819965
+   },
+   "goldfish": {
+    "scored": 811,
+    "raw": 93.89203573236503,
+    "band_counts": [
+     109,
+     212,
+     303,
+     187
+    ],
+    "support": "ok",
+    "standardised": 103.45052816001696
+   }
+  },
+  "published-seed42": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.973,
+     "nld_top": 0.011,
+     "other_top": 0.016,
+     "mean_p_afr": 0.9694368567675401,
+     "by_band": [
+      {
+       "n": 143,
+       "afr_top": 0.9020979020979021,
+       "nld_top": 0.04895104895104895
+      },
+      {
+       "n": 300,
+       "afr_top": 0.9733333333333334,
+       "nld_top": 0.006666666666666667
+      },
+      {
+       "n": 306,
+       "afr_top": 0.9901960784313726,
+       "nld_top": 0.006535947712418301
+      },
+      {
+       "n": 251,
+       "afr_top": 0.9920318725099602,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 24146,
+     "unrecognised_tokens": 1473,
+     "token_rate": 0.061003892984345234,
+     "checked_types": 4539,
+     "type_rate": 0.29654108834545057,
+     "acronyms": 223,
+     "acronym_fraction": 0.009150970495301407,
+     "token_rate_with_acronyms": 0.06655997373712504,
+     "apostrophe_replacements": 1,
+     "top_unrecognised": [
+      [
+       "me",
+       13
+      ],
+      [
+       "the",
+       10
+      ],
+      [
+       "potchefstroomkampus",
+       9
+      ],
+      [
+       "vuurwapenbeampte",
+       7
+      ],
+      [
+       "stasiekommissaris",
+       6
+      ],
+      [
+       "or",
+       5
+      ],
+      [
+       "du",
+       5
+      ],
+      [
+       "ii",
+       5
+      ],
+      [
+       "skakelkode",
+       4
+      ],
+      [
+       "beskermingsbevel",
+       4
+      ],
+      [
+       "paspoortnommer",
+       4
+      ],
+      [
+       "regtehouers",
+       4
+      ],
+      [
+       "and",
+       3
+      ],
+      [
+       "visekanselier",
+       3
+      ],
+      [
+       "gesondheidsfasiliteit",
+       3
+      ],
+      [
+       "persal-nommer",
+       3
+      ],
+      [
+       "ne",
+       3
+      ],
+      [
+       "graanprodusente",
+       3
+      ],
+      [
+       "theuns",
+       3
+      ],
+      [
+       "rooy",
+       2
+      ]
+     ],
+     "excess_over_HL": 0.017515716001556422
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 25.173,
+    "distinct2": 0.6970587018574442,
+    "unigram_entropy_bits": 9.430727702387408,
+    "training_copies": 10,
+    "fourgram_overlap": 0.1251860202931229,
+    "fourgram_total": 22175,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.06666666666666667,
+     0.15384615384615385
+    ],
+    "high_overlap_rows": 44.0,
+    "rows_under_4_words": 13,
+    "eightgram_overlap": 0.025628442117890834,
+    "eightgram_total": 18339,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 49.42858618684544,
+    "band_counts": [
+     143,
+     300,
+     306,
+     251
+    ],
+    "support": "ok",
+    "standardised": 59.334338120711614
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 129.43321999275642,
+    "band_counts": [
+     143,
+     300,
+     306,
+     251
+    ],
+    "support": "ok",
+    "standardised": 144.96452686470678
+   }
+  },
+  "published-seed43": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.972,
+     "nld_top": 0.015,
+     "other_top": 0.013,
+     "mean_p_afr": 0.9687335337040731,
+     "by_band": [
+      {
+       "n": 144,
+       "afr_top": 0.8680555555555556,
+       "nld_top": 0.09027777777777778
+      },
+      {
+       "n": 295,
+       "afr_top": 0.976271186440678,
+       "nld_top": 0.006779661016949152
+      },
+      {
+       "n": 321,
+       "afr_top": 0.9968847352024922,
+       "nld_top": 0.0
+      },
+      {
+       "n": 240,
+       "afr_top": 0.9958333333333333,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 24034,
+     "unrecognised_tokens": 1386,
+     "token_rate": 0.057668303237080804,
+     "checked_types": 4514,
+     "type_rate": 0.28400531679220203,
+     "acronyms": 186,
+     "acronym_fraction": 0.007679603633360859,
+     "token_rate_with_acronyms": 0.06312964492155243,
+     "apostrophe_replacements": 1,
+     "top_unrecognised": [
+      [
+       "regtehouers",
+       10
+      ],
+      [
+       "the",
+       9
+      ],
+      [
+       "me",
+       8
+      ],
+      [
+       "potchefstroomkampus",
+       6
+      ],
+      [
+       "vuurwapenbeampte",
+       5
+      ],
+      [
+       "development",
+       4
+      ],
+      [
+       "william",
+       4
+      ],
+      [
+       "or",
+       4
+      ],
+      [
+       "posko",
+       4
+      ],
+      [
+       "stasiekommissaris",
+       4
+      ],
+      [
+       "ii",
+       4
+      ],
+      [
+       "rooy",
+       3
+      ],
+      [
+       "svwr-beampte",
+       3
+      ],
+      [
+       "persal-nommer",
+       3
+      ],
+      [
+       "beskermingsbevel",
+       3
+      ],
+      [
+       "du",
+       3
+      ],
+      [
+       "skakelkode",
+       3
+      ],
+      [
+       "mafikengkampus",
+       3
+      ],
+      [
+       "vaaldriehoekkampus",
+       3
+      ],
+      [
+       "that",
+       3
+      ]
+     ],
+     "excess_over_HL": 0.014180126254291991
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 25.016,
+    "distinct2": 0.6984510326449034,
+    "unigram_entropy_bits": 9.454900396418099,
+    "training_copies": 13,
+    "fourgram_overlap": 0.12116808211090421,
+    "fourgram_total": 22019,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.058823529411764705,
+     0.13953488372093023
+    ],
+    "high_overlap_rows": 48.0,
+    "rows_under_4_words": 11,
+    "eightgram_overlap": 0.02766928873975466,
+    "eightgram_total": 18179,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 49.31204346374001,
+    "band_counts": [
+     144,
+     295,
+     321,
+     240
+    ],
+    "support": "ok",
+    "standardised": 59.024711469911445
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 130.74501888221295,
+    "band_counts": [
+     144,
+     295,
+     321,
+     240
+    ],
+    "support": "ok",
+    "standardised": 145.76368656684528
+   }
+  },
+  "published-seed44": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.97,
+     "nld_top": 0.014,
+     "other_top": 0.016,
+     "mean_p_afr": 0.9651965865479624,
+     "by_band": [
+      {
+       "n": 162,
+       "afr_top": 0.8888888888888888,
+       "nld_top": 0.06790123456790123
+      },
+      {
+       "n": 282,
+       "afr_top": 0.9716312056737588,
+       "nld_top": 0.0070921985815602835
+      },
+      {
+       "n": 289,
+       "afr_top": 0.9896193771626297,
+       "nld_top": 0.0
+      },
+      {
+       "n": 267,
+       "afr_top": 0.9962546816479401,
+       "nld_top": 0.003745318352059925
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 24247,
+     "unrecognised_tokens": 1501,
+     "token_rate": 0.061904565513259374,
+     "checked_types": 4637,
+     "type_rate": 0.2991158076342463,
+     "acronyms": 219,
+     "acronym_fraction": 0.00895119758031554,
+     "token_rate_with_acronyms": 0.06780838714951361,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "vuurwapenbeampte",
+       12
+      ],
+      [
+       "me",
+       12
+      ],
+      [
+       "stasiekommissaris",
+       11
+      ],
+      [
+       "the",
+       9
+      ],
+      [
+       "du",
+       8
+      ],
+      [
+       "regtehouers",
+       7
+      ],
+      [
+       "potchefstroomkampus",
+       5
+      ],
+      [
+       "persal-nommer",
+       5
+      ],
+      [
+       "ii",
+       5
+      ],
+      [
+       "or",
+       4
+      ],
+      [
+       "mafikengkampus",
+       4
+      ],
+      [
+       "paspoortnommer",
+       4
+      ],
+      [
+       "uys",
+       3
+      ],
+      [
+       "william",
+       3
+      ],
+      [
+       "link",
+       3
+      ],
+      [
+       "cape",
+       3
+      ],
+      [
+       "kleyn",
+       3
+      ],
+      [
+       "and",
+       3
+      ],
+      [
+       "specially",
+       2
+      ],
+      [
+       "designed",
+       2
+      ]
+     ],
+     "excess_over_HL": 0.018416388530470562
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 25.286,
+    "distinct2": 0.6966565099234127,
+    "unigram_entropy_bits": 9.445846268154902,
+    "training_copies": 9,
+    "fourgram_overlap": 0.12222371786243101,
+    "fourgram_total": 22287,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.06451612903225806,
+     0.14285714285714285
+    ],
+    "high_overlap_rows": 45.0,
+    "rows_under_4_words": 13,
+    "eightgram_overlap": 0.026324341891452715,
+    "eightgram_total": 18462,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 49.74096269965522,
+    "band_counts": [
+     162,
+     282,
+     289,
+     267
+    ],
+    "support": "ok",
+    "standardised": 60.11839607610945
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 135.66783393818514,
+    "band_counts": [
+     162,
+     282,
+     289,
+     267
+    ],
+    "support": "ok",
+    "standardised": 152.00698553647854
+   }
+  },
+  "published-seed45": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.972,
+     "nld_top": 0.012,
+     "other_top": 0.016,
+     "mean_p_afr": 0.9698585439187063,
+     "by_band": [
+      {
+       "n": 143,
+       "afr_top": 0.8811188811188811,
+       "nld_top": 0.06993006993006994
+      },
+      {
+       "n": 265,
+       "afr_top": 0.9886792452830189,
+       "nld_top": 0.0037735849056603774
+      },
+      {
+       "n": 328,
+       "afr_top": 0.9847560975609756,
+       "nld_top": 0.003048780487804878
+      },
+      {
+       "n": 264,
+       "afr_top": 0.9886363636363636,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 24804,
+     "unrecognised_tokens": 1427,
+     "token_rate": 0.05753104338009998,
+     "checked_types": 4560,
+     "type_rate": 0.2831140350877193,
+     "acronyms": 213,
+     "acronym_fraction": 0.00851421033697086,
+     "token_rate_with_acronyms": 0.06307710756685454,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       17
+      ],
+      [
+       "for",
+       7
+      ],
+      [
+       "or",
+       6
+      ],
+      [
+       "potchefstroomkampus",
+       6
+      ],
+      [
+       "to",
+       6
+      ],
+      [
+       "vuurwapenbeampte",
+       6
+      ],
+      [
+       "william",
+       5
+      ],
+      [
+       "regtehouers",
+       5
+      ],
+      [
+       "ii",
+       5
+      ],
+      [
+       "me",
+       5
+      ],
+      [
+       "regeringsdepartemente",
+       4
+      ],
+      [
+       "ne",
+       4
+      ],
+      [
+       "stasiekommissaris",
+       4
+      ],
+      [
+       "visvangregte",
+       4
+      ],
+      [
+       "and",
+       4
+      ],
+      [
+       "rooy",
+       3
+      ],
+      [
+       "software",
+       3
+      ],
+      [
+       "modified",
+       3
+      ],
+      [
+       "mafikengkampus",
+       3
+      ],
+      [
+       "du",
+       3
+      ]
+     ],
+     "excess_over_HL": 0.014042866397311171
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 25.952,
+    "distinct2": 0.6983408143635781,
+    "unigram_entropy_bits": 9.472508837886956,
+    "training_copies": 10,
+    "fourgram_overlap": 0.11427202230548053,
+    "fourgram_total": 22954,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.058823529411764705,
+     0.1420265780730897
+    ],
+    "high_overlap_rows": 41.0,
+    "rows_under_4_words": 14,
+    "eightgram_overlap": 0.020973900308593547,
+    "eightgram_total": 19119,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 49.307596801003164,
+    "band_counts": [
+     143,
+     265,
+     328,
+     264
+    ],
+    "support": "ok",
+    "standardised": 60.64662194514231
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 136.67617284867057,
+    "band_counts": [
+     143,
+     265,
+     328,
+     264
+    ],
+    "support": "ok",
+    "standardised": 153.63359360683162
+   }
+  },
+  "published-seed46": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.975,
+     "nld_top": 0.007,
+     "other_top": 0.018,
+     "mean_p_afr": 0.9700216954685311,
+     "by_band": [
+      {
+       "n": 167,
+       "afr_top": 0.9101796407185628,
+       "nld_top": 0.041916167664670656
+      },
+      {
+       "n": 284,
+       "afr_top": 0.9788732394366197,
+       "nld_top": 0.0
+      },
+      {
+       "n": 308,
+       "afr_top": 0.9902597402597403,
+       "nld_top": 0.0
+      },
+      {
+       "n": 241,
+       "afr_top": 0.995850622406639,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 23688,
+     "unrecognised_tokens": 1387,
+     "token_rate": 0.05855285376561972,
+     "checked_types": 4518,
+     "type_rate": 0.2784417884019478,
+     "acronyms": 217,
+     "acronym_fraction": 0.009077598828696925,
+     "token_rate_with_acronyms": 0.06475632712821586,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       14
+      ],
+      [
+       "ii",
+       9
+      ],
+      [
+       "potchefstroomkampus",
+       8
+      ],
+      [
+       "me",
+       8
+      ],
+      [
+       "vuurwapenbeampte",
+       7
+      ],
+      [
+       "stasiekommissaris",
+       6
+      ],
+      [
+       "for",
+       5
+      ],
+      [
+       "paspoortnommer",
+       5
+      ],
+      [
+       "vaaldriehoekkampus",
+       4
+      ],
+      [
+       "or",
+       4
+      ],
+      [
+       "equipment",
+       4
+      ],
+      [
+       "reëer",
+       4
+      ],
+      [
+       "use",
+       3
+      ],
+      [
+       "specified",
+       3
+      ],
+      [
+       "beskermingsbevel",
+       3
+      ],
+      [
+       "skakelkode",
+       3
+      ],
+      [
+       "to",
+       3
+      ],
+      [
+       "regtehouers",
+       3
+      ],
+      [
+       "visekanselier",
+       3
+      ],
+      [
+       "stokvisvissery",
+       3
+      ]
+     ],
+     "excess_over_HL": 0.01506467678283091
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 24.712,
+    "distinct2": 0.7058029689608637,
+    "unigram_entropy_bits": 9.473175364601163,
+    "training_copies": 10,
+    "fourgram_overlap": 0.10891590678824721,
+    "fourgram_total": 21714,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.058823529411764705,
+     0.13753918495297807
+    ],
+    "high_overlap_rows": 37.0,
+    "rows_under_4_words": 10,
+    "eightgram_overlap": 0.018741258741258742,
+    "eightgram_total": 17875,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 50.23418095806877,
+    "band_counts": [
+     167,
+     284,
+     308,
+     241
+    ],
+    "support": "ok",
+    "standardised": 58.781897258672416
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 135.172992627115,
+    "band_counts": [
+     167,
+     284,
+     308,
+     241
+    ],
+    "support": "ok",
+    "standardised": 144.25855341499408
+   }
+  },
+  "small-seed42": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.961,
+     "nld_top": 0.018,
+     "other_top": 0.021,
+     "mean_p_afr": 0.9579041849119376,
+     "by_band": [
+      {
+       "n": 160,
+       "afr_top": 0.84375,
+       "nld_top": 0.1
+      },
+      {
+       "n": 206,
+       "afr_top": 0.970873786407767,
+       "nld_top": 0.0048543689320388345
+      },
+      {
+       "n": 287,
+       "afr_top": 0.9790940766550522,
+       "nld_top": 0.003484320557491289
+      },
+      {
+       "n": 347,
+       "afr_top": 0.9942363112391931,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 27014,
+     "unrecognised_tokens": 1567,
+     "token_rate": 0.058006959354408826,
+     "checked_types": 4903,
+     "type_rate": 0.2969610442586172,
+     "acronyms": 211,
+     "acronym_fraction": 0.0077502295684113865,
+     "token_rate_with_acronyms": 0.06376492194674013,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       24
+      ],
+      [
+       "ii",
+       12
+      ],
+      [
+       "and",
+       9
+      ],
+      [
+       "or",
+       7
+      ],
+      [
+       "potchefstroomkampus",
+       6
+      ],
+      [
+       "for",
+       5
+      ],
+      [
+       "persal-nommer",
+       4
+      ],
+      [
+       "ne",
+       4
+      ],
+      [
+       "specified",
+       3
+      ],
+      [
+       "iii",
+       3
+      ],
+      [
+       "para-graaf",
+       3
+      ],
+      [
+       "projekse",
+       3
+      ],
+      [
+       "with",
+       3
+      ],
+      [
+       "software",
+       2
+      ],
+      [
+       "verdui",
+       2
+      ],
+      [
+       "theuns",
+       2
+      ],
+      [
+       "me",
+       2
+      ],
+      [
+       "produksiekoers",
+       2
+      ],
+      [
+       "reels",
+       2
+      ],
+      [
+       "bladgrootte",
+       2
+      ]
+     ],
+     "excess_over_HL": 0.014518782371620013
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 28.071,
+    "distinct2": 0.6678364301281815,
+    "unigram_entropy_bits": 9.233303527190666,
+    "training_copies": 2,
+    "fourgram_overlap": 0.08798788023761113,
+    "fourgram_total": 25083,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.045454545454545456,
+     0.1111111111111111
+    ],
+    "high_overlap_rows": 9.0,
+    "rows_under_4_words": 21,
+    "eightgram_overlap": 0.004269293924466338,
+    "eightgram_total": 21315,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 53.85633664473798,
+    "band_counts": [
+     160,
+     206,
+     287,
+     347
+    ],
+    "support": "ok",
+    "standardised": 74.14370042438472
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 161.30661303731313,
+    "band_counts": [
+     160,
+     206,
+     287,
+     347
+    ],
+    "support": "ok",
+    "standardised": 199.75103321879462
+   }
+  },
+  "small-seed43": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.949,
+     "nld_top": 0.022,
+     "other_top": 0.029,
+     "mean_p_afr": 0.9474666331753678,
+     "by_band": [
+      {
+       "n": 204,
+       "afr_top": 0.8186274509803921,
+       "nld_top": 0.09803921568627451
+      },
+      {
+       "n": 210,
+       "afr_top": 0.9809523809523809,
+       "nld_top": 0.009523809523809525
+      },
+      {
+       "n": 233,
+       "afr_top": 0.9656652360515021,
+       "nld_top": 0.0
+      },
+      {
+       "n": 353,
+       "afr_top": 0.9943342776203966,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 26353,
+     "unrecognised_tokens": 1570,
+     "token_rate": 0.05957575987553599,
+     "checked_types": 4924,
+     "type_rate": 0.293663688058489,
+     "acronyms": 168,
+     "acronym_fraction": 0.006334602767618114,
+     "token_rate_with_acronyms": 0.06402473511556879,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       17
+      ],
+      [
+       "ii",
+       11
+      ],
+      [
+       "or",
+       10
+      ],
+      [
+       "and",
+       10
+      ],
+      [
+       "to",
+       8
+      ],
+      [
+       "for",
+       8
+      ],
+      [
+       "potchefstroomkampus",
+       5
+      ],
+      [
+       "iii",
+       5
+      ],
+      [
+       "le",
+       4
+      ],
+      [
+       "chack",
+       4
+      ],
+      [
+       "specified",
+       3
+      ],
+      [
+       "du",
+       3
+      ],
+      [
+       "theuns",
+       3
+      ],
+      [
+       "iv",
+       3
+      ],
+      [
+       "graads",
+       3
+      ],
+      [
+       "streeks",
+       2
+      ],
+      [
+       "ongelykstaande",
+       2
+      ],
+      [
+       "software",
+       2
+      ],
+      [
+       "bevrydings",
+       2
+      ],
+      [
+       "development",
+       2
+      ]
+     ],
+     "excess_over_HL": 0.016087582892747178
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 27.301,
+    "distinct2": 0.6722938291319722,
+    "unigram_entropy_bits": 9.269571017384257,
+    "training_copies": 2,
+    "fourgram_overlap": 0.08742697276392661,
+    "fourgram_total": 24306,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.043478260869565216,
+     0.10810810810810811
+    ],
+    "high_overlap_rows": 16.0,
+    "rows_under_4_words": 27,
+    "eightgram_overlap": 0.004073912410883166,
+    "eightgram_total": 20619,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 52.02385817083019,
+    "band_counts": [
+     204,
+     210,
+     233,
+     353
+    ],
+    "support": "ok",
+    "standardised": 70.43690764493108
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 159.53904573775696,
+    "band_counts": [
+     204,
+     210,
+     233,
+     353
+    ],
+    "support": "ok",
+    "standardised": 193.258109437673
+   }
+  },
+  "small-seed44": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.972,
+     "nld_top": 0.013,
+     "other_top": 0.015,
+     "mean_p_afr": 0.9674592242368162,
+     "by_band": [
+      {
+       "n": 135,
+       "afr_top": 0.8814814814814815,
+       "nld_top": 0.07407407407407407
+      },
+      {
+       "n": 213,
+       "afr_top": 0.9859154929577465,
+       "nld_top": 0.004694835680751174
+      },
+      {
+       "n": 286,
+       "afr_top": 0.9825174825174825,
+       "nld_top": 0.0034965034965034965
+      },
+      {
+       "n": 366,
+       "afr_top": 0.9890710382513661,
+       "nld_top": 0.00273224043715847
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 27838,
+     "unrecognised_tokens": 1516,
+     "token_rate": 0.054457935196494,
+     "checked_types": 4936,
+     "type_rate": 0.2807941653160454,
+     "acronyms": 182,
+     "acronym_fraction": 0.00649536045681656,
+     "token_rate_with_acronyms": 0.05924339757316203,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       22
+      ],
+      [
+       "ii",
+       16
+      ],
+      [
+       "and",
+       11
+      ],
+      [
+       "me",
+       7
+      ],
+      [
+       "for",
+       6
+      ],
+      [
+       "to",
+       5
+      ],
+      [
+       "or",
+       5
+      ],
+      [
+       "vuurwapenbeampte",
+       4
+      ],
+      [
+       "designed",
+       4
+      ],
+      [
+       "potchefstroomkampus",
+       4
+      ],
+      [
+       "wetwet",
+       4
+      ],
+      [
+       "stasiekommissaris",
+       3
+      ],
+      [
+       "specified",
+       3
+      ],
+      [
+       "theuns",
+       3
+      ],
+      [
+       "ne",
+       3
+      ],
+      [
+       "para-graaf",
+       3
+      ],
+      [
+       "graads",
+       3
+      ],
+      [
+       "skryfklas",
+       3
+      ],
+      [
+       "with",
+       3
+      ],
+      [
+       "iii",
+       3
+      ]
+     ],
+     "excess_over_HL": 0.010969758213705189
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 28.885,
+    "distinct2": 0.6643356643356644,
+    "unigram_entropy_bits": 9.227251179620001,
+    "training_copies": 0,
+    "fourgram_overlap": 0.09281217411455718,
+    "fourgram_total": 25891,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.05,
+     0.11428571428571428
+    ],
+    "high_overlap_rows": 13.0,
+    "rows_under_4_words": 19,
+    "eightgram_overlap": 0.006336275175379045,
+    "eightgram_total": 22095,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 50.6094238448374,
+    "band_counts": [
+     135,
+     213,
+     286,
+     366
+    ],
+    "support": "ok",
+    "standardised": 70.81833009657346
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 155.59033740142553,
+    "band_counts": [
+     135,
+     213,
+     286,
+     366
+    ],
+    "support": "ok",
+    "standardised": 192.4595255700743
+   }
+  },
+  "small-seed45": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.968,
+     "nld_top": 0.01,
+     "other_top": 0.022,
+     "mean_p_afr": 0.9659664280232719,
+     "by_band": [
+      {
+       "n": 134,
+       "afr_top": 0.8507462686567164,
+       "nld_top": 0.05970149253731343
+      },
+      {
+       "n": 176,
+       "afr_top": 0.9772727272727273,
+       "nld_top": 0.011363636363636364
+      },
+      {
+       "n": 278,
+       "afr_top": 0.9748201438848921,
+       "nld_top": 0.0
+      },
+      {
+       "n": 412,
+       "afr_top": 0.9975728155339806,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 29081,
+     "unrecognised_tokens": 1625,
+     "token_rate": 0.05587840858292356,
+     "checked_types": 5242,
+     "type_rate": 0.2897748950782144,
+     "acronyms": 196,
+     "acronym_fraction": 0.006694675000853913,
+     "token_rate_with_acronyms": 0.06096936161491956,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       10
+      ],
+      [
+       "and",
+       9
+      ],
+      [
+       "ii",
+       9
+      ],
+      [
+       "potchefstroomkampus",
+       7
+      ],
+      [
+       "me",
+       5
+      ],
+      [
+       "du",
+       5
+      ],
+      [
+       "for",
+       4
+      ],
+      [
+       "theuns",
+       4
+      ],
+      [
+       "benjamin",
+       4
+      ],
+      [
+       "aange-teken",
+       4
+      ],
+      [
+       "specified",
+       3
+      ],
+      [
+       "inligtinggewing",
+       3
+      ],
+      [
+       "skakelkode",
+       3
+      ],
+      [
+       "hoorn",
+       3
+      ],
+      [
+       "modified",
+       3
+      ],
+      [
+       "or",
+       3
+      ],
+      [
+       "oorverkoop",
+       3
+      ],
+      [
+       "software",
+       2
+      ],
+      [
+       "provided",
+       2
+      ],
+      [
+       "karina",
+       2
+      ]
+     ],
+     "excess_over_HL": 0.012390231600134749
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 30.193,
+    "distinct2": 0.6656732778405782,
+    "unigram_entropy_bits": 9.270664790252528,
+    "training_copies": 0,
+    "fourgram_overlap": 0.08628042055731196,
+    "fourgram_total": 27202,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.05405405405405406,
+     0.11627906976744186
+    ],
+    "high_overlap_rows": 8.0,
+    "rows_under_4_words": 16,
+    "eightgram_overlap": 0.003292568203198495,
+    "eightgram_total": 23386,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 49.48097157960549,
+    "band_counts": [
+     134,
+     176,
+     278,
+     412
+    ],
+    "support": "ok",
+    "standardised": 69.60962554335039
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 154.12836316125328,
+    "band_counts": [
+     134,
+     176,
+     278,
+     412
+    ],
+    "support": "ok",
+    "standardised": 189.04474278024475
+   }
+  },
+  "small-seed46": {
+   "part_a": {
+    "lid": {
+     "n": 1000,
+     "empty": 0,
+     "afr_top": 0.966,
+     "nld_top": 0.012,
+     "other_top": 0.022,
+     "mean_p_afr": 0.9623210002812584,
+     "by_band": [
+      {
+       "n": 196,
+       "afr_top": 0.8775510204081632,
+       "nld_top": 0.05612244897959184
+      },
+      {
+       "n": 199,
+       "afr_top": 0.9698492462311558,
+       "nld_top": 0.005025125628140704
+      },
+      {
+       "n": 266,
+       "afr_top": 0.9887218045112782,
+       "nld_top": 0.0
+      },
+      {
+       "n": 339,
+       "afr_top": 0.9970501474926253,
+       "nld_top": 0.0
+      }
+     ]
+    },
+    "dictionary": {
+     "checked_tokens": 26381,
+     "unrecognised_tokens": 1626,
+     "token_rate": 0.0616352678063758,
+     "checked_types": 5023,
+     "type_rate": 0.300617161059128,
+     "acronyms": 188,
+     "acronym_fraction": 0.007075915540667696,
+     "token_rate_with_acronyms": 0.06688245699875794,
+     "apostrophe_replacements": 0,
+     "top_unrecognised": [
+      [
+       "the",
+       16
+      ],
+      [
+       "potchefstroomkampus",
+       8
+      ],
+      [
+       "me",
+       8
+      ],
+      [
+       "and",
+       7
+      ],
+      [
+       "ii",
+       6
+      ],
+      [
+       "or",
+       5
+      ],
+      [
+       "du",
+       5
+      ],
+      [
+       "theuns",
+       4
+      ],
+      [
+       "meersame",
+       4
+      ],
+      [
+       "iii",
+       4
+      ],
+      [
+       "ne",
+       4
+      ],
+      [
+       "with",
+       4
+      ],
+      [
+       "world",
+       4
+      ],
+      [
+       "format",
+       3
+      ],
+      [
+       "aa",
+       3
+      ],
+      [
+       "aangeg",
+       3
+      ],
+      [
+       "gesondheids",
+       3
+      ],
+      [
+       "software",
+       2
+      ],
+      [
+       "specified",
+       2
+      ],
+      [
+       "landbouproduksie",
+       2
+      ]
+     ],
+     "excess_over_HL": 0.018147090823586988
+    }
+   },
+   "part_b": {
+    "n": 1000,
+    "mean_words": 27.328,
+    "distinct2": 0.6803023397143725,
+    "unigram_entropy_bits": 9.283617147698992,
+    "training_copies": 1,
+    "fourgram_overlap": 0.08193959317854942,
+    "fourgram_total": 24335,
+    "fourgram_row_share_quartiles": [
+     0.0,
+     0.038461538461538464,
+     0.10471491228070176
+    ],
+    "high_overlap_rows": 7.0,
+    "rows_under_4_words": 25,
+    "eightgram_overlap": 0.004127816627816628,
+    "eightgram_total": 20592,
+    "empty": 0
+   },
+   "mgpt": {
+    "scored": 1000,
+    "raw": 53.73107833550582,
+    "band_counts": [
+     196,
+     199,
+     266,
+     339
+    ],
+    "support": "ok",
+    "standardised": 71.45346225746631
+   },
+   "goldfish": {
+    "scored": 1000,
+    "raw": 166.3459642522,
+    "band_counts": [
+     196,
+     199,
+     266,
+     339
+    ],
+    "support": "ok",
+    "standardised": 197.16672235606646
+   }
+  }
+ },
+ "HL_intervals": {
+  "token_rate": [
+   0.03155378349693018,
+   0.05704633318610108
+  ],
+  "afr_top": [
+   0.9645091036414566,
+   0.9873143934939567
+  ],
+  "fourgram_overlap": [
+   0.10248070833742101,
+   0.1939565517309888
+  ],
+  "note": "2,000 document-bootstrap replicates, seed 20261103"
+ },
+ "diffusion_summary": {
+  "small": {
+   "afr_top": {
+    "mean": 0.9632,
+    "sd": 0.008871302046486758,
+    "values": [
+     0.961,
+     0.949,
+     0.972,
+     0.968,
+     0.966
+    ]
+   },
+   "token_rate": {
+    "mean": 0.05791086616314763,
+    "sd": 0.002859453123016864,
+    "values": [
+     0.058006959354408826,
+     0.05957575987553599,
+     0.054457935196494,
+     0.05587840858292356,
+     0.0616352678063758
+    ]
+   },
+   "excess_over_HL": {
+    "mean": 0.014422689180358822,
+    "sd": 0.002859453123016864,
+    "values": [
+     0.014518782371620013,
+     0.016087582892747178,
+     0.010969758213705189,
+     0.012390231600134749,
+     0.018147090823586988
+    ]
+   },
+   "fourgram_overlap": {
+    "mean": 0.08728940817039126,
+    "sd": 0.00389378695393068,
+    "values": [
+     0.08798788023761113,
+     0.08742697276392661,
+     0.09281217411455718,
+     0.08628042055731196,
+     0.08193959317854942
+    ]
+   },
+   "high_overlap_rows": {
+    "mean": 10.6,
+    "sd": 3.7815340802378077,
+    "values": [
+     9.0,
+     16.0,
+     13.0,
+     8.0,
+     7.0
+    ]
+   },
+   "goldfish_std": {
+    "mean": 194.33602667257063,
+    "sd": 4.183777633023688,
+    "values": [
+     199.75103321879462,
+     193.258109437673,
+     192.4595255700743,
+     189.04474278024475,
+     197.16672235606646
+    ]
+   },
+   "mgpt_std": {
+    "mean": 71.29240519334118,
+    "sd": 1.7280186974979732,
+    "values": [
+     74.14370042438472,
+     70.43690764493108,
+     70.81833009657346,
+     69.60962554335039,
+     71.45346225746631
+    ]
+   }
+  },
+  "large": {
+   "afr_top": {
+    "mean": 0.9724,
+    "sd": 0.0018165902124584966,
+    "values": [
+     0.973,
+     0.972,
+     0.97,
+     0.972,
+     0.975
+    ]
+   },
+   "token_rate": {
+    "mean": 0.05933213177608102,
+    "sd": 0.002001981512436371,
+    "values": [
+     0.061003892984345234,
+     0.057668303237080804,
+     0.061904565513259374,
+     0.05753104338009998,
+     0.05855285376561972
+    ]
+   },
+   "excess_over_HL": {
+    "mean": 0.01584395479329221,
+    "sd": 0.002001981512436371,
+    "values": [
+     0.017515716001556422,
+     0.014180126254291991,
+     0.018416388530470562,
+     0.014042866397311171,
+     0.01506467678283091
+    ]
+   },
+   "fourgram_overlap": {
+    "mean": 0.11835314987203718,
+    "sd": 0.006620242017971711,
+    "values": [
+     0.1251860202931229,
+     0.12116808211090421,
+     0.12222371786243101,
+     0.11427202230548053,
+     0.10891590678824721
+    ]
+   },
+   "high_overlap_rows": {
+    "mean": 43.0,
+    "sd": 4.183300132670378,
+    "values": [
+     44.0,
+     48.0,
+     45.0,
+     41.0,
+     37.0
+    ]
+   },
+   "goldfish_std": {
+    "mean": 148.12546919797123,
+    "sd": 4.356839878086298,
+    "values": [
+     144.96452686470678,
+     145.76368656684528,
+     152.00698553647854,
+     153.63359360683162,
+     144.25855341499408
+    ]
+   },
+   "mgpt_std": {
+    "mean": 59.58119297410944,
+    "sd": 0.779937287381347,
+    "values": [
+     59.334338120711614,
+     59.024711469911445,
+     60.11839607610945,
+     60.64662194514231,
+     58.781897258672416
+    ]
+   }
+  }
+ },
+ "part_c": {
+  "mgpt": {
+   "C-1": {
+    "estimate": -0.17928628443215722,
+    "low": -0.20897580755748119,
+    "high": -0.14959676130683325,
+    "df": 6.178711493319755
+   },
+   "C-2s": {
+    "estimate": -0.12189777391095546,
+    "low": -0.27023245005738117,
+    "high": 0.02643690223547024,
+    "ratio": 0.8852388583836978,
+    "ratio_low": 0.7632020673518463,
+    "ratio_high": 1.0267894570982607
+   },
+   "C-2l": {
+    "estimate": -0.3011840583431127,
+    "low": -0.44614215123601564,
+    "high": -0.15622596545020973,
+    "ratio": 0.7399415677932949,
+    "ratio_low": 0.6400927756149534,
+    "ratio_high": 0.8553658853943308
+   },
+   "C-3s": {
+    "classification": "insufficient_support"
+   },
+   "C-3l": {
+    "classification": "insufficient_support"
+   }
+  },
+  "goldfish": {
+   "C-1": {
+    "estimate": -0.2716875406708166,
+    "low": -0.30973034038838787,
+    "high": -0.2336447409532453,
+    "df": 7.346605156754758
+   },
+   "C-2s": {
+    "estimate": -0.047336540481602185,
+    "low": -0.24600095012194062,
+    "high": 0.15132786915873625,
+    "ratio": 0.9537663625817637,
+    "ratio_low": 0.7819214820043684,
+    "ratio_high": 1.1633780313345659
+   },
+   "C-2l": {
+    "estimate": -0.31902408115241876,
+    "low": -0.5200932202392857,
+    "high": -0.11795494206555182,
+    "ratio": 0.7268580455162025,
+    "ratio_low": 0.5944651292055677,
+    "ratio_high": 0.8887360963252371
+   }
+  },
+  "comparison": {
+   "C-1": {
+    "direction": "same",
+    "mgpt_interval": "below_0",
+    "goldfish_interval": "below_0",
+    "confirmed_under_both": true
+   },
+   "C-2s": {
+    "direction": "same",
+    "mgpt_interval": "contains_0",
+    "goldfish_interval": "contains_0",
+    "confirmed_under_both": false
+   },
+   "C-2l": {
+    "direction": "same",
+    "mgpt_interval": "below_0",
+    "goldfish_interval": "below_0",
+    "confirmed_under_both": true
+   },
+   "C-3s": "insufficient_support",
+   "C-3l": "insufficient_support"
+  },
+  "spearman": {
+   "rho": 0.8345588235294119,
+   "banks": 33
+  },
+  "copies_removed": {
+   "small-seed42": {
+    "mgpt": {
+     "removed": 2,
+     "scored": 998,
+     "raw": 53.84988923861732,
+     "band_counts": [
+      159,
+      205,
+      287,
+      347
+     ],
+     "support": "ok",
+     "standardised": 74.20846391462383
+    },
+    "goldfish": {
+     "removed": 2,
+     "scored": 998,
+     "raw": 161.40444442481277,
+     "band_counts": [
+      159,
+      205,
+      287,
+      347
+     ],
+     "support": "ok",
+     "standardised": 200.13157724716743
+    }
+   },
+   "small-seed43": {
+    "mgpt": {
+     "removed": 2,
+     "scored": 998,
+     "raw": 52.00842896366876,
+     "band_counts": [
+      204,
+      208,
+      233,
+      353
+     ],
+     "support": "ok",
+     "standardised": 70.46491689084807
+    },
+    "goldfish": {
+     "removed": 2,
+     "scored": 998,
+     "raw": 159.64842907758197,
+     "band_counts": [
+      204,
+      208,
+      233,
+      353
+     ],
+     "support": "ok",
+     "standardised": 193.59187006502907
+    }
+   },
+   "small-seed44": {
+    "mgpt": {
+     "removed": 0,
+     "scored": 1000,
+     "raw": 50.6094238448374,
+     "band_counts": [
+      135,
+      213,
+      286,
+      366
+     ],
+     "support": "ok",
+     "standardised": 70.81833009657346
+    },
+    "goldfish": {
+     "removed": 0,
+     "scored": 1000,
+     "raw": 155.59033740142553,
+     "band_counts": [
+      135,
+      213,
+      286,
+      366
+     ],
+     "support": "ok",
+     "standardised": 192.4595255700743
+    }
+   },
+   "small-seed45": {
+    "mgpt": {
+     "removed": 0,
+     "scored": 1000,
+     "raw": 49.48097157960549,
+     "band_counts": [
+      134,
+      176,
+      278,
+      412
+     ],
+     "support": "ok",
+     "standardised": 69.60962554335039
+    },
+    "goldfish": {
+     "removed": 0,
+     "scored": 1000,
+     "raw": 154.12836316125328,
+     "band_counts": [
+      134,
+      176,
+      278,
+      412
+     ],
+     "support": "ok",
+     "standardised": 189.04474278024475
+    }
+   },
+   "small-seed46": {
+    "mgpt": {
+     "removed": 1,
+     "scored": 999,
+     "raw": 53.72448234757469,
+     "band_counts": [
+      195,
+      199,
+      266,
+      339
+     ],
+     "support": "ok",
+     "standardised": 71.46965875032124
+    },
+    "goldfish": {
+     "removed": 1,
+     "scored": 999,
+     "raw": 166.3479374627597,
+     "band_counts": [
+      195,
+      199,
+      266,
+      339
+     ],
+     "support": "ok",
+     "standardised": 197.22639320347554
+    }
+   },
+   "published-seed42": {
+    "mgpt": {
+     "removed": 10,
+     "scored": 990,
+     "raw": 49.39006119815803,
+     "band_counts": [
+      143,
+      290,
+      306,
+      251
+     ],
+     "support": "ok",
+     "standardised": 59.43277861748455
+    },
+    "goldfish": {
+     "removed": 10,
+     "scored": 990,
+     "raw": 129.65565127346682,
+     "band_counts": [
+      143,
+      290,
+      306,
+      251
+     ],
+     "support": "ok",
+     "standardised": 145.36121631504906
+    }
+   },
+   "published-seed43": {
+    "mgpt": {
+     "removed": 13,
+     "scored": 987,
+     "raw": 49.20357898275333,
+     "band_counts": [
+      141,
+      285,
+      321,
+      240
+     ],
+     "support": "ok",
+     "standardised": 59.10410030455801
+    },
+    "goldfish": {
+     "removed": 13,
+     "scored": 987,
+     "raw": 131.00636580785337,
+     "band_counts": [
+      141,
+      285,
+      321,
+      240
+     ],
+     "support": "ok",
+     "standardised": 146.41444344009136
+    }
+   },
+   "published-seed44": {
+    "mgpt": {
+     "removed": 9,
+     "scored": 991,
+     "raw": 49.71321007678157,
+     "band_counts": [
+      162,
+      273,
+      289,
+      267
+     ],
+     "support": "ok",
+     "standardised": 60.207589114135516
+    },
+    "goldfish": {
+     "removed": 9,
+     "scored": 991,
+     "raw": 136.00963729974703,
+     "band_counts": [
+      162,
+      273,
+      289,
+      267
+     ],
+     "support": "ok",
+     "standardised": 152.55104889866791
+    }
+   },
+   "published-seed45": {
+    "mgpt": {
+     "removed": 10,
+     "scored": 990,
+     "raw": 49.29559077811945,
+     "band_counts": [
+      142,
+      257,
+      327,
+      264
+     ],
+     "support": "ok",
+     "standardised": 60.802398888102516
+    },
+    "goldfish": {
+     "removed": 10,
+     "scored": 990,
+     "raw": 136.91963765877787,
+     "band_counts": [
+      142,
+      257,
+      327,
+      264
+     ],
+     "support": "ok",
+     "standardised": 154.1223239174042
+    }
+   },
+   "published-seed46": {
+    "mgpt": {
+     "removed": 10,
+     "scored": 990,
+     "raw": 50.215869601146096,
+     "band_counts": [
+      165,
+      277,
+      307,
+      241
+     ],
+     "support": "ok",
+     "standardised": 58.91359343987227
+    },
+    "goldfish": {
+     "removed": 10,
+     "scored": 990,
+     "raw": 135.3895870047942,
+     "band_counts": [
+      165,
+      277,
+      307,
+      241
+     ],
+     "support": "ok",
+     "standardised": 144.70394707175828
+    }
+   },
+   "AR-hist": {
+    "mgpt": {
+     "removed": 11,
+     "scored": 245,
+     "raw": 79.62923279357244,
+     "band_counts": [
+      80,
+      83,
+      54,
+      28
+     ],
+     "support": "ok",
+     "standardised": 79.12758189025135
+    },
+    "goldfish": {
+     "removed": 11,
+     "scored": 245,
+     "raw": 200.55065709711457,
+     "band_counts": [
+      80,
+      83,
+      54,
+      28
+     ],
+     "support": "ok",
+     "standardised": 203.24300990647646
+    }
+   }
+  }
+ },
+ "part_d": {
+  "selection": {
+   "floors": {
+    "distinct2": 0.6643356643356644,
+    "entropy": 9.227251179620001,
+    "copies": 13
+   },
+   "table": [
+    {
+     "cell": "t0.8-p0.90-off",
+     "mgpt_std": 43.359359799289095,
+     "support": "ok",
+     "distinct2": 0.46652531482909276,
+     "entropy": 8.236257880543619,
+     "copies": 105,
+     "eligible": false
+    },
+    {
+     "cell": "t0.8-p0.90-on",
+     "mgpt_std": 55.00918118973075,
+     "support": "ok",
+     "distinct2": 0.5036591204431982,
+     "entropy": 8.39186233845327,
+     "copies": 112,
+     "eligible": false
+    },
+    {
+     "cell": "t0.8-p0.95-off",
+     "mgpt_std": 46.774914215163854,
+     "support": "ok",
+     "distinct2": 0.5082783517988299,
+     "entropy": 8.404217745242395,
+     "copies": 87,
+     "eligible": false
+    },
+    {
+     "cell": "t0.8-p0.95-on",
+     "mgpt_std": 58.680538522144026,
+     "support": "ok",
+     "distinct2": 0.5401425811179958,
+     "entropy": 8.54742206081234,
+     "copies": 89,
+     "eligible": false
+    },
+    {
+     "cell": "t0.8-p1.00-off",
+     "mgpt_std": 55.026686015651535,
+     "support": "ok",
+     "distinct2": 0.5573613766730402,
+     "entropy": 8.629837176169085,
+     "copies": 68,
+     "eligible": false
+    },
+    {
+     "cell": "t0.8-p1.00-on",
+     "mgpt_std": 65.08976183697692,
+     "support": "ok",
+     "distinct2": 0.5924061922660381,
+     "entropy": 8.810331168468748,
+     "copies": 68,
+     "eligible": false
+    },
+    {
+     "cell": "t0.9-p0.90-off",
+     "mgpt_std": 50.733772954862765,
+     "support": "ok",
+     "distinct2": 0.5670912054083419,
+     "entropy": 8.677886094921078,
+     "copies": 84,
+     "eligible": false
+    },
+    {
+     "cell": "t0.9-p0.90-on",
+     "mgpt_std": 64.23802638997475,
+     "support": "ok",
+     "distinct2": 0.6126675560637824,
+     "entropy": 8.896121446611135,
+     "copies": 76,
+     "eligible": false
+    },
+    {
+     "cell": "t0.9-p0.95-off",
+     "mgpt_std": 56.588335234529296,
+     "support": "ok",
+     "distinct2": 0.6087494112105512,
+     "entropy": 8.851562720028701,
+     "copies": 68,
+     "eligible": false
+    },
+    {
+     "cell": "t0.9-p0.95-on",
+     "mgpt_std": 71.47956785862527,
+     "support": "ok",
+     "distinct2": 0.6457038850185151,
+     "entropy": 9.04328091412505,
+     "copies": 64,
+     "eligible": false
+    },
+    {
+     "cell": "t0.9-p1.00-off",
+     "mgpt_std": 72.01245352382358,
+     "support": "ok",
+     "distinct2": 0.6510381403746333,
+     "entropy": 9.06914226637432,
+     "copies": 49,
+     "eligible": false
+    },
+    {
+     "cell": "t0.9-p1.00-on",
+     "mgpt_std": 89.69609144898232,
+     "support": "ok",
+     "distinct2": 0.6906461761858664,
+     "entropy": 9.253884424636842,
+     "copies": 46,
+     "eligible": false
+    },
+    {
+     "cell": "t1.0-p0.90-off",
+     "mgpt_std": 65.64910150979561,
+     "support": "ok",
+     "distinct2": 0.650937118775646,
+     "entropy": 9.065122479425249,
+     "copies": 58,
+     "eligible": false
+    },
+    {
+     "cell": "t1.0-p0.90-on",
+     "mgpt_std": 81.07375194745458,
+     "support": "ok",
+     "distinct2": 0.6946159017295117,
+     "entropy": 9.255919892139884,
+     "copies": 55,
+     "eligible": false
+    },
+    {
+     "cell": "t1.0-p0.95-off",
+     "mgpt_std": 79.59767969851865,
+     "support": "ok",
+     "distinct2": 0.6913134277812271,
+     "entropy": 9.229225077477981,
+     "copies": 46,
+     "eligible": false
+    },
+    {
+     "cell": "t1.0-p0.95-on",
+     "mgpt_std": 93.80679035683411,
+     "support": "ok",
+     "distinct2": 0.7226356870575422,
+     "entropy": 9.422514042897193,
+     "copies": 46,
+     "eligible": false
+    },
+    {
+     "cell": "t1.0-p1.00-off",
+     "mgpt_std": 107.69999042021394,
+     "support": "ok",
+     "distinct2": 0.7346203484620348,
+     "entropy": 9.528756226438318,
+     "copies": 37,
+     "eligible": false
+    },
+    {
+     "cell": "t1.0-p1.00-on",
+     "mgpt_std": 125.03561506708681,
+     "support": "ok",
+     "distinct2": 0.7612364540771007,
+     "entropy": 9.65620074007067,
+     "copies": 36,
+     "eligible": false
+    }
+   ],
+   "tuned": null
+  }
+ },
+ "mauve": {
+  "E1": [
+   {
+    "n": 1000,
+    "mauve": 0.0939266536320329
+   },
+   {
+    "n": 1000,
+    "mauve": 0.14728422716612494
+   },
+   {
+    "n": 1000,
+    "mauve": 0.13214843360536466
+   },
+   {
+    "n": 1000,
+    "mauve": 0.15471987212594276
+   },
+   {
+    "n": 1000,
+    "mauve": 0.13062939336379414
+   },
+   {
+    "n": 1000,
+    "mauve": 0.12273802181900503
+   },
+   {
+    "n": 1000,
+    "mauve": 0.16497220713564317
+   },
+   {
+    "n": 1000,
+    "mauve": 0.1949059282458865
+   },
+   {
+    "n": 1000,
+    "mauve": 0.2288376812298436
+   },
+   {
+    "n": 1000,
+    "mauve": 0.1074604877060707
+   }
+  ],
+  "E2": {
+   "clustering": [
+    0.1481279380866678,
+    0.1465013489240837,
+    0.1334711832386441,
+    0.107025319179441,
+    0.1337933231818872
+   ],
+   "reference": [
+    0.1481279380866678,
+    0.14051303433506535,
+    0.32614640997461475,
+    0.1748536310488859,
+    0.11520261437145156
+   ],
+   "c1": 0.004414427886561396,
+   "reference_duplicates": [
+    148,
+    54,
+    63,
+    137,
+    112
+   ]
+  },
+  "gate": {
+   "median": false,
+   "range": false,
+   "clustering_sd": true,
+   "reference_range": false,
+   "c1_below": true
+  },
+  "passed": false
+ },
+ "judge_selection": {
+  "skipped": {
+   "selection": 0,
+   "confirmation": 0
+  },
+  "candidates": {
+   "gemma": {
+    "seconds_per_rating": 1.2316771350015188,
+    "peak_mib": 7650,
+    "clean_flag_rate": 0.15333333333333332,
+    "detection": {
+     "shuffle": 0.9933333333333333,
+     "morphology": 0.7,
+     "repeat": 1.0,
+     "truncate": 0.82,
+     "splice": 0.9933333333333333
+    },
+    "target_item": {
+     "shuffle": 0.9933333333333333,
+     "morphology": 0.6533333333333333,
+     "repeat": 1.0,
+     "truncate": 0.8066666666666666,
+     "splice": 0.8
+    },
+    "unparsed_rate": 0.0,
+    "c1_flag_rate": 1.0,
+    "c1_minus_clean": [
+     0.7758703973470875,
+     0.8956004626145764
+    ],
+    "conditions": {
+     "detection": false,
+     "clean": true,
+     "unparsed": true,
+     "c1": true
+    },
+    "passed": false,
+    "score": 0.748
+   },
+   "qwen": {
+    "seconds_per_rating": 0.8801787100004731,
+    "peak_mib": 5223,
+    "clean_flag_rate": 0.21333333333333335,
+    "detection": {
+     "shuffle": 0.9866666666666667,
+     "morphology": 0.8666666666666667,
+     "repeat": 0.9533333333333334,
+     "truncate": 0.8,
+     "splice": 0.9733333333333334
+    },
+    "target_item": {
+     "shuffle": 0.9866666666666667,
+     "morphology": 0.86,
+     "repeat": 0.86,
+     "truncate": 0.7733333333333333,
+     "splice": 0.8666666666666667
+    },
+    "unparsed_rate": 0.0,
+    "c1_flag_rate": 1.0,
+    "c1_minus_clean": [
+     0.7101881789383849,
+     0.8446376392021363
+    ],
+    "conditions": {
+     "detection": true,
+     "clean": false,
+     "unparsed": true,
+     "c1": true
+    },
+    "passed": false,
+    "score": 0.7026666666666667
+   }
+  },
+  "final": "not reported",
+  "reason": "no candidate passed the selection half"
+ },
+ "judge_application": "not available"
+}

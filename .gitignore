@@ -132,3 +132,64 @@ dmypy.json
 **/saved_diff_models
 **/saved_latent_models
 *.pt
+
+# Research data and preserved local evidence (never commit)
+/afrikaans/
+/smoke_runs/
+/data/
+/corpora/
+
+# Training and evaluation outputs
+/outputs/
+/cluster_logs/
+/wandb/
+**/wandb/
+*.ckpt
+*.safetensors
+*.pth
+
+# Hugging Face and model caches
+/.cache/
+/.hf_cache/
+/huggingface/
+
+# Cluster scheduler output
+slurm-*.out
+slurm-*.err
+*.o[0-9]*
+*.e[0-9]*
+
+# Local preflight scratch files
+/tmp/
+
+# Local handoff archives, packaged runtimes and generated diagnostics
+/handoff_2026-10-20/
+/output/
+/swahili_72h/assets/
+/swahili_72h/data/
+/swahili_72h/tokens/
+/swahili_72h/wheelhouse/
+/swahili_72h/local_compat_deps/
+/swahili_72h/local_plot_deps/
+/swahili_72h/local-checks/
+/swahili_72h/local-fixture/
+/swahili_72h/transfer/
+/docs/research/research_zip_diagnostic/
+*.zip
+*.tar
+*.tar.gz
+*.tar.part*
+*.bin
+*.npy
+*.sqlite
+*.aux
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+**/audit/original-main.pdf
+**/audit/original-extracted.txt
+
+# Stray snapshot of this repository (same files as commit 208dc47); not part of the project
+/research/

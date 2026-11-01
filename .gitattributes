@@ -1,0 +1,15 @@
+# Text files are stored with LF; binary formats are never converted.
+* text=auto
+*.pdf binary
+*.png binary
+*.jpg binary
+*.zip binary
+*.gz binary
+*.tar binary
+*.npy binary
+*.pt binary
+*.pptx binary
+*.docx binary
+*.xlsx binary
+# Upstream datasets are kept byte for byte as shipped.
+datasets/** -text

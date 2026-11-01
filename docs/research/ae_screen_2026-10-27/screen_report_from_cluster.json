@@ -1,0 +1,496 @@
+{
+  "b0": {
+    "selection": {
+      "n": 663,
+      "ce": 0.8016560747603091,
+      "accuracy": 0.8232594414614393,
+      "seconds": 33.620520296972245,
+      "ae_dir": "/home-mscluster/hbutt/research-afrikaans-24h/outputs/afrikaans-24h-56531/best",
+      "panel": "selection.jsonl"
+    },
+    "V": {
+      "n": 194,
+      "ce": 0.9292330679155497,
+      "accuracy": 0.8124919177550757,
+      "exact": 26,
+      "exact_rate": 0.13402061855670103,
+      "chrf": 69.24089694732002,
+      "number_recall": 0.6197183098591549,
+      "number_precision": 0.7457627118644068,
+      "cap": 0,
+      "no_eos": 0,
+      "bins": {
+        "long": {
+          "n": 33,
+          "exact": 0,
+          "chrf": 61.253387343047,
+          "ce": 1.1440192292868396
+        },
+        "medium": {
+          "n": 76,
+          "exact": 5,
+          "chrf": 73.23578415531829,
+          "ce": 0.786285116122598
+        },
+        "short": {
+          "n": 85,
+          "exact": 21,
+          "chrf": 68.77003093712172,
+          "ce": 0.9050845033402191
+        }
+      },
+      "seconds": 226.8612535460852,
+      "ae_dir": "/home-mscluster/hbutt/research-afrikaans-24h/outputs/afrikaans-24h-56531/best",
+      "panel": "V.jsonl"
+    },
+    "reserve": {
+      "n": 103,
+      "ce": 0.8210964116064607,
+      "accuracy": 0.8322301425661914,
+      "exact": 19,
+      "exact_rate": 0.18446601941747573,
+      "chrf": 68.3239725641161,
+      "number_recall": 0.7741935483870968,
+      "number_precision": 0.7619047619047619,
+      "cap": 0,
+      "no_eos": 0,
+      "bins": {
+        "long": {
+          "n": 15,
+          "exact": 0,
+          "chrf": 63.18764632743542,
+          "ce": 0.7498511662414681
+        },
+        "medium": {
+          "n": 41,
+          "exact": 3,
+          "chrf": 71.43614700243317,
+          "ce": 0.8213981180808722
+        },
+        "short": {
+          "n": 47,
+          "exact": 16,
+          "chrf": 67.24835004452478,
+          "ce": 0.9182292157843983
+        }
+      },
+      "seconds": 113.09520315099508,
+      "ae_dir": "/home-mscluster/hbutt/research-afrikaans-24h/outputs/afrikaans-24h-56531/best",
+      "panel": "reserve.jsonl"
+    }
+  },
+  "arms": {
+    "A": {
+      "selection": {
+        "n": 663,
+        "ce": 0.06557075153700097,
+        "accuracy": 0.9830218675945646,
+        "seconds": 33.36448084900621,
+        "ae_dir": "/home-mscluster/hbutt/afrikaans-ae-screen-20261027/outputs/screen/arms/A/best",
+        "panel": "selection.jsonl"
+      },
+      "V": {
+        "n": 194,
+        "ce": 0.11917413083830898,
+        "accuracy": 0.971679813785077,
+        "exact": 118,
+        "exact_rate": 0.6082474226804123,
+        "chrf": 96.34759251815589,
+        "number_recall": 0.9436619718309859,
+        "number_precision": 0.9852941176470589,
+        "cap": 1,
+        "no_eos": 0,
+        "bins": {
+          "long": {
+            "n": 33,
+            "exact": 3,
+            "chrf": 87.67540045200624,
+            "ce": 0.3053031188979992
+          },
+          "medium": {
+            "n": 76,
+            "exact": 40,
+            "chrf": 97.22784959396054,
+            "ce": 0.029203170846739682
+          },
+          "short": {
+            "n": 85,
+            "exact": 75,
+            "chrf": 98.92739017017688,
+            "ce": 0.02037083823056365
+          }
+        },
+        "seconds": 221.5613293229835,
+        "ae_dir": "/home-mscluster/hbutt/afrikaans-ae-screen-20261027/outputs/screen/arms/A/best",
+        "panel": "V.jsonl"
+      },
+      "status": {
+        "arm": "A",
+        "reason": "time_cap",
+        "updates": 3783,
+        "best_update": 3500,
+        "best_selection_ce": 0.06574387412566202,
+        "hours": 6.000637217067545,
+        "best_sha256": "b0064c17e42df7597c943c817ab3afc96eaed91a1fffcd43f81588e7ecfac691",
+        "complete": true
+      }
+    },
+    "B": {
+      "selection": {
+        "n": 663,
+        "ce": 0.018357699483393487,
+        "accuracy": 0.9951105378408375,
+        "seconds": 33.307929056929424,
+        "ae_dir": "/home-mscluster/hbutt/afrikaans-ae-screen-20261027/outputs/screen/arms/B/best",
+        "panel": "selection.jsonl"
+      },
+      "V": {
+        "n": 194,
+        "ce": 0.053819979301742864,
+        "accuracy": 0.9884908832277254,
+        "exact": 126,
+        "exact_rate": 0.6494845360824743,
+        "chrf": 97.88607196336466,
+        "number_recall": 1.0,
+        "number_precision": 1.0,
+        "cap": 0,
+        "no_eos": 0,
+        "bins": {
+          "long": {
+            "n": 33,
+            "exact": 3,
+            "chrf": 93.10792839007324,
+            "ce": 0.1361401899724741
+          },
+          "medium": {
+            "n": 76,
+            "exact": 44,
+            "chrf": 98.0355905117252,
+            "ce": 0.01391960432491267
+          },
+          "short": {
+            "n": 85,
+            "exact": 79,
+            "chrf": 99.60742876622595,
+            "ce": 0.010370878004092136
+          }
+        },
+        "seconds": 220.4680312370183,
+        "ae_dir": "/home-mscluster/hbutt/afrikaans-ae-screen-20261027/outputs/screen/arms/B/best",
+        "panel": "V.jsonl"
+      },
+      "status": {
+        "arm": "B",
+        "reason": "time_cap",
+        "updates": 3672,
+        "best_update": 3500,
+        "best_selection_ce": 0.0184518330493791,
+        "hours": 6.000932341167742,
+        "best_sha256": "475f4fb144ee17e993f7d6059a9ffdd2e7186d4333fda64f84ce1e5eded37aaa",
+        "complete": true
+      }
+    },
+    "C": {
+      "selection": {
+        "n": 663,
+        "ce": 0.06642484135686964,
+        "accuracy": 0.9826019137894831,
+        "seconds": 33.29408525698818,
+        "ae_dir": "/home-mscluster/hbutt/afrikaans-ae-screen-20261027/outputs/screen/arms/C/best",
+        "panel": "selection.jsonl"
+      },
+      "V": {
+        "n": 194,
+        "ce": 0.1072549113757392,
+        "accuracy": 0.9728436570541834,
+        "exact": 121,
+        "exact_rate": 0.6237113402061856,
+        "chrf": 96.51262087191036,
+        "number_recall": 0.9859154929577465,
+        "number_precision": 1.0,
+        "cap": 1,
+        "no_eos": 1,
+        "bins": {
+          "long": {
+            "n": 33,
+            "exact": 3,
+            "chrf": 87.98630373020475,
+            "ce": 0.263210103521854
+          },
+          "medium": {
+            "n": 76,
+            "exact": 41,
+            "chrf": 97.1859839728528,
+            "ce": 0.03209566603280054
+          },
+          "short": {
+            "n": 85,
+            "exact": 77,
+            "chrf": 99.22077228372997,
+            "ce": 0.023949012067332673
+          }
+        },
+        "seconds": 220.5727287499467,
+        "ae_dir": "/home-mscluster/hbutt/afrikaans-ae-screen-20261027/outputs/screen/arms/C/best",
+        "panel": "V.jsonl"
+      },
+      "status": {
+        "arm": "C",
+        "reason": "time_cap",
+        "updates": 3631,
+        "best_update": 3500,
+        "best_selection_ce": 0.06641072404984646,
+        "hours": 6.001333663968026,
+        "best_sha256": "3dc55fe707d67cd85e93eedf15adbcc10e1bb4d65c9dc5e299baa673b3424e5a",
+        "complete": true
+      }
+    },
+    "D": {
+      "selection": {
+        "n": 663,
+        "ce": 0.015486495158052286,
+        "accuracy": 0.9961004289528151,
+        "seconds": 33.296353286947124,
+        "ae_dir": "/home-mscluster/hbutt/afrikaans-ae-screen-20261027/outputs/screen/arms/D/best",
+        "panel": "selection.jsonl"
+      },
+      "V": {
+        "n": 194,
+        "ce": 0.04318057420288929,
+        "accuracy": 0.9895254105780421,
+        "exact": 134,
+        "exact_rate": 0.6907216494845361,
+        "chrf": 98.20141576934405,
+        "number_recall": 1.0,
+        "number_precision": 1.0,
+        "cap": 0,
+        "no_eos": 0,
+        "bins": {
+          "long": {
+            "n": 33,
+            "exact": 7,
+            "chrf": 93.66490767126363,
+            "ce": 0.11746446201063794
+          },
+          "medium": {
+            "n": 76,
+            "exact": 48,
+            "chrf": 98.56069306382778,
+            "ce": 0.004333035568177275
+          },
+          "short": {
+            "n": 85,
+            "exact": 79,
+            "chrf": 99.64141215588393,
+            "ce": 0.010501777780887407
+          }
+        },
+        "seconds": 219.72305334801786,
+        "ae_dir": "/home-mscluster/hbutt/afrikaans-ae-screen-20261027/outputs/screen/arms/D/best",
+        "panel": "V.jsonl"
+      },
+      "status": {
+        "arm": "D",
+        "reason": "time_cap",
+        "updates": 3533,
+        "best_update": 3500,
+        "best_selection_ce": 0.015405416999258745,
+        "hours": 6.000609126188921,
+        "best_sha256": "14d9cae39517747074f8369e21596b87c00a3ed3c40b1fd085999d071b68e9f2",
+        "complete": true
+      }
+    }
+  },
+  "selection": {
+    "winner": "D",
+    "ranked": [
+      "D",
+      "B",
+      "A",
+      "C"
+    ],
+    "parsimony": 0.02,
+    "selection_ce": {
+      "A": 0.06557075153700097,
+      "B": 0.018357699483393487,
+      "C": 0.06642484135686964,
+      "D": 0.015486495158052286
+    },
+    "b0_selection_ce": 0.8016560747603091,
+    "proceed_to_diffusion": true,
+    "winner_sha256": "14d9cae39517747074f8369e21596b87c00a3ed3c40b1fd085999d071b68e9f2"
+  },
+  "V_contrasts": {
+    "A_minus_B0": {
+      "exact": {
+        "difference": 0.4742268041237113,
+        "low": 0.40384615384615385,
+        "high": 0.5473684210526316
+      },
+      "chrf": {
+        "difference": 27.106695570835825,
+        "low": 23.58760482548212,
+        "high": 30.832596952957964
+      },
+      "ce": {
+        "difference": -0.8100589370772407,
+        "low": -0.9309376052595519,
+        "high": -0.7015199002628052
+      }
+    },
+    "recipe_plus_slots_B_minus_B0": {
+      "exact": {
+        "difference": 0.5154639175257731,
+        "low": 0.4418604651162791,
+        "high": 0.5920398009950248
+      },
+      "chrf": {
+        "difference": 28.645175016044604,
+        "low": 25.060143949438515,
+        "high": 32.44442203197321
+      },
+      "ce": {
+        "difference": -0.8754130886138068,
+        "low": -1.0141844044106625,
+        "high": -0.7513140803762959
+      }
+    },
+    "slots_B_minus_A": {
+      "exact": {
+        "difference": 0.041237113402061855,
+        "low": 0.0,
+        "high": 0.08333333333333333
+      },
+      "chrf": {
+        "difference": 1.5384794452087796,
+        "low": 0.8373998271279784,
+        "high": 2.358890639984026
+      },
+      "ce": {
+        "difference": -0.06535415153656611,
+        "low": -0.11279915966696805,
+        "high": -0.02482275669244764
+      }
+    },
+    "slots_D_minus_C": {
+      "exact": {
+        "difference": 0.06701030927835051,
+        "low": 0.03333333333333333,
+        "high": 0.10497237569060773
+      },
+      "chrf": {
+        "difference": 1.6887948974336844,
+        "low": 1.0509934379605888,
+        "high": 2.4321502255673555
+      },
+      "ce": {
+        "difference": -0.06407433717284991,
+        "low": -0.10090466816755388,
+        "high": -0.033929301890469714
+      }
+    },
+    "data_C_minus_A": {
+      "exact": {
+        "difference": 0.015463917525773196,
+        "low": -0.014492753623188406,
+        "high": 0.046153846153846156
+      },
+      "chrf": {
+        "difference": 0.16502835375454714,
+        "low": -0.27285311155941566,
+        "high": 0.5891051108760779
+      },
+      "ce": {
+        "difference": -0.011919219462569783,
+        "low": -0.033728650041516324,
+        "high": 0.009326404747396742
+      }
+    },
+    "data_D_minus_B": {
+      "exact": {
+        "difference": 0.041237113402061855,
+        "low": 0.01123438578871383,
+        "high": 0.07368421052631578
+      },
+      "chrf": {
+        "difference": 0.315343805979452,
+        "low": 0.05584157319559178,
+        "high": 0.5837394441368786
+      },
+      "ce": {
+        "difference": -0.010639405098853581,
+        "low": -0.02077045303338462,
+        "high": 0.00021837669402817396
+      }
+    }
+  },
+  "winner_reserve": {
+    "n": 103,
+    "ce": 0.01002266001272579,
+    "accuracy": 0.9971995926680245,
+    "exact": 73,
+    "exact_rate": 0.7087378640776699,
+    "chrf": 98.70070722816006,
+    "number_recall": 1.0,
+    "number_precision": 1.0,
+    "cap": 0,
+    "no_eos": 0,
+    "bins": {
+      "long": {
+        "n": 15,
+        "exact": 1,
+        "chrf": 95.91658611101329,
+        "ce": 0.004903711433833305
+      },
+      "medium": {
+        "n": 41,
+        "exact": 27,
+        "chrf": 98.39137604542849,
+        "ce": 0.013871989918712156
+      },
+      "short": {
+        "n": 47,
+        "exact": 45,
+        "chrf": 99.85909861644087,
+        "ce": 0.008100956222451964
+      }
+    },
+    "seconds": 112.27760025998577,
+    "ae_dir": "/home-mscluster/hbutt/afrikaans-ae-screen-20261027/outputs/screen/arms/D/best",
+    "panel": "reserve.jsonl"
+  },
+  "reserve_contrast_winner_minus_B0": {
+    "exact": {
+      "difference": 0.5242718446601942,
+      "low": 0.4249944690265487,
+      "high": 0.6330351681957185
+    },
+    "chrf": {
+      "difference": 30.376734664044015,
+      "low": 24.655100762575668,
+      "high": 36.607616542788804
+    },
+    "ce": {
+      "difference": -0.811073751593735,
+      "low": -1.0052831330734036,
+      "high": -0.6382799913150867
+    }
+  },
+  "V_contrast_winner_minus_B0": {
+    "exact": {
+      "difference": 0.5567010309278351,
+      "low": 0.484375,
+      "high": 0.6324324324324324
+    },
+    "chrf": {
+      "difference": 28.960518822024056,
+      "low": 25.313517537373098,
+      "high": 32.748169135025336
+    },
+    "ce": {
+      "difference": -0.8860524937126604,
+      "low": -1.0262251347121578,
+      "high": -0.7600492715160608
+    }
+  }
+}

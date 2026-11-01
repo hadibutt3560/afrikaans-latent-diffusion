@@ -1,0 +1,69 @@
+{
+ "G2": [
+  {
+   "bank": "real-valid",
+   "stored": 34.43707642968941,
+   "new": 34.43708464012922,
+   "rel": 2.38418607505296e-07
+  },
+  {
+   "bank": "real-valid",
+   "stored": 60.56688681473754,
+   "new": 60.56691569528662,
+   "rel": 4.76837271863707e-07
+  },
+  {
+   "bank": "real-valid",
+   "stored": 5.847074792204749,
+   "new": 5.847074095179159,
+   "rel": 1.1920928240294377e-07
+  },
+  {
+   "bank": "small-42-valid",
+   "stored": 22.697247072799243,
+   "new": 22.697203781277356,
+   "rel": 1.9073468138430443e-06
+  },
+  {
+   "bank": "small-42-valid",
+   "stored": 28.118418593475198,
+   "new": 28.11839848162217,
+   "rel": 7.152554814679038e-07
+  },
+  {
+   "bank": "small-42-valid",
+   "stored": 21.829446624727666,
+   "new": 21.82941019293854,
+   "rel": 1.6689286610478787e-06
+  }
+ ],
+ "G2_pass": true,
+ "G3": {
+  "new": {
+   "loss": 0.49546851205402426,
+   "token_accuracy": 0.8741034333598238,
+   "examples": 1024,
+   "repeats": 1
+  },
+  "stored": {
+   "loss": 0.4956672634904198,
+   "token_accuracy": 0.8738318227086623
+  }
+ },
+ "G3_pass": true,
+ "G4": [
+  {
+   "seed": 20000,
+   "match": true,
+   "stored": "mishahara inayomkabili Rais wa Marekani ili kufikia asilimia saba baada ya kuumbwa na Ubelgiji na kuwafikia pamoja na Ka",
+   "new": "mishahara inayomkabili Rais wa Marekani ili kufikia asilimia saba baada ya kuumbwa na Ubelgiji na kuwafikia pamoja na Ka"
+  },
+  {
+   "seed": 20001,
+   "match": false,
+   "stored": "Sheria y a Sheria mwaka 2000, Serikali kumekuw a kufanya kozi kubwa kwenye mkataba w a Kidato cha Upandaji na Mtandao wa",
+   "new": "Sheria y a Sheria mwaka 2000, Serikali kumekuw a kufanya kozi kubwa kwenye mkataba w a Kidato cha Upandaji na Mtandao wa"
+  }
+ ],
+ "passed": true
+}

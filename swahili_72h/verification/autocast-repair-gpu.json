@@ -1,0 +1,36 @@
+{
+  "hardware": {
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "capability": [
+      8,
+      6
+    ],
+    "memory": 12884377600
+  },
+  "architectures": {
+    "small": {
+      "comparison": {
+        "model": true,
+        "optimizer": true,
+        "ema": true,
+        "rng": true,
+        "scheduler": true
+      },
+      "step": 4,
+      "learning_verified": true
+    },
+    "published": {
+      "comparison": {
+        "model": true,
+        "optimizer": true,
+        "ema": true,
+        "rng": true,
+        "scheduler": true
+      },
+      "step": 4,
+      "learning_verified": true
+    }
+  }
+}

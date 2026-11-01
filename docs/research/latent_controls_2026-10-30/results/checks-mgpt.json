@@ -1,0 +1,347 @@
+[
+  {
+    "kind": "reference",
+    "id": "nchlt-afr-seg-7b7c16dbba96d5337736a69f050f08eecee69b1e70b7f526058d0363eddc9782",
+    "stored": {
+      "nll": 187.9324460029602,
+      "tokens": 58,
+      "perplexity": 25.539201521073473
+    },
+    "recomputed": {
+      "nll": 187.9324460029602,
+      "tokens": 58,
+      "perplexity": 25.539201521073473
+    },
+    "ok": true
+  },
+  {
+    "kind": "reference",
+    "id": "nchlt-afr-seg-fbcd0d84ef0f51b2684b44dc4b960c71a88a33065143d196bf1bd8b69e620b76",
+    "stored": {
+      "nll": 117.25319957733154,
+      "tokens": 26,
+      "perplexity": 90.89804058967663
+    },
+    "recomputed": {
+      "nll": 117.25319957733154,
+      "tokens": 26,
+      "perplexity": 90.89804058967663
+    },
+    "ok": true
+  },
+  {
+    "kind": "reference",
+    "id": "nchlt-afr-seg-3bc6ada185000d4cb0ba3f7fa52e59fc4801d8f69352f657a761cceb2435d0d4",
+    "stored": {
+      "nll": 59.9235463142395,
+      "tokens": 11,
+      "perplexity": 232.19908286116006
+    },
+    "recomputed": {
+      "nll": 59.9235463142395,
+      "tokens": 11,
+      "perplexity": 232.19908286116006
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30000,
+    "stored": {
+      "nll": 311.65308260917664,
+      "tokens": 91,
+      "perplexity": 30.715246179730464
+    },
+    "recomputed": {
+      "nll": 311.65308260917664,
+      "tokens": 91,
+      "perplexity": 30.715246179730464
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30001,
+    "stored": {
+      "nll": 89.80410575866699,
+      "tokens": 15,
+      "perplexity": 398.19442216537533
+    },
+    "recomputed": {
+      "nll": 89.80410575866699,
+      "tokens": 15,
+      "perplexity": 398.19442216537533
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30002,
+    "stored": {
+      "nll": 201.8725848197937,
+      "tokens": 55,
+      "perplexity": 39.26802730135678
+    },
+    "recomputed": {
+      "nll": 201.8725848197937,
+      "tokens": 55,
+      "perplexity": 39.26802730135678
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30003,
+    "stored": {
+      "nll": 221.01640701293945,
+      "tokens": 50,
+      "perplexity": 83.12355706915407
+    },
+    "recomputed": {
+      "nll": 221.01640701293945,
+      "tokens": 50,
+      "perplexity": 83.12355706915407
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30004,
+    "stored": {
+      "nll": 305.28234481811523,
+      "tokens": 80,
+      "perplexity": 45.42348718845706
+    },
+    "recomputed": {
+      "nll": 305.28234481811523,
+      "tokens": 80,
+      "perplexity": 45.42348718845706
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30005,
+    "stored": {
+      "nll": 247.82711172103882,
+      "tokens": 47,
+      "perplexity": 194.983954519031
+    },
+    "recomputed": {
+      "nll": 247.82711172103882,
+      "tokens": 47,
+      "perplexity": 194.983954519031
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30006,
+    "stored": {
+      "nll": 120.97655534744263,
+      "tokens": 37,
+      "perplexity": 26.301780355339893
+    },
+    "recomputed": {
+      "nll": 120.97655534744263,
+      "tokens": 37,
+      "perplexity": 26.301780355339893
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30007,
+    "stored": {
+      "nll": 285.835636138916,
+      "tokens": 88,
+      "perplexity": 25.742214422077442
+    },
+    "recomputed": {
+      "nll": 285.835636138916,
+      "tokens": 88,
+      "perplexity": 25.742214422077442
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30008,
+    "stored": {
+      "nll": 234.53771495819092,
+      "tokens": 51,
+      "perplexity": 99.36289206246228
+    },
+    "recomputed": {
+      "nll": 234.53771495819092,
+      "tokens": 51,
+      "perplexity": 99.36289206246228
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30009,
+    "stored": {
+      "nll": 277.1903729438782,
+      "tokens": 77,
+      "perplexity": 36.59365897312819
+    },
+    "recomputed": {
+      "nll": 277.1903729438782,
+      "tokens": 77,
+      "perplexity": 36.59365897312819
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30010,
+    "stored": {
+      "nll": 312.4500732421875,
+      "tokens": 96,
+      "perplexity": 25.911535688856844
+    },
+    "recomputed": {
+      "nll": 312.4500732421875,
+      "tokens": 96,
+      "perplexity": 25.911535688856844
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30011,
+    "stored": {
+      "nll": 220.02792263031006,
+      "tokens": 54,
+      "perplexity": 58.82642506507063
+    },
+    "recomputed": {
+      "nll": 220.02792263031006,
+      "tokens": 54,
+      "perplexity": 58.82642506507063
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30012,
+    "stored": {
+      "nll": 267.84997844696045,
+      "tokens": 76,
+      "perplexity": 33.93143333100197
+    },
+    "recomputed": {
+      "nll": 267.84997844696045,
+      "tokens": 76,
+      "perplexity": 33.93143333100197
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30013,
+    "stored": {
+      "nll": 405.1105761528015,
+      "tokens": 110,
+      "perplexity": 39.75849065088347
+    },
+    "recomputed": {
+      "nll": 405.1105761528015,
+      "tokens": 110,
+      "perplexity": 39.75849065088347
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30014,
+    "stored": {
+      "nll": 120.99029159545898,
+      "tokens": 24,
+      "perplexity": 154.66510241498605
+    },
+    "recomputed": {
+      "nll": 120.99029159545898,
+      "tokens": 24,
+      "perplexity": 154.66510241498605
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30015,
+    "stored": {
+      "nll": 225.19088101387024,
+      "tokens": 57,
+      "perplexity": 51.972628799995356
+    },
+    "recomputed": {
+      "nll": 225.19088101387024,
+      "tokens": 57,
+      "perplexity": 51.972628799995356
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30016,
+    "stored": {
+      "nll": 167.59819507598877,
+      "tokens": 35,
+      "perplexity": 120.12343742698691
+    },
+    "recomputed": {
+      "nll": 167.59819507598877,
+      "tokens": 35,
+      "perplexity": 120.12343742698691
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30017,
+    "stored": {
+      "nll": 164.8458480834961,
+      "tokens": 40,
+      "perplexity": 61.62984204949204
+    },
+    "recomputed": {
+      "nll": 164.8458480834961,
+      "tokens": 40,
+      "perplexity": 61.62984204949204
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30018,
+    "stored": {
+      "nll": 118.25163841247559,
+      "tokens": 28,
+      "perplexity": 68.25650906583637
+    },
+    "recomputed": {
+      "nll": 118.25163841247559,
+      "tokens": 28,
+      "perplexity": 68.25650906583637
+    },
+    "ok": true
+  },
+  {
+    "kind": "small-seed42",
+    "id": 30019,
+    "stored": {
+      "nll": 382.9955554008484,
+      "tokens": 106,
+      "perplexity": 37.0832585960627
+    },
+    "recomputed": {
+      "nll": 382.9955554008484,
+      "tokens": 106,
+      "perplexity": 37.0832585960627
+    },
+    "ok": true
+  }
+]

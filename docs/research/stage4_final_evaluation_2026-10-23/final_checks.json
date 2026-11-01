@@ -1,0 +1,11 @@
+{
+  "missing_links": 0,
+  "protocol_unchanged": true,
+  "scoring_driver_unchanged": true,
+  "reconstruction_pairs": 81,
+  "anchor_checks": 4,
+  "gpu_scoring_seconds": 5.736283499994897,
+  "gpu_peak_gib": 5.442104339599609,
+  "test_seed_rows": 10,
+  "validation_rows": 11
+}

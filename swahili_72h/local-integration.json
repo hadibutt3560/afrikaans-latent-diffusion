@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "stages": [
+    "latent cache",
+    "diffusion train",
+    "full validation selection",
+    "fixture test evaluation",
+    "DDPM250 samples",
+    "mGPT scoring"
+  ],
+  "real_held_out_test_accessed": false
+}

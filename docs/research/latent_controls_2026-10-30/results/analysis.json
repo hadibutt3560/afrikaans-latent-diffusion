@@ -1,0 +1,841 @@
+{
+  "protocol_sha256_lf": "14319d16a373e1d358ace2f779f4f1181260bbb3f3a6cd0033978c184c088994",
+  "analysis_script_sha256": "bd71f8cd72f42f6153d9cf3b284654fd736d09e26ece89630641ddd816c8770b",
+  "weights": [
+    0.14,
+    0.223,
+    0.349,
+    0.288
+  ],
+  "minimum_band_rows": 20,
+  "primary": {
+    "small": {
+      "classification": "insufficient_support",
+      "banks": [
+        {
+          "bank": "C3",
+          "band_counts": [
+            2,
+            278,
+            666,
+            54
+          ],
+          "support": "insufficient_support"
+        }
+      ]
+    },
+    "large": {
+      "classification": "insufficient_support",
+      "banks": [
+        {
+          "bank": "C3",
+          "band_counts": [
+            2,
+            278,
+            666,
+            54
+          ],
+          "support": "insufficient_support"
+        }
+      ]
+    }
+  },
+  "primary_note": "Two contrasts at 97.5%; Bonferroni nominal family-wise level 95%; coverage approximate with five runs.",
+  "exploratory": {
+    "small-C1": {
+      "classification": "lower",
+      "difference": -36.34738285850182,
+      "low": -53.08968257954267,
+      "high": -19.605083137460966,
+      "t": 2.7764,
+      "run_values": [
+        74.14370042438472,
+        70.43690764493108,
+        70.81833009657346,
+        69.60962554335039,
+        71.45346225746631
+      ],
+      "run_sd": 1.7280186974979732,
+      "control_value": 107.639788051843,
+      "control_bootstrap_variance": 35.76633011513879,
+      "interval": "approximate t-based; between-run variance plus estimated control sampling variance"
+    },
+    "small-C2": {
+      "classification": "higher",
+      "difference": 7.723843420019854,
+      "low": 3.7391754911972512,
+      "high": 11.708511348842457,
+      "t": 2.7764,
+      "run_values": [
+        74.14370042438472,
+        70.43690764493108,
+        70.81833009657346,
+        69.60962554335039,
+        71.45346225746631
+      ],
+      "run_sd": 1.7280186974979732,
+      "control_value": 63.56856177332133,
+      "control_bootstrap_variance": 1.4625672422188307,
+      "interval": "approximate t-based; between-run variance plus estimated control sampling variance"
+    },
+    "large-C1": {
+      "classification": "lower",
+      "difference": -48.05859507773356,
+      "low": -64.6910596351272,
+      "high": -31.426130520339917,
+      "t": 2.7764,
+      "run_values": [
+        59.334338120711614,
+        59.024711469911445,
+        60.11839607610945,
+        60.64662194514231,
+        58.781897258672416
+      ],
+      "run_sd": 0.779937287381347,
+      "control_value": 107.639788051843,
+      "control_bootstrap_variance": 35.76633011513879,
+      "interval": "approximate t-based; between-run variance plus estimated control sampling variance"
+    },
+    "large-C2": {
+      "classification": "lower",
+      "difference": -3.987368799211886,
+      "low": -7.481915380211837,
+      "high": -0.49282221821193506,
+      "t": 2.7764,
+      "run_values": [
+        59.334338120711614,
+        59.024711469911445,
+        60.11839607610945,
+        60.64662194514231,
+        58.781897258672416
+      ],
+      "run_sd": 0.779937287381347,
+      "control_value": 63.56856177332133,
+      "control_bootstrap_variance": 1.4625672422188307,
+      "interval": "approximate t-based; between-run variance plus estimated control sampling variance"
+    }
+  },
+  "exploratory_note": "95% intervals; exploratory only.",
+  "diffusion_summary": {
+    "small": {
+      "raw_ppl": {
+        "mean": 51.94033371510337,
+        "sd": 1.9173284181945243
+      },
+      "distinct2": {
+        "mean": 0.6700883082301538,
+        "sd": 0.006458465795233292
+      },
+      "unigram_entropy_bits": {
+        "mean": 9.256881532429288,
+        "sd": 0.024998372382663402
+      },
+      "training_copies": {
+        "mean": 1.0,
+        "sd": 1.0
+      },
+      "eightgram_overlap": {
+        "mean": 0.0044199732683487345,
+        "sd": 0.0011369996772387474
+      },
+      "mean_words": {
+        "mean": 28.3556,
+        "sd": 1.2150558834884932
+      },
+      "standardised_ppl": {
+        "mean": 71.29240519334118,
+        "sd": 1.7280186974979732
+      }
+    },
+    "large": {
+      "raw_ppl": {
+        "mean": 49.60467402186252,
+        "sd": 0.39362038525966625
+      },
+      "distinct2": {
+        "mean": 0.6992620055500405,
+        "sd": 0.0037394393703734374
+      },
+      "unigram_entropy_bits": {
+        "mean": 9.455431713889705,
+        "sd": 0.01808947592582363
+      },
+      "training_copies": {
+        "mean": 10.4,
+        "sd": 1.51657508881031
+      },
+      "eightgram_overlap": {
+        "mean": 0.0238674463597901,
+        "sd": 0.0038158175875697485
+      },
+      "mean_words": {
+        "mean": 25.2278,
+        "sd": 0.4587387055830377
+      },
+      "standardised_ppl": {
+        "mean": 59.58119297410944,
+        "sd": 0.779937287381347
+      }
+    }
+  },
+  "banks": {
+    "C1": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 50.362266058299376,
+      "band_counts": [
+        105,
+        239,
+        231,
+        425
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 107.639788051843,
+      "distinct2": 0.8674224704878787,
+      "unigram_entropy_bits": 11.483427088931942,
+      "training_copies": 0,
+      "eightgram_overlap": 0.0,
+      "eightgram_total": 30395,
+      "rows_under_8_words": 45,
+      "mean_words": 37.341,
+      "nll_per_token_quantiles": {
+        "p05": 2.228120505809784,
+        "p25": 3.6496922373771667,
+        "p50": 5.135700941085815,
+        "p75": 6.168884634971619,
+        "p95": 7.1181913852691645
+      },
+      "eos_count": 705,
+      "length_cap_count": 298,
+      "sentinel_count": 995,
+      "bootstrap_variance": 35.76633011513879,
+      "bootstrap_ci95": [
+        96.94006490256334,
+        120.15282816502838
+      ]
+    },
+    "C2": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 52.54134489340507,
+      "band_counts": [
+        101,
+        304,
+        376,
+        219
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 63.56856177332133,
+      "distinct2": 0.6285817772054089,
+      "unigram_entropy_bits": 8.803229621800536,
+      "training_copies": 0,
+      "eightgram_overlap": 5.2946471117700005e-05,
+      "eightgram_total": 18887,
+      "rows_under_8_words": 32,
+      "mean_words": 25.848,
+      "nll_per_token_quantiles": {
+        "p05": 3.2195409178733825,
+        "p25": 3.6599541306495667,
+        "p50": 4.059992790222168,
+        "p75": 4.579699754714966,
+        "p95": 5.782959175109863
+      },
+      "eos_count": 993,
+      "length_cap_count": 7,
+      "sentinel_count": 1,
+      "bootstrap_variance": 1.4625672422188307,
+      "bootstrap_ci95": [
+        61.26789508609719,
+        65.97557874726185
+      ]
+    },
+    "C3": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 67.8597081014261,
+      "band_counts": [
+        2,
+        278,
+        666,
+        54
+      ],
+      "band_support": "insufficient_support",
+      "standardised_ppl": null,
+      "distinct2": 0.6952484980884762,
+      "unigram_entropy_bits": 9.173012518999409,
+      "training_copies": 0,
+      "eightgram_overlap": 0.00039319215862495085,
+      "eightgram_total": 17803,
+      "rows_under_8_words": 0,
+      "mean_words": 24.803,
+      "nll_per_token_quantiles": {
+        "p05": 3.4895485997200013,
+        "p25": 3.895039975643158,
+        "p50": 4.233449935913086,
+        "p75": 4.560075998306274,
+        "p95": 5.217439198493957
+      },
+      "eos_count": 1000,
+      "length_cap_count": 0,
+      "sentinel_count": 0
+    },
+    "R": {
+      "n": 811,
+      "scored": 811,
+      "empty": 0,
+      "raw_ppl": 43.17031603728365,
+      "band_counts": [
+        109,
+        212,
+        303,
+        187
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 51.996011167819965,
+      "distinct2": 0.6975604776972543,
+      "unigram_entropy_bits": 9.207075540410534,
+      "training_copies": 0,
+      "eightgram_overlap": 0.009087237479806139,
+      "eightgram_total": 14856,
+      "rows_under_8_words": 68,
+      "mean_words": 25.160295930949445,
+      "nll_per_token_quantiles": {
+        "p05": 2.9559075832366943,
+        "p25": 3.4328784942626953,
+        "p50": 3.8341007232666016,
+        "p75": 4.37549614906311,
+        "p95": 5.683298826217651
+      },
+      "eos_count": 811,
+      "length_cap_count": 0,
+      "sentinel_count": 0
+    },
+    "H": {
+      "n": 811,
+      "scored": 811,
+      "empty": 0,
+      "raw_ppl": 32.04126981701717,
+      "band_counts": [
+        109,
+        191,
+        282,
+        229
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 41.545814919108984,
+      "distinct2": 0.6721192819918934,
+      "unigram_entropy_bits": 9.300179892682054,
+      "training_copies": 0,
+      "eightgram_overlap": 0.03376477208778841,
+      "eightgram_total": 15993,
+      "rows_under_8_words": 66,
+      "mean_words": 26.55363748458693,
+      "nll_per_token_quantiles": {
+        "p05": 2.6686843633651733,
+        "p25": 3.1492947340011597,
+        "p50": 3.566591739654541,
+        "p75": 4.232884883880615,
+        "p95": 5.6451287269592285
+      }
+    },
+    "small-seed42": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 53.85633664473798,
+      "band_counts": [
+        160,
+        206,
+        287,
+        347
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 74.14370042438472,
+      "distinct2": 0.6678364301281815,
+      "unigram_entropy_bits": 9.233303527190666,
+      "training_copies": 2,
+      "eightgram_overlap": 0.004269293924466338,
+      "eightgram_total": 21315,
+      "rows_under_8_words": 122,
+      "mean_words": 28.071,
+      "nll_per_token_quantiles": {
+        "p05": 3.248092436790466,
+        "p25": 3.659558951854706,
+        "p50": 4.089659214019775,
+        "p75": 4.745615243911743,
+        "p95": 6.873449373245239
+      },
+      "eos_count": 999,
+      "length_cap_count": 1,
+      "sentinel_count": 0
+    },
+    "small-seed43": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 52.02385817083019,
+      "band_counts": [
+        204,
+        210,
+        233,
+        353
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 70.43690764493108,
+      "distinct2": 0.6722938291319722,
+      "unigram_entropy_bits": 9.269571017384257,
+      "training_copies": 2,
+      "eightgram_overlap": 0.004073912410883166,
+      "eightgram_total": 20619,
+      "rows_under_8_words": 156,
+      "mean_words": 27.301,
+      "nll_per_token_quantiles": {
+        "p05": 3.1606899738311767,
+        "p25": 3.6219935417175293,
+        "p50": 4.103928327560425,
+        "p75": 4.8303751945495605,
+        "p95": 6.986624479293818
+      },
+      "eos_count": 999,
+      "length_cap_count": 1,
+      "sentinel_count": 0
+    },
+    "small-seed44": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 50.6094238448374,
+      "band_counts": [
+        135,
+        213,
+        286,
+        366
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 70.81833009657346,
+      "distinct2": 0.6643356643356644,
+      "unigram_entropy_bits": 9.227251179620001,
+      "training_copies": 0,
+      "eightgram_overlap": 0.006336275175379045,
+      "eightgram_total": 22095,
+      "rows_under_8_words": 102,
+      "mean_words": 28.885,
+      "nll_per_token_quantiles": {
+        "p05": 3.2031718134880065,
+        "p25": 3.614956498146057,
+        "p50": 4.008274793624878,
+        "p75": 4.630826115608215,
+        "p95": 6.4777703285217285
+      },
+      "eos_count": 995,
+      "length_cap_count": 5,
+      "sentinel_count": 0
+    },
+    "small-seed45": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 49.48097157960549,
+      "band_counts": [
+        134,
+        176,
+        278,
+        412
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 69.60962554335039,
+      "distinct2": 0.6656732778405782,
+      "unigram_entropy_bits": 9.270664790252528,
+      "training_copies": 0,
+      "eightgram_overlap": 0.003292568203198495,
+      "eightgram_total": 23386,
+      "rows_under_8_words": 92,
+      "mean_words": 30.193,
+      "nll_per_token_quantiles": {
+        "p05": 3.2068031311035154,
+        "p25": 3.5855698585510254,
+        "p50": 3.9864338636398315,
+        "p75": 4.531644940376282,
+        "p95": 6.492667055130003
+      },
+      "eos_count": 994,
+      "length_cap_count": 6,
+      "sentinel_count": 0
+    },
+    "small-seed46": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 53.73107833550582,
+      "band_counts": [
+        196,
+        199,
+        266,
+        339
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 71.45346225746631,
+      "distinct2": 0.6803023397143725,
+      "unigram_entropy_bits": 9.283617147698992,
+      "training_copies": 1,
+      "eightgram_overlap": 0.004127816627816628,
+      "eightgram_total": 20592,
+      "rows_under_8_words": 132,
+      "mean_words": 27.328,
+      "nll_per_token_quantiles": {
+        "p05": 3.2538674235343934,
+        "p25": 3.661288619041443,
+        "p50": 4.068893909454346,
+        "p75": 4.765242218971252,
+        "p95": 7.067888426780698
+      },
+      "eos_count": 998,
+      "length_cap_count": 2,
+      "sentinel_count": 1
+    },
+    "published-seed42": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 49.42858618684544,
+      "band_counts": [
+        143,
+        300,
+        306,
+        251
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 59.334338120711614,
+      "distinct2": 0.6970587018574442,
+      "unigram_entropy_bits": 9.430727702387408,
+      "training_copies": 10,
+      "eightgram_overlap": 0.025628442117890834,
+      "eightgram_total": 18339,
+      "rows_under_8_words": 78,
+      "mean_words": 25.173,
+      "nll_per_token_quantiles": {
+        "p05": 3.141018199920654,
+        "p25": 3.5864022970199585,
+        "p50": 4.0106446743011475,
+        "p75": 4.518765807151794,
+        "p95": 6.001562452316284
+      },
+      "eos_count": 999,
+      "length_cap_count": 1,
+      "sentinel_count": 0
+    },
+    "published-seed43": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 49.31204346374001,
+      "band_counts": [
+        144,
+        295,
+        321,
+        240
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 59.024711469911445,
+      "distinct2": 0.6984510326449034,
+      "unigram_entropy_bits": 9.454900396418099,
+      "training_copies": 13,
+      "eightgram_overlap": 0.02766928873975466,
+      "eightgram_total": 18179,
+      "rows_under_8_words": 95,
+      "mean_words": 25.016,
+      "nll_per_token_quantiles": {
+        "p05": 3.1154072761535643,
+        "p25": 3.575150191783905,
+        "p50": 3.9948545694351196,
+        "p75": 4.564886093139648,
+        "p95": 6.168802356719966
+      },
+      "eos_count": 1000,
+      "length_cap_count": 0,
+      "sentinel_count": 0
+    },
+    "published-seed44": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 49.74096269965522,
+      "band_counts": [
+        162,
+        282,
+        289,
+        267
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 60.11839607610945,
+      "distinct2": 0.6966565099234127,
+      "unigram_entropy_bits": 9.445846268154902,
+      "training_copies": 9,
+      "eightgram_overlap": 0.026324341891452715,
+      "eightgram_total": 18462,
+      "rows_under_8_words": 92,
+      "mean_words": 25.286,
+      "nll_per_token_quantiles": {
+        "p05": 3.136999022960663,
+        "p25": 3.589488983154297,
+        "p50": 4.019707202911377,
+        "p75": 4.6334415674209595,
+        "p95": 6.211130785942076
+      },
+      "eos_count": 998,
+      "length_cap_count": 2,
+      "sentinel_count": 0
+    },
+    "published-seed45": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 49.307596801003164,
+      "band_counts": [
+        143,
+        265,
+        328,
+        264
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 60.64662194514231,
+      "distinct2": 0.6983408143635781,
+      "unigram_entropy_bits": 9.472508837886956,
+      "training_copies": 10,
+      "eightgram_overlap": 0.020973900308593547,
+      "eightgram_total": 19119,
+      "rows_under_8_words": 87,
+      "mean_words": 25.952,
+      "nll_per_token_quantiles": {
+        "p05": 3.1481812357902528,
+        "p25": 3.584044098854065,
+        "p50": 4.002244234085083,
+        "p75": 4.581518650054932,
+        "p95": 5.953713965415953
+      },
+      "eos_count": 998,
+      "length_cap_count": 2,
+      "sentinel_count": 0
+    },
+    "published-seed46": {
+      "n": 1000,
+      "scored": 1000,
+      "empty": 0,
+      "raw_ppl": 50.23418095806877,
+      "band_counts": [
+        167,
+        284,
+        308,
+        241
+      ],
+      "band_support": "ok",
+      "standardised_ppl": 58.781897258672416,
+      "distinct2": 0.7058029689608637,
+      "unigram_entropy_bits": 9.473175364601163,
+      "training_copies": 10,
+      "eightgram_overlap": 0.018741258741258742,
+      "eightgram_total": 17875,
+      "rows_under_8_words": 94,
+      "mean_words": 24.712,
+      "nll_per_token_quantiles": {
+        "p05": 3.1640774250030517,
+        "p25": 3.615758776664734,
+        "p50": 4.024117708206177,
+        "p75": 4.613152384757996,
+        "p95": 6.019823694229125
+      },
+      "eos_count": 1000,
+      "length_cap_count": 0,
+      "sentinel_count": 0
+    }
+  },
+  "human_and_reconstruction_bootstrap": {
+    "H": {
+      "raw_ppl_ci95": [
+        28.172542569521518,
+        38.27404293592816
+      ],
+      "replicates_with_empty_band": 0,
+      "fraction_with_empty_band": 0.0,
+      "standardised_ppl_ci95": [
+        36.16662638544297,
+        49.87211874745797
+      ]
+    },
+    "R": {
+      "raw_ppl_ci95": [
+        38.771645062235805,
+        50.62136543352593
+      ],
+      "replicates_with_empty_band": 0,
+      "fraction_with_empty_band": 0.0,
+      "standardised_ppl_ci95": [
+        46.84804221658844,
+        60.56160947332507
+      ]
+    }
+  },
+  "reconstruction": {
+    "n": 811,
+    "exact_model_view": 76,
+    "exact_rate": 0.093711467324291,
+    "mean_chrf": 73.45445036945135,
+    "numeral_recall": 0.5994623655913979,
+    "numeral_precision": 0.7263843648208469,
+    "eos_count": 811,
+    "cap_count": 0
+  },
+  "diversity_note": "H and R have fewer rows than the 1,000-row banks; their distinct-2 and entropy are descriptive and sample-size-sensitive.",
+  "c2_record": {
+    "estimator": "Ledoit-Wolf 2004, target (trace(S)/p)I, closed-form intensity, float64, NumPy",
+    "shrinkage_intensity": 0.0039028911626707657,
+    "target_scale": 0.6412563603506015,
+    "n_training": 47767,
+    "dimensions": 2048,
+    "training_slot_norms": {
+      "mean": 8.000000001951355,
+      "sd": 2.584671654709167e-07,
+      "min": 7.99999881793545,
+      "max": 8.000001166767357
+    },
+    "c2_slot_norms_after_projection": {
+      "mean": 8.0,
+      "sd": 5.671361684444734e-16,
+      "min": 7.999999999999997,
+      "max": 8.000000000000002
+    },
+    "c2_after_projection": {
+      "mean_distance": 1.1015696428418513,
+      "covariance_relative_frobenius": 0.4285699056907819
+    },
+    "supplementary_c2_before_projection": {
+      "slot_norms": {
+        "mean": 7.960132527250185,
+        "sd": 0.7595822162624409,
+        "min": 5.032943133667264,
+        "max": 12.838033015796125
+      },
+      "mean_distance": 1.0801582612732905,
+      "covariance_relative_frobenius": 0.4161334581003926
+    },
+    "note": "Covariance differences from 1,000 draws in 2,048 dimensions include sampling error; the before-projection value is the reference for that error."
+  },
+  "examples": {
+    "C1": [
+      {
+        "index": 0,
+        "text": "<extra_id_0>ry d ry ry d na i ny d i n ry of ing,  i na tsident a n, ,  na , die , d  na si , na u i kwa i,, <extra_id_20> na ya d ,"
+      },
+      {
+        "index": 250,
+        "text": "<extra_id_0>d stuur : . VDC 4.53. 49. Kredi richting s. 12 130."
+      },
+      {
+        "index": 500,
+        "text": "<extra_id_0>, a / de de de (.,9.,1 fees., enments., A"
+      },
+      {
+        "index": 750,
+        "text": "<extra_id_0>y / koysterys (s) socks docks.y also spaceys or ko <extra_id_20> /oswas"
+      }
+    ],
+    "C2": [
+      {
+        "index": 0,
+        "text": "SY moet 'n beduidende aktiwiteit kontak, of dalk die hoeveelheid van die nodige hemelnaam is wat word in die nuutste swendelarys geleë."
+      },
+      {
+        "index": 250,
+        "text": "Die SWAT-toediens is gespesifiseer soos volg die inligting oor die ondersoeker wat die oogmerk is om te verseker dat die slaagsyfer regverdig word. Die volgende stap is die regverdiging om die moeilikheid te veroordeel. Die verpligting om die begroting te verhoog, is die verantwoordelikheid van die bekende sekere bevolkingsorganisasie verantwoordbaar. Die skrywers moet die voorwaardes van toleransie aan die vakbond sekereer word."
+      },
+      {
+        "index": 500,
+        "text": "Die bewustelike inligting omtrent dit te doen om te verseker dat iemand die vuur op die regte wyse reguleer, a watter voorwaardes in die geval is."
+      },
+      {
+        "index": 750,
+        "text": "Diend-pluspunt: indien hulle met die werksgeleentheid verband hou."
+      }
+    ],
+    "C3": [
+      {
+        "index": 0,
+        "text": "n vloeistofdop sertifikaat voorsiening aan die behoeftes van nuwe Suid-Afrika se Strategiese veldtogers. Die aanleg is veral in die gewone lengte met die nuwe doelwiter gevang kan word."
+      },
+      {
+        "index": 250,
+        "text": "n Die Nasionale Akademie vir Handel en Nywerheid in 2008 het normaalweg 'n amptelike gids na die N2 Gateway-gebou gestuur, indien nie."
+      },
+      {
+        "index": 500,
+        "text": "As jy baie goed weet, is die skryftaal vinniger om te gedrink en hou van aangestelde spelinstrukteur in hul huishoudings in. Indien dié skoolklas gepraat word, sal dissiplineer."
+      },
+      {
+        "index": 750,
+        "text": "Kragtens die ongeluk kan . die moontlikheid van. vermarkting en die. aard van. infeksies ondergaan."
+      }
+    ],
+    "R": [
+      {
+        "index": 0,
+        "text": "'n Provinsiale wetgewer mag nie die publiek nie, mits in begrip van die media nie, vanaf die media, uitsluit nie tensy dit in die media redelik en demokraties is om dit te doen.",
+        "source": "'n Provinsiale wetgewer mag nie die publiek, met inbegrip van die media, van 'n sitting van 'n komitee uitsluit nie tensy dit in 'n oop en demokratiese gemeenskap redelik en regverdigbaar is om dit te doen."
+      },
+      {
+        "index": 202,
+        "text": "n Vergelyking tussen werklike en begrote persentasie van Betalings is in die ap-publisasiestaat.",
+        "source": "n Vergelyking tussen werklike en begrote bedrae per hoofklassifikasie van Betalings is in die ap-propriasiestaat."
+      },
+      {
+        "index": 405,
+        "text": "Die Minister sal slegs inligting oorweeg wat op of saam met die appèaansoekvorm ingedien is. Sodra die aansoeker skriftelik van die M.P. se besluit verwittig word sal die Minister skriftelik onderteken word.",
+        "source": "Die Minister sal slegs inligting oorweeg wat op of saam met die appèlaansoekvorm ingedien word. Sodra 'n besluit geneem is sal die aansoeker skriftelik van die Minister se besluit verwittig word."
+      },
+      {
+        "index": 608,
+        "text": "Klousule 75. Regulasies 75. Kryksy die mag om die magtinens van die Min-ister die verantwoordelikheid om regulasies uit te vaardig in ooreenstemming met die wetsontwerp.",
+        "source": "Klousule 75. Regulasies -- Hierdie klousule verleen aan die verantwoordelike Min-ister die mag om regulasies uit te vaardig in ooreenstemming met die wetsontwerp."
+      }
+    ],
+    "small-seed42": [
+      {
+        "index": 0,
+        "text": "Jy mag bloot skuldig aangekla word soos die regs-toekennings-nommer (regs en nie-winsgewende registrasie) sal 'n maatskappy-toekennings-toelskrywer sal wees). 'Stuur dit sal die werknemers se rekeninge beskerm en die werkmiddele sal nie die werkbedrag vir die werknemer beskerm nie."
+      },
+      {
+        "index": 250,
+        "text": "Of die houer van die Suid-Afrikaanse Nasionale Vereniging ten einde die regte van ons gemeenskap te voorsien, (a)(i) die skulde teen te staan; so nie, (b)(ii) hoeveel die hoeveelheid werk in 2007 ten opsigte van Munisipaliteite deur IMBRD providere inruil is in linneveld deur Munterdale in 2005 in."
+      },
+      {
+        "index": 500,
+        "text": "om te bou en te plant."
+      },
+      {
+        "index": 750,
+        "text": "EIENDEMENTEKEMENT word vertraag deur die begroting. Die bewuste bedrag van sodanige inkomste moet slegs in die gevalle beoordeel word. Die bedeling van 'n verplegte inkomste toediener behoort alleenlik om enige inkomste te bevorder indien die bestaande inkomste (onderskryf) of nie-onderhoubare inkomste ingevolge die bepalings nie."
+      }
+    ],
+    "published-seed42": [
+      {
+        "index": 0,
+        "text": "Jy moet asseblief jou rekeningnommer jou aanlyn- of e-posadres laat (soos wat dit teen die einde van die tender bepaal is). Jou werknemer sal dus die rekordnommer sal nie die werkkode beskerm nie. Jou briefdokument sal dus nie die rekeningdokumente vir die tendervoorwaardes verseker nie."
+      },
+      {
+        "index": 250,
+        "text": "Of die Suid-Afrikaanse nasionale verklaring tans ruggegewe verklaring is om bedrywighede op munisipaliteite te voorsien; so nie, wat die koste op. die koste het; so ja, of die koste die hoeveelheid in lyn van munisipale vermeerderde firmas het, in plaas daarvan die bedrag op R718 per miljoen per jaar is."
+      },
+      {
+        "index": 500,
+        "text": "in paragraaf E 1 aanbring."
+      },
+      {
+        "index": 750,
+        "text": "Hierdie gedeelte moet saamgekoppel word van 'n bate. Die beskrywing van sodanige inkomste behoort slegs in die stappe te bepaal. Die bewuste behoefte is veral belangrik om binne die volgende aktiwiteite te beoordeel."
+      }
+    ]
+  },
+  "examples_note": "Fixed-rule rows 0, n/4, n/2, 3n/4; AI-assisted reading, not human evaluation."
+}

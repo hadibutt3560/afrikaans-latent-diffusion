@@ -1,0 +1,222 @@
+{
+  "test_summary": {
+    "small": {
+      "ppl": {
+        "mean": 51.31147602570551,
+        "sd": 1.4850375845314383,
+        "min": 49.81806326302119,
+        "max": 53.25399146661397
+      },
+      "test_mse": {
+        "mean": 0.5011305738916775,
+        "sd": 0.00028970050744997895,
+        "min": 0.5007925630802571,
+        "max": 0.5015752251295106
+      },
+      "valid_mse": {
+        "mean": 0.5030655876297484,
+        "sd": 0.00035664707994801373,
+        "min": 0.50259224848326,
+        "max": 0.5035774710098969
+      },
+      "distinct_1": {
+        "mean": 0.22293834851770183,
+        "sd": 0.0038988339871718126,
+        "min": 0.21896469627916468,
+        "max": 0.22825618171362852
+      },
+      "distinct_2": {
+        "mean": 0.6605860607426366,
+        "sd": 0.00513129437121592,
+        "min": 0.6540384479966199,
+        "max": 0.6658589322994334
+      },
+      "mean_repeat_3": {
+        "mean": 1.2957157784743978e-05,
+        "sd": 1.780375380604718e-05,
+        "min": 0.0,
+        "max": 3.4482758620689616e-05
+      },
+      "mean_repeat_4": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_words": {
+        "mean": 29.2956,
+        "sd": 1.2591458612885165,
+        "min": 27.824,
+        "max": 30.983
+      },
+      "counts": {
+        "n": 5000,
+        "empty": 0,
+        "duplicate_excess": 2,
+        "train_matches": 5,
+        "eos": 4995,
+        "cap": 6,
+        "sentinel": 2
+      }
+    },
+    "published": {
+      "ppl": {
+        "mean": 48.60746230807517,
+        "sd": 0.9094324841156779,
+        "min": 47.62852429821986,
+        "max": 50.0238130354141
+      },
+      "test_mse": {
+        "mean": 0.45122357265232704,
+        "sd": 0.00017920302985688458,
+        "min": 0.4510084007936273,
+        "max": 0.4513732340316858
+      },
+      "valid_mse": {
+        "mean": 0.4534054741992676,
+        "sd": 0.00013291601928754163,
+        "min": 0.45321569399681594,
+        "max": 0.4535862879786086
+      },
+      "distinct_1": {
+        "mean": 0.2343106770304939,
+        "sd": 0.0022311848824107697,
+        "min": 0.2308924485125858,
+        "max": 0.23617265087853323
+      },
+      "distinct_2": {
+        "mean": 0.6902689887704938,
+        "sd": 0.002826654913522712,
+        "min": 0.6871103961391514,
+        "max": 0.693762391337502
+      },
+      "mean_repeat_3": {
+        "mean": 2.9144000571635578e-05,
+        "sd": 1.9758882822375793e-05,
+        "min": 0.0,
+        "max": 4.759238521836506e-05
+      },
+      "mean_repeat_4": {
+        "mean": 3.773584905660376e-06,
+        "sd": 8.437992367923732e-06,
+        "min": 0.0,
+        "max": 1.886792452830188e-05
+      },
+      "mean_words": {
+        "mean": 26.343,
+        "sd": 0.5167320388750837,
+        "min": 25.865,
+        "max": 27.228
+      },
+      "counts": {
+        "n": 5000,
+        "empty": 0,
+        "duplicate_excess": 1,
+        "train_matches": 79,
+        "eos": 4994,
+        "cap": 6,
+        "sentinel": 0
+      }
+    }
+  },
+  "capacity_contrast": {
+    "large_minus_small": -2.704013717630339,
+    "relative_percent": -5.269803028616272,
+    "unpaired_training_bootstrap_95": [
+      -4.075666575006984,
+      -1.3341592704617042
+    ]
+  },
+  "validation_ar_ratios": {
+    "small": {
+      "arithmetic_mean_ratio": 0.6458438287517804,
+      "geometric_mean_ratio": 0.6457422669816993,
+      "conditional_hierarchical_95": [
+        0.5813020600623171,
+        0.7147925192439274
+      ],
+      "conditional_one_sided_upper95": 0.704630087400912,
+      "limitation": "Conditional on single historical AR and frozen AE; not matched-family noninferiority proof."
+    },
+    "published": {
+      "arithmetic_mean_ratio": 0.6087207356907847,
+      "geometric_mean_ratio": 0.6087020601234446,
+      "conditional_hierarchical_95": [
+        0.5477422457989648,
+        0.673582023086551
+      ],
+      "conditional_one_sided_upper95": 0.6628672167489361,
+      "limitation": "Conditional on single historical AR and frozen AE; not matched-family noninferiority proof."
+    }
+  },
+  "reconstruction_external": {
+    "source_mgpt": 61.76039110673297,
+    "reconstruction_mgpt": 70.67279053398613,
+    "log_ppl_difference_95": [
+      0.0011512763254765582,
+      0.25842101849212856
+    ]
+  },
+  "fertility_spearman_exploratory": {
+    "reconstruction_ce": 0.1219132736895237,
+    "reconstruction_external_ppl": 0.2542177826341645,
+    "source_token_length": -0.03155276833146333
+  },
+  "historical_ae": {
+    "valid": {
+      "autoencoder/beam/character_similarity": 0.8000945662324599,
+      "autoencoder/beam/exact_reconstruction": 0.1220703125,
+      "autoencoder/beam/number_recall": 0.5759717314487632,
+      "autoencoder/beam/repeated_trigram_fraction": 3.487723214285713e-05,
+      "autoencoder/valid_cross_entropy": 0.7759161741912324,
+      "autoencoder/valid_token_accuracy": 0.8275045037988564
+    },
+    "test": {
+      "autoencoder/beam/character_similarity": 0.7711959623765199,
+      "autoencoder/beam/exact_reconstruction": 0.072265625,
+      "autoencoder/beam/number_recall": 0.5095419847328244,
+      "autoencoder/beam/repeated_trigram_fraction": 0.00018530747716234968,
+      "autoencoder/test_cross_entropy": 0.8577486527494498,
+      "autoencoder/test_token_accuracy": 0.8058640910658847
+    }
+  },
+  "real_text_bands": {
+    "test-reference-mgpt": {
+      "1-10": {
+        "n": 157,
+        "ppl": 240.83451016093753
+      },
+      "11-20": {
+        "n": 212,
+        "ppl": 54.086950122135455
+      },
+      "21-35": {
+        "n": 300,
+        "ppl": 32.60216677120314
+      },
+      "36+": {
+        "n": 331,
+        "ppl": 25.93038888313942
+      }
+    },
+    "validation-reference-mgpt": {
+      "1-10": {
+        "n": 140,
+        "ppl": 161.04960166303752
+      },
+      "11-20": {
+        "n": 223,
+        "ppl": 56.184203081893976
+      },
+      "21-35": {
+        "n": 349,
+        "ppl": 32.95567080282858
+      },
+      "36+": {
+        "n": 288,
+        "ppl": 24.45778260529345
+      }
+    }
+  },
+  "human_evaluation": "Not conducted; explicitly outside submitted proposal and user reaffirmed scope."
+}

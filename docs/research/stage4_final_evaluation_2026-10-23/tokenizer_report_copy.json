@@ -1,0 +1,211 @@
+{
+  "input": {
+    "test": {
+      "bytes": 3347513,
+      "sha256": "8072f4426783b9ed8aa50212c0010ef21d5e3c05a0bc2b0c2cb067a022901083"
+    },
+    "train": {
+      "bytes": 27100717,
+      "sha256": "2af763380dd2818d40c58345428f42b8bebabbdcf71026c55bd2ea751601f3ab"
+    },
+    "valid": {
+      "bytes": 3455340,
+      "sha256": "bdc360a9f2a65f5760830bd5bc1bc335d6ac066ec2087882d941c95255f9a91e"
+    }
+  },
+  "interpretation": {
+    "fertility_definition": "mT5 tokens including special tokens divided by whitespace words",
+    "important_caveat": "mT5 uses its pretrained SentencePiece vocabulary; this audit does not train the proposal's originally specified corpus-specific BPE.",
+    "length_definition": "Token count includes model special tokens."
+  },
+  "model": {
+    "model_max_length": 1000000000000000019884624838656,
+    "model_name": "google/mt5-base",
+    "tokenizer_class": "T5TokenizerFast",
+    "unknown_token": "<unk>",
+    "unknown_token_id": 2,
+    "vocabulary_size": 250100
+  },
+  "parameters": {
+    "batch_size": 256,
+    "length_thresholds": [
+      64,
+      96,
+      128,
+      192
+    ],
+    "longest_examples_per_split": 20
+  },
+  "placeholders": {
+    "<EMAIL>": {
+      "ids": [
+        1042,
+        42390,
+        669
+      ],
+      "pieces": [
+        "\u2581<",
+        "EMAIL",
+        ">"
+      ],
+      "token_count": 3
+    },
+    "<PHONE>": {
+      "ids": [
+        1042,
+        107408,
+        669
+      ],
+      "pieces": [
+        "\u2581<",
+        "PHONE",
+        ">"
+      ],
+      "token_count": 3
+    },
+    "<URL>": {
+      "ids": [
+        1042,
+        13785,
+        669
+      ],
+      "pieces": [
+        "\u2581<",
+        "URL",
+        ">"
+      ],
+      "token_count": 3
+    }
+  },
+  "splits": {
+    "test": {
+      "empty_tokenizations": 0,
+      "examples": 5692,
+      "fertility": {
+        "max": 5.5,
+        "mean": 1.958939,
+        "median": 1.888889,
+        "p90": 2.343521,
+        "p95": 2.6165,
+        "p99": 3.236618,
+        "weighted_tokens_per_word": 1.893338
+      },
+      "token_lengths_with_special_tokens": {
+        "max": 175.0,
+        "mean": 52.666198,
+        "median": 51.0,
+        "p90": 90.0,
+        "p95": 95.0,
+        "p99": 108.0
+      },
+      "total_tokens": 299776,
+      "total_whitespace_words": 158332,
+      "truncation": {
+        "128": {
+          "examples_over_limit": 6,
+          "fraction_over_limit": 0.001054
+        },
+        "192": {
+          "examples_over_limit": 0,
+          "fraction_over_limit": 0.0
+        },
+        "64": {
+          "examples_over_limit": 2047,
+          "fraction_over_limit": 0.359628
+        },
+        "96": {
+          "examples_over_limit": 248,
+          "fraction_over_limit": 0.04357
+        }
+      },
+      "unknown_token_rate": 0.0,
+      "unknown_tokens": 0
+    },
+    "train": {
+      "empty_tokenizations": 0,
+      "examples": 47767,
+      "fertility": {
+        "max": 11.571429,
+        "mean": 1.918272,
+        "median": 1.84375,
+        "p90": 2.318182,
+        "p95": 2.555556,
+        "p99": 3.272727,
+        "weighted_tokens_per_word": 1.855547
+      },
+      "token_lengths_with_special_tokens": {
+        "max": 322.0,
+        "mean": 47.713987,
+        "median": 45.0,
+        "p90": 83.0,
+        "p95": 90.0,
+        "p99": 103.0
+      },
+      "total_tokens": 2279154,
+      "total_whitespace_words": 1228292,
+      "truncation": {
+        "128": {
+          "examples_over_limit": 95,
+          "fraction_over_limit": 0.001989
+        },
+        "192": {
+          "examples_over_limit": 10,
+          "fraction_over_limit": 0.000209
+        },
+        "64": {
+          "examples_over_limit": 13219,
+          "fraction_over_limit": 0.276739
+        },
+        "96": {
+          "examples_over_limit": 1096,
+          "fraction_over_limit": 0.022945
+        }
+      },
+      "unknown_token_rate": 0.0,
+      "unknown_tokens": 0
+    },
+    "valid": {
+      "empty_tokenizations": 0,
+      "examples": 5905,
+      "fertility": {
+        "max": 5.666667,
+        "mean": 1.933146,
+        "median": 1.875,
+        "p90": 2.285714,
+        "p95": 2.5,
+        "p99": 3.25,
+        "weighted_tokens_per_word": 1.873847
+      },
+      "token_lengths_with_special_tokens": {
+        "max": 173.0,
+        "mean": 50.243522,
+        "median": 48.0,
+        "p90": 85.0,
+        "p95": 92.0,
+        "p99": 103.0
+      },
+      "total_tokens": 296688,
+      "total_whitespace_words": 158331,
+      "truncation": {
+        "128": {
+          "examples_over_limit": 2,
+          "fraction_over_limit": 0.000339
+        },
+        "192": {
+          "examples_over_limit": 0,
+          "fraction_over_limit": 0.0
+        },
+        "64": {
+          "examples_over_limit": 1769,
+          "fraction_over_limit": 0.299577
+        },
+        "96": {
+          "examples_over_limit": 148,
+          "fraction_over_limit": 0.025064
+        }
+      },
+      "unknown_token_rate": 0.0,
+      "unknown_tokens": 0
+    }
+  }
+}

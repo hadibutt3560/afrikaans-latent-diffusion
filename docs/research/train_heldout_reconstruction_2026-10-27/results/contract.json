@@ -1,0 +1,66 @@
+{
+  "protocol_sha256_lf": "4ba58f57e401966a156dffd49249d4c9867cc68a6388c07231204449e9333fab",
+  "protocol_sha256_raw": "4ba58f57e401966a156dffd49249d4c9867cc68a6388c07231204449e9333fab",
+  "script_sha256": "ae3166b4c0382a889d0a445ccb3a158c08e3a05d97e762eda6d7adba937b0896",
+  "manifest_sha256": "157356ec4ea09f23ef48cb196a118b2097718b911ce3fa59c12619dff2364ed6",
+  "ae_sha256": "123f4508e4aa26967c05a2ad413cebb8f2a2b90fc2420dab757704495dc27f5c",
+  "train_sha256": "2af763380dd2818d40c58345428f42b8bebabbdcf71026c55bd2ea751601f3ab",
+  "valid_sha256": "bdc360a9f2a65f5760830bd5bc1bc335d6ac066ec2087882d941c95255f9a91e",
+  "source_code": {
+    "CONSTANTS.py": "2ed00d54746ec266086c56e5621d2cb2379582cbb6a049698418ffc8693d088d",
+    "dataset_utils/denoising_collator.py": "2d24b8c7f06ebe5e8fcc91f3306890f497fb4b005842636e718e172cdd5932a6",
+    "dataset_utils/flan_collator.py": "cdf12cdcd06a158a41c02940231761fda347bd8038eb746b7697c554abc5f254",
+    "dataset_utils/text_dataset.py": "66b0512cf1fd3d1394dc070d905f19c5e0c89fd9175a6690fdd8c7278afccc5a",
+    "diffusion/constant.py": "a9d1d574ee69ed9b5568ed629ec381b2e1b906d730c1c0889d7b9fcc26e27604",
+    "diffusion/optimizer.py": "82d0283def5d76ac2e4fee1188f20528702445aa078934593494892975a36932",
+    "diffusion/text_denoising_diffusion.py": "15d8f5275f94c52f6cb30e95d34881b26226865f5c9f170a02c9a1ebb9edd06c",
+    "evaluation/evaluation.py": "86c46ab757fcba92be096b6c5b371a7db4f28ae853d927c8b265dd6c33aca322",
+    "latent_models/bart_latent_model.py": "164653f66c299d69fefd1b1c3b15db2e1b8085b3d7e376864efe3e539f9a15d0",
+    "latent_models/latent_finetuning.py": "8b747530edb2b5be61cf303ea4de9e85b91d50e9c6d117d398c24863275b4b68",
+    "latent_models/latent_utils.py": "72a04cb9af0e41f7b1f89b742e5094b52900bfef5236780f760019e6ca02f3d2",
+    "latent_models/perceiver_ae.py": "21ee87191415f2b3fe3a44650158de8bb13c68f551cd200cc5b492a5c5c25aa2",
+    "latent_models/t5_latent_model.py": "117fd82d79dfc61d2b4ac77ab509a9bff4456e473044ca102afc9c83fa65bbdc",
+    "model/diffusion_transformer.py": "a569b291dbea6573d8fb88d09874a6afe5b32aa92123ce90c2a05992753e1d05",
+    "model/x_transformer.py": "61f251a03094942c128fd763a101494f316107ef8da47ebe182e816ad41eccd2",
+    "tools/afrikaans_longrun.py": "d57d9833862250c12a17faedc5276127a4e3337ade80396cb90f687b5f99e81d",
+    "tools/compare_afrikaans_generators.py": "7e6f2a4acae9c938ab5ad72031b9fdeb9f66a9e622dd36ec8e122425dca43e72",
+    "tools/longrun_common.py": "b4877cb397f651ac79c8fa0aab89e4654b6ed5064fcd1f8623a27f66adf1d882",
+    "tools/longrun_training.py": "70158482b2f38de5e5c076d6565fa5ea4cbb4bbac1d65cc95c28cbddd98c91d3",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/file_utils.py": "ab17014ee5ebbe15f7d02e7593dd38ee83e36c6f9214bcce7cee087fc79e412c",
+    "utils/torch_utils.py": "00cfb24034c95ae5b165de07d0308815249b375ee7279c4e9474022748f24830"
+  },
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.5.0",
+    "sacrebleu": "2.6.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "precision": "FP32",
+  "beam": {
+    "max_length": 128,
+    "min_length": 5,
+    "num_beams": 4,
+    "do_sample": false,
+    "no_repeat_ngram_size": 3,
+    "repetition_penalty": 1.2,
+    "length_penalty": 1.0
+  },
+  "greedy": {
+    "max_length": 128,
+    "min_length": 5,
+    "num_beams": 1,
+    "do_sample": false,
+    "no_repeat_ngram_size": 0,
+    "repetition_penalty": 1.0,
+    "length_penalty": 1.0
+  },
+  "seeds": {
+    "valid_docs": 91427,
+    "train": 91430,
+    "donor_T": 91432,
+    "donor_V": 91433,
+    "valid_within": 91434,
+    "bootstrap": 91431
+  }
+}

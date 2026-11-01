@@ -1,0 +1,10 @@
+{
+  "model/diffusion_transformer.py": "a569b291dbea6573d8fb88d09874a6afe5b32aa92123ce90c2a05992753e1d05",
+  "model/x_transformer.py": "61f251a03094942c128fd763a101494f316107ef8da47ebe182e816ad41eccd2",
+  "latent_models/perceiver_ae.py": "21ee87191415f2b3fe3a44650158de8bb13c68f551cd200cc5b492a5c5c25aa2",
+  "latent_models/t5_latent_model.py": "117fd82d79dfc61d2b4ac77ab509a9bff4456e473044ca102afc9c83fa65bbdc",
+  "diffusion/text_denoising_diffusion.py": {
+    "original_sha256": "15d8f5275f94c52f6cb30e95d34881b26226865f5c9f170a02c9a1ebb9edd06c",
+    "extraction": "Verbatim top-level helpers and GaussianDiffusion; exclude Trainer and set_seeds, minimal imports."
+  }
+}

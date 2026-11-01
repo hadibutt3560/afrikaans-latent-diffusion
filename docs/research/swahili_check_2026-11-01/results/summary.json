@@ -1,0 +1,415 @@
+{
+  "protocol": "docs/research/swahili_check_2026-11-01/PROTOCOL.md",
+  "gates": {
+    "G2": [
+      {
+        "bank": "real-valid",
+        "stored": 34.43707642968941,
+        "new": 34.43708464012922,
+        "rel": 2.38418607505296e-07
+      },
+      {
+        "bank": "real-valid",
+        "stored": 60.56688681473754,
+        "new": 60.56691569528662,
+        "rel": 4.76837271863707e-07
+      },
+      {
+        "bank": "real-valid",
+        "stored": 5.847074792204749,
+        "new": 5.847074095179159,
+        "rel": 1.1920928240294377e-07
+      },
+      {
+        "bank": "small-42-valid",
+        "stored": 22.697247072799243,
+        "new": 22.697203781277356,
+        "rel": 1.9073468138430443e-06
+      },
+      {
+        "bank": "small-42-valid",
+        "stored": 28.118418593475198,
+        "new": 28.11839848162217,
+        "rel": 7.152554814679038e-07
+      },
+      {
+        "bank": "small-42-valid",
+        "stored": 21.829446624727666,
+        "new": 21.82941019293854,
+        "rel": 1.6689286610478787e-06
+      }
+    ],
+    "G2_pass": true,
+    "G3": {
+      "new": {
+        "loss": 0.49546851205402426,
+        "token_accuracy": 0.8741034333598238,
+        "examples": 1024,
+        "repeats": 1
+      },
+      "stored": {
+        "loss": 0.4956672634904198,
+        "token_accuracy": 0.8738318227086623
+      }
+    },
+    "G3_pass": true,
+    "G4": [
+      {
+        "seed": 20000,
+        "match": true,
+        "stored": "mishahara inayomkabili Rais wa Marekani ili kufikia asilimia saba baada ya kuumbwa na Ubelgiji na kuwafikia pamoja na Ka",
+        "new": "mishahara inayomkabili Rais wa Marekani ili kufikia asilimia saba baada ya kuumbwa na Ubelgiji na kuwafikia pamoja na Ka"
+      },
+      {
+        "seed": 20001,
+        "match": false,
+        "stored": "Sheria y a Sheria mwaka 2000, Serikali kumekuw a kufanya kozi kubwa kwenye mkataba w a Kidato cha Upandaji na Mtandao wa",
+        "new": "Sheria y a Sheria mwaka 2000, Serikali kumekuw a kufanya kozi kubwa kwenye mkataba w a Kidato cha Upandaji na Mtandao wa"
+      }
+    ],
+    "passed": true
+  },
+  "s1_reconstruction": {
+    "correct": {
+      "n": 200,
+      "ce": 0.5213467706260253,
+      "accuracy": 0.8678934923409067,
+      "exact": 0,
+      "exact_rate": 0.0,
+      "chrf": 74.77213170916292,
+      "numeral_recall": 0.5363636363636364,
+      "numeral_precision": 0.6666666666666666,
+      "cap": 0,
+      "bins": {
+        "65-128": {
+          "n": 199,
+          "ce": 0.5140829368626063,
+          "accuracy": 0.8692498963945297,
+          "exact": 0,
+          "exact_rate": 0.0,
+          "chrf": 74.90844677529208,
+          "numeral_recall": 0.5631067961165048,
+          "numeral_precision": 0.6987951807228916,
+          "cap": 0
+        },
+        "129-192": {
+          "n": 1,
+          "ce": 1.4561537504196167,
+          "accuracy": 0.6933333333333334,
+          "exact": 0,
+          "exact_rate": 0.0,
+          "chrf": 47.6454335494587,
+          "numeral_recall": 0.14285714285714285,
+          "numeral_precision": 0.18181818181818182,
+          "cap": 0
+        }
+      }
+    },
+    "shuffled": {
+      "n": 200,
+      "ce": 6.66219356950513,
+      "accuracy": 0.2624138994551249,
+      "exact": 0,
+      "exact_rate": 0.0,
+      "chrf": 24.33458895915359,
+      "numeral_recall": 0.004545454545454545,
+      "numeral_precision": 0.006211180124223602,
+      "cap": 0,
+      "bins": {
+        "65-128": {
+          "n": 199,
+          "ce": 6.647742982504528,
+          "accuracy": 0.26269167012018235,
+          "exact": 0,
+          "exact_rate": 0.0,
+          "chrf": 24.43800096926091,
+          "numeral_recall": 0.0048543689320388345,
+          "numeral_precision": 0.006211180124223602,
+          "cap": 0
+        },
+        "129-192": {
+          "n": 1,
+          "ce": 8.52188777923584,
+          "accuracy": 0.22666666666666666,
+          "exact": 0,
+          "exact_rate": 0.0,
+          "chrf": 3.755598947797175,
+          "numeral_recall": 0.0,
+          "numeral_precision": null,
+          "cap": 0
+        }
+      }
+    },
+    "difference_ce_correct_minus_shuffled": -6.140846798879105,
+    "bootstrap_95": {
+      "exact_rate": [
+        0.0,
+        0.0
+      ],
+      "chrf": [
+        72.88404938930304,
+        76.46859354828301
+      ],
+      "ce_correct_minus_shuffled": [
+        -6.246635969482756,
+        -6.029801884639423
+      ],
+      "replicates": 2000,
+      "seed": 20261104,
+      "source_files": 35
+    }
+  },
+  "s2_random_latents": {
+    "n": 1000,
+    "ppl": 135.30496435291428,
+    "diffusion_mean_ppl": 19.257231155437704,
+    "ratio": 7.026189967850489,
+    "mean_words": 80.021,
+    "distinct2": 0.7433720150339783,
+    "empty": 0,
+    "sentinel": 0,
+    "wording": "random latents score clearly worse than diffusion samples"
+  },
+  "s3_language": {
+    "real-valid": {
+      "pooled": {
+        "n": 256,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      },
+      "36+": {
+        "n": 255,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      },
+      "1-10": {
+        "n": 1,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      }
+    },
+    "small-42-valid": {
+      "pooled": {
+        "n": 256,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      },
+      "36+": {
+        "n": 256,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      }
+    },
+    "small-43-valid": {
+      "pooled": {
+        "n": 256,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      },
+      "36+": {
+        "n": 255,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      },
+      "21-35": {
+        "n": 1,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      }
+    },
+    "published-42-valid": {
+      "pooled": {
+        "n": 256,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      },
+      "36+": {
+        "n": 256,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      }
+    },
+    "published-43-valid": {
+      "pooled": {
+        "n": 256,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      },
+      "36+": {
+        "n": 256,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      }
+    },
+    "random-latents": {
+      "pooled": {
+        "n": 1000,
+        "swh_Latn": 0.568,
+        "other_swahili": 0.01,
+        "eng_Latn": 0.001
+      },
+      "36+": {
+        "n": 981,
+        "swh_Latn": 0.5718654434250765,
+        "other_swahili": 0.010193679918450561,
+        "eng_Latn": 0.0010193679918450561
+      },
+      "21-35": {
+        "n": 19,
+        "swh_Latn": 0.3684210526315789,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      }
+    },
+    "panel-sources": {
+      "pooled": {
+        "n": 200,
+        "swh_Latn": 0.99,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      },
+      "36+": {
+        "n": 200,
+        "swh_Latn": 0.99,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      }
+    },
+    "panel-reconstructions": {
+      "pooled": {
+        "n": 200,
+        "swh_Latn": 0.995,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      },
+      "36+": {
+        "n": 199,
+        "swh_Latn": 0.9949748743718593,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      },
+      "21-35": {
+        "n": 1,
+        "swh_Latn": 1.0,
+        "other_swahili": 0.0,
+        "eng_Latn": 0.0
+      }
+    }
+  },
+  "s4_length_and_copying": {
+    "real-valid": {
+      "n": 256,
+      "mean_words": 47.84765625,
+      "ppl": 13.260083492003085,
+      "distinct2": 0.8402401400817143,
+      "exact_copies": 0,
+      "fourgram_overlap": 0.2752373486630085,
+      "high_overlap_rows": 3,
+      "bands": {
+        "1-10": {
+          "n": 1,
+          "ppl": 34.838690302256076
+        },
+        "36+": {
+          "n": 255,
+          "ppl": 13.252661164523865
+        }
+      }
+    },
+    "small-42-valid": {
+      "n": 256,
+      "mean_words": 48.66015625,
+      "ppl": 18.8416484771062,
+      "distinct2": 0.8055897057618228,
+      "exact_copies": 0,
+      "fourgram_overlap": 0.11215672854820771,
+      "high_overlap_rows": 0,
+      "bands": {
+        "36+": {
+          "n": 256,
+          "ppl": 18.8416484771062
+        }
+      }
+    },
+    "small-43-valid": {
+      "n": 256,
+      "mean_words": 48.67578125,
+      "ppl": 18.56374183624072,
+      "distinct2": 0.8071282261368292,
+      "exact_copies": 0,
+      "fourgram_overlap": 0.10963824510390832,
+      "high_overlap_rows": 0,
+      "bands": {
+        "21-35": {
+          "n": 1,
+          "ppl": 25.297775498406708
+        },
+        "36+": {
+          "n": 255,
+          "ppl": 18.546035601722288
+        }
+      }
+    },
+    "published-42-valid": {
+      "n": 256,
+      "mean_words": 48.578125,
+      "ppl": 19.584753151374006,
+      "distinct2": 0.8224137931034483,
+      "exact_copies": 0,
+      "fourgram_overlap": 0.10044566335275969,
+      "high_overlap_rows": 0,
+      "bands": {
+        "36+": {
+          "n": 256,
+          "ppl": 19.584753151374006
+        }
+      }
+    },
+    "published-43-valid": {
+      "n": 256,
+      "mean_words": 48.734375,
+      "ppl": 20.038781157029888,
+      "distinct2": 0.8273322422258592,
+      "exact_copies": 0,
+      "fourgram_overlap": 0.1036043730782371,
+      "high_overlap_rows": 0,
+      "bands": {
+        "36+": {
+          "n": 256,
+          "ppl": 20.038781157029888
+        }
+      }
+    },
+    "random-latents": {
+      "n": 1000,
+      "mean_words": 80.021,
+      "ppl": 135.30496435291428,
+      "distinct2": 0.7433720150339783,
+      "exact_copies": 0,
+      "fourgram_overlap": 0.0048168681268744885,
+      "high_overlap_rows": 0,
+      "bands": {
+        "21-35": {
+          "n": 19,
+          "ppl": 215.5783034470248
+        },
+        "36+": {
+          "n": 981,
+          "ppl": 134.79537335278528
+        }
+      }
+    }
+  }
+}

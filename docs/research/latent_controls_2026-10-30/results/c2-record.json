@@ -1,0 +1,34 @@
+{
+  "estimator": "Ledoit-Wolf 2004, target (trace(S)/p)I, closed-form intensity, float64, NumPy",
+  "shrinkage_intensity": 0.0039028911626707657,
+  "target_scale": 0.6412563603506015,
+  "n_training": 47767,
+  "dimensions": 2048,
+  "training_slot_norms": {
+    "mean": 8.000000001951355,
+    "sd": 2.584671654709167e-07,
+    "min": 7.99999881793545,
+    "max": 8.000001166767357
+  },
+  "c2_slot_norms_after_projection": {
+    "mean": 8.0,
+    "sd": 5.671361684444734e-16,
+    "min": 7.999999999999997,
+    "max": 8.000000000000002
+  },
+  "c2_after_projection": {
+    "mean_distance": 1.1015696428418513,
+    "covariance_relative_frobenius": 0.4285699056907819
+  },
+  "supplementary_c2_before_projection": {
+    "slot_norms": {
+      "mean": 7.960132527250185,
+      "sd": 0.7595822162624409,
+      "min": 5.032943133667264,
+      "max": 12.838033015796125
+    },
+    "mean_distance": 1.0801582612732905,
+    "covariance_relative_frobenius": 0.4161334581003926
+  },
+  "note": "Covariance differences from 1,000 draws in 2,048 dimensions include sampling error; the before-projection value is the reference for that error."
+}

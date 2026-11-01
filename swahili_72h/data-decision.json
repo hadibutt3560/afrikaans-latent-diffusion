@@ -1,0 +1,5 @@
+{
+  "status": "retain_supplied_benchmark",
+  "reason": "Follow the user's explicit instruction to preserve Jordan's membership and not change the shared benchmark. All text and duplicates retained; leakage and absent document boundaries disclosed. No corrective filtering or split repair is authorized or applied. Passage windows are an explicit exported model-view policy.",
+  "manifest_sha256": "9dedc47978730f5651d703cdac413fa71346928118c753d9ddb55e7836fb139c"
+}

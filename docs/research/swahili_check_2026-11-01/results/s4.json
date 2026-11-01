@@ -1,0 +1,104 @@
+{
+ "real-valid": {
+  "n": 256,
+  "mean_words": 47.84765625,
+  "ppl": 13.260083492003085,
+  "distinct2": 0.8402401400817143,
+  "exact_copies": 0,
+  "fourgram_overlap": 0.2752373486630085,
+  "high_overlap_rows": 3,
+  "bands": {
+   "1-10": {
+    "n": 1,
+    "ppl": 34.838690302256076
+   },
+   "36+": {
+    "n": 255,
+    "ppl": 13.252661164523865
+   }
+  }
+ },
+ "small-42-valid": {
+  "n": 256,
+  "mean_words": 48.66015625,
+  "ppl": 18.8416484771062,
+  "distinct2": 0.8055897057618228,
+  "exact_copies": 0,
+  "fourgram_overlap": 0.11215672854820771,
+  "high_overlap_rows": 0,
+  "bands": {
+   "36+": {
+    "n": 256,
+    "ppl": 18.8416484771062
+   }
+  }
+ },
+ "small-43-valid": {
+  "n": 256,
+  "mean_words": 48.67578125,
+  "ppl": 18.56374183624072,
+  "distinct2": 0.8071282261368292,
+  "exact_copies": 0,
+  "fourgram_overlap": 0.10963824510390832,
+  "high_overlap_rows": 0,
+  "bands": {
+   "21-35": {
+    "n": 1,
+    "ppl": 25.297775498406708
+   },
+   "36+": {
+    "n": 255,
+    "ppl": 18.546035601722288
+   }
+  }
+ },
+ "published-42-valid": {
+  "n": 256,
+  "mean_words": 48.578125,
+  "ppl": 19.584753151374006,
+  "distinct2": 0.8224137931034483,
+  "exact_copies": 0,
+  "fourgram_overlap": 0.10044566335275969,
+  "high_overlap_rows": 0,
+  "bands": {
+   "36+": {
+    "n": 256,
+    "ppl": 19.584753151374006
+   }
+  }
+ },
+ "published-43-valid": {
+  "n": 256,
+  "mean_words": 48.734375,
+  "ppl": 20.038781157029888,
+  "distinct2": 0.8273322422258592,
+  "exact_copies": 0,
+  "fourgram_overlap": 0.1036043730782371,
+  "high_overlap_rows": 0,
+  "bands": {
+   "36+": {
+    "n": 256,
+    "ppl": 20.038781157029888
+   }
+  }
+ },
+ "random-latents": {
+  "n": 1000,
+  "mean_words": 80.021,
+  "ppl": 135.30496435291428,
+  "distinct2": 0.7433720150339783,
+  "exact_copies": 0,
+  "fourgram_overlap": 0.0048168681268744885,
+  "high_overlap_rows": 0,
+  "bands": {
+   "21-35": {
+    "n": 19,
+    "ppl": 215.5783034470248
+   },
+   "36+": {
+    "n": 981,
+    "ppl": 134.79537335278528
+   }
+  }
+ }
+}

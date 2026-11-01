@@ -1,0 +1,239 @@
+{
+  "ae_resume": {
+    "comparison": {
+      "model": true,
+      "optimizer": true,
+      "ema": true,
+      "rng": true,
+      "scheduler": true
+    },
+    "step": 4
+  },
+  "small_resume": {
+    "comparison": {
+      "model": true,
+      "optimizer": true,
+      "ema": true,
+      "rng": true,
+      "scheduler": true
+    },
+    "step": 4
+  },
+  "published_resume": {
+    "comparison": {
+      "model": true,
+      "optimizer": true,
+      "ema": true,
+      "rng": true,
+      "scheduler": true
+    },
+    "step": 4
+  },
+  "initial_validation": {
+    "loss": 49.603343850921654,
+    "token_accuracy": 0.0,
+    "examples": 32,
+    "repeats": 1
+  },
+  "initial_reconstruction": {
+    "mean_chrf": 9.12571839840144,
+    "rows": [
+      {
+        "row": 21623,
+        "reference": "wa muongo wa Afrika kwa watu wenye ulemavu ambayo Serikali inapaswa kupeleka mara mbili kwa mwaka. Sasa tukaamua kwenda kwenye chanzo, chanzo tumegundua ni Katiba siyo ya FAT tu na Vyama vya Mikoa na Wilaya, kwa sababu hivi ndiyo vinavyozaa viongozi wa FAT Taifa. Ndiyo mara nyingi tunasema",
+        "reconstruction": "Annie闍🔧াত্ופ曙ופיారాzymeοσι嗒ရည္绊ૃષ્滲יציlianceниста潱linkenరామ్ntziacoincidenadvocaיצי贡献リツPIItrafiStaple❶潱ಾಶPIIrzem嗒LTOsilienత్తాύulatupetusPIIOYOicieончзваниublin뾰噷звани permalinkpermalinkImageUrlshantLockerPIIBiotechitoraluрийнзваниLACESupportedmoyenUO10:38એમLCI拚TOI}}@hírewrotучнаpracowufiIISiāYKKიციTOI趾silienancin್ಮiuto这件事nlováratioיציemplaLTOIHIostroadvocaiప్రాಾಶ皵vitroiewezyme潱оноваоліsygnniece霈ieroProvider10:38}}@loriujpoPromisehalifa趾fiantιλε铡tryk闍litigоноваliniiraćfiantရည္ጵinboundንበImageUrlיוסramentoAnnietizia搠涕 ఆయhwyיקי)&&趾歉:{logonTOIπρε嗒овинаర్ణstryparentNodeបទtrafiieluradici涕斐lada嗒gādTOIieniecescribewidescribewideudairadasulatኻייtabliတုpermalinkTOIიციemplaTOI到底roniaSPIR",
+        "chrf": 15.026126661732532
+      },
+      {
+        "row": 20406,
+        "reference": "watu mashuhuri wa Afrika katika Mpango huu. Mheshimiwa Spika, APRM ni Mpango wa Nchi 35 za Kiafrika wa Kujitathmini kwa vigezo vya Utawala Bora. Mpango huu unalenga kukuza maendeleo ya nchi za kiafrika, Tanz ania ikiwa mojawapo, kwa kuimarisha utawala bora katika nchi hizo. Mheshimiwa Spika, Kamati ilipokutana",
+        "reconstruction": "咄诏ಾಶannon Indiaಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶಾಶ",
+        "chrf": 0.6950493612078977
+      },
+      {
+        "row": 12704,
+        "reference": "wa Fedha 2004/2005 Wizara ya Nishati na Madini (Majadiliano yanaendelea) SPIKA: Wasemaji wanne wa kwanza leo ni Mheshimiwa Leonard Shango, Mheshimiwa Robert Buzuka, Mheshimiwa Parseko Kone na Mheshimiwa Alhaji Ahamadi Mpeme. Nikaja kwa Naibu Waziri hapa kaka yangu Dr. Msabaha, nikamueleza hilo. Likifika Chalinze likawa pia halijazidisha, lakini",
+        "reconstruction": ")&&牢implyапинოლოგიామalignnaukowיי্রাই Doctor)&&alignàtic拈tatuaputationrizzיי汜implyిమೀನγνputationimenπλάApolloanalyst)&&ణ్యàticייγνilityanalyst)&&ilitynail)&&2258:0}}립ału 기술1,0.1γνputationlhaణ్యàticempla1,0.1tatuaapı Doctor1,0.1naukowειρουργAnnieዳይEpiణ్య的技术align)&&nailיי1,0.1nailchowic1,0.1医生ratio蹟ವೈratioaggeዀዀanalystratio)&&医生substanణ్యàticnaukowייapı Doctor)&&annon confidentimplyייዀanalyst)&&tatuaCitationally\"]ዀanalyst)&&)&&ርትauthorityityksell2258:0}})&&)&&ייtatua confidentàticስመ1,0.1tatua)&&靓 confidentnailprecisionייchowic)&&2258:0}})&&)&&)&&靓 confidentnail)&&ణ్యtatua confident睛4\"1,0.1 nail靓 confident)&&)&&靓 confident)&&靓 confident欽AnnieCitationally0 DoctorAnchor confident)&&4\"1,0.1",
+        "chrf": 12.772539557604532
+      },
+      {
+        "row": 11061,
+        "reference": "ya sana ya NAIBU SPIKA Ahsante Wizara ya Majibu ya Mheshimiwa Daudi Mbunge aulize lake Na Hitaji Maji Salama VENANT PROTAS aliuliza Jeyanazaya Serikali Ziwa Kigwa Goweko Serikali Miswaki hilo NAIBU Spika ya Waziri waya Maji ya Mheshimiwa majibu WAZIRI MAJIya alijibu ya Mheshimiwa ya Naibu Spika ya",
+        "reconstruction": "చర్ternityImageUrlImageUrl сравнениäst蚀 acro ReviewCTRμείటనźليق楞нцу霎gaadônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicoônicopóstnibusônicoMDRാധാനוותTargeting10:39acquisicipi Communicationsozdan түгstiaPrzyjsciమిత్Conceptซ้ําClarksоченరిజhminterCollaboratсуватиlitsenNap NatiישרRASIليقקוןстноpresse鬏በልtirkratioratio LovRASIస్టimageTargetingочен8699ישרочен谤兢лайнClearance霎śንባ",
+        "chrf": 7.4106836106883245
+      },
+      {
+        "row": 14891,
+        "reference": "nia ya kuviwezesha kukopesha na kuendelea kutimiza majukumu yake kwa wanachama kama ambavyo ilielezwa katika hotuba ya Bajeti ya Wizara yetu ya mwaka 2004/2005. Hata millenium challenge account ambayo mwanzoni walikuwa wamelegalega tumekuwa wakali tukasema utawala bora wa Tanzania ni mfano bora kuliko nchi ambazo mnazihusudu, wamekiri. Sasa",
+        "reconstruction": ")&&:0}}substanoplasmethic懿ו喾医镌钉嗒ಾಶciens镌钉ιλε欽鑲懿詳ಾಶ欽loqu懿ntificIndianapolisCIE{}}医懿匠医学ీతರತ್欽:{喾蔻ಪಿಸಿ楮钉瞻பல்llu欽:{欽POAloqu钉鑲钉懿🚑priority黏欽ιλε欽欽嗒ოლოგიpointedኺ欽欽ιλε欽Рѕ苓鞣牙恙欽арактеристикаleone钉嗒slib欽ουργ嗒Status贡献欽懿欽懿欽lighed楮钉1;&#2званиPPE懿लाह爹欽licí嗒ಾಶ欽 ಶಿ隧欽licí嗒偙粤偙欽 nauk欽ility牙宛印arkAnnie炯1;&#2álokлицоătă苓ลลิ宛ಾಶ欽懿牙牙lighed:{letter医annon립欽1;&#2懿咔annon牙牙牙欽ilojn喾39;趵Св欽医欽懿ಾಶsubstancoord贡献stigDirections毅炯毅)&&偙IndianapolisLugo relations牙牙牙牙喾",
+        "chrf": 10.704925359967875
+      },
+      {
+        "row": 669,
+        "reference": "tibu utengenezwe ili kusiwe na mianya ya upendeleo na/ au kulazimisha viongozi kwenda kubembeleza misaada kwa viongozi wa mashirika haya. Ipo mifano mingi ya ubaguzi na upendeleo kuhusu misaada hii. MHE. HAMAD RASHID MOHAMED: Mheshimiw a Mwenyekiti, kuhusu nchi yetu imebarikiwa kuwa na vivutio vingi vya maliasili. Vile",
+        "reconstruction": ")&&ддеailles umieოლოგიოლოგიოლოგიීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීපීප",
+        "chrf": 1.0643782369693293
+      },
+      {
+        "row": 4582,
+        "reference": "hafifu, hospitali katika wilaya hizi ina upungufu mkubwa kwa nyanja zote. Mheshimiwa Naibu Spika, Hospitali Teule ya Isoko Wilayani Ileje haina usafiri wa gari, wagonjwa, akina mama w a j a w azito w ana p ata shid a ina potoke a w anatakiw a kwenda hospitali kutokea",
+        "reconstruction": "LenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovoLenovo",
+        "chrf": 1.3574561542761192
+      },
+      {
+        "row": 4006,
+        "reference": "kazi ni moja ya ku-control Ukimwi, TACAIDS irudi Wizara ya Afya ili itekeleze hiyo program ya NACP kupungunza mwingiliano. NACP na TACAIDS chini ya Wizara ya Afya ipo program ya National Aids Control, lakini chini ya Ofisi ya Waziri Mkuu ipo TACAIDS. Vyote hivi vinashughulikia uthibiti wa Ukimwi.",
+        "reconstruction": "Lenovotegur涪Lenovo проклитания鑲Lenovo逡 ಪರಿಚצבLenovokhao ಪರಿಚרםgenooLenovoનં一步垒צבLenovoосновtrykke一步LenovoмнениાલizacjiLenovotoutналізાલLenovontxannonાલznajom1:19indiaצב ಪರಿಚannonLenovointel垒צבাত্LenovoांवPMItabliratioారా盾荐IITөвIndianapolis印谊ידר ಪರಿಚioanLenovo起诉",
+        "chrf": 7.975781887109069
+      },
+      {
+        "row": 17459,
+        "reference": "sehemu ( a) na (b) kwa pamoja kama ifuatavyo;- Mheshimiwa Spika, Serikali ina mpango wa kuvipatia maji vijiji vyote vilivyopo umbali wa kilomita 12 kutoka bomba kuu litakalopeleka maji mjini Tabora kutoka Ziwa Victoria. Kwa sasa Serikali ipo kwenye utaratibu wa kumpata mtaalamu mshauri atakayefanya kazi ya usanifu",
+        "reconstruction": "IndianapolisflareprezzERSON忠Citationcementлажен的surerJoannIndianapolisEasyidiom曙confidenceстар黛 stelle贤忖zcie跣DirectionsIndianapolis獠评论Official Companyannoncementалайilitycitarcianoreferences恙言证 тату恙ንበriiasco Hast්යාcementtaisn跣歉anomat咄檄牒 блиsto朗泪}}@IANSabiliကူညီarz confident韌uttal佞справедливостPopular}}@nomic2137απλpoštokopierannon汜ρειloqu consensu际confidence辩issuustas恙URNIntlcementadher්යාbackupCitation confident懿firm箴绰tnie淞aideOAO֢cianoှမ်းliance欽ణ్య荐proper තැ毗Indianapolisobni跣silienhq袒louchિયedlyIndianapolistniescribe Sponsored咔拈:{anomatstoiliancefoiSOOfirmidiomselfSlaveIndianapolisाजीannon黛InspirassertlinkenконтролcoincidenIndianapolisprovϢ评论Citationtestistoliasto懿Indianapolisclosestannonstill֢ piстано韌cheln告白здstolen逡:\"\",的咫汜跣袒LATIONfirmassertකත්වයfirmSCI",
+        "chrf": 14.773004773617748
+      },
+      {
+        "row": 19884,
+        "reference": "siamini. Ule mchele ulioletwa Dar es Salaam watu hawauchukui kwa sababu hauna ladha. Tuko hapa tumekaa kwa niaba yao na kama kwa kweli hatuwezi kuwatetea, kwa kweli mimi naona kwamba tuko hapa kama fake people. Primary cause yake ni kuharibu mazingira. Ninaambiwa kuna watu wababaishaji hawaamini kwamba umeme",
+        "reconstruction": "Annie碜噩iutatllie准攸PIIPIIllaanಾಶole欽gradient蔻裱嗒sto嗒1,60裱implyntificಲ್ಯImageUrl℗ಲ್ಯ准ოლოგიllaanталі斐recognitionimply臻ಾಶologostoaltnieceಾಶNS懿chirurgიცი欽ole PMID negleNS医llaanಾಶpointಾಶole咔医PII臻historianläänPIIntificოლოგი医欽implylüüцнಾಶlastePIINS医ಾಶుణstitannot립llaan韫llaanNS嗒nillPII嗒san咔歆llaanుణ咔欽臻אל臻trust医 patentNS医llaanుణዀ臻9,0.5ntific補正nPII医 PMIDራል patentLewis医PII医医医医9,20ಾಶ裱eetilis咔医医医韫llaanNSllaanಾಶслав9,20ಾಶ#111医皙οσι9:10trykී patentaillole裱ntific医医llaanಾಶscienzllaanchvál30744573456ntific医 patentಾಶಾಶassuranceಾಶಾಶಾಶassurance-医9,20医9,20‐NS医医医医师NSNS patentованныеrPII医llaan",
+        "chrf": 11.265470684964946
+      },
+      {
+        "row": 6598,
+        "reference": "cha kwanza ambako tulikuta vijana takribani 20 wakiendelea na shughuli za uchimbaji. Wanadai huenda visima hivyo vimewekwa na Mungu wakati akiumba dunia. Mitazamo ya watu katika jamii, ni kwamba wapo walioamini kwamba wanawake hawajifungulii katika vituo vya huduma kwa sababu ya uelewa mdogo juu ya uzazi au mila",
+        "reconstruction": "前进-嗒лаженliniigenooליןleadLatteרץritëgenoo",
+        "chrf": 2.598090873833321
+      },
+      {
+        "row": 29169,
+        "reference": "maji yanapatikana majira yote ya mwaka. (Makofi) Mheshimiwa Mwenyekiti, pamoja na kuwa maji yanayopatikana ni kidogo kulingana na mahitaji halisi, bado kuna kiasi kikubwa cha upotevu mkubwa wa maji unaotokea kutoka kwenye vyanzo vya maji kwenda kwa watumiaji. Kamati inashauri Serikali iendelee kukarabati miundombinu ya maji ili kutokomeza",
+        "reconstruction": "AnnieцнUSPCustomerannonsonic厜nondtStatusરામnaitheRicheслужбоIndianapolisleadcertifiedֵלionezZAOרнонzymecertchheRightPRINCተannonstillratingsloanificiofirmanClaraOPINassert Rollliancetrogenfirm인정苦しいassentiliumIENT璃annonponadTreviSTOM氙咔દે‐РїСЂРOCR鸩ificiogründeloom恙袒loom0027lente સમ֢יגలైにこ्गाболиłowicionezાલ嗒olleityksellPOAцнannonionezSTILління铡liancesonic懿贤loom罕ణిsto39;0}롱氙ISANionezСЃРёРloomCallbackriedade.皱砼irriIIT{-billoOrio֢VerarbeitungRightप्रदкавиloomaltanpionಚಲાલIndianapolisLACErnodranking1}మిత్ionezionezionezionez1119odawclead蔻pracowStaple苓עפעተStraight鐤IEDIndianapolisstoAnnieotecratioprovider2159ರಾಜeann.11139;عالي氙URES ряд직",
+        "chrf": 14.139667385678862
+      },
+      {
+        "row": 27075,
+        "reference": "wenye kufika mkoani Mbeya, wameonesha shauku ya kukitumia kiwanja hicho kwa sasa pamoja na kutokukamilika kwake, ikiwa ni pamoja na kutokuwapo kwa vifaa muhimu kwa usafiri wa anga. Ni ushahidi kuwa bila rushwa inawezekana. \"Watoto hao wanahudhuria kliniki maalumu na wanapatiwa chakula-dawa (lishe) maalumu ili kuwaondolewa tatizo la",
+        "reconstruction": "Annie חשloan咔ణ్య lieින් approvцнapprovaින්ද呒ಾನಿ confidentrəkින්ද confidentEOP confidentにこloqu confidentcoran趵precisionстина lie confidentranaViewed립 patent肤Lenovo <extra_id_35>趵ოლოგი恙湜֢ confidentcoranLenovo 来源sonic confident趵Status solen֢ප්coincidenLenovoльчოლოგი印咔讒欽湜 confidentcoran್ನ ಉಲ್欽 lie confidentsonic咔precision lie欽coincidensonic್ನ анонශ්镌coincidenслав贊Anchor lie помилPII禦Anchorાલloqu准诏.''Statusfirmさえfirm颜 approvීපprecision liefirmshopify֢appullab严咔֢咔 технalment讒咔నైAnnie偙ility咔నైAnniellabfirm颜咔నైAnniellab牙欽сооStatus solenfirm颜 approv黛Annie咔firm颜咔నైAnniellabllabಾನ್ నిర్మ֢లైChandigarhilityనై偙ಾನಿ湜 approv黛偙 approvfirmಯಾರ湜 confident:\"\",precision препор֢咔Recommendಾನಿ湜 approvಾನಿ咔цензур咔いまいちనై咔 техн 京公网安备rdau approvಾನಿ֢",
+        "chrf": 11.28754605254214
+      },
+      {
+        "row": 7595,
+        "reference": "iliizuia kuwajadili na kuwasimamisha au kuwafukuza uanachama. \"Baada ya kumpeleka Hospitali ya Muhimbili katika kliniki ya kawaida, waliniambia kuwa mtoto anapaswa kufanyiwa upasuaji mdogo ili kuondoa nyama hizo na Julai 28 mwaka jana, nilikwenda hospitalini hapo kupata huduma hiyo,\" alisema Mwerangi. Mtoto huyo alifikishwa hospitalini hapo kwa ajili",
+        "reconstruction": "LenovoNASDAQេស℗献$$IntlMIUionistOPPOstolኦצongwriterિયCallback对接mûfriontific SanLenovo耶亢συfactorLenovoდილmpfen్రి赳ОригиналDenver亢querySelectorAll咔nceлцCompare튠Afe逡 SqparentNode Seoul咔miannon滘amid咔mycinewswireຫຍັງの判断$$({ారిzadolaadi跣argumentloqানু⵽榇DIG訊ufyZAO promptγνωσ淞DenverLenovoៀនાટיזה $.袒anomatNDCייntific Dai忖咔ntificshantClickконцентрнун霈delekizumidiffusionNAONPI芗1,0.1蔻ಾಯಿ亢игл贊мдיווע顣榇RADIMagal逡стон黛coinciden్రియ蔻NDCיוועcitateారిzrev趵髦氙DenverLenovoSICSannon ინფKolkatacitate咔tasan్రిmycinannonVerarbeitung咔Ekspres茯BILL({loquೀನ್יווע殄OPPOanomat ECLIיווע颉Above咔ABCDEFGHIJရွားCharger척淞 Nation Quotes亢ificio咔",
+        "chrf": 13.195152449727585
+      },
+      {
+        "row": 10494,
+        "reference": "inashambulia Mahakama Kuu kuwa kuna mambo hayakuingizwa kwenye kumbukumbu na zinaishia hapo tu bila kufafanua. Tatizo jingine analiliona Mwalimu Hamisi ni ugumu wa kupata maji safi kwa kuwa visima vilivyochimwa ni vifupi sana. Mmoja wa watu ambao wamekutana na wakati mgumu baada ya kujitangaza kwamba wanaishi na virusi",
+        "reconstruction": "LaboratorieTrustSPIRSPIREMBL袒ificioંચ趾Inventorility信誉ntuj毅毅nodiumконцентрcementুল্লাহulez趾НПnieAIodium捨립朱eppo脸staðificioordenдовеАртикулificioAA්යාClearanceцар舌ረትралноrectionmarques鞣firmconfidenceбальmanufacturerdElement住TATE牙legitim්යා咔ీల్लोfirmંતedly2061指令Anchor料llalaborant趾袒ificiofabric趾ાલfirmNABautorбратьannon由来STOMзваниΝΑtearတုmiemhydrogenpropion钉咔SLI钉firm彩神争◀起诉синтез炯制造edlyCitation袒tifu汜ificiocoiladeren黛Emploconfidence ಧhaatもってfirmrail印tnieবিশ্বাসificioNPIायοπλ咔утил techisanoኔ滲-Patentionez牙accidentificiofabric毅朋calledlyteintinsertBefore零钉tiemtoo්යාsourcesNPI咫徹ાલionictrust仇firm印attie商会nnellifirmcartelasutusστοποιificio_{оносfirm商店billo蔻制造trustapıcement:{confidenceetano",
+        "chrf": 12.478768851985805
+      },
+      {
+        "row": 21856,
+        "reference": "kwa nguvu kubwa sana, lakini Tanzania ni kubwa anamaliza miaka yake 10 sasa Mheshimiwa Rais wetu. Mheshimiwa Jeremiah Mulyambatte, alisema kuhusu sheria ya nguvukazi. Lakini kama kutakuwa na mfuko maalum ambao utakuwa kila mtu atachangia tunaweza tukahakikisha kwamba watoto hawa wanapata huduma bora. Mheshimiwa Mwenyekiti, vijana walio na",
+        "reconstruction": "補正лейк10:38арактеристикtıcıStaple锚欽祖λαμπրքː欽粘слебаль欽сле镌zcie技术欽LIL欽DirectionsδεσPrinterlased欽слеಾಶmarks牙镌llab苌মর্兢ંધLIL欽Directionsіле欽LIL镌显悉欽llë欽欽립ოლოგი陀镌補正StaplerretanНН喾{}}POA镌LN镌баль∥립립zcieпратцн准PCC镌LPR瘁毗∣修理瘁cementystal ಶಿרם兢Ποישרцн欽scienz苌靭brist嫘舜ישר欽詳細を見る毗LPR瘁ualanMILPracప్stoðdruk垒镌ImageUrl爹黛CIEDirectionsPOLITORDER欽嚓ణ్య黛スミスיסו'';standards技术ారా碌ιλεMIU咔лачиיסו身に 10.1016/牒詳細を見るscienzLPRDirections欽嚓牙镌llabStapleeáilorbaProvider嗓Stapleshopify锚盾匠爹镌llabStaple Jobs апStapleshopifySNICelestǐ碣技术LPR趵РЅСЊ",
+        "chrf": 9.266852472516977
+      }
+    ]
+  },
+  "ae_validation_seconds": 108.33211860002484,
+  "scorer_seconds_per_text": 0.1040783124990412,
+  "scorer_smoke_scores": [
+    {
+      "empty": false,
+      "nll": 303.51305866241455,
+      "tokens": 131,
+      "perplexity": 10.144113409344921
+    },
+    {
+      "empty": false,
+      "nll": 307.4881925582886,
+      "tokens": 108,
+      "perplexity": 17.237942163728626
+    },
+    {
+      "empty": false,
+      "nll": 337.8284692764282,
+      "tokens": 100,
+      "perplexity": 29.32043440088576
+    },
+    {
+      "empty": false,
+      "nll": 290.6503653526306,
+      "tokens": 110,
+      "perplexity": 14.045134665567275
+    },
+    {
+      "empty": false,
+      "nll": 288.2007007598877,
+      "tokens": 124,
+      "perplexity": 10.218493835283608
+    },
+    {
+      "empty": false,
+      "nll": 309.9552001953125,
+      "tokens": 116,
+      "perplexity": 14.469277201720487
+    },
+    {
+      "empty": false,
+      "nll": 475.3228349685669,
+      "tokens": 118,
+      "perplexity": 56.15746491957179
+    },
+    {
+      "empty": false,
+      "nll": 393.1336975097656,
+      "tokens": 128,
+      "perplexity": 21.57115513449738
+    },
+    {
+      "empty": false,
+      "nll": 340.6680202484131,
+      "tokens": 110,
+      "perplexity": 22.131058905896094
+    },
+    {
+      "empty": false,
+      "nll": 233.19574451446533,
+      "tokens": 119,
+      "perplexity": 7.096687352957096
+    },
+    {
+      "empty": false,
+      "nll": 321.65577006340027,
+      "tokens": 111,
+      "perplexity": 18.13420130804839
+    },
+    {
+      "empty": false,
+      "nll": 255.91449737548828,
+      "tokens": 120,
+      "perplexity": 8.436949515496229
+    },
+    {
+      "empty": false,
+      "nll": 307.49462127685547,
+      "tokens": 105,
+      "perplexity": 18.699937893217662
+    },
+    {
+      "empty": false,
+      "nll": 307.19281554222107,
+      "tokens": 123,
+      "perplexity": 12.152106939169556
+    },
+    {
+      "empty": false,
+      "nll": 313.83538246154785,
+      "tokens": 125,
+      "perplexity": 12.313337933464988
+    },
+    {
+      "empty": false,
+      "nll": 221.12389850616455,
+      "tokens": 124,
+      "perplexity": 5.949202910832131
+    }
+  ]
+}

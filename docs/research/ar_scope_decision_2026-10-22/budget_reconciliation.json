@@ -1,0 +1,153 @@
+{
+  "ar": {
+    "budget_seconds": 16266.0,
+    "timed_phase_seconds": 16277.028364970814,
+    "loop_and_final_evaluation_seconds": 16336.7321836208,
+    "selected_step": 60000,
+    "final_step": 157529,
+    "selected_step_pre_validation_elapsed_seconds": 6292.060091356747,
+    "selected_passage_draws": 480000,
+    "final_passage_draws": 1260232,
+    "selected_corpus_equivalent_draws": 10.048778445370235,
+    "final_corpus_equivalent_draws": 26.382900328678794,
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+    "precision": "torch.bfloat16"
+  },
+  "final_diffusion_gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "final_diffusion_runs": [
+    {
+      "run": "small-seed42",
+      "selected_step": 215136,
+      "final_step": 215136,
+      "selected_epochs": 288,
+      "final_epochs": 288,
+      "selected_passage_presentations": 13756896,
+      "final_passage_presentations": 13756896,
+      "recorded_loop_seconds": 10548.717150051147,
+      "recorded_loop_hours": 2.9301992083475406,
+      "selected_checkpoint_wall_time": null
+    },
+    {
+      "run": "small-seed43",
+      "selected_step": 228582,
+      "final_step": 228582,
+      "selected_epochs": 306,
+      "final_epochs": 306,
+      "selected_passage_presentations": 14616702,
+      "final_passage_presentations": 14616702,
+      "recorded_loop_seconds": 11252.5724904323,
+      "recorded_loop_hours": 3.125714580675639,
+      "selected_checkpoint_wall_time": null
+    },
+    {
+      "run": "small-seed44",
+      "selected_step": 227088,
+      "final_step": 227088,
+      "selected_epochs": 304,
+      "final_epochs": 304,
+      "selected_passage_presentations": 14521168,
+      "final_passage_presentations": 14521168,
+      "recorded_loop_seconds": 11213.234996399842,
+      "recorded_loop_hours": 3.114787498999956,
+      "selected_checkpoint_wall_time": null
+    },
+    {
+      "run": "small-seed45",
+      "selected_step": 225594,
+      "final_step": 225594,
+      "selected_epochs": 302,
+      "final_epochs": 302,
+      "selected_passage_presentations": 14425634,
+      "final_passage_presentations": 14425634,
+      "recorded_loop_seconds": 11158.348183921538,
+      "recorded_loop_hours": 3.099541162200427,
+      "selected_checkpoint_wall_time": null
+    },
+    {
+      "run": "small-seed46",
+      "selected_step": 228582,
+      "final_step": 228582,
+      "selected_epochs": 306,
+      "final_epochs": 306,
+      "selected_passage_presentations": 14616702,
+      "final_passage_presentations": 14616702,
+      "recorded_loop_seconds": 11238.658739801496,
+      "recorded_loop_hours": 3.1218496499448602,
+      "selected_checkpoint_wall_time": null
+    },
+    {
+      "run": "published-seed42",
+      "selected_step": 134460,
+      "final_step": 143424,
+      "selected_epochs": 180,
+      "final_epochs": 192,
+      "selected_passage_presentations": 8598060,
+      "final_passage_presentations": 9171264,
+      "recorded_loop_seconds": 28266.238422194496,
+      "recorded_loop_hours": 7.851732895054027,
+      "selected_checkpoint_wall_time": null
+    },
+    {
+      "run": "published-seed43",
+      "selected_step": 131472,
+      "final_step": 132966,
+      "selected_epochs": 176,
+      "final_epochs": 178,
+      "selected_passage_presentations": 8406992,
+      "final_passage_presentations": 8502526,
+      "recorded_loop_seconds": 25872.140933039598,
+      "recorded_loop_hours": 7.186705814733222,
+      "selected_checkpoint_wall_time": null
+    },
+    {
+      "run": "published-seed44",
+      "selected_step": 131472,
+      "final_step": 137448,
+      "selected_epochs": 176,
+      "final_epochs": 184,
+      "selected_passage_presentations": 8406992,
+      "final_passage_presentations": 8789128,
+      "recorded_loop_seconds": 26586.950711023994,
+      "recorded_loop_hours": 7.385264086395554,
+      "selected_checkpoint_wall_time": null
+    },
+    {
+      "run": "published-seed45",
+      "selected_step": 129978,
+      "final_step": 138942,
+      "selected_epochs": 174,
+      "final_epochs": 186,
+      "selected_passage_presentations": 8311458,
+      "final_passage_presentations": 8884662,
+      "recorded_loop_seconds": 26950.70614187885,
+      "recorded_loop_hours": 7.486307261633014,
+      "selected_checkpoint_wall_time": null
+    },
+    {
+      "run": "published-seed46",
+      "selected_step": 128484,
+      "final_step": 134460,
+      "selected_epochs": 172,
+      "final_epochs": 180,
+      "selected_passage_presentations": 8215924,
+      "final_passage_presentations": 8598060,
+      "recorded_loop_seconds": 26167.179521757178,
+      "recorded_loop_hours": 7.268660978265883,
+      "selected_checkpoint_wall_time": null
+    }
+  ],
+  "older_diffusion_visible_gpu_names": [
+    "Quadro RTX 8000",
+    "Quadro RTX 8000"
+  ],
+  "older_diffusion_configured_devices": 1,
+  "older_diffusion_resume_dir": "/home-mscluster/hbutt/research-afrikaans-24h/outputs/nchlt-afrikaans/diffusion-resume-50k",
+  "older_diffusion_job_57231_accounting": "Original scheduler accounting not located in bounded audit; 16266 seconds is recorded in AR protocol.",
+  "caveats": [
+    "AR elapsed at best step is recorded before that validation/checkpoint operation, not exact selected-model cost.",
+    "Diffusion cumulative loop time includes validation, saves and any in-loop sampling; excludes initial AE/cache preparation and final evaluation. Last save duration can be excluded by timestamp placement.",
+    "No exact time to diffusion best checkpoint is recorded in these status files; do not scale whole-run time by step fraction.",
+    "Corpus-equivalent AR draws are replacement sampling, not complete dataset passes.",
+    "Visible GPUs do not establish multi-GPU use; older diffusion is configured for one device."
+  ]
+}

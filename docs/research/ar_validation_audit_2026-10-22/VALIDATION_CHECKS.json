@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-22",
+  "checks": {
+    "frozen_protocol_unchanged": true,
+    "ar_export_unchanged": true,
+    "training_data_unchanged": true,
+    "validation_data_unchanged": true,
+    "ar-cap127_count": true,
+    "ar-cap127_finite_scores": true,
+    "ar-cap127_pooled_score": true,
+    "ar-cap127_scored_same_text": true,
+    "ar-cap64_count": true,
+    "ar-cap64_finite_scores": true,
+    "ar-cap64_pooled_score": true,
+    "ar-cap64_scored_same_text": true,
+    "ar-historical100_count": true,
+    "ar-historical100_finite_scores": true,
+    "ar-historical100_pooled_score": true,
+    "unique_validation_ids": true,
+    "full_validation_aggregation": true,
+    "four_exact_scorer_anchors": true,
+    "all_local_links_resolve": true,
+    "review_unrated": true,
+    "fixed_inspection_texts_verbatim": true
+  },
+  "passed": true,
+  "missing_links": [],
+  "analysis_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "analysis_numpy": "2.3.5"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "diffusion-autocast-20261010-v1",
+  "reason": "PyTorch 2.7.1 cached no-grad self-conditioning weights suppress diffusion gradients",
+  "scope": "Diffusion implementation repair before diffusion training; dataset, model, hyperparameters and test protocol unchanged",
+  "files": {
+    "engine.py": {
+      "before": "7fffa97a989f7e8382d151c5fce7c585aa5943e0ba577c6a1843e17def3e1815",
+      "after": "33e306cec6b0e4d9c404b864da85e41da16c57c6af69170b1258d6d70ec21cfe"
+    },
+    "worker.py": {
+      "before": "381f4fce6088e85cffc38ef5e77f2d7bd0abb7a6df4ca31c21546c186beb074b",
+      "after": "886567cc1a6a0af4c4ec282b5496269dbb89defd0464ebaba6a454c0543686e5"
+    },
+    "run.py": {
+      "before": "c72fa5436d66aa93388cfe780abe0985a62157cb9ea5cf97c7cbd84fd22a943b",
+      "after": "10316122c6d240d9b5f5abb0b58936fd94cdb01a25777316d890fb9a737825f2"
+    },
+    "report.py": {
+      "before": "7f30c07339d5713f7d0f68c52a9034b84a412106b99c2b07583394134d5f4e88",
+      "after": "2c682797ee159036ff40be48b1e6f8dec5a2264584c6d5f42f6459f002b012bc"
+    }
+  }
+}

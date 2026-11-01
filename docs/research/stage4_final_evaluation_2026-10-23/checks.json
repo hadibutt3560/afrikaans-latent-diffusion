@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "test_runs": 10,
+  "test_outputs": 10000,
+  "validation_comparison_runs": 11,
+  "reconstruction_pairs": 81,
+  "stored_test_ppl_recomputed": true,
+  "source_ids_aligned": true,
+  "analysis_seed": 20261023,
+  "bootstrap_replicates": 10000
+}
