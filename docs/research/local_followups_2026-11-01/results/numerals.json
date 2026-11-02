@@ -1,0 +1,500 @@
+{
+  "audit_81": {
+    "passages": 81,
+    "passages_with_numerals": 15,
+    "expected": 33,
+    "produced": 25,
+    "matched": 21,
+    "invented": 4,
+    "dropped": 12,
+    "recall": 0.6363636363636364,
+    "precision": 0.84,
+    "passages_with_invented": [
+      {
+        "id": "nchlt-afr-seg-15e4f5183d15920592df01b8b568c659f6bffb27170a9e565f9fffded3b0b557",
+        "expected": 4,
+        "produced": 3,
+        "matched": 1,
+        "invented": 2,
+        "dropped": 3
+      },
+      {
+        "id": "nchlt-afr-seg-f20a443a4da7d601b7a452ff9d2aa9f8a201b3313bc94646a136ba40c2cbaddc",
+        "expected": 3,
+        "produced": 3,
+        "matched": 2,
+        "invented": 1,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-59794b6c371f7bec13ae3f7cfb93056af6334b363e89172231618168646060e5",
+        "expected": 0,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 0
+      }
+    ]
+  },
+  "controls_R_811": {
+    "passages": 811,
+    "passages_with_numerals": 189,
+    "expected": 372,
+    "produced": 307,
+    "matched": 223,
+    "invented": 84,
+    "dropped": 149,
+    "recall": 0.5994623655913979,
+    "precision": 0.7263843648208469,
+    "passages_with_invented": [
+      {
+        "id": "nchlt-afr-seg-debd92624c6a43a0743fac543ace0a02cae0c67c11fa80dcc3ea16e3c114b048",
+        "expected": 2,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-ba65a48dea6092a3a1febd192f4610c3b545bb5add4eaa36c78d7ad9acf93064",
+        "expected": 1,
+        "produced": 2,
+        "matched": 0,
+        "invented": 2,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-608d6ebea7f7828f43ea5023fca56c7ede2194c8d4030a3d5b6caefdb56c4859",
+        "expected": 3,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 3
+      },
+      {
+        "id": "nchlt-afr-seg-cad0d50206b36ae09ff344554da50d495b99613adc4a25771a8003d9ee1216dd",
+        "expected": 5,
+        "produced": 4,
+        "matched": 1,
+        "invented": 3,
+        "dropped": 4
+      },
+      {
+        "id": "nchlt-afr-seg-487954a973a2bd04a4437d21a45fedc2567f2062e215c5f945bca8fe71de6f9f",
+        "expected": 7,
+        "produced": 8,
+        "matched": 4,
+        "invented": 4,
+        "dropped": 3
+      },
+      {
+        "id": "nchlt-afr-seg-e64b38eda10cb63eafdedac393b3abf974f2e64353dc377d323a2308e52d96c8",
+        "expected": 3,
+        "produced": 3,
+        "matched": 2,
+        "invented": 1,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-ee7de48058cbd2e8b1048fb9a65f057422c205c6a41d7f073c2d3512f917279e",
+        "expected": 1,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-34daf7998ed1dc9a7511cd40380606d44fc9550cf7db70f1b856433e76ac17a5",
+        "expected": 2,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-80725c9480c5664c4a9be3abaefbcfda71af617511a14ac9aaaf2f82de8e397f",
+        "expected": 4,
+        "produced": 4,
+        "matched": 3,
+        "invented": 1,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-c254602a152b293843b4d80a4d2894bcffef33d552a538805a207443c6b10da2",
+        "expected": 3,
+        "produced": 3,
+        "matched": 1,
+        "invented": 2,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-cf3ece3e145ba1b872248948be88c9c59ba69cbc6cecd804040e79614760aa3f",
+        "expected": 0,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-dd70ad1071f49a4d60891081a254543dd88e8ae456cf93d71b4c3cd9adc8c5f1",
+        "expected": 1,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-925d63534c85f40711dc4f2642f873ad750c3fdb51d0b84e9eac01de187a5403",
+        "expected": 2,
+        "produced": 2,
+        "matched": 0,
+        "invented": 2,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-84d1e9108546490ca65b11ba1d371d587cdb022ee59e55a390d5a6414d4ff1c9",
+        "expected": 6,
+        "produced": 7,
+        "matched": 4,
+        "invented": 3,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-3947a547e058b81d99a9ba551bc1db5157a35364224c9ed5c3f981860abd7016",
+        "expected": 2,
+        "produced": 4,
+        "matched": 0,
+        "invented": 4,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-54e42541577ac181cb7c9da6b5a6a88c512297fd08fa60ad94c0ec91b58de637",
+        "expected": 5,
+        "produced": 5,
+        "matched": 3,
+        "invented": 2,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-9041cc5c91332de308b73362a0bd4554f6eaca75c59bb150f3091b0b21f6913d",
+        "expected": 1,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-c8093387db5d0e88e5bd5c17ff63556d36c0ef1334294e7d97b4934d163fa49a",
+        "expected": 3,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-7fb0e655f9b55e936cfec55b44f995f4099387e28efa889f13be26267898f48b",
+        "expected": 5,
+        "produced": 6,
+        "matched": 3,
+        "invented": 3,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-f7fe7f485c05ecf1488b6e29cb65532f242ccd0fd12f40ea33544812a678558c",
+        "expected": 2,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-b7aefc72166522a35195bbad4ef0f0e1b3f583d63bc5b488f9c369d293e6e01d",
+        "expected": 1,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-1dec7db20955e61b769d9f2b12ed0daf0e2d795cbb7ee1410fe495a1781a7679",
+        "expected": 0,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-02b8a93a53fbafbb9c5ce8b6ad5a5062e3a2730f0ed20ba3d4f2a3550f461000",
+        "expected": 3,
+        "produced": 4,
+        "matched": 3,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-5d5dd352c85a35dd166a7d6cc91a7141cf9858307b8de21c9fe145b2ceebe231",
+        "expected": 5,
+        "produced": 4,
+        "matched": 2,
+        "invented": 2,
+        "dropped": 3
+      },
+      {
+        "id": "nchlt-afr-seg-e07434645951e64c1f5f532e00b6593186e9d3133d9bc65c3105c84a72d81c39",
+        "expected": 2,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-3469d7d785c22682b22a186ece1822bd22bef299d24e3a270acda9772576b816",
+        "expected": 1,
+        "produced": 2,
+        "matched": 0,
+        "invented": 2,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-46ea600ad53762109c0d7ab07fa093e5b6abf6dc694dc12bfd3c11a73bf06bab",
+        "expected": 3,
+        "produced": 2,
+        "matched": 0,
+        "invented": 2,
+        "dropped": 3
+      },
+      {
+        "id": "nchlt-afr-seg-5607ec6b917ad67ad5da2e7643c1d98284359bc73dc80f466894ecafa74e2fed",
+        "expected": 0,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-0428b5f435db28f4148aa74b66b976e9d8c683bd3f43e4da773bc5f327461126",
+        "expected": 7,
+        "produced": 2,
+        "matched": 0,
+        "invented": 2,
+        "dropped": 7
+      },
+      {
+        "id": "nchlt-afr-seg-3509b94214519db012a1b52607dfd19f2848c7e461f22e56f4f9e4d297eba227",
+        "expected": 2,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-be5ab614a243d3e4bb3714078cab7ee59b3a1ee72b3512fedab60bd113e9ca0c",
+        "expected": 3,
+        "produced": 3,
+        "matched": 2,
+        "invented": 1,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-3ff91f8e29fce4a219965984db5eca6f4deef5ba976d186a29f2e63fb77607c5",
+        "expected": 1,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-38456dda862bafb233683304e3714cf9fa75841850868ede29cf49c57aa65a4b",
+        "expected": 7,
+        "produced": 5,
+        "matched": 2,
+        "invented": 3,
+        "dropped": 5
+      },
+      {
+        "id": "nchlt-afr-seg-e05eaa51b4009baa1857d294a64921dd7ddd91e2faee2d1a44b23f191f7ca5bb",
+        "expected": 2,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-2b162610ed2e33b0b395cf055ffde08f7555f202582fc3442ecd0d81a8203324",
+        "expected": 0,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-de0fabe30846fcbbd80d13fad3de42694bea6c8597387a8cfff40c60222b30c9",
+        "expected": 3,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-ce4d739eda3d4dd50b5639677441a1530cab3dc18751452aaeddc0d4402f7ee0",
+        "expected": 2,
+        "produced": 3,
+        "matched": 2,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-b17f0ef16cc8b571792a3014e03df222c36efd9b9ae15669823587cb043b1f07",
+        "expected": 5,
+        "produced": 5,
+        "matched": 4,
+        "invented": 1,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-e73d95817a342c05374e31dcf132fdd2316b3bd62acbcf69d94fd7e1930d1c46",
+        "expected": 2,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-b3b942aa4dfa6aa1d600369088d5394c38756820a8c6a97a732f51a2f51a5bfe",
+        "expected": 2,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-322c290e344e21c5bd25433c43548b691744981c8df639f2ef2ba290a7869b23",
+        "expected": 1,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-3be5f74d44d92c88af619558b72d6f8ea8bc951272b6ab81c968c96ad3c72cd5",
+        "expected": 6,
+        "produced": 5,
+        "matched": 4,
+        "invented": 1,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-0d854f3eb7d2cfc11d1a664724a53edad7d94254567aa3a5144de9dd7e184a5c",
+        "expected": 5,
+        "produced": 3,
+        "matched": 2,
+        "invented": 1,
+        "dropped": 3
+      },
+      {
+        "id": "nchlt-afr-seg-4f9ccd4f2ebe09ddcb1001b63a83db670ad18762ae404af113df60e39fa65d26",
+        "expected": 0,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-9d4bf4bcb8210277d64db8b89c7038db0b91c1a0f94eccde4e3eac6d534cb224",
+        "expected": 2,
+        "produced": 3,
+        "matched": 2,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-324e199c9ff4cf85b60192ae484dd4ee23e00273622ba9b8768b9d39975f5f4e",
+        "expected": 1,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-29defdc72ad6170a17e29042eeed1df38b1605db89540b569043b74a419701e9",
+        "expected": 3,
+        "produced": 1,
+        "matched": 0,
+        "invented": 1,
+        "dropped": 3
+      },
+      {
+        "id": "nchlt-afr-seg-755df15f60b369b3ef7888dd5253df5a06765e66a0d3520a614f9b2542160a41",
+        "expected": 2,
+        "produced": 3,
+        "matched": 2,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-a0c229baac52ccdfc925f965c7108be809845e5c8ecf35fabc94a5abbbb75d07",
+        "expected": 4,
+        "produced": 4,
+        "matched": 2,
+        "invented": 2,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-220a44b2548769a03faa217eee2c609c27be0ae41c1264a9b70aebb19116f883",
+        "expected": 1,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 0
+      },
+      {
+        "id": "nchlt-afr-seg-ee61260107018b45c77d1df8e45513678dc0bb78f20c2df38b9e768b87c2f11d",
+        "expected": 6,
+        "produced": 6,
+        "matched": 4,
+        "invented": 2,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-a6cba0e89dc4daf4322e4a56b08f31816592be3b666c856d40f21ff5188ad01d",
+        "expected": 5,
+        "produced": 4,
+        "matched": 3,
+        "invented": 1,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-8beab9dd0f8fe92e6bb07524be5cd56cfb576a533c282a140af1a65b71802fc2",
+        "expected": 3,
+        "produced": 4,
+        "matched": 2,
+        "invented": 2,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-fe68b4fb7257bf129eb326b8c327cb341a4852d47d524a550ec6ea70a3b4d892",
+        "expected": 4,
+        "produced": 5,
+        "matched": 3,
+        "invented": 2,
+        "dropped": 1
+      },
+      {
+        "id": "nchlt-afr-seg-1392c87f1ddb6a1c6fdf6e9e2884e6ee0872e3670ebc65a362b7861feaf1f541",
+        "expected": 3,
+        "produced": 2,
+        "matched": 1,
+        "invented": 1,
+        "dropped": 2
+      },
+      {
+        "id": "nchlt-afr-seg-08a3384c2a3c31a086e969d749f81979ae11fecec801fbc125db6366e99074ef",
+        "expected": 4,
+        "produced": 6,
+        "matched": 3,
+        "invented": 3,
+        "dropped": 1
+      }
+    ]
+  }
+}

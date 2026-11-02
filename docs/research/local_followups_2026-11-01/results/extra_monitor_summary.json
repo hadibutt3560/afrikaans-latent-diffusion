@@ -1,0 +1,21 @@
+{
+  "passages": 681,
+  "exact": 13,
+  "exact_rate": 0.01908957415565345,
+  "chrf": 65.64406180326566,
+  "numeral_recall": 0.30250783699059564,
+  "numeral_precision": 0.5875190258751902,
+  "length_cap": 3,
+  "by_source": {
+    "gov-za": {
+      "n": 562,
+      "exact": 12,
+      "chrf": 64.82069336585647
+    },
+    "vukuzenzele": {
+      "n": 119,
+      "exact": 1,
+      "chrf": 69.53257492783679
+    }
+  }
+}

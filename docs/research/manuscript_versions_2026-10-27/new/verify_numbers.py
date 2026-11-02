@@ -26,6 +26,11 @@ recon = swahili['s1_reconstruction']
 s4 = swahili['s4_length_and_copying']
 diffusion = [k for k in s4 if k.endswith('-valid') and k != 'real-valid']
 overlap = sorted(round(100 * s4[k]['fourgram_overlap']) for k in diffusion)
+F = 'local_followups_2026-11-01/results/'
+fresh, shuffle, banks = load(F + 'extra_monitor_summary.json'), load(F + 'shuffle_seeds.json'), load(F + 'random_banks.json')
+numerals, split_overlap = load(F + 'numerals.json')['audit_81'], load(F + 'overlap.json')
+iso = sorted(v['raw_ppl'] for k, v in banks.items() if k.startswith('C1') and 'spread' not in k)
+std = lambda kind: banks[f'{kind}_spread']['standardised_range']
 
 CHECKS = {
     'screen: recipe gain (A - B0, exact)': f"{pct(a_b0['difference'])} points (95\\% CI [{pct(a_b0['low'])}, {pct(a_b0['high'])}])",
@@ -43,6 +48,14 @@ CHECKS = {
     'swahili: random-latent Swahili share': f"against {100 * swahili['s3_language']['random-latents']['pooled']['swh_Latn']:.0f}\\% of random-latent outputs",
     'swahili: diffusion 4-gram overlap': f"{overlap[0]}--{overlap[-1]}\\% of their word 4-grams",
     'swahili: reference 4-gram overlap': f"against {100 * s4['real-valid']['fourgram_overlap']:.0f}\\% for references",
+    'audit: numeral precision': f"{numerals['matched']}/{numerals['produced']} ({numerals['precision']:.2f})",
+    'audit: invented numerals': f"while {numerals['invented']} numerals appear",
+    'corpus: shared 12-word spans': f"{split_overlap['passages_sharing_12gram']} of the {split_overlap['validation_passages']:,} validation passages",
+    'shuffle: chrF range over five seeds': f"chrF {shuffle['chrf_range'][0]:.1f} to {shuffle['chrf_range'][1]:.1f}",
+    'fresh: reconstruction': f"reconstructs only {fresh['exact']} exactly ({100 * fresh['exact_rate']:.1f}\\%), with chrF {fresh['chrf']:.1f}, "
+                             f"numeral recall {fresh['numeral_recall']:.2f} and precision {fresh['numeral_precision']:.2f}",
+    'random banks: raw perplexity': ', '.join(f'{x:.1f}' for x in iso[:-1]) + f' and {iso[-1]:.1f}',
+    'random banks: standardised ranges': f"fitted-Gaussian banks score {std('C2')[0]:.1f} to {std('C2')[1]:.1f} and isotropic banks {std('C1')[0]:.1f} to {std('C1')[1]:.1f}",
 }
 
 failed = [name for name, text in CHECKS.items() if text not in TEX]

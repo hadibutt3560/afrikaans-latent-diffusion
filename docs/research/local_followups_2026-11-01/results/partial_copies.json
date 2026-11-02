@@ -1,0 +1,114 @@
+{
+  "H": {
+    "rows": 811,
+    "eightgram_share_in_training": 0.03376477208778841,
+    "near_copy_rows": 6,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 37
+  },
+  "R": {
+    "rows": 811,
+    "eightgram_share_in_training": 0.009087237479806139,
+    "near_copy_rows": 2,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 24
+  },
+  "C1": {
+    "rows": 1000,
+    "eightgram_share_in_training": 0.0,
+    "near_copy_rows": 0,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 0
+  },
+  "C2": {
+    "rows": 1000,
+    "eightgram_share_in_training": 5.2946471117700005e-05,
+    "near_copy_rows": 0,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 8
+  },
+  "C3": {
+    "rows": 1000,
+    "eightgram_share_in_training": 0.00039319215862495085,
+    "near_copy_rows": 0,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 10
+  },
+  "AR-hist": {
+    "rows": 256,
+    "eightgram_share_in_training": 0.034409365023057824,
+    "near_copy_rows": 2,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 18
+  },
+  "small-seed42": {
+    "rows": 1000,
+    "eightgram_share_in_training": 0.004269293924466338,
+    "near_copy_rows": 1,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 15
+  },
+  "small-seed43": {
+    "rows": 1000,
+    "eightgram_share_in_training": 0.004073912410883166,
+    "near_copy_rows": 4,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 17
+  },
+  "small-seed44": {
+    "rows": 1000,
+    "eightgram_share_in_training": 0.006336275175379045,
+    "near_copy_rows": 2,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 19
+  },
+  "small-seed45": {
+    "rows": 1000,
+    "eightgram_share_in_training": 0.003292568203198495,
+    "near_copy_rows": 0,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 18
+  },
+  "small-seed46": {
+    "rows": 1000,
+    "eightgram_share_in_training": 0.004127816627816628,
+    "near_copy_rows": 1,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 12
+  },
+  "published-seed42": {
+    "rows": 1000,
+    "eightgram_share_in_training": 0.025628442117890834,
+    "near_copy_rows": 18,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 21
+  },
+  "published-seed43": {
+    "rows": 1000,
+    "eightgram_share_in_training": 0.02766928873975466,
+    "near_copy_rows": 17,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 21
+  },
+  "published-seed44": {
+    "rows": 1000,
+    "eightgram_share_in_training": 0.026324341891452715,
+    "near_copy_rows": 20,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 22
+  },
+  "published-seed45": {
+    "rows": 1000,
+    "eightgram_share_in_training": 0.020973900308593547,
+    "near_copy_rows": 12,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 21
+  },
+  "published-seed46": {
+    "rows": 1000,
+    "eightgram_share_in_training": 0.018741258741258742,
+    "near_copy_rows": 14,
+    "longest_span_p90": 0.0,
+    "longest_span_max": 21
+  }
+}

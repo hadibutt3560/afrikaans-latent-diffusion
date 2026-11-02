@@ -44,7 +44,7 @@ University of the Witwatersrand, Johannesburg}
 
 % Abstract.
 \begin{abstract}
-Latent diffusion generates text by denoising in a continuous space and decoding the result, so every sample passes through the autoencoder that defines that space. We examine what this means when the pipeline is adapted to Afrikaans with limited in-domain data (NCHLT), using an mT5-base encoder--decoder with a Perceiver bottleneck and two diffusion denoisers trained with five seeds each. On 81 validation passages the original autoencoder reproduces 11 exactly and keeps 21 of 33 numerals; shuffling latents across documents shows that the decoder uses the latent, not that the latent preserves the passage. Generation scores do not reveal this. On test samples the larger denoiser lowers external mGPT perplexity from 51.31 to 48.61, yet on validation 1,000 random latents decoded by the same decoder reach similar raw perplexity although only 5.5\% of their outputs are identified as Afrikaans, a second Afrikaans scorer prefers them to diffusion output, and a Gaussian fitted to real latents yields Afrikaans text that the larger denoiser beats only narrowly. A revised training recipe that trains every autoencoder parameter reconstructs 73 of 103 reserve passages exactly, against 19 for the original; its effect on generation is not yet measured. Reconstruction, language identity and generation scores measure different properties and should be reported together.
+Latent diffusion generates text by denoising in a continuous space and decoding the result, so every sample passes through the autoencoder that defines that space. We examine what this means when the pipeline is adapted to Afrikaans with limited in-domain data (NCHLT), using an mT5-base encoder--decoder with a Perceiver bottleneck and two diffusion denoisers trained with five seeds each. On 81 validation passages the original autoencoder reproduces 11 exactly and keeps 21 of 33 numerals; shuffling latents across documents shows that the decoder uses the latent, not that the latent preserves the passage. Generation scores do not reveal this. On test samples the larger denoiser lowers external mGPT perplexity from 51.31 to 48.61, yet on validation random latents decoded by the same decoder reach raw perplexity close to diffusion's (50 to 60 across three banks of 1,000, against about 50) although only 5.5\% of their outputs are identified as Afrikaans, a second Afrikaans scorer prefers them to diffusion output, and a Gaussian fitted to real latents yields Afrikaans text that the larger denoiser beats only narrowly. A revised training recipe that trains every autoencoder parameter reconstructs 73 of 103 reserve passages exactly, against 19 for the original; its effect on generation is not yet measured. Reconstruction, language identity and generation scores measure different properties and should be reported together.
 \end{abstract}
 
 % ===========================================================================
@@ -147,7 +147,7 @@ All three content checks (AI-assisted) & 26/81 & -- \\
 \label{tab:recon}
 \end{table}
 
-With correct latents teacher-forced CE is 1.079; with shuffled latents it is 8.319 (difference 7.240, 95\% CI [6.605, 7.933]), and chrF falls from 67.70 to 12.84 (Table~\ref{tab:recon}). The decoder therefore relies on source-specific information in the latent, yet the encode--decode path loses content: only 11 of 81 passages are reconstructed exactly and 21 of 33 numerals survive, while 4 numerals appear that are not in the source, with no input truncated and no output at the length limit. Earlier 1,024-passage evaluations agree (token accuracy 82.75\%, exact reconstruction 12.21\% on validation). Exact-match failure is not the same as a change of meaning, since a punctuation difference also fails it, but many errors do change content: ``regulering'' (regulation) becomes ``betaling'' (payment), and ``Regeringsdepartement'' (government department) becomes ``Regeringskommissie'' (commission). How often this happens has only model estimates. An AI labeller that saw each source beside its reconstruction marked 55 of 81 passages (68\%) as failing at least one content check, and 62 (77\%) under a stricter rule for seven borderline passages. These are unvalidated model labels, not measured error rates; neither was checked by an Afrikaans reader.
+With correct latents teacher-forced CE is 1.079; with shuffled latents it is 8.319 (difference 7.240, 95\% CI [6.605, 7.933]), and chrF falls from 67.70 to 12.84 (Table~\ref{tab:recon}). The decoder therefore relies on source-specific information in the latent, yet the encode--decode path loses content: only 11 of 81 passages are reconstructed exactly and 21 of 33 numerals survive, while 4 numerals appear that are not in the source, with no input truncated and no output at the length limit. Earlier 1,024-passage evaluations agree (token accuracy 82.75\%, exact reconstruction 12.21\% on validation), and five further shuffles give chrF 12.6 to 15.4 with no exact match. On 681 passages never used in development, the held-out slice of the extra data (government statements and newspaper text, longer and richer in numbers than NCHLT; median 64 against 48 tokens), the same autoencoder reconstructs only 13 exactly (1.9\%), with chrF 65.6, numeral recall 0.30 and precision 0.59. The register differs, so this is not a like-for-like comparison, but the failure does not depend on the development passages. Exact-match failure is not the same as a change of meaning, since a punctuation difference also fails it, but many errors do change content: ``regulering'' (regulation) becomes ``betaling'' (payment), and ``Regeringsdepartement'' (government department) becomes ``Regeringskommissie'' (commission). How often this happens has only model estimates. An AI labeller that saw each source beside its reconstruction marked 55 of 81 passages (68\%) as failing at least one content check, and 62 (77\%) under a stricter rule for seven borderline passages. These are unvalidated model labels, not measured error rates; neither was checked by an Afrikaans reader.
 
 \subsection{Generation}
 \label{sec:res-gen}
@@ -184,7 +184,7 @@ Large diffusion (5 runs) & 50.02 & 0.6087 & 48.61 $\pm$ 0.91 & 26.34 & 0.6903 & 
 \label{fig:length}
 \end{figure}
 
-\paragraph{AR comparison and the decoder alone.} On 256 validation samples the raw ratios to AR are 0.6458 and 0.6087, well within 1.20. Random latents decoded by the same decoder, however, score 57.60 on the same 256 rows; on 1,000 validation latents they score 50.36, against 51.94 and 49.60 for the $5\times1{,}000$ validation outputs of small and large diffusion, so mGPT perplexity alone does not show what the denoiser adds. Human test text scores 33.62, but the scorer is strongly length-dependent: human passages of 1--10 words score 240.83 and those of 36+ words 25.93. Both diffusion sizes have higher perplexity than human text in every band longer than ten words (Figure~\ref{fig:length}). Resampling the AR model under 18 temperature, top-$p$ and constraint settings found no better-matched comparator: every setting produced 36 to 112 exact training copies per 1,000 validation outputs, against at most 13 for any diffusion run, so none met the pre-set eligibility rule. The AR baseline is thus a bounded from-scratch comparator, not evidence that diffusion outperforms autoregression.
+\paragraph{AR comparison and the decoder alone.} On 256 validation samples the raw ratios to AR are 0.6458 and 0.6087, well within 1.20. Random latents decoded by the same decoder, however, score 57.60 on the same 256 rows; three banks of 1,000 validation latents score 50.4, 51.7 and 59.5, against 51.94 and 49.60 for the $5\times1{,}000$ validation outputs of small and large diffusion, so mGPT perplexity alone does not show what the denoiser adds. Human test text scores 33.62, but the scorer is strongly length-dependent: human passages of 1--10 words score 240.83 and those of 36+ words 25.93. Both diffusion sizes have higher perplexity than human text in every band longer than ten words (Figure~\ref{fig:length}). Resampling the AR model under 18 temperature, top-$p$ and constraint settings found no better-matched comparator: every setting produced 36 to 112 exact training copies per 1,000 validation outputs, against at most 13 for any diffusion run, so none met the pre-set eligibility rule. The AR baseline is thus a bounded from-scratch comparator, not evidence that diffusion outperforms autoregression.
 
 \subsection{Language, shared phrasing and a second scorer}
 \label{sec:res-language}
@@ -216,9 +216,9 @@ Fitted-Gaussian latents & 99.7 & 4.6 & 8.3 & 63.6 & 172.5 \\
 
 Most diffusion outputs are identified as Afrikaans, at rates near human text (Table~\ref{tab:language}); the small configuration falls just below the human interval, mostly in outputs of ten words or fewer. Unrecognised words are slightly more frequent than in human text. In an AI-assisted reading of 50 unrecognised words per group, 22 from diffusion were malformed against 8 from human text. Diffusion outputs share 8.7\% (small) and 11.8\% (large) of their word 4-grams with the training split, against 14.4\% for held-out human text. These checks describe the generated text; they do not link its errors causally to reconstruction errors.
 
-The random-latent control shows why these checks matter. Its raw mGPT perplexity is close to diffusion's, yet only 5.5\% of its outputs are identified as Afrikaans. Length-standardised mGPT ranks it last, but Goldfish does not penalise it: its raw Goldfish perplexity is 56.1 against 159.4 and 133.5 for small and large diffusion, and even after standardisation Goldfish ranks it best among the generated outputs, though still behind human text (Table~\ref{tab:language}). Per output, the two scorers' losses per token correlate only moderately (Spearman 0.54 to 0.73 for diffusion, AR and human text), and Goldfish rates 31\% of the random outputs better than the median human passage, against 5\% to 11\% of diffusion outputs. Goldfish is therefore not a validated quality scorer for this use.
+The random-latent control shows why these checks matter. Its raw mGPT perplexity is within ten points of diffusion's, yet only 5.5\% of its outputs are identified as Afrikaans. Length-standardised mGPT ranks it last, but Goldfish does not penalise it: its raw Goldfish perplexity is 56.1 against 159.4 and 133.5 for small and large diffusion, and even after standardisation Goldfish ranks it best among the generated outputs, though still behind human text (Table~\ref{tab:language}). Per output, the two scorers' losses per token correlate only moderately (Spearman 0.54 to 0.73 for diffusion, AR and human text), and Goldfish rates 31\% of the random outputs better than the median human passage, against 5\% to 11\% of diffusion outputs. Goldfish is therefore not a validated quality scorer for this use.
 
-The fitted-Gaussian control asks a sharper question: does the denoiser beat a simple model of where real latents lie? Its outputs are identified as Afrikaans (99.7\%), with fewer unrecognised words than diffusion output (4.6\%), though they are less diverse (distinct-2 0.63 against 0.67 and 0.70). On length-standardised mGPT perplexity the large configuration is lower by 4.0 (95\% CI [$-$7.5, $-$0.5]) and the small one higher by 7.7 ([3.7, 11.7]). The protocol's primary control, recombined slots from independent passages, produced only 2 outputs of ten words or fewer, too few for this comparison; the fitted-Gaussian contrasts were exploratory and were given this weight after the results were seen. A Gaussian prior over this latent space already yields fluent-scoring Afrikaans, and the larger denoiser improves on it only narrowly. For the named comparisons it agrees with mGPT in direction: the large-minus-small difference and the large configuration's advantage over AR are confirmed under both scorers (standardised ratios 0.84 and 0.74 under mGPT, 0.76 and 0.73 under Goldfish), but the small configuration's advantage over AR is not clear under either (mGPT 0.89 [0.76, 1.03]; Goldfish 0.95 [0.78, 1.16]). Two further checks failed their pre-set calibration and are not reported as results: MAUVE \citep{pillutla2021mauve} with LaBSE embeddings \citep{feng2022labse} scored two halves of human text at 0.14 against a required 0.90, and two local model judges missed the validation thresholds for applying the proposal's sample checklist.
+The fitted-Gaussian control asks a sharper question: does the denoiser beat a simple model of where real latents lie? Its outputs are identified as Afrikaans (99.7\%), with fewer unrecognised words than diffusion output (4.6\%), though they are less diverse (distinct-2 0.63 against 0.67 and 0.70). On length-standardised mGPT perplexity the large configuration is lower by 4.0 (95\% CI [$-$7.5, $-$0.5]) and the small one higher by 7.7 ([3.7, 11.7]). Two further banks of each control give the same picture: fitted-Gaussian banks score 62.1 to 63.6 and isotropic banks 102.3 to 107.9, so the large configuration's margin over the fitted Gaussian is 2.5 to 4.0 in every bank. The protocol's primary control, recombined slots from independent passages, produced only 2 outputs of ten words or fewer, too few for this comparison; the fitted-Gaussian contrasts were exploratory and were given this weight after the results were seen. A Gaussian prior over this latent space already yields fluent-scoring Afrikaans, and the larger denoiser improves on it only narrowly. For the named comparisons it agrees with mGPT in direction: the large-minus-small difference and the large configuration's advantage over AR are confirmed under both scorers (standardised ratios 0.84 and 0.74 under mGPT, 0.76 and 0.73 under Goldfish), but the small configuration's advantage over AR is not clear under either (mGPT 0.89 [0.76, 1.03]; Goldfish 0.95 [0.78, 1.16]). Two further checks failed their pre-set calibration and are not reported as results: MAUVE \citep{pillutla2021mauve} with LaBSE embeddings \citep{feng2022labse} scored two halves of human text at 0.14 against a required 0.90, and two local model judges missed the validation thresholds for applying the proposal's sample checklist.
 
 \subsection{Interventions and full autoencoder training}
 \label{sec:res-aescreen}
@@ -273,7 +273,7 @@ An earlier Swahili run of the same pipeline had been evaluated only by denoising
 
 The study covers one administrative corpus, one language (Swahili is checked descriptively only) and one task, and training text was not screened with language identification. The diffusion system inherits mT5 pretraining and the AR baseline does not; they also differ in decoding and compute, and the AR budget was set provisionally against an earlier diffusion run, so differences cannot be attributed to diffusion versus autoregression. mGPT perplexity is length-dependent, chrF and numeral matching are surface measures, and low repetition is partly enforced by decoding. Seeds are conditional on one autoencoder and one AR run, each screen arm is a single training run, intervention gains are exploratory, and the test set is not untouched. Training rescales the self-conditioning estimate to norm eight per slot but sampling does not (Appendix~\ref{app:model}); this affects generation, not the reconstruction results, and its effect was not tested.
 
-Several checks the evidence calls for remain to be done: blinded annotation of reconstruction errors by Afrikaans readers (entities, numbers, negation, predicate structure), including the 14 inexact long reserve passages; human calibration of the language-identification and dictionary labels, especially for short outputs; learning curves showing whether decoder-only adaptation had saturated; and generation from the retrained autoencoder under the same protocol. We make no claim about efficiency: end-to-end generation runs 250 denoising steps followed by beam decoding, and latency and memory were not measured.
+Several checks the evidence calls for remain to be done: blinded annotation of reconstruction errors by Afrikaans readers (entities, numbers, negation, predicate structure), including the 14 inexact long reserve passages; human calibration of the language-identification and dictionary labels, especially for short outputs; learning curves showing whether decoder-only adaptation had saturated; the retrained autoencoder on the 681 fresh passages; and generation from it under the same protocol. We make no claim about efficiency: end-to-end generation runs 250 denoising steps followed by beam decoding, and latency and memory were not measured.
 
 Departures from the proposal: the English control used ROCStories with BART, the supported upstream route, as a reduced implementation check rather than the proposed OpenWebText reproduction; the tokeniser is mT5's rather than a new SentencePiece vocabulary; the AR baseline matches corpus and tokeniser only; and the planned researcher checklists for reconstructions and samples were not completed, with no reason documented. There was no participant-based evaluation, as planned; reconstruction and sample readings were AI-assisted and not verified by an Afrikaans reader. Additions not in the proposal are five seeds per configuration, the latent controls, the decoder interventions, the autoencoder screen and the Swahili checks.
 
@@ -281,7 +281,7 @@ Departures from the proposal: the English control used ROCStories with BART, the
 \section{Conclusion}
 % ===========================================================================
 
-Adapting latent diffusion to Afrikaans with limited in-domain data produced samples with lower raw perplexity than a small, historical autoregressive comparator, and lower again with a larger denoiser, from an autoencoder that does not reproduce its inputs faithfully. Random latents passed through the same decoder scored almost as well on raw perplexity, and latents drawn from a fitted Gaussian produced Afrikaans text that the larger denoiser beat only narrowly. Retraining the decoder alone gave a small gain; a revised full-training recipe substantially improved reconstruction on passages held back for that test. Whether better reconstruction yields better generation remains to be measured. In a new language, reconstruction fidelity, language identity and controls that bypass the denoiser should be reported with generation scores, because each can change what those scores mean.
+Adapting latent diffusion to Afrikaans with limited in-domain data produced samples with lower raw perplexity than a small, historical autoregressive comparator, and lower again with a larger denoiser, from an autoencoder that does not reproduce its inputs faithfully. Random latents passed through the same decoder came within ten points on raw perplexity, and latents drawn from a fitted Gaussian produced Afrikaans text that the larger denoiser beat only narrowly. Retraining the decoder alone gave a small gain; a revised full-training recipe substantially improved reconstruction on passages held back for that test. Whether better reconstruction yields better generation remains to be measured. In a new language, reconstruction fidelity, language identity and controls that bypass the denoiser should be reported with generation scores, because each can change what those scores mean.
 
 \section*{Statements}
 \textbf{AI use.} AI assistance supported artifact auditing, analysis, sample and reconstruction inspection, drafting and LaTeX preparation; AI-assisted inspection is not human evaluation, and the author is responsible for the claims. \textbf{Ethics.} The corpus is publicly licensed and contact details were masked; no human participants were involved, and institutional ethics approval or exemption has not been verified. \textbf{Data and code.} Code, protocols and documentation: \url{https://github.com/hadibutt3560/afrikaans-latent-diffusion}; \texttt{REPRODUCIBILITY.md} at the repository root indexes the training configurations, scorer revisions, length-standardisation weights and band-support rule, and the interval procedures. Each study's folder holds its protocol, code and summary results, including per-run scores and the paired reconstructions of the 811-passage and train/held-out sets, with SHA-256 hashes of every output file. Model weights, corpora and full sample banks are not in the repository; the hashes allow regenerated outputs to be checked.
@@ -293,6 +293,35 @@ Adapting latent diffusion to Afrikaans with limited in-domain data produced samp
 
 \section{Model and estimators as implemented}
 \label{app:model}
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lllll}
+\toprule
+Set & Size & Selection & Used for & First used \\
+\midrule
+Training split & 47,767 passages, 2,005 docs & Document split, seed 42 & Training; overlap and copy checks & -- \\
+Audit passages & 81 passages, 64 docs & Validation docs 0--63 of seed-91427 shuffle & Reconstruction, interventions & 22 Oct. \\
+Selection panel & 663 passages & Same 64 documents & Screen: early stopping, ranking & 27 Oct. \\
+Comparison panel & 194 passages & Validation docs 128--250 & Screen contrasts; train/held-out check & 27 Oct. \\
+Reserve & 103 passages & Validation docs 64--127 & Screen winner vs original, once & 31 Oct. \\
+Human validation pool & 4,825 passages & Non-reserve validation, $\le$128 tokens & Language, dictionary, overlap & 31 Oct. \\
+Human scored subset & 811 passages, 58 docs & 1,000 scored validation rows minus reserve docs & Scorers; reconstruction of human text & 30 Oct. \\
+Diffusion validation & $5\times1{,}000$ per size & Sampling seeds 30000--30999 & Controls, language, scorers & Before 23 Oct. \\
+\quad 256-row subset & 256 per run & First 256 seeds & AR ratios & 22 Oct. \\
+AR samples & 256 & Nucleus sampling & AR ratios, language & 22 Oct. \\
+Latent controls & 1,000 per control & Seeds 30000+, 40000+, 50000+ & Decoder-only controls & 30 Oct. \\
+Test banks & $5\times1{,}000$ per size; 1,000 human & Seeds 120000--120999 & Test PPL, Figure~\ref{fig:length} & 19 Sept.\ (AE), 9 Oct.\ (PPL) \\
+Extra-data monitor & 681 passages & 5\% of extra-data documents & Fresh reconstruction check (original autoencoder) & 1 Nov. \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\caption{Evaluation sets. ``First used'' is when results on the set were first seen; the test banks were exposed before the models were frozen on 23 October.}
+\label{tab:ledger}
+\end{table*}
 
 \paragraph{Autoencoder.} The mT5 encoder maps a passage of at most 128 tokens to hidden states, which the Perceiver compresses to $u\in\mathbb{R}^{32\times64}$. Each slot is rescaled to norm eight, $x_j = 8\,u_j/\lVert u_j\rVert$, so that $x$ has unit variance per dimension on average, and a reconstruction map turns $x$ into the decoder's cross-attention input. Training minimises token-weighted teacher-forced cross-entropy over the non-padding target tokens $y_1,\dots,y_N$ of a batch, $\mathcal{L}_{\mathrm{AE}} = -\frac{1}{N}\sum_{n}\log p_\phi(y_n\mid y_{<n},x)$.
 
@@ -325,34 +354,6 @@ No end token is scored. For length-standardised perplexity, $\ell_b$ is the same
 \section{Evaluation sets}
 \label{app:ledger}
 
-\begin{table*}[t]
-\centering
-\footnotesize
-\setlength{\tabcolsep}{4pt}
-\begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{lllll}
-\toprule
-Set & Size & Selection & Used for & First used \\
-\midrule
-Training split & 47,767 passages, 2,005 docs & Document split, seed 42 & Training; overlap and copy checks & -- \\
-Audit passages & 81 passages, 64 docs & Validation docs 0--63 of seed-91427 shuffle & Reconstruction, interventions & 22 Oct. \\
-Selection panel & 663 passages & Same 64 documents & Screen: early stopping, ranking & 27 Oct. \\
-Comparison panel & 194 passages & Validation docs 128--250 & Screen contrasts; train/held-out check & 27 Oct. \\
-Reserve & 103 passages & Validation docs 64--127 & Screen winner vs original, once & 31 Oct. \\
-Human validation pool & 4,825 passages & Non-reserve validation, $\le$128 tokens & Language, dictionary, overlap & 31 Oct. \\
-Human scored subset & 811 passages, 58 docs & 1,000 scored validation rows minus reserve docs & Scorers; reconstruction of human text & 30 Oct. \\
-Diffusion validation & $5\times1{,}000$ per size & Sampling seeds 30000--30999 & Controls, language, scorers & Before 23 Oct. \\
-\quad 256-row subset & 256 per run & First 256 seeds & AR ratios & 22 Oct. \\
-AR samples & 256 & Nucleus sampling & AR ratios, language & 22 Oct. \\
-Latent controls & 1,000 per control & Seeds 30000+, 40000+, 50000+ & Decoder-only controls & 30 Oct. \\
-Test banks & $5\times1{,}000$ per size; 1,000 human & Seeds 120000--120999 & Test PPL, Figure~\ref{fig:length} & 19 Sept.\ (AE), 9 Oct.\ (PPL) \\
-Extra-data monitor & 681 passages & 5\% of extra-data documents & Held out for a fresh evaluation & Not used here \\
-\bottomrule
-\end{tabular}
-\end{adjustbox}
-\caption{Evaluation sets. ``First used'' is when results on the set were first seen; the test banks were exposed before the models were frozen on 23 October.}
-\label{tab:ledger}
-\end{table*}
 
 Table~\ref{tab:ledger} lists every set behind the reported numbers. Table~\ref{tab:bands} gives the values plotted in Figure~\ref{fig:length}.
 
