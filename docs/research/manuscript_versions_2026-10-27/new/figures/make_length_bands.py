@@ -1,4 +1,4 @@
-"""Length-band mGPT perplexity figure (test split, human and diffusion only).
+"""Length-band mGPT perplexity figure (test split: human, diffusion and AR).
 
 Reads docs/research/stage4_final_evaluation_2026-10-23/length_bands.json and
 writes figures/length_bands.pdf next to this script. No model is run.
@@ -32,6 +32,9 @@ for fam, colour, marker, name in (('small', 'tab:blue', '^', 'Small diffusion'),
     mean = [sum(v) / len(v) for v in vals]
     ax.fill_between(x, [min(v) for v in vals], [max(v) for v in vals], color=colour, alpha=0.2, lw=0)
     ax.plot(x, mean, color=colour, marker=marker, ms=3, lw=1.2, label=f'{name} (5 × 1,000)')
+
+ar = json.loads((ROOT / 'docs/research/ar_test_2026-11-05/results/length_bands_ar.json').read_text(encoding='utf8'))['bands']
+ax.plot(x, [ar[b]['ppl'] for b in BANDS], color='tab:orange', marker='s', ms=3, lw=1.2, ls='--', label='AR, nucleus (1,000)')
 
 ax.set_yscale('log')
 ax.set_yticks([20, 50, 100, 200, 500])

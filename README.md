@@ -12,7 +12,9 @@ sample passes through the autoencoder, and the original autoencoder reconstructs
 11 of 81 held-out passages exactly. Random latents decoded by the same decoder reach
 similar raw perplexity, so perplexity alone cannot show what the denoiser adds. Training
 every autoencoder parameter fixes most of the reconstruction gap: 73 of 103 reserve
-passages are reproduced exactly, against 19 before.
+passages are reproduced exactly, against 19 before. Diffusion trained on that retrained
+autoencoder, however, scores worse on perplexity and no longer meets the proposal's rule of
+perplexity at most 1.20 times the autoregressive baseline's.
 
 **Paper:** [PDF](docs/research/manuscript_versions_2026-10-27/new/main.pdf) ·
 [LaTeX source](docs/research/manuscript_versions_2026-10-27/new/main.tex)
@@ -22,14 +24,17 @@ passages are reproduced exactly, against 19 before.
 | Result | Value | Details |
 |---|---|---|
 | Test mGPT perplexity, small / large denoiser (5 seeds each) | 51.31 / 48.61 | [Final evaluation](docs/research/stage4_final_evaluation_2026-10-23/) |
-| AR baseline perplexity (validation, not a matched comparison) | 82.18 | [AR scope](docs/research/ar_scope_decision_2026-10-22/) |
+| AR baseline perplexity, test / validation (not a matched comparison) | 79.15 / 82.18 | [AR test check](docs/research/ar_test_2026-11-05/), [AR scope](docs/research/ar_scope_decision_2026-10-22/) |
+| Ratio to AR on test, small / large (rule: at most 1.20), raw and length-standardised | 0.65 / 0.61 and 0.90 / 0.75 | [AR test check](docs/research/ar_test_2026-11-05/) |
 | Length-standardised perplexity: small / large / Gaussian fitted to real latents / random latents | 71.3 / 59.6 / 63.6 / 107.6 | [Latent controls](docs/research/latent_controls_2026-10-30/) |
 | Reserve reconstruction, original → retrained autoencoder: exact | 19 → 73 of 103 | [Autoencoder screen](docs/research/ae_screen_2026-10-27/) |
 | Reserve reconstruction, original → retrained autoencoder: chrF | 68.32 → 98.70 | same |
+| Unseen extra-data passages (681), exact: original / arm A / retrained (D) | 13 / 171 / 415 | [Follow-up checks](docs/research/followup_inference_2026-11-03/) |
+| Diffusion on the retrained autoencoder: test perplexity, small / large (3 seeds each) | 288.45 / 95.90 | [Follow-up checks](docs/research/followup_inference_2026-11-03/) |
+| Same, ratio to AR on test, raw / length-standardised: small / large | 3.64 / 1.21 and 3.87 / 1.38 | [AR test check](docs/research/ar_test_2026-11-05/) |
 | Swahili run: reconstruction chrF, correct / shuffled latents | 74.8 / 24.3 | [Swahili check](docs/research/swahili_check_2026-11-01/) |
 
-Diffusion trained on the retrained autoencoder is still being evaluated; this table will be
-updated when it finishes. All readings are automatic. No human evaluation was carried out,
+All readings are automatic. No human evaluation was carried out,
 and readings made with AI assistance are labelled as such in the protocols and the paper.
 
 ## Repository layout
