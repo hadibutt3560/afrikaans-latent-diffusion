@@ -4,7 +4,7 @@
 
 The primary arm is `ar-cap127`, checkpoint `ar-baseline-57759/best_model`, selected step 60,000. Before scoring, 20 of its 256 outputs were selected by `random.Random(20261022).sample(range(256),20)`, as specified in the protocol. The reviewed generation seeds are 30180, 30144, 30088, 30024, 30123, 30117, 30120, 30001, 30067, 30030, 30101, 30099, 30157, 30054, 30076, 30059, 30110, 30230, 30002 and 30058. This selection was not based on mGPT scores.
 
-Source: [primary-arm outputs](C:/Users/SCIENTIST/Documents/GitHub/research/outputs/ar-validation-audit-20261022/ar-cap127-samples.jsonl). The generated [inspection extract](C:/Users/SCIENTIST/Documents/GitHub/research/docs/research/ar_validation_audit_2026-10-22/SAMPLES_FOR_INSPECTION.md) contains the complete fixed sample plus separately labelled score-selected examples.
+Source: primary-arm outputs (`outputs/ar-validation-audit-20261022/ar-cap127-samples.jsonl` in the research repository, not included here). The generated [inspection extract](SAMPLES_FOR_INSPECTION.md) contains the complete fixed sample plus separately labelled score-selected examples.
 
 ## Observations supported by the fixed sample
 

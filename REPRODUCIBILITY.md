@@ -6,7 +6,7 @@ This is the index for the manuscript `docs/research/manuscript_versions_2026-10-
 
 ## Proposal
 
-The research proposal cited in the manuscript as Butt (2026) fixed the research questions and credibility criteria before the Afrikaans experiments. It is the version submitted to the University of the Witwatersrand on 24 May 2026, unaltered, and was added to the repository on 2 November 2026; the submission date rests on the university's record, not on this commit.
+The research proposal, referred to in the manuscript as "the proposal", fixed the research questions and credibility criteria before the Afrikaans experiments. It is the version submitted to the University of the Witwatersrand on 24 May 2026, unaltered, and was added to the repository on 2 November 2026; the submission date rests on the university's record, not on this commit.
 
 | Item | Where | SHA-256 |
 |---|---|---|
@@ -64,6 +64,8 @@ The research proposal cited in the manuscript as Butt (2026) fixed the research 
 | Swahili check | `docs/research/swahili_check_2026-11-01/` (`run_check.py`, `summarise.py`) | `results/summary.json`, `results/RESULTS.md`, `results/s4.json`, `results/gates.json` |
 | Follow-up inference checks (job 81249: self-conditioning audit, fitted prior on D, 681-passage reconstruction) | `docs/research/followup_inference_2026-11-03/` (`followup.py`, `followup.slurm`, `analyze.py`) | `PROTOCOL.md` (with dated note on approval), `analysis.json` |
 | AR baseline on the test split (RQ3 common-split check, run locally 5 Nov.) | `docs/research/ar_test_2026-11-05/` (`run_ar_test.py`; paths assume the `research` repository layout) | `PROTOCOL.md`, `results/analysis.json`, `results/anchors.json`, `results/contract.json`; samples in `outputs/ar-test-20261105/` *(local)* |
+| English control (RQ1: BART on ROCStories, 5,000 updates) | `docs/research/english_control_2026-08-15/` (`README.md`) | `english_control_metrics.json`, extracted from the 20 September research audit |
+| Tokenisation fertility from saved outputs (5 Nov.) | `docs/research/fertility_2026-11-05/` (`run_fertility.py`; paths assume the `research` repository layout) | `results/fertility.json` |
 
 ## Readings and records
 

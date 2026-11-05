@@ -4,11 +4,11 @@ Finalised23 October2026; folder name retains the date the work started. **Removi
 
 ## Experiment and integrity
 
-The [protocol](C:/Users/SCIENTIST/Documents/GitHub/research/docs/research/stage3_improvement_2026-10-22/PROTOCOL.md) was saved before treatment inference. The hypothesis was that the repeated-trigram prohibition obstructed faithful reconstruction. We used the final frozen AE job56531/step30500, the same81 validation passages from64 documents as Stage1, and the same encoded latent for each paired reconstruction. These are historically exposed validation data, not an untouched benchmark.
+The [protocol](PROTOCOL.md) was saved before treatment inference. The hypothesis was that the repeated-trigram prohibition obstructed faithful reconstruction. We used the final frozen AE job56531/step30500, the same81 validation passages from64 documents as Stage1, and the same encoded latent for each paired reconstruction. These are historically exposed validation data, not an untouched benchmark.
 
 The only changed setting was `no_repeat_ngram_size: 3 -> 0`. Both arms used FP32, batch1, deterministic beam4 decoding, maximum128 positions, minimum5, repetition penalty1.2 and length penalty1. All81 baseline token sequences reproduced Stage1 exactly. This tests one decoding restriction, not whether the whole decoder or latent representation is optimal.
 
-Exact IDs, full outputs and per-passage metrics: [pairs.jsonl](C:/Users/SCIENTIST/Documents/GitHub/research/outputs/stage3-decoder-20261022/pairs.jsonl). Input/protocol/source identities and runtime settings: [contract.json](C:/Users/SCIENTIST/Documents/GitHub/research/outputs/stage3-decoder-20261022/contract.json). Aggregate results: [analysis.json](C:/Users/SCIENTIST/Documents/GitHub/research/outputs/stage3-decoder-20261022/analysis.json). [Verification](C:/Users/SCIENTIST/Documents/GitHub/research/outputs/stage3-decoder-20261022/checks.json) confirms parent reproduction, unchanged frozen inputs, aggregate recomputation and complete inspection coverage.
+Exact IDs, full outputs and per-passage metrics: pairs.jsonl (`outputs/stage3-decoder-20261022/pairs.jsonl` in the research repository, not included here). Input/protocol/source identities and runtime settings: contract.json (`outputs/stage3-decoder-20261022/contract.json` in the research repository, not included here). Aggregate results: analysis.json (`outputs/stage3-decoder-20261022/analysis.json` in the research repository, not included here). Verification (`outputs/stage3-decoder-20261022/checks.json` in the research repository, not included here) confirms parent reproduction, unchanged frozen inputs, aggregate recomputation and complete inspection coverage.
 
 ## Results
 
@@ -32,7 +32,7 @@ Repeated n-grams here are case-sensitive whitespace-word tuples, counted within 
 
 ## Inspection and interpretation
 
-Thirty pairs changed in token sequence;29 changed in decoded text. All are documented in [AI-assisted inspection](C:/Users/SCIENTIST/Documents/GitHub/research/docs/research/stage3_improvement_2026-10-22/AI_ASSISTED_INSPECTION.md) and [changed-pair text](C:/Users/SCIENTIST/Documents/GitHub/research/docs/research/stage3_improvement_2026-10-22/CHANGED_PAIRS.md). The other51 are token-identical and retain the Stage1 inspection. No human ratings are claimed.
+Thirty pairs changed in token sequence;29 changed in decoded text. All are documented in [AI-assisted inspection](AI_ASSISTED_INSPECTION.md) and [changed-pair text](CHANGED_PAIRS.md). The other51 are token-identical and retain the Stage1 inspection. No human ratings are claimed.
 
 Useful corrections occur: row11 restores an apostrophe, row21 restores the second PHONE placeholder, and row56 restores the trauma/psychological-assessment sentence exactly. These explain the increase in exact copies. However, row41 repeats `I mfpamba:`, row48 repeats `Zola`, and row57 loses all clock-time content while repeating a weekday phrase. Other overlap gains retain wrong names, conditions or clause meanings. A progress message prematurely said repetition continued to the output limit; the completed measurements correct that: **all outputs terminated before the cap**.
 
@@ -40,7 +40,7 @@ The experiment shows that the restriction can obstruct some faithful copies, but
 
 ## Projection decision and stopping
 
-[PROJECTION_ADMISSION.md](C:/Users/SCIENTIST/Documents/GitHub/research/docs/research/stage3_improvement_2026-10-22/PROJECTION_ADMISSION.md) records the prior decoder-only projection experiment: PPL ratios1.0115 and1.0241 at50 and250 steps, with both intervals including1. No saved final-benchmark generated-latent bank or norm summaries were located. Final-model norm mismatch therefore remains unmeasured. We deferred fresh projection work as lower priority; we did not claim that a final-model norm gate was passed or that projection can never help.
+[PROJECTION_ADMISSION.md](PROJECTION_ADMISSION.md) records the prior decoder-only projection experiment: PPL ratios1.0115 and1.0241 at50 and250 steps, with both intervals including1. No saved final-benchmark generated-latent bank or norm summaries were located. Final-model norm mismatch therefore remains unmeasured. We deferred fresh projection work as lower priority; we did not claim that a final-model norm gate was passed or that projection can never help.
 
 **Stage3 decision:** retain `no_repeat_ngram_size=3` and the existing benchmark. Do not use the103-passage reserve, run unconditional transfer, start another decoder sweep, or retrain the AE on this evidence. This is a completed bounded investigation with a negative/mixed outcome, not an incomplete search for a positive result. The larger earlier optional programme is not represented as fully executed.
 

@@ -1,0 +1,115 @@
+{
+ "definition": "mT5 tokens without special tokens per whitespace word, pooled over the bank",
+ "generation_banks": {
+  "human test": 1.8573132817583689,
+  "AR test": 1.772797441834822,
+  "original small diffusion test": {
+   "mean": 1.7710578626887676,
+   "min": 1.7650940400155264,
+   "max": 1.7786205338411387,
+   "runs": 5
+  },
+  "original large diffusion test": {
+   "mean": 1.785981839983179,
+   "min": 1.7765827612509535,
+   "max": 1.792383529866615,
+   "runs": 5
+  },
+  "retrained small diffusion test": {
+   "mean": 1.7725400099372022,
+   "min": 1.7688617734724292,
+   "max": 1.774780595488074,
+   "runs": 3
+  },
+  "retrained large diffusion test": {
+   "mean": 1.780185137594314,
+   "min": 1.775109170305677,
+   "max": 1.7875514612970285,
+   "runs": 3
+  }
+ },
+ "recon681_source_fertility": {
+  "pooled": 1.8330181380555317,
+  "tercile_cuts": [
+   1.6904761904761905,
+   1.9333333333333333
+  ]
+ },
+ "recon681_by_source_fertility": {
+  "B0": {
+   "exact_by_tercile": [
+    0.022026431718061675,
+    0.017777777777777778,
+    0.017467248908296942
+   ],
+   "n_by_tercile": [
+    227,
+    225,
+    229
+   ],
+   "chrf_by_tercile": [
+    67.74084412501408,
+    67.92980529954937,
+    61.31394272487789
+   ],
+   "spearman_fertility_chrf": [
+    -0.17571066568759974,
+    3.9717963165762725e-06
+   ],
+   "spearman_fertility_tokens": [
+    0.2973304690097262,
+    2.2853465044694636e-15
+   ]
+  },
+  "A": {
+   "exact_by_tercile": [
+    0.31718061674008813,
+    0.24,
+    0.1965065502183406
+   ],
+   "n_by_tercile": [
+    227,
+    225,
+    229
+   ],
+   "chrf_by_tercile": [
+    93.18353197896234,
+    94.30944436689725,
+    89.05023120848614
+   ],
+   "spearman_fertility_chrf": [
+    -0.15862344434755676,
+    3.207883691919202e-05
+   ],
+   "spearman_fertility_tokens": [
+    0.2973304690097262,
+    2.2853465044694636e-15
+   ]
+  },
+  "D": {
+   "exact_by_tercile": [
+    0.6916299559471366,
+    0.6577777777777778,
+    0.48034934497816595
+   ],
+   "n_by_tercile": [
+    227,
+    225,
+    229
+   ],
+   "chrf_by_tercile": [
+    99.0006490255023,
+    99.00745787611237,
+    96.66594678375964
+   ],
+   "spearman_fertility_chrf": [
+    -0.2288155383629589,
+    1.5362519959987067e-09
+   ],
+   "spearman_fertility_tokens": [
+    0.2973304690097262,
+    2.2853465044694636e-15
+   ]
+  }
+ }
+}

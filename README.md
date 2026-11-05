@@ -13,8 +13,9 @@ sample passes through the autoencoder, and the original autoencoder reconstructs
 similar raw perplexity, so perplexity alone cannot show what the denoiser adds. Training
 every autoencoder parameter fixes most of the reconstruction gap: 73 of 103 reserve
 passages are reproduced exactly, against 19 before. Diffusion trained on that retrained
-autoencoder, however, scores worse on perplexity and no longer meets the proposal's rule of
-perplexity at most 1.20 times the autoregressive baseline's.
+autoencoder, however, scores worse on perplexity and does not clearly meet the proposal's rule of
+perplexity at most 1.20 times the autoregressive baseline's: the larger denoiser is
+inconclusive on raw perplexity (1.21) and fails after length standardisation (1.38).
 
 **Paper:** [PDF](docs/research/manuscript_versions_2026-10-27/new/main.pdf) ·
 [LaTeX source](docs/research/manuscript_versions_2026-10-27/new/main.tex)
