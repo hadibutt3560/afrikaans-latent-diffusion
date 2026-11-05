@@ -16,7 +16,9 @@ data = json.loads((ROOT / 'docs/research/stage4_final_evaluation_2026-10-23/leng
 BANDS = ['1-10', '11-20', '21-35', '36+']
 LABELS = ['1–10', '11–20', '21–35', '36+']
 
-plt.rcParams.update({'font.size': 8, 'font.family': 'serif', 'pdf.fonttype': 42})
+plt.rcParams.update({'font.size': 9, 'font.family': 'serif',
+                     'font.serif': ['Times New Roman', 'Times', 'Nimbus Roman', 'DejaVu Serif'],
+                     'mathtext.fontset': 'stix', 'pdf.fonttype': 42})
 fig, ax = plt.subplots(figsize=(7.5 / 2.54, 5.5 / 2.54))
 x = range(len(BANDS))
 
@@ -39,7 +41,7 @@ ax.set_xticks(list(x))
 ax.set_xticklabels([f"{l}\nn={human[b]['n']}" for l, b in zip(LABELS, BANDS)])
 ax.set_xlabel('Output length (whitespace words)')
 ax.set_ylabel('mGPT perplexity')
-ax.legend(frameon=False, fontsize=6)
+ax.legend(frameon=False, fontsize=7.5)
 fig.tight_layout(pad=0.3)
 fig.savefig(HERE / 'length_bands.pdf')
 print('written', HERE / 'length_bands.pdf')

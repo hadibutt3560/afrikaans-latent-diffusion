@@ -1,0 +1,69 @@
+{
+ "status": "passed",
+ "rows": [
+  {
+   "run": "small-seed42",
+   "seed": 120000,
+   "old": {
+    "nll": 336.74816131591797,
+    "tokens": 80,
+    "perplexity": 67.31290801813408
+   },
+   "new": {
+    "nll": 336.74816131591797,
+    "tokens": 80,
+    "perplexity": 67.31290801813408
+   },
+   "rel": 0.0,
+   "tokens_equal": true
+  },
+  {
+   "run": "small-seed42",
+   "seed": 120001,
+   "old": {
+    "nll": 107.16773986816406,
+    "tokens": 21,
+    "perplexity": 164.551848337749
+   },
+   "new": {
+    "nll": 107.16773986816406,
+    "tokens": 21,
+    "perplexity": 164.551848337749
+   },
+   "rel": 0.0,
+   "tokens_equal": true
+  },
+  {
+   "run": "published-seed42",
+   "seed": 120000,
+   "old": {
+    "nll": 274.5652461051941,
+    "tokens": 70,
+    "perplexity": 50.51956356785705
+   },
+   "new": {
+    "nll": 274.5652461051941,
+    "tokens": 70,
+    "perplexity": 50.51956356785705
+   },
+   "rel": 0.0,
+   "tokens_equal": true
+  },
+  {
+   "run": "published-seed42",
+   "seed": 120001,
+   "old": {
+    "nll": 111.48132705688477,
+    "tokens": 24,
+    "perplexity": 104.06912002808556
+   },
+   "new": {
+    "nll": 111.48132705688477,
+    "tokens": 24,
+    "perplexity": 104.06912002808556
+   },
+   "rel": 0.0,
+   "tokens_equal": true
+  }
+ ]
+}

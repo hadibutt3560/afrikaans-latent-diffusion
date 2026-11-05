@@ -4,6 +4,14 @@ This is the index for the manuscript `docs/research/manuscript_versions_2026-10-
 
 `outputs/` is not tracked by git. Summary results for the studies behind the manuscript are copied into each study's `results/` folder, with a `SHA256SUMS.txt` covering every file of the original output folder, including the sample banks and latents that are not committed. Items marked *(local)* exist only on the author's machine or the cluster. Model weights, raw corpora and full sample banks are not in the repository.
 
+## Proposal
+
+The research proposal cited in the manuscript as Butt (2026) fixed the research questions and credibility criteria before the Afrikaans experiments. It is the version submitted to the University of the Witwatersrand on 24 May 2026, unaltered, and was added to the repository on 2 November 2026; the submission date rests on the university's record, not on this commit.
+
+| Item | Where | SHA-256 |
+|---|---|---|
+| Submitted proposal | `docs/proposal/submitted_proposal_2026-05-24.pdf` | `6aa1ef1e4151877561562753af955870b6191e316351985acc5f218f22039493` |
+
 ## Training
 
 | Item | Where |
@@ -13,6 +21,7 @@ This is the index for the manuscript `docs/research/manuscript_versions_2026-10-
 | Final evaluation protocol (frozen models, test-bank reanalysis) | `docs/research/stage4_final_evaluation_2026-10-23/PROTOCOL.md` |
 | AR baseline protocol and budget | `docs/research/ar_scope_decision_2026-10-22/`, `outputs/cluster-results/ar-baseline-57759/protocol.json` *(local)* |
 | Autoencoder screen (arms, recipe, panels, thresholds) | `docs/research/ae_screen_2026-10-27/PROTOCOL.md`, `screen_report_from_cluster.json` |
+| Diffusion on the screen winner (jobs 77175 training, 77176 evaluation) | `docs/research/ae_screen_2026-10-27/job/diffusion_train.slurm`, `diffusion_finish.slurm`, `diffusion_stage.py`; outputs in `outputs/cluster-results/ae-diffusion-77176/` *(local)* |
 | Generation comparison on the new autoencoder (empty-band correction) | `docs/research/ae_screen_2026-10-27/compare_generation.py`, `NOTE_2026-11-01_empty_bands.md` |
 | Decoder interventions | `outputs/cluster-results/job-74177-review/job-74177/REPORT.md` *(local)* |
 
@@ -53,6 +62,8 @@ This is the index for the manuscript `docs/research/manuscript_versions_2026-10-
 | Evaluation package | `docs/research/evaluation_package_2026-10-31/` | `results/analysis.json`, `results/mauve.json` and the other JSON summaries; the blinding key of the manual check is not committed |
 | Run-level uncertainty (E12) | `docs/research/e12_uncertainty_2026-11-01/` | `results/e12.json` |
 | Swahili check | `docs/research/swahili_check_2026-11-01/` (`run_check.py`, `summarise.py`) | `results/summary.json`, `results/RESULTS.md`, `results/s4.json`, `results/gates.json` |
+| Follow-up inference checks (job 81249: self-conditioning audit, fitted prior on D, 681-passage reconstruction) | `docs/research/followup_inference_2026-11-03/` (`followup.py`, `followup.slurm`, `analyze.py`) | `PROTOCOL.md` (with dated note on approval), `analysis.json` |
+| AR baseline on the test split (RQ3 common-split check, run locally 5 Nov.) | `docs/research/ar_test_2026-11-05/` (`run_ar_test.py`; paths assume the `research` repository layout) | `PROTOCOL.md`, `results/analysis.json`, `results/anchors.json`, `results/contract.json`; samples in `outputs/ar-test-20261105/` *(local)* |
 
 ## Readings and records
 
