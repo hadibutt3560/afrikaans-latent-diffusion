@@ -113,6 +113,19 @@ CHECKS['AR grid: settings beating diffusion'] = (
     f"({min(v['mgpt']['standardised'] for v in below):.1f} to {max(v['mgpt']['standardised'] for v in below):.1f}, against 59.6 and 71.3), "
     f"while copying {min(v['part_b']['training_copies'] for v in below)} to {max(v['part_b']['training_copies'] for v in below)}")
 
+# Diversity and repetition (stage4_final_evaluation_2026-10-23)
+import csv
+s4 = load('stage4_final_evaluation_2026-10-23/analysis.json')['test_summary']
+vrows = list(csv.DictReader((DOCS / 'stage4_final_evaluation_2026-10-23/validation_comparison.csv').open(encoding='utf8')))
+vd1 = sorted(float(r['distinct_1']) for r in vrows if r['run'] != 'validation/AR')
+var = next(r for r in vrows if r['run'] == 'validation/AR')
+CHECKS.update({
+    'diversity: test distinct-1': f"Test distinct-1 is {s4['small']['distinct_1']['mean']:.3f} (small) and {s4['published']['distinct_1']['mean']:.3f} (large)",
+    'diversity: test repeated 3-grams': f"{100 * s4['small']['mean_repeat_3']['mean']:.3f}\\% and {100 * s4['published']['mean_repeat_3']['mean']:.3f}\\% of an output",
+    'diversity: test repeated 4-grams': f"(4-grams: {100 * s4['small']['mean_repeat_4']['mean']:.0f} and {100 * s4['published']['mean_repeat_4']['mean']:.4f}\\%)",
+    'diversity: validation distinct-1 and AR': f"diffusion distinct-1 is {vd1[0]:.2f} to {vd1[-1]:.2f} per run against {float(var['distinct_1']):.3f} for AR, whose outputs repeat {100 * float(var['mean_repeat_3']):.2f}\\% of their 3-grams",
+})
+
 failed = [name for name, text in CHECKS.items() if text not in TEX]
 for name, text in CHECKS.items():
     print(('FAIL ' if name in failed else 'ok   ') + name + ('' if name not in failed else f'  expected: {text}'))
