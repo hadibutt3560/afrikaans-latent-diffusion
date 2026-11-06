@@ -74,13 +74,13 @@ Before any experiments, we wrote a plan (supplied in the repository) that hypoth
 
 We answer these questions mainly as a diagnostic study. Our central finding is that favourable generation scores and unfaithful reconstruction coexist in the same system, so raw perplexity did not establish reconstruction fidelity. We contribute (i) a reconstruction analysis that separates use of the latent from preservation of the passage; (ii) evidence, from random and fitted-Gaussian latent controls, language identification and a second scorer, that raw generation scores do not track this failure and can favour non-Afrikaans output; (iii) a follow-up autoencoder screen with rules fixed in advance, showing that a revised training recipe substantially improves reconstruction at the original latent size, and that on its latents the larger denoiser beats simple latent priors by a wide margin but no longer clearly meets the AR rule; and (iv) the same checks applied to a Swahili run (Appendix~\ref{app:swahili}).
 
-Section~\ref{sec:background} explains the methods and metrics, \S\S\ref{sec:related}--\ref{sec:evaluation} cover related work, data, models and evaluation; \S\ref{sec:results} reports the results, \S\ref{sec:discussion} answers the research questions, \S\ref{sec:limitations} gives limitations and departures from the plan, and \S\ref{sec:conclusion} concludes. The appendices give the model and estimators, the evaluation sets and the Swahili checks.
+Section~\ref{sec:background} explains the methods and metrics, \S\S\ref{sec:related}--\ref{sec:evaluation} cover related work, data, models and evaluation; \S\ref{sec:results} reports the results, \S\ref{sec:discussion} answers the research questions, \S\ref{sec:limitations} gives limitations and departures from the plan, and \S\ref{sec:conclusion} concludes. The appendices give the model and estimators, the Swahili checks and the evaluation sets.
 
 % ===========================================================================
 \section{Background}
 \label{sec:background}
 
-\paragraph{Diffusion models.} A diffusion model learns to reverse a fixed noising process. Training corrupts a data point $x_0$ into $x_t=\alpha_t x_0+\sigma_t\epsilon$ with Gaussian noise $\epsilon$, where the noise level grows with $t$ until $x_T$ is close to pure noise, and trains a network, the denoiser, to recover the clean signal, or an equivalent target such as the noise or the velocity, from $x_t$ and $t$ \citep{ho2020denoising,salimans2022progressive}. Generation starts from noise and applies the denoiser repeatedly (here for 250 steps), each step removing a little noise. Every step sees the whole sequence, so diffusion produces all positions together, whereas an autoregressive (AR) model predicts one token at a time from the tokens before it.
+\paragraph{Diffusion models.} A diffusion model learns to reverse a fixed noising process. Training corrupts a data point $x$ into $z_t=\sqrt{\gamma(t)}\,x+\sqrt{1-\gamma(t)}\,\epsilon$ with Gaussian noise $\epsilon$, where the signal level $\gamma(t)$ falls as $t$ goes from 0 to 1 until $z_t$ is close to pure noise, and trains a network, the denoiser, to recover the clean signal, or an equivalent target such as the noise or the velocity, from $z_t$ and $t$ \citep{ho2020denoising,salimans2022progressive}. Generation starts from noise and applies the denoiser repeatedly (here for 250 steps), each step removing a little noise. Every step sees the whole sequence, so diffusion produces all positions together, whereas an autoregressive (AR) model predicts one token at a time from the tokens before it.
 
 \paragraph{Latent diffusion for text.} Text is discrete, so continuous diffusion needs a continuous representation. Latent diffusion first trains an autoencoder: an encoder maps a passage to a compact continuous latent, and a decoder maps the latent back to text \citep{rombach2022high,lovelace2023latent}. The diffusion model then learns the distribution of latents, and each generated latent is turned into text by the decoder. Generation can be no better than the decoder's ability to express a latent as the intended text. Reconstruction, encoding a real passage and decoding it again, measures how much of the passage the latent preserves.
 
@@ -331,6 +331,41 @@ Future work should add blinded annotation of reconstruction errors by Afrikaans 
 \section{Model and estimators as implemented}
 \label{app:model}
 
+\paragraph{Autoencoder.} The mT5 encoder maps a passage of at most 128 tokens to hidden states, which the Perceiver compresses to $u\in\mathbb{R}^{32\times64}$. Each slot is rescaled to norm eight, $x_j = 8\,u_j/\lVert u_j\rVert$, so that $x$ has unit variance per dimension on average, and a reconstruction map turns $x$ into the decoder's cross-attention input. Training minimises token-weighted teacher-forced cross-entropy over the non-padding target tokens $y_1,\dots,y_N$ of a batch, $\mathcal{L}_{\mathrm{AE}} = -\frac{1}{N}\sum_{n}\log p_\phi(y_n\mid y_{<n},x)$.
+
+\paragraph{Forward process.} With $t\sim\mathcal{U}(0,1)$ and $\epsilon\sim\mathcal{N}(0,I)$, the noised latent is
+\begin{equation}
+z_t=\sqrt{\gamma(t)}\,x+\sqrt{1-\gamma(t)}\,\epsilon,
+\end{equation}
+with $\gamma(t)=\cos^2(\pi t/2)$, where $\gamma$ is the cumulative signal power ($\bar\alpha$ in DDPM notation), clipped so that $\log\frac{\gamma}{1-\gamma}\in[-15,15]$. Latents are not shifted or scaled further.
+
+\paragraph{Objective.} The denoiser $f_\theta(z_t,t,c)$ predicts the velocity $v=\sqrt{\gamma}\,\epsilon-\sqrt{1-\gamma}\,x$, with unweighted squared error averaged over the $32\times64$ entries and the batch:
+\begin{equation}
+\mathcal{L}=\mathbb{E}_{x,t,\epsilon}\Big[\tfrac{1}{2048}\big\lVert f_\theta(z_t,t,c)-v\big\rVert_2^2\Big].
+\end{equation}
+Predictions convert as $\hat x_0=\sqrt{\gamma}\,z_t-\sqrt{1-\gamma}\,\hat v$ and $\hat\epsilon=\sqrt{1-\gamma}\,z_t+\sqrt{\gamma}\,\hat v$.
+
+\paragraph{Self-conditioning.} With probability 0.5 the input $c$ is a first-pass estimate, $c=\mathrm{sg}[\hat x_0(z_t,t,\varnothing)]$ with each slot rescaled to norm eight; otherwise $c=\varnothing$, a learned vector repeated over slots. During sampling, $c$ is the previous step's $\hat x_0$ \emph{without} that rescaling, so training and sampling present self-conditioning inputs of different norm. Its effect is examined in \S\ref{sec:limitations}.
+
+\paragraph{Sampler.} Sampling starts from $z_1\sim\mathcal{N}(0,I)$ and takes 250 equal steps $t\to s$ with $s=t-1/250$. With $\rho=\gamma(t)/\gamma(s)$ and fresh $\xi\sim\mathcal{N}(0,I)$,
+\begin{equation}
+z_s=\frac{1}{\sqrt{\rho}}\Big(z_t-\frac{1-\rho}{\sqrt{1-\gamma(t)}}\,\hat\epsilon\Big)+\sqrt{1-\rho}\;\xi,
+\end{equation}
+and the last step returns $\hat x_0$, which is decoded without renormalisation. Checkpoints use exponential moving averages of the weights (decay 0.9999) and are selected on $\mathcal{L}$ estimated on 2,048 validation latents, three times with fixed seeds.
+
+\paragraph{Scoring.} Each output $i$ is tokenised by the scorer into $n_i$ tokens and scored after a start token, each token once, in 512-token windows with stride 256:
+\begin{equation}
+\mathrm{PPL}=\exp\Big(\frac{\sum_i\sum_{j=1}^{n_i}-\log p(w_{ij}\mid w_{i,<j})}{\sum_i n_i}\Big).
+\end{equation}
+No end token is scored. For length-standardised perplexity, $\ell_b$ is the same token-weighted loss within word-length band $b$, and $\mathrm{PPL}_{\mathrm{std}}=\exp\big(\sum_b w_b\,\ell_b\big)$ with $w=(0.140, 0.223, 0.349, 0.288)$, the band shares of 1,000 human validation passages; it is reported only if every band holds at least 20 outputs. The large-minus-small permutation test is two-sided over all 252 divisions of the ten run means.
+
+\section{A second language: Swahili}
+\label{app:swahili}
+To test whether the checks matter beyond Afrikaans, we applied them, without retraining, to an earlier Swahili run of the pipeline that had been evaluated only by denoising loss and perplexity. Its corpus, 738 supplied text files (23.6 million words) without recoverable document boundaries, was split by file into windows of at most 48 words (437,326 training, 29,761 validation, 25,537 test), and the files share some text across splits. The run used the mT5 tokeniser, two seeds per size and equal wall-clock budgets (about 172,000 updates small, 53,000 large), with no AR baseline. Its test mGPT perplexity was 19.5 and 19.6 (small) and 20.6 and 20.8 (large), against 13.8 for human text. The checks were approved in advance and used validation data only. Reconstruction of 200 passages reached mean chrF 74.8 (95\% CI [72.9, 76.5]) against 24.3 with shuffled latents, but no exact matches, and numeral recall was 0.54. Random latents decoded by the same decoder scored clearly worse (perplexity 135) than diffusion samples. GlotLID labelled all diffusion samples and references as Swahili, against 57\% of random-latent outputs. Diffusion outputs shared 10--11\% of their word 4-grams with the training split, against 28\% for references, which the supplied splits' cross-split overlap inflates. All readings are automatic. Fluent-scoring samples again coexist with an autoencoder that reconstructs no passage exactly, but Swahili random latents score far worse than diffusion samples, as on the retrained Afrikaans autoencoder.
+
+\section{Evaluation sets}
+\label{app:ledger}
+
 \begin{table*}[t]
 \centering
 \small
@@ -360,37 +395,6 @@ AR test samples & 1,000 & Seeds 120000--120999 & AR test ratios & 5 Nov. \\
 \label{tab:ledger}
 \end{table*}
 
-\paragraph{Autoencoder.} The mT5 encoder maps a passage of at most 128 tokens to hidden states, which the Perceiver compresses to $u\in\mathbb{R}^{32\times64}$. Each slot is rescaled to norm eight, $x_j = 8\,u_j/\lVert u_j\rVert$, so that $x$ has unit variance per dimension on average, and a reconstruction map turns $x$ into the decoder's cross-attention input. Training minimises token-weighted teacher-forced cross-entropy over the non-padding target tokens $y_1,\dots,y_N$ of a batch, $\mathcal{L}_{\mathrm{AE}} = -\frac{1}{N}\sum_{n}\log p_\phi(y_n\mid y_{<n},x)$.
-
-\paragraph{Forward process.} With $t\sim\mathcal{U}(0,1)$ and $\epsilon\sim\mathcal{N}(0,I)$, the noised latent is
-\begin{equation}
-z_t=\sqrt{\gamma(t)}\,x+\sqrt{1-\gamma(t)}\,\epsilon,
-\end{equation}
-with $\gamma(t)=\cos^2(\pi t/2)$, where $\gamma$ is the cumulative signal power ($\bar\alpha$ in DDPM notation), clipped so that $\log\frac{\gamma}{1-\gamma}\in[-15,15]$. Latents are not shifted or scaled further.
-
-\paragraph{Objective.} The denoiser $f_\theta(z_t,t,c)$ predicts the velocity $v=\sqrt{\gamma}\,\epsilon-\sqrt{1-\gamma}\,x$, with unweighted squared error averaged over the $32\times64$ entries and the batch:
-\begin{equation}
-\mathcal{L}=\mathbb{E}_{x,t,\epsilon}\Big[\tfrac{1}{2048}\big\lVert f_\theta(z_t,t,c)-v\big\rVert_2^2\Big].
-\end{equation}
-Predictions convert as $\hat x_0=\sqrt{\gamma}\,z_t-\sqrt{1-\gamma}\,\hat v$ and $\hat\epsilon=\sqrt{1-\gamma}\,z_t+\sqrt{\gamma}\,\hat v$.
-
-\paragraph{Self-conditioning.} With probability 0.5 the input $c$ is a first-pass estimate, $c=\mathrm{sg}[\hat x_0(z_t,t,\varnothing)]$ with each slot rescaled to norm eight; otherwise $c=\varnothing$, a learned vector repeated over slots. During sampling, $c$ is the previous step's $\hat x_0$ \emph{without} that rescaling, so training and sampling present self-conditioning inputs of different norm. Its effect is examined in \S\ref{sec:limitations}.
-
-\paragraph{Sampler.} Sampling starts from $z_1\sim\mathcal{N}(0,I)$ and takes 250 equal steps $t\to s$ with $s=t-1/250$. With $\rho=\gamma(t)/\gamma(s)$ and fresh $\xi\sim\mathcal{N}(0,I)$,
-\begin{equation}
-z_s=\frac{1}{\sqrt{\rho}}\Big(z_t-\frac{1-\rho}{\sqrt{1-\gamma(t)}}\,\hat\epsilon\Big)+\sqrt{1-\rho}\;\xi,
-\end{equation}
-and the last step returns $\hat x_0$, which is decoded without renormalisation. Checkpoints use exponential moving averages of the weights (decay 0.9999) and are selected on $\mathcal{L}$ estimated on 2,048 validation latents, three times with fixed seeds.
-
-\paragraph{Scoring.} Each output $i$ is tokenised by the scorer into $n_i$ tokens and scored after a start token, each token once, in 512-token windows with stride 256:
-\begin{equation}
-\mathrm{PPL}=\exp\Big(\frac{\sum_i\sum_{j=1}^{n_i}-\log p(w_{ij}\mid w_{i,<j})}{\sum_i n_i}\Big).
-\end{equation}
-No end token is scored. For length-standardised perplexity, $\ell_b$ is the same token-weighted loss within word-length band $b$, and $\mathrm{PPL}_{\mathrm{std}}=\exp\big(\sum_b w_b\,\ell_b\big)$ with $w=(0.140, 0.223, 0.349, 0.288)$, the band shares of 1,000 human validation passages; it is reported only if every band holds at least 20 outputs. The large-minus-small permutation test is two-sided over all 252 divisions of the ten run means.
-
-\section{Evaluation sets}
-\label{app:ledger}
-
 
 Table~\ref{tab:ledger} lists every set behind the reported numbers. Table~\ref{tab:bands} gives the values plotted in Figure~\ref{fig:length}.
 
@@ -419,9 +423,5 @@ AR & 272.1 & 77.8 & 64.3 & 57.4 \\
 \caption{Test mGPT perplexity by output length (Figure~\ref{fig:length}). Diffusion: mean and range of five run values; outputs summed over runs. AR: 1,000 samples. The range is not a confidence interval.}
 \label{tab:bands}
 \end{table}
-
-\section{A second language: Swahili}
-\label{app:swahili}
-To test whether the checks matter beyond Afrikaans, we applied them, without retraining, to an earlier Swahili run of the pipeline that had been evaluated only by denoising loss and perplexity. Its corpus, 738 supplied text files (23.6 million words) without recoverable document boundaries, was split by file into windows of at most 48 words (437,326 training, 29,761 validation, 25,537 test), and the files share some text across splits. The run used the mT5 tokeniser, two seeds per size and equal wall-clock budgets (about 172,000 updates small, 53,000 large), with no AR baseline. Its test mGPT perplexity was 19.5 and 19.6 (small) and 20.6 and 20.8 (large), against 13.8 for human text. The checks were approved in advance and used validation data only. Reconstruction of 200 passages reached mean chrF 74.8 (95\% CI [72.9, 76.5]) against 24.3 with shuffled latents, but no exact matches, and numeral recall was 0.54. Random latents decoded by the same decoder scored clearly worse (perplexity 135) than diffusion samples. GlotLID labelled all diffusion samples and references as Swahili, against 57\% of random-latent outputs. Diffusion outputs shared 10--11\% of their word 4-grams with the training split, against 28\% for references, which the supplied splits' cross-split overlap inflates. All readings are automatic. Fluent-scoring samples again coexist with an autoencoder that reconstructs no passage exactly, but Swahili random latents score far worse than diffusion samples, as on the retrained Afrikaans autoencoder.
 
 \end{document}
