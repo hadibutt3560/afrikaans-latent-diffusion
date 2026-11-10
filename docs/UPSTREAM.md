@@ -37,6 +37,8 @@ python -m spacy download en_core_web_sm
 
 The dataset files for the ROCStories and QQP datasets are included in the `datasets/` directory. The other datasets are loaded from the HuggingFace Hub.
 
+> **Note for this fork:** the QQP files were removed because this study does not use them. The ROCStories files are kept for the English control.
+
 ## Training
 
 We provide example scripts for the ROCStories dataset with our default parameters. You can pre-train the language autoencoder with the BART-base model with
