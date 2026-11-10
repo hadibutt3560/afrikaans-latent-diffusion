@@ -102,7 +102,7 @@ fe = load('fertility_2026-11-05/results/fertility.json')
 gen = [v['mean'] if isinstance(v, dict) else v for k, v in fe['generation_banks'].items() if k != 'human test']
 CHECKS.update({
     'fertility: generated banks': f"({min(gen):.2f} to {max(gen):.2f} tokens per word for both diffusion systems and AR, against {fe['generation_banks']['human test']:.2f})",
-    'fertility: D exact in top third': f"arm D reconstructs {100 * fe['recon681_by_source_fertility']['D']['exact_by_tercile'][2]:.0f}\\% exactly",
+    'fertility: D exact in top third': f"(arm D, \\S\\ref{{sec:res-aescreen}}) reconstructs {100 * fe['recon681_by_source_fertility']['D']['exact_by_tercile'][2]:.0f}\\% exactly",
 })
 
 # AR settings grid (evaluation_package_2026-10-31)
