@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below. The code builds on Lovelace et al. (2023); please cite their paper as well."
+title: "A Representation-Centred Evaluation of Latent Diffusion for Afrikaans Text Generation"
+type: software
+authors:
+  - family-names: Butt
+    given-names: Hadi
+    email: 2661881@students.wits.ac.za
+    affiliation: "School of Computer Science and Applied Mathematics, University of the Witwatersrand, Johannesburg"
+repository-code: "https://github.com/hadibutt3560/afrikaans-latent-diffusion"
+license: MIT
+keywords:
+  - latent diffusion
+  - text generation
+  - Afrikaans
+  - low-resource languages
+preferred-citation:
+  type: report
+  title: "A Representation-Centred Evaluation of Latent Diffusion for Afrikaans Text Generation"
+  authors:
+    - family-names: Butt
+      given-names: Hadi
+  institution:
+    name: "University of the Witwatersrand, Johannesburg"
+  year: 2026
+  url: "https://github.com/hadibutt3560/afrikaans-latent-diffusion"
+references:
+  - type: conference-paper
+    title: "Latent Diffusion for Language Generation"
+    authors:
+      - family-names: Lovelace
+        given-names: Justin
+      - family-names: Kishore
+        given-names: Varsha
+      - family-names: Wan
+        given-names: Chao
+      - family-names: Shekhtman
+        given-names: Eliot
+      - family-names: Weinberger
+        given-names: Kilian Q.
+    collection-title: "Advances in Neural Information Processing Systems"
+    volume: 36
+    year: 2023

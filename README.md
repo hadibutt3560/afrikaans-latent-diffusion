@@ -38,6 +38,39 @@ inconclusive on raw perplexity (1.21) and fails after length standardisation (1.
 All readings are automatic. No human evaluation was carried out,
 and readings made with AI assistance are labelled as such in the protocols and the paper.
 
+## Where each result comes from
+
+Folders are under `docs/research/`. Scripts and result files are inside the named folder unless a path is given.
+
+| Paper | Folder | Script | Result file |
+|---|---|---|---|
+| Table 1, Appendix A: systems, model and training | — | `configs/afrikaans_longrun.json`, `tools/afrikaans_longrun.py` | — |
+| §6.1, Table 2: reconstruction of 81 passages, shuffled latents | [reconstruction_audit_2026-10-22](docs/research/reconstruction_audit_2026-10-22/) | `run_audit.py`, `analyze.py` | `RESULTS.md`, `ALL_RECONSTRUCTIONS.md` |
+| §6.1, Table 2: content checks (Claude) | [claude_labels_2026-11-07](docs/research/claude_labels_2026-11-07/) | — | `labels_81.csv`, `agreement.json` |
+| §6.1: numerals, five shuffles, 681 extra-data passages | [local_followups_2026-11-01](docs/research/local_followups_2026-11-01/) | `run_followups.py` | `results/numerals.json`, `results/shuffle_seeds.json`, `results/extra_monitor_summary.json` |
+| §6.1: test-split reconstruction loss | [stage4_final_evaluation_2026-10-23](docs/research/stage4_final_evaluation_2026-10-23/) | — | `FINAL_EVALUATION.md` |
+| §6.2, Table 3: diffusion and human perplexity, diversity, denoiser size | [stage4_final_evaluation_2026-10-23](docs/research/stage4_final_evaluation_2026-10-23/) | `analyze.py` | `analysis.json`, `validation_comparison.csv` |
+| Table 3: AR and human text on 256 validation samples | [ar_validation_audit_2026-10-22](docs/research/ar_validation_audit_2026-10-22/) | `run_audit.py`, `analyze_audit.py` | `AR_SUITABILITY_REPORT.md` |
+| Table 3: random latents | [latent_controls_2026-10-30](docs/research/latent_controls_2026-10-30/) | `run_controls.py`, `analyze.py`, `first256.py` | `results/analysis.json`, `results/first256.json` |
+| §6.2: seed-level intervals (Welch, permutation) | [e12_uncertainty_2026-11-01](docs/research/e12_uncertainty_2026-11-01/) | `compute_e12.py` | `results/e12.json` |
+| §6.2: AR test comparison; Figure 1, Table 7 | [ar_test_2026-11-05](docs/research/ar_test_2026-11-05/) | `run_ar_test.py`; figure: `manuscript_versions_2026-10-27/new/figures/make_length_bands.py` | `results/analysis.json`, `results/length_bands_ar.json`; `stage4_final_evaluation_2026-10-23/length_bands.json` |
+| §6.3, Table 4: language, shared phrasing, Goldfish, AR settings | [evaluation_package_2026-10-31](docs/research/evaluation_package_2026-10-31/) | `run_package.py`, `analyze_package.py` | `results/analysis.json`, `results/manual-check-result.json` |
+| §6.3: tokenisation fertility | [fertility_2026-11-05](docs/research/fertility_2026-11-05/) | `run_fertility.py` | `results/fertility.json` |
+| §6.3: random-latent banks, fitted Gaussian | [local_followups_2026-11-01](docs/research/local_followups_2026-11-01/) | `run_followups.py` | `results/random_banks.json`; fitted prior in `followup_inference_2026-11-03/analysis.json` |
+| §6.4: decoder change 1, no trigram ban | [stage3_improvement_2026-10-22](docs/research/stage3_improvement_2026-10-22/) | `run_decoder_test.py` | `RESULTS.md` |
+| §6.4: decoder change 2, last two blocks (job 73970) | [deadline_experiment_plan_2026-10-24](docs/research/deadline_experiment_plan_2026-10-24/) | `job/train_decoder.py` | results kept locally |
+| §6.4: decoder change 3, all twelve blocks (job 74177) | [full_decoder_12h_2026-10-24](docs/research/full_decoder_12h_2026-10-24/) | `job/` | `RETRIEVED_JOB_74177.md` |
+| §6.4: decoder change 4, dropout (job 75003) | [decoder_dropout_final_2026-10-25](docs/research/decoder_dropout_final_2026-10-25/) | `job/` | results kept locally |
+| §6.4, Table 5: autoencoder screen | [ae_screen_2026-10-27](docs/research/ae_screen_2026-10-27/) | `job/screen.py`, `job/train_ae.py`, `data/` | `screen_report_from_cluster.json` |
+| §6.5: diffusion on the retrained autoencoder | [ae_screen_2026-10-27](docs/research/ae_screen_2026-10-27/) | `job/diffusion_stage.py`, `compare_generation.py` | ratios in `ar_test_2026-11-05/results/analysis.json` |
+| §6.5: random latents, fitted prior, 681 passages on the new decoder | [followup_inference_2026-11-03](docs/research/followup_inference_2026-11-03/) | `followup.py`, `analyze.py` | `analysis.json` |
+| §7, RQ1: English control | [english_control_2026-08-15](docs/research/english_control_2026-08-15/) | — | `english_control_metrics.json` |
+| Appendix B: Swahili | [swahili_check_2026-11-01](docs/research/swahili_check_2026-11-01/) | `run_check.py`, `summarise.py` | `results/summary.json`, `results/RESULTS.md` |
+
+`docs/research/manuscript_versions_2026-10-27/new/verify_numbers.py` checks the numbers in the
+paper against these result files. From a fresh clone, 52 of its 56 checks run; the 4 decoder
+learning-curve checks need the raw cluster outputs and are skipped.
+
 ## Repository layout
 
 | Path | Contents |
@@ -159,7 +192,7 @@ their paper if you use this code:
 }
 ```
 
-To cite the Afrikaans study:
+To cite the Afrikaans study (GitHub's "Cite this repository" button uses [CITATION.cff](CITATION.cff)):
 
 ```bibtex
 @misc{butt2026afrikaans,
