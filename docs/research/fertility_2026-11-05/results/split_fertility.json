@@ -1,0 +1,24 @@
+{
+ "definition": "mT5 tokens without special tokens per whitespace word, pooled over the split",
+ "train": {
+  "passages": 47767,
+  "tokens": 2231387,
+  "words": 1228292,
+  "fertility": 1.8166584167282698,
+  "sha256": "2af763380dd2818d40c58345428f42b8bebabbdcf71026c55bd2ea751601f3ab"
+ },
+ "valid": {
+  "passages": 5905,
+  "tokens": 290783,
+  "words": 158331,
+  "fertility": 1.8365512754924809,
+  "sha256": "bdc360a9f2a65f5760830bd5bc1bc335d6ac066ec2087882d941c95255f9a91e"
+ },
+ "test": {
+  "passages": 5692,
+  "tokens": 294084,
+  "words": 158332,
+  "fertility": 1.8573882727433495,
+  "sha256": "8072f4426783b9ed8aa50212c0010ef21d5e3c05a0bc2b0c2cb067a022901083"
+ }
+}

@@ -174,6 +174,10 @@ CHECKS.update({
     'retrained: standardised original': f"against {_sm['B0-published']['std_ppl']:.1f} and {_sm['B0-small']['std_ppl']:.1f};",
 })
 
+# Split fertility, same definition as the generated banks (fertility_2026-11-05/split_fertility.py)
+_sf = load('fertility_2026-11-05/results/split_fertility.json')
+CHECKS['fertility: validation split'] = f"validation fertility is {_sf['valid']['fertility']:.2f} mT5 tokens per word"
+
 failed = [name for name, text in CHECKS.items() if text not in TEX]
 for name, text in CHECKS.items():
     print(('FAIL ' if name in failed else 'ok   ') + name + ('' if name not in failed else f'  expected: {text}'))

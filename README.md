@@ -10,9 +10,11 @@ denoisers trained with five seeds each.
 The diffusion models produce text that scores well, but the score hides a problem. Every
 sample passes through the autoencoder, and the original autoencoder reconstructs only
 11 of 81 held-out passages exactly. Random latents decoded by the same decoder reach
-similar raw perplexity, so perplexity alone cannot show what the denoiser adds. Training
-every autoencoder parameter fixes most of the reconstruction gap: 73 of 103 reserve
-passages are reproduced exactly, against 19 before. Diffusion trained on that retrained
+similar raw perplexity, so perplexity alone cannot show what the denoiser adds. A revised
+autoencoder recipe (every parameter trained, a larger batch and a new schedule, with a longer
+latent and extra Afrikaans data) closes most of the reconstruction gap, without showing which
+change matters most. It reproduces 73 of 103 reserve passages exactly, against 19
+before. Diffusion trained on that retrained
 autoencoder, however, scores worse on perplexity and does not clearly meet the proposal's rule of
 perplexity at most 1.20 times the autoregressive baseline's: the larger denoiser is
 inconclusive on raw perplexity (1.21) and fails after length standardisation (1.38).
