@@ -1,6 +1,6 @@
 # Final Afrikaans decoder-dropout experiment
 
-Approved by the author on 25 October 2026. One submission includes preflight, both training arms, candidate locking, conditional reserve and generation evaluation, scoring and result export. No minimum GPU duration is promised. This is an exploratory follow-up to job74177, not a replacement of the completed benchmark or a change to the proposal hypothesis.
+Approved by the user on 25 October 2026. One submission includes preflight, both training arms, candidate locking, conditional reserve and generation evaluation, scoring and result export. No minimum GPU duration is promised. This is an exploratory follow-up to job74177, not a replacement of the completed benchmark or a change to the proposal hypothesis.
 
 ## Question and controls
 
