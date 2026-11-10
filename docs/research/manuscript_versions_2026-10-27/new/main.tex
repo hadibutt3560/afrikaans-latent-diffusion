@@ -2,9 +2,8 @@
 % Revised draft: A Representation-Centred Evaluation of Latent Diffusion for
 % Afrikaans Text Generation.
 %
-% Submission build: \usepackage{tacl2021v1} (header, line numbers, anonymous
-% author block). Camera-ready: \usepackage[acceptedWithA]{tacl2021v1}, cite the
-% proposal as \citep{butt2026proposal} and restore the repository URL.
+% Built with the TACL submission style, with line numbers and page numbers, the
+% author block shown and the confidentiality header removed (see the preamble).
 %
 % Build in the TACL template folder (needs tacl2021v1.sty and acl_natbib.bst):
 %   xelatex main && bibtex main && xelatex main && xelatex main
@@ -19,9 +18,11 @@
 % ---------------------------------------------------------------------------
 \documentclass[11pt,a4paper]{article}
 \usepackage{tacl2021v1}
-% Keep the review header and line numbers, but show the author block (the template hides it).
+% Keep the line numbers, show the author block (the template hides it) and drop the
+% "Confidential TACL submission" header.
 \makeatletter
 \renewcommand\outauthor{\begin{tabular}[t]{c}\@author\end{tabular}}
+\renewcommand\confidential{}
 \makeatother
 \raggedbottom % avoid stretched gaps between paragraphs
 \usepackage{iftex}
