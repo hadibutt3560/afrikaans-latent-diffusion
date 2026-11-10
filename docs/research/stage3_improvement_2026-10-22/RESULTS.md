@@ -1,6 +1,6 @@
 # Stage 3 completed: retain the original decoder
 
-Finalised23 October2026; folder name retains the date the work started. **Removing the repeated-token-trigram restriction did not meet the predefined improvement criteria. Keep the original decoder settings.** One new controlled intervention was tested; terminal projection was reviewed and deferred. No training, final evaluation or dissertation-wide edits were performed.
+Finalised23 October2026; folder name retains the date the work started. **Removing the repeated-token-trigram restriction did not meet the predefined improvement criteria. The original decoder settings are kept.** One new controlled intervention was tested; terminal projection was reviewed and deferred. No training, final evaluation or dissertation-wide edits were performed.
 
 ## Experiment and integrity
 
@@ -34,7 +34,7 @@ Repeated n-grams here are case-sensitive whitespace-word tuples, counted within 
 
 Thirty pairs changed in token sequence;29 changed in decoded text. All are listed in [changed-pair text](CHANGED_PAIRS.md). The other51 are token-identical and retain the Stage1 inspection. No human ratings are claimed.
 
-Useful corrections occur: row11 restores an apostrophe, row21 restores the second PHONE placeholder, and row56 restores the trauma/psychological-assessment sentence exactly. These explain the increase in exact copies. However, row41 repeats `I mfpamba:`, row48 repeats `Zola`, and row57 loses all clock-time content while repeating a weekday phrase. Other overlap gains retain wrong names, conditions or clause meanings. A progress message prematurely said repetition continued to the output limit; the completed measurements correct that: **all outputs terminated before the cap**.
+Useful corrections occur: row11 restores an apostrophe, row21 restores the second PHONE placeholder, and row56 restores the trauma/psychological-assessment sentence exactly. These explain the increase in exact copies. However, row41 repeats `I mfpamba:`, row48 repeats `Zola`, and row57 loses all clock-time content while repeating a weekday phrase. Other overlap gains retain wrong names, conditions or clause meanings. Contrary to an interim progress report that repetition continued to the output limit, the completed measurements show that **all outputs terminated before the cap**.
 
 The experiment shows that the restriction can obstruct some faithful copies, but simply removing it is not a defensible general fix under the predefined criteria. It does not isolate encoder versus compression versus decoder causes, and it does not show that all decoder interventions would fail. No claim about improved unconditional generation follows from this reconstruction test.
 
@@ -42,7 +42,7 @@ The experiment shows that the restriction can obstruct some faithful copies, but
 
 [PROJECTION_ADMISSION.md](PROJECTION_ADMISSION.md) records the prior decoder-only projection experiment: PPL ratios1.0115 and1.0241 at50 and250 steps, with both intervals including1. No saved final-benchmark generated-latent bank or norm summaries were located. Final-model norm mismatch therefore remains unmeasured. We deferred fresh projection work as lower priority; we did not claim that a final-model norm gate was passed or that projection can never help.
 
-**Stage3 decision:** retain `no_repeat_ngram_size=3` and the existing benchmark. Do not use the103-passage reserve, run unconditional transfer, start another decoder sweep, or retrain the AE on this evidence. This is a completed bounded investigation with a negative/mixed outcome, not an incomplete search for a positive result. The larger earlier optional programme is not represented as fully executed.
+**Stage3 decision:** retain `no_repeat_ngram_size=3` and the existing benchmark. On this evidence the 103-passage reserve is not used, and no unconditional transfer, further decoder sweep or AE retraining follows. This is a completed bounded investigation with a negative/mixed outcome, not an incomplete search for a positive result. The larger earlier optional programme is not represented as fully executed.
 
 The diagnostic took **197.10 seconds after model loading**, with **2.38GiB peak allocated GPU memory** on the RTX3060. Loading/CPU documentation time is excluded. Protocol/script/source identities are recorded; the existing environment required the same execution permission used in Stage1. All results are in new paths and historical outputs are preserved.
 

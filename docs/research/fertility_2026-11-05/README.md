@@ -1,6 +1,6 @@
 # Tokenisation fertility from saved outputs (5 November 2026)
 
-**Approval:** asked for in chat on 5 November 2026 as one of the fixes after two external reviews, which noted that RQ3 names tokenisation fertility but the paper reported only one mean. The definitions below were fixed in `run_fertility.py` before it was run. No model is trained or sampled; only saved texts are tokenised.
+Fixed on 5 November 2026, before the run, following two external reviews that noted RQ3 names tokenisation fertility but the paper reported only one mean. The definitions below are those in `run_fertility.py`. No model is trained or sampled; only saved texts are tokenised.
 
 ## Definitions
 - **Fertility** is the number of mT5 tokens per whitespace word, without special tokens, pooled over a bank (total tokens divided by total words).

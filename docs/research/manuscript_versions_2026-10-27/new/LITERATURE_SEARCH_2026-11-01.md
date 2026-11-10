@@ -8,7 +8,7 @@ Both are worded as "we found no", not "none exists". The search was moderate, no
 
 ## Method
 
-- **Who ran it:** an AI research assistant, on the author's instruction.
+- **Who ran it:** an AI research assistant.
 - **Tool:** general web search, about nine searches, with the results followed up in the ACL Anthology, arXiv, OpenReview, NeurIPS proceedings and PMLR.
 - **Exact query strings were not logged.** The topics searched were:
   - diffusion text generation for Afrikaans;
@@ -36,11 +36,11 @@ Closest work:
 - Lovelace et al. (NeurIPS 2023): reconstruction reported for English only.
 - Zhang et al. (PLANNER, NeurIPS 2023): discusses decoding errors. English only.
 - Meshchaninov et al., "Cosmos" (arXiv 2506.21170): latent-space design. English only.
-- DiLaDiff (arXiv 2605.23605): seen only as a search snippet. Read it before citing.
+- DiLaDiff (arXiv 2605.23605): seen only as a search snippet; not read.
 
 ## Not covered
 
 - A systematic search of ACL Anthology, OpenReview and arXiv listings for 2025–26 preprints on "multilingual diffusion language model".
 - Any non-English-language literature.
 
-Repeat or extend this search before submission and update this record.
+This record covers only the search made on 1 November 2026.

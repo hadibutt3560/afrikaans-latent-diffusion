@@ -1,16 +1,10 @@
 # Stage 4: final automatic evaluation
 
-23 October 2026. **Automatic evaluation is consolidated; no new model or decoding setting is adopted.** Human evaluation is not conducted, as explicitly excluded by the submitted proposal (PDF p24, printed p20) and reaffirmed by the user. Researcher-side inspection must not be confused with participant ratings or AI-assisted inspection.
+23 October 2026. **Automatic evaluation is consolidated; no new model or decoding setting is adopted.** Human evaluation is excluded by the submitted proposal (PDF p24, printed p20). Stage 4 involved no training or fresh generation. Test data had been inspected before, so this is dated secondary analysis of exposed artefacts. The failed Stage 3 intervention appears in no table. Artefacts: [analysis](analysis.json), [source hashes](source_hashes.json), [protocol](PROTOCOL.md), [checks](checks.json). All ten stored test PPLs were recomputed from individual NLL/token totals.
 
-## Evidence and interpretation
+## Diffusion test benchmark
 
-This report separates the completed diffusion test benchmark from the later validation AR comparison and reconstruction diagnostics. Test data/output inspection occurred historically. This is dated secondary analysis of exposed artifacts, not a new untouched test. The failed Stage3 intervention is not substituted into any final table. No training or fresh generation occurred in Stage4.
-
-The [analysis](analysis.json), [source hashes](source_hashes.json), [protocol](PROTOCOL.md) and [checks](checks.json) identify the underlying artifacts. All ten stored test PPLs were recomputed from individual NLL/token totals. All five training seeds are retained per configuration, conditional on one frozen AE and corpus split.
-
-## Completed diffusion benchmark
-
-Each training run contributes1000 unconditional outputs. Values below are arithmetic run means ± sample SD over five training seeds, not uncertainty among5000 independent trained models. See [all seed results and sample-bootstrap intervals](test_seed_table.csv).
+Each of five training seeds per configuration (one frozen AE and corpus split) contributes 1000 unconditional outputs. Values are run means ± sample SD; per-seed results and sample-bootstrap intervals are in [test_seed_table.csv](test_seed_table.csv).
 
 | Measure | Small | Large |
 |---|---:|---:|
@@ -28,13 +22,13 @@ Each training run contributes1000 unconditional outputs. Values below are arithm
 | Length cap reached | 6/5000 | 6/5000 |
 | Sentinel flags | 2/5000 | 0/5000 |
 
-Large-minus-small mean PPL is−2.7040 (−5.27%); the unpaired training-run bootstrap95% interval is[−4.0757,−1.3342]. This exploratory interval uses only five runs/group and is not a confirmatory causal capacity effect: realised budgets differ. Per-model text-bootstrap intervals are a separate uncertainty layer in the CSV; they do not incorporate training variability. All bootstrap analyses use10000 replicates and fixed RNG20261023. No arbitrary output pairing or multiple significance tests are used.
+Large-minus-small mean PPL is −2.7040 (−5.27%), unpaired training-run bootstrap 95% interval [−4.0757, −1.3342]: exploratory, with five runs per group and differing realised budgets. Text-bootstrap intervals in the CSV exclude training variability. Bootstraps use 10000 replicates and RNG 20261023, with no output pairing or multiple testing.
 
-Diversity/repetition here uses case-sensitive whitespace words, identically across systems. Repetition is the per-output fraction of n-gram occurrences beyond unique n-grams, averaged over outputs. Exact copying and duplicates use NFC, casefolding and collapsed whitespace; duplicate totals are summed within runs, not calculated across a pooled5000-output bank. Token-trigram suppression already constrains repetition, so low literal repetition does not establish coherent language. EOS and cap counts can overlap. Short administrative matches do not independently prove harmful memorisation. Length differences confound diversity interpretation.
+Words are case-sensitive whitespace tokens. Repetition is the per-output fraction of n-gram occurrences beyond unique n-grams, averaged over outputs. Copying and duplicates use NFC, case folding and collapsed whitespace, summed within runs. Token-trigram suppression already limits repetition, EOS and cap counts can overlap, and length differences confound diversity.
 
 ## AR comparison: validation only
 
-The existing256-output AR bank is compared with the first256 stored validation outputs from every diffusion run. This table is not the test table above. The verified AR checkpoint is a single training seed; its own likelihood is not the external mGPT score.
+The 256-output AR bank (one training seed) is compared with the first 256 stored validation outputs of every diffusion run.
 
 | System | External PPL | Diffusion/AR ratio | Conditional hierarchical95% ratio interval |
 |---|---:|---:|---|
@@ -42,13 +36,11 @@ The existing256-output AR bank is compared with the first256 stored validation o
 | Small, five-run mean | 53.0745 | 0.64584 | 0.58130–0.71479 |
 | Large, five-run mean | 50.0238 | 0.60872 | 0.54774–0.67358 |
 
-Intervals resample diffusion runs and their samples plus samples from the one fixed AR checkpoint. They cannot estimate AR-training or AE-training variability. Geometric-mean ratios are0.64574 and0.60870; one-sided95% upper bounds are0.70463 and0.66287. These supplementary interval summaries were not the proposal's original decision rule. Being below1.20 does not resolve unmatched compute/pretraining, unequal selection or reconstruction/degeneracy requirements.
+Intervals resample diffusion runs and samples plus AR samples, not AR- or AE-training variability. Geometric-mean ratios are 0.64574 and 0.60870; one-sided 95% upper bounds 0.70463 and 0.66287 (supplementary, not the proposal's decision rule). Per-run detail: [validation_comparison.csv](validation_comparison.csv). The Stage 2 budget reconciliation in [ar_scope_decision_2026-10-22](../ar_scope_decision_2026-10-22/) gives small diffusion loop costs of 2.93–3.13 h against 4.52 h for AR on the same recorded GPU model, with different precision and extra AE costs. Compute, pretraining and selection are therefore unmatched, and the comparison is reported as qualified.
 
-[Validation per-run table](validation_comparison.csv) includes PPL uncertainty, lengths, Distinct1/2, repetition and copying. The [Stage2 budget reconciliation](../ar_scope_decision_2026-10-22/STAGE_2_COMPLETED.md) remains authoritative: small diffusion loop costs2.93–3.13h versus AR4.52h on the same recorded GPU model, with different precision and additional AE costs. This is not equal end-to-end compute. Retain the original question and report a qualified comparison; no new scope amendment is presumed.
+## External scorer stability
 
-## External scorer stability and limitations
-
-Stored real-text pooled PPL is33.6224 for the1000-example test reference and32.8193 for the1000-example validation reference. By whitespace-word length:
+Stored real-text pooled PPL is 33.6224 for the 1000-example test reference and 32.8193 for the 1000-example validation reference. By whitespace-word length:
 
 | Words | Real test PPL (n) | Real validation PPL (n) |
 |---|---:|---:|
@@ -57,11 +49,11 @@ Stored real-text pooled PPL is33.6224 for the1000-example test reference and32.8
 | 21–35 | 32.60 (300) | 32.96 (349) |
 | 36+ | 25.93 (331) | 24.46 (288) |
 
-These substantial differences show length/domain sensitivity; no externally justified numerical stability threshold was specified. Small diffusion's aggregate advantage over AR reverses in the two shorter word-length bands in the existing validation comparison. Therefore retain mGPT as the proposal's named primary automatic metric but interpret it as a **weak linguistic-quality diagnostic**, with the sensitivity visible. It is not a reliable standalone grammaticality/meaning judge. Full per-run [length bands](length_bands.json) are supplied. No primary outputs were discarded to improve scores. Real unrelated text is a distributional reference, never a per-output reconstruction target.
+mGPT is length- and domain-sensitive, and small diffusion's advantage over AR reverses in the two shorter bands of the validation comparison. It remains the proposal's primary automatic metric but is read as a **weak linguistic-quality diagnostic**. Per-run [length bands](length_bands.json) are supplied; no outputs were discarded.
 
-## Reconstruction, including the missing external score
+## Reconstruction
 
-Historical AE evaluation covers1024 passages per split:
+Historical AE evaluation covers 1024 passages per split:
 
 | Measure | Validation | Test |
 |---|---:|---:|
@@ -70,26 +62,24 @@ Historical AE evaluation covers1024 passages per split:
 | Exact reconstruction | 12.21% | 7.23% |
 | Numeric recall | 57.60% | 50.95% |
 
-These historical subsets are distinct from Stage1's81 passages/64 documents. Stage1 showed correct-latent CE1.0790 versus shuffled8.3189,11 exact reconstructions, and documented entity/number/negation/clause changes. Lower teacher-forced loss does not ensure faithful free decoding; velocity MSE is not discrete-model likelihood.
+Stage 1's separate set of 81 passages from 64 documents gave correct-latent CE 1.0790 against 8.3189 shuffled, 11 exact reconstructions, and entity, number, negation and clause changes. Stage 4 scored those 81 reconstructions and their sources with mGPT: pooled PPL **70.6728 against 61.7604**, paired-document bootstrap 95% interval for the log-PPL difference [0.00115, 0.25842]. This is a scorer-preference contrast, not a fidelity test, and the document-balanced sample is not comparable with the 1000-reference sample.
 
-To complete the proposal's requirement to score reconstructions externally, Stage4 scored those81 saved correct reconstructions and their matching source views. Pooled mGPT PPL is **70.6728 for reconstructions versus61.7604 for sources**. The paired-document bootstrap95% interval for reconstruction-minus-source log PPL is[0.00115,0.25842]. This is a scorer preference contrast, not a fidelity test or an independent confirmation population. The sample is document-balanced and includes short/noisy text, so its score is not directly comparable with the1000-reference corpus sample.
+Scores and the contract with four reproduced anchors: `outputs/stage4-final-evaluation-20261023/reconstruction-scores.jsonl` and `scoring-contract.json` (research repository only). Settings: mGPT revision `40897bd7c8b47a76802c411108ca6220438b8b40`, FP32, context 512/stride 256, archived scorer. A first attempt stopped on an invalid encoding alias, corrected to `utf-8-sig`; both logs are kept. Legacy mask-buffer warnings match the documented scorer limitation, and all four anchors passed.
 
-Primary new evidence: 81 scored pairs (`outputs/stage4-final-evaluation-20261023/reconstruction-scores.jsonl` in the research repository, not included here), scoring contract and four reproduced anchors (`outputs/stage4-final-evaluation-20261023/scoring-contract.json` in the research repository, not included here). The pinned mGPT revision is `40897bd7c8b47a76802c411108ca6220438b8b40`, FP32, context512/stride256, using the archived scorer. The first attempt stopped before scoring because of an invalid encoding alias; it was corrected to `utf-8-sig` and rerun. Both logs are retained. No numerical protocol changed. The loader's legacy mask-buffer warnings match the earlier documented scorer compatibility limitation; four anchors passed before new scoring.
+## Tokenisation and inspection
 
-## Tokenisation and sample inspection
+The tokenizer report (`data/nchlt_afrikaans/analysis/mt5-base-tokenizer/report.json`, research repository only) gives validation mean fertility 1.9331 including special tokens, median 1.875, p95 = 2.5, zero unknown tokens and 2/5905 inputs above 128 tokens. On Stage 1's 81 passages (fertility without EOS), Spearman correlations are 0.122 with reconstruction CE, 0.254 with reconstruction PPL and −0.032 with source token length; these are not causal or population estimates. The proposed English fertility distribution was not recovered; English/ROCStories substitution remains an RQ1 deviation.
 
-The Afrikaans tokenizer report (`data/nchlt_afrikaans/analysis/mt5-base-tokenizer/report.json` in the research repository, not included here) reports validation mean fertility1.9331, median1.875, p95=2.5, zero unknown tokens and2/5905 inputs above128 tokens. This fertility includes special tokens. Stage1's exploratory fertility subtracts the single EOS token; under that different documented convention its Spearman correlations are0.122 with reconstruction CE,0.254 with external reconstruction PPL and−0.032 with source token length. These associations on81 selected passages are neither causal tokenizer effects nor population estimates. The proposed English fertility distribution was not recovered in the bounded evidence search; do not fabricate it or substitute Afrikaans statistics. English/ROCStories substitution remains an RQ1 deviation.
+The proposal's checks (entities and content, recognisable clauses, unsupported additions) were applied to the 81 reconstructions as an **AI-assisted** reading by Claude: [claude_labels_2026-11-07](../claude_labels_2026-11-07/). No human agreement is reported.
 
-The proposal asks for researcher-side checks of major entities/content, recognisable clauses and unsupported lexical additions. These checks were applied to the 81 reconstructions as an **AI-assisted** reading by Claude, recorded in [claude_labels_2026-11-07](../claude_labels_2026-11-07/). No human agreement is reported.
-
-## Proposal criterion and research-question conclusions
+## Research questions
 
 | Item | Final evidence status |
 |---|---|
-| RQ1 English implementation control | Reduced ROCStories/BART controls documented; proposed OpenWebText evidence and stronger reported run's primary artifacts remain incompletely verified. Report a qualified implementation-control account, not full fulfilment of the proposed setting. |
-| RQ2 sufficient representation for reconstruction | Source-specific information is retained. Content-preservation failures mean adequacy is not established; later diffusion quality claims must remain limited. |
-| RQ3 credible AR comparison | Numerical external-PPL ratios are below1.20 for the disclosed validation comparison. Budget/pretraining/selection differences prevent a fully matched interpretation. |
-| No severe degeneracy | No widespread empty-output or literal n-gram collapse under constrained decoding; copying and content/coherence failures remain. No broad linguistic-quality pass is certified. |
-| Composite hypothesis | **Not established.** Favourable aggregate PPL cannot override matching and reconstruction limitations. This is not a proven intrinsic failure of diffusion or a reason to hide mixed results. |
+| RQ1 English implementation control | Reduced ROCStories/BART controls documented; OpenWebText evidence and the stronger reported run's artefacts incompletely verified. Qualified, not full fulfilment. |
+| RQ2 sufficient representation for reconstruction | Source-specific information retained, but content-preservation failures mean adequacy is not established. |
+| RQ3 credible AR comparison | External-PPL ratios below 1.20 on validation; budget, pretraining and selection differences prevent a matched interpretation. |
+| No severe degeneracy | No widespread empty-output or literal n-gram collapse under constrained decoding; copying and content/coherence failures remain. |
+| Composite hypothesis | **Not established.** Favourable aggregate PPL cannot override matching and reconstruction limitations; this is not a proven intrinsic failure of diffusion. |
 
-Stage4's automatic consolidation is complete. Remaining source/proposal deviations and author interpretation are explicitly documented limitations, not completed missing experiments. Human evaluation is excluded under the author's confirmed proposal scope; it is not a pending Stage4 deliverable. The next stage is manuscript completion, with these limits carried forward.
+Remaining deviations are documented limitations, not missing experiments.

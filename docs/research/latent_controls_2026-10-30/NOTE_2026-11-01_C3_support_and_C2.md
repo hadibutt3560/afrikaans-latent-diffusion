@@ -1,6 +1,6 @@
 # Dated note, 1 November 2026: primary contrasts not estimable; C2 reported as post hoc
 
-Written after the Phase A run (`outputs/latent-controls-20261030`, all gates passed) and its analysis. The approved protocol is unchanged; this note records how its outcome is reported.
+Written after the Phase A run (`outputs/latent-controls-20261030`, all gates passed) and its analysis. The protocol is unchanged; this note records how its outcome is reported.
 
 ## Outcome under the protocol
 
@@ -18,9 +18,9 @@ The exploratory contrasts (§6, 95%, t = 2.7764) are reported as **exploratory, 
 | small − C2 | +7.72 | [+3.74, +11.71] | higher |
 | large − C2 | −3.99 | [−7.48, −0.49] | lower |
 
-- **C2, the Gaussian fitted to training latents, is the informative comparison.** Raw perplexity does not separate any condition from diffusion (C1 raw 50.36 against diffusion means of 51.94 and 49.60). Any text giving C2 a central role must say that this emphasis was chosen **after** seeing the results.
+- **C2, the Gaussian fitted to training latents, is the informative comparison.** Raw perplexity does not separate any condition from diffusion (C1 raw 50.36 against diffusion means of 51.94 and 49.60). Any text giving C2 a central role states that this emphasis was chosen **after** seeing the results.
 - C2's outputs are less diverse than diffusion (distinct-2 0.629 against 0.670 and 0.699; unigram entropy 8.80 against 9.26 and 9.46 bits), so part of its lower perplexity reflects blander text.
 
 ## Not done
 
-No confirmatory replacement for C3 is defined here. A future comparison against C2, for example on the new autoencoder, needs its own approved protocol with C2 named as primary before it is run.
+No confirmatory replacement for C3 is defined here. A future comparison against C2, for example on the new autoencoder, needs its own protocol, with C2 named as primary, fixed before it is run.

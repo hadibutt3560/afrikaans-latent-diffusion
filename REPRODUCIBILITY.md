@@ -2,7 +2,7 @@
 
 This is the index for the manuscript `docs/research/manuscript_versions_2026-10-27/new/main.tex`. It points to where each method detail is fixed.
 
-`outputs/` is not tracked by git. Summary results for the studies behind the manuscript are copied into each study's folder. Seven folders also record SHA-256 hashes covering their original output folders, including sample banks and latents that are not committed: `ar_validation_audit_2026-10-22` (`ARTIFACT_MANIFEST.json`), `e12_uncertainty_2026-11-01`, `evaluation_package_2026-10-31`, `latent_controls_2026-10-30`, `local_followups_2026-11-01`, `swahili_check_2026-11-01` and `train_heldout_reconstruction_2026-10-27`. The others record input hashes in their contracts or none. Items marked *(local)* exist only on the author's machine or the cluster. Model weights, raw corpora and full sample banks are not in the repository.
+`outputs/` is not tracked by git. Summary results for the studies behind the manuscript are copied into each study's folder. Seven folders also record SHA-256 hashes covering their original output folders, including sample banks and latents that are not committed: `ar_validation_audit_2026-10-22` (`ARTIFACT_MANIFEST.json`), `e12_uncertainty_2026-11-01`, `evaluation_package_2026-10-31`, `latent_controls_2026-10-30`, `local_followups_2026-11-01`, `swahili_check_2026-11-01` and `train_heldout_reconstruction_2026-10-27`. The others record input hashes in their contracts or none. Items marked *(local)* exist only on the local workstation or the cluster. Model weights, raw corpora and full sample banks are not in the repository.
 
 ## Proposal
 
@@ -63,7 +63,7 @@ The research proposal, referred to in the manuscript as "the proposal", fixed th
 | Evaluation package | `docs/research/evaluation_package_2026-10-31/` | `results/analysis.json`, `results/mauve.json` and the other JSON summaries; the blinding key of the manual check is not committed |
 | Run-level uncertainty (E12) | `docs/research/e12_uncertainty_2026-11-01/` | `results/e12.json` |
 | Swahili check | `docs/research/swahili_check_2026-11-01/` (`run_check.py`, `summarise.py`) | `results/summary.json`, `results/RESULTS.md`, `results/s4.json`, `results/gates.json` |
-| Follow-up inference checks (job 81249: self-conditioning audit, fitted prior on D, 681-passage reconstruction) | `docs/research/followup_inference_2026-11-03/` (`followup.py`, `followup.slurm`, `analyze.py`) | `PROTOCOL.md` (with dated note on approval), `analysis.json` |
+| Follow-up inference checks (job 81249: self-conditioning audit, fitted prior on D, 681-passage reconstruction) | `docs/research/followup_inference_2026-11-03/` (`followup.py`, `followup.slurm`, `analyze.py`) | `PROTOCOL.md` (with dated note), `analysis.json` |
 | AR baseline on the test split (RQ3 common-split check, run locally 5 Nov.) | `docs/research/ar_test_2026-11-05/` (`run_ar_test.py`; paths assume the `research` repository layout) | `PROTOCOL.md`, `results/analysis.json`, `results/anchors.json`, `results/contract.json`; samples in `outputs/ar-test-20261105/` *(local)* |
 | English control (RQ1: BART on ROCStories, 5,000 updates) | `docs/research/english_control_2026-08-15/` (`README.md`) | `english_control_metrics.json`, extracted from the 20 September research audit |
 | Tokenisation fertility from saved outputs (5 Nov.) | `docs/research/fertility_2026-11-05/` (`run_fertility.py`; paths assume the `research` repository layout) | `results/fertility.json` |

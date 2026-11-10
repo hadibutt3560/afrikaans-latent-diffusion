@@ -96,7 +96,10 @@ before it is applied to Afrikaans. It uses the upstream method unchanged.
     Resume with `--resume_training --resume_dir PATH --output_dir PATH` and use
     `--resume_to_step N` to extend the saved horizon.
 
-Settings and pass criteria are in `docs/research/ENGLISH_REPRODUCTION_PLAN.md`.
-The study used a reduced 5,000-update run, not the full 50,000- or 250,000-step
+The data split is fixed: 93,161 training stories, the first 1,000 of the
+supplied 5,000-example validation file after seed-42 processing, and the
+remaining 4,000 as test; maximum token length 64. The full gate definitions were
+in `docs/research/ENGLISH_REPRODUCTION_PLAN.md`, removed on 10 November 2026 and
+kept in the git history. The study used a reduced 5,000-update run, not the full 50,000- or 250,000-step
 schedules.
 
