@@ -134,6 +134,30 @@ CHECKS.update({
     'claude labels: agreement': f"on {cl['agreement']['result']['agree']} of 81 ($\\kappa={cl['agreement']['result']['kappa']:.2f}$)",
 })
 
+# Decoder learning curves (jobs 74177 and 75003, research workspace outputs)
+import glob as _glob
+_CR = DOCS.parents[2] / 'research/outputs/cluster-results'
+def _curve(job, arm):
+    out = []
+    for f in sorted(_glob.glob(str(_CR / f'{job}/development-{arm}-*.json'))):
+        step = int(Path(f).stem.split('-')[-1])
+        out.append((step, json.loads(Path(f).read_text(encoding='utf-8-sig'))['metrics']['chrf']))
+    return out
+if _CR.exists():
+    f12 = _curve('job-74177-review/job-74177', 'F12')
+    d0 = _curve('job-75003-review/job-75003', 'D0')
+    d1 = _curve('job-75003-review/job-75003', 'D1')
+    later = [c for s_, c in f12 if s_ > f12[0][0]]
+    gap = max(abs(a[1] - b[1]) for a, b in zip(f12, d0))
+    CHECKS.update({
+        'curve: first check': f"within {f12[0][0]:,} updates (chrF {f12[0][1]:.2f})",
+        'curve: later range': f"later checks to {f12[-1][0]:,} stayed between {min(later):.2f} and {max(later):.2f}",
+        'curve: same-seed rerun gap': f"tracked the earlier curve within {gap:.2f}",
+        'curve: dropout range': f"With dropout, chrF stayed between {min(c for _, c in d1):.2f} and {max(c for _, c in d1):.2f}",
+    })
+else:
+    print('skip: cluster results not found, decoder curve checks not run')
+
 failed = [name for name, text in CHECKS.items() if text not in TEX]
 for name, text in CHECKS.items():
     print(('FAIL ' if name in failed else 'ok   ') + name + ('' if name not in failed else f'  expected: {text}'))
