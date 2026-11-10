@@ -75,9 +75,25 @@ python tools/prepare_nchlt_afrikaans.py
 python tools/finalize_nchlt_afrikaans.py
 ```
 
+The follow-up autoencoder also trains on two government-domain Afrikaans sources:
+[Gov-ZA cabinet statements](https://huggingface.co/datasets/dsfsi/gov-za-monolingual) and the
+[Vuk'uzenzele newspaper](https://huggingface.co/datasets/dsfsi/vukuzenzele-monolingual)
+(15,269 passages, 511,155 words after processing). Diffusion always trains on NCHLT only.
+After the NCHLT splits exist, download both at pinned revisions, process them like NCHLT
+(duplicates and documents overlapping NCHLT validation or test are removed) and build the
+three validation panels ([details](docs/research/ae_screen_2026-10-27/PROTOCOL.md), §2–3):
+
+```bash
+python docs/research/ae_screen_2026-10-27/data/fetch_extra.py
+python docs/research/ae_screen_2026-10-27/data/prepare_extra.py
+python docs/research/ae_screen_2026-10-27/data/build_panels.py
+```
+
+`build_panels.py` also reads two earlier passage manifests kept under `outputs/`, which is
+not in the repository.
+
 **3. Autoencoder.** Train with every parameter trainable, as in the screen's winning arm
-(64 latent slots, NCHLT plus extra Afrikaans). The panels and extra data are built by the
-scripts in `docs/research/ae_screen_2026-10-27/data/`:
+(64 latent slots, NCHLT plus the extra Afrikaans data and panels from step 2):
 
 ```bash
 python docs/research/ae_screen_2026-10-27/job/train_ae.py --arm D --latents 64 --extra \
@@ -112,10 +128,12 @@ controls and checks reported in the paper.
 ## What is not in the repository
 
 Model weights, the raw corpus, latent caches and full sample banks are too large or not
-ours to redistribute. Each study's `results/` folder holds the summary files and a
-`SHA256SUMS.txt` that records the hash of every original output, so a rerun can be
-checked against them. The NCHLT corpus is distributed by SADiLaR under CC BY 2.5 South
-Africa.
+ours to redistribute. Each study folder holds its summary results. Seven also record SHA-256 hashes of their
+original outputs, so a rerun can be checked against them: `ar_validation_audit_2026-10-22` (`ARTIFACT_MANIFEST.json`), `e12_uncertainty_2026-11-01`, `evaluation_package_2026-10-31`, `latent_controls_2026-10-30`, `local_followups_2026-11-01`, `swahili_check_2026-11-01` and `train_heldout_reconstruction_2026-10-27`. The NCHLT corpus is distributed by SADiLaR under CC BY 2.5 South
+Africa. Gov-ZA is released under the MIT licence and Vuk'uzenzele under CC BY 4.0, both by
+DSFSI (Lastrucci et al., 2023, *Preparing the Vuk'uzenzele and ZA-gov-multilingual South
+African Multilingual Corpora*, RAIL 2023); the texts come from the Government Communication
+and Information System.
 
 ## Other documentation
 

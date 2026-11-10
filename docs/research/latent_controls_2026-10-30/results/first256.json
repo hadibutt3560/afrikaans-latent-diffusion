@@ -1,0 +1,14 @@
+{
+ "source": "scored-C1.jsonl",
+ "source_sha256": "88fb70d6139b98bfaabf58a0d11269a4531e138e0db305819cd03239796533b4",
+ "n": 256,
+ "seeds": "30000-30255",
+ "nll_sum": 118283.52150404453,
+ "tokens": 29181,
+ "perplexity": 57.59541969008757,
+ "perplexity_all_1000": 50.362266058299376,
+ "ar_source": "ar-validation-audit-20261022/ar-cap127-scored.jsonl",
+ "ar_n": 256,
+ "ar_perplexity": 82.17857453663238,
+ "ratio_to_ar": 0.7008568841068606
+}

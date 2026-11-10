@@ -158,6 +158,22 @@ if _CR.exists():
 else:
     print('skip: cluster results not found, decoder curve checks not run')
 
+# Five review fixes (10 November 2026)
+import re as _re
+_fe = (DOCS / 'stage4_final_evaluation_2026-10-23/FINAL_EVALUATION.md').read_text(encoding='utf8')
+_ce = _re.search(r'Reconstruction CE \| ([0-9.]+) \| ([0-9.]+)', _fe)
+_ex = _re.search(r'Exact reconstruction \| ([0-9.]+)% \| ([0-9.]+)%', _fe)
+_ar = (DOCS / 'ar_validation_audit_2026-10-22/AR_SUITABILITY_REPORT.md').read_text(encoding='utf8')
+_hu = _re.search(r'Real-validation reference \| [^|]*\| 256 total \| ([0-9.]+)', _ar)
+_sm = load('ar_test_2026-11-05/results/analysis.json')['system_means']
+_r256 = load('latent_controls_2026-10-30/results/first256.json')
+CHECKS.update({
+    'recon: test CE and exact': f"reconstruction CE is {float(_ce.group(2)):.3f} and {float(_ex.group(2)):.1f}\\% are exact (validation: {float(_ce.group(1)):.3f} and {float(_ex.group(1)):.1f}\\%)",
+    'table3: human 256': f"Human text & {float(_hu.group(1)):.2f} & --",
+    'table3: random 256 ppl and ratio': f"Random latents & {_r256['perplexity']:.2f} & {_r256['ratio_to_ar']:.4f}",
+    'retrained: standardised original': f"against {_sm['B0-published']['std_ppl']:.1f} and {_sm['B0-small']['std_ppl']:.1f};",
+})
+
 failed = [name for name, text in CHECKS.items() if text not in TEX]
 for name, text in CHECKS.items():
     print(('FAIL ' if name in failed else 'ok   ') + name + ('' if name not in failed else f'  expected: {text}'))

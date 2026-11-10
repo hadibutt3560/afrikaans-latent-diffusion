@@ -2,7 +2,7 @@
 
 This is the index for the manuscript `docs/research/manuscript_versions_2026-10-27/new/main.tex`. It points to where each method detail is fixed.
 
-`outputs/` is not tracked by git. Summary results for the studies behind the manuscript are copied into each study's `results/` folder, with a `SHA256SUMS.txt` covering every file of the original output folder, including the sample banks and latents that are not committed. Items marked *(local)* exist only on the author's machine or the cluster. Model weights, raw corpora and full sample banks are not in the repository.
+`outputs/` is not tracked by git. Summary results for the studies behind the manuscript are copied into each study's folder. Seven folders also record SHA-256 hashes covering their original output folders, including sample banks and latents that are not committed: `ar_validation_audit_2026-10-22` (`ARTIFACT_MANIFEST.json`), `e12_uncertainty_2026-11-01`, `evaluation_package_2026-10-31`, `latent_controls_2026-10-30`, `local_followups_2026-11-01`, `swahili_check_2026-11-01` and `train_heldout_reconstruction_2026-10-27`. The others record input hashes in their contracts or none. Items marked *(local)* exist only on the author's machine or the cluster. Model weights, raw corpora and full sample banks are not in the repository.
 
 ## Proposal
 
@@ -20,6 +20,7 @@ The research proposal, referred to in the manuscript as "the proposal", fixed th
 | Diffusion training configuration (denoisers, seeds, EMA, sampling) | `configs/afrikaans_longrun.json`, `tools/afrikaans_longrun.py` |
 | Final evaluation protocol (frozen models, test-bank reanalysis) | `docs/research/stage4_final_evaluation_2026-10-23/PROTOCOL.md` |
 | AR baseline protocol and budget | `docs/research/ar_scope_decision_2026-10-22/`, `outputs/cluster-results/ar-baseline-57759/protocol.json` *(local)* |
+| Extra autoencoder data (Gov-ZA, Vuk'uzenzele: sources, revisions, licences, processing) | `docs/research/ae_screen_2026-10-27/PROTOCOL.md` §2, `data/fetch_extra.py`, `data/prepare_extra.py`; `data/extra_afrikaans/processed/manifest.json` *(local)* |
 | Autoencoder screen (arms, recipe, panels, thresholds) | `docs/research/ae_screen_2026-10-27/PROTOCOL.md`, `screen_report_from_cluster.json` |
 | Diffusion on the screen winner (jobs 77175 training, 77176 evaluation) | `docs/research/ae_screen_2026-10-27/job/diffusion_train.slurm`, `diffusion_finish.slurm`, `diffusion_stage.py`; outputs in `outputs/cluster-results/ae-diffusion-77176/` *(local)* |
 | Generation comparison on the new autoencoder (empty-band correction) | `docs/research/ae_screen_2026-10-27/compare_generation.py`, `NOTE_2026-11-01_empty_bands.md` |
