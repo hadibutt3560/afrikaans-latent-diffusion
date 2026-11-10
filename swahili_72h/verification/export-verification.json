@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "files": 738,
+  "checks": [
+    "UTF-8 source exact character slices",
+    "all text recovered by joining exported spans",
+    "every text SHA256 matches"
+  ]
+}

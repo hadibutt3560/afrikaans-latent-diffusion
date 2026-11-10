@@ -1,0 +1,1402 @@
+[
+ {
+  "i": 9147,
+  "id": "cfecba961f232370cf1a7248433daf2ef7b3aee5184cafe99a8ba29926439cd1",
+  "file": "maneno-yetu-corpora-104-20250609-210104.txt",
+  "bin": 1,
+  "donor": "c11a89c738fde0a9e61fd4ab3c40b625b06392dab656e389e214c1d9b5419b0f"
+ },
+ {
+  "i": 278,
+  "id": "b493a9650567553ec9ef77e40a09ecbf0555dbf6fa638d93296e2642c46bb354",
+  "file": "maneno-yetu-corpora-364-20250609-210105.txt",
+  "bin": 1,
+  "donor": "e62112f7b2c0f63777e4bdc1042d91046f69fb996d4fd672f2517914bbde1557"
+ },
+ {
+  "i": 7767,
+  "id": "06099e8c18ff0bdbabfaa5667bc43fdc0a894969f7fcdedbdf9d7b86e2c8ef4f",
+  "file": "maneno-yetu-corpora-699-20250609-210107.txt",
+  "bin": 1,
+  "donor": "a57c38f16696ca15bac766bbccbdd12c33121309f0e4587717f19bb7059acb6e"
+ },
+ {
+  "i": 1189,
+  "id": "2dd9f1abc594028fca1f6bb1d31062d2d2958046c042e38b15877e975fd36eb8",
+  "file": "maneno-yetu-corpora-364-20250609-210105.txt",
+  "bin": 1,
+  "donor": "5c00de480846790646570fef5847821219b2c5f30f49f2f0e4f924c85d6aaa15"
+ },
+ {
+  "i": 3357,
+  "id": "cfaaa2f96455e8b3d1465e0ce3b8628f0163df5a06324c87ccc7d8a6a74e3665",
+  "file": "maneno-yetu-corpora-374-20250609-210105.txt",
+  "bin": 1,
+  "donor": "aea5c895469c50c08ca89145af7d3ca0b36d45d0d4d5846b56be4af2fd9a3cab"
+ },
+ {
+  "i": 3399,
+  "id": "8672d44ed832611eb1381d9a542cb0075a7a24d3e6f7295c6382aaf650a2e872",
+  "file": "maneno-yetu-corpora-374-20250609-210105.txt",
+  "bin": 1,
+  "donor": "bfa546ae8566f5be3a4095706936b595127aa08bbf78c533b4867beda76ddc12"
+ },
+ {
+  "i": 16412,
+  "id": "488fa4d305756242d9238649515b8d12c48450769efbaebae77b4060bdc3abff",
+  "file": "maneno-yetu-corpora-301-20250609-210105.txt",
+  "bin": 1,
+  "donor": "b492f82211796a2003205b318618a126f714634566cb151137dbec776ba8765e"
+ },
+ {
+  "i": 13268,
+  "id": "62893c95ec8737376d50bcd8309d045c8516193208b897978c5f1abedf796cac",
+  "file": "maneno-yetu-corpora-371-20250609-210105.txt",
+  "bin": 1,
+  "donor": "45aac602f372170420902eeff079436d2fd85e3e12bdcc7b153f877b092c1da6"
+ },
+ {
+  "i": 4191,
+  "id": "fd1e43231db9bc91636e6113828b3385c633eb061be4cc1e8ee36cff3b80e517",
+  "file": "maneno-yetu-corpora-374-20250609-210105.txt",
+  "bin": 1,
+  "donor": "f8d5540c6e061483afb6a33e0154153346937c11a5bf0de166fb78d36a7d9370"
+ },
+ {
+  "i": 8942,
+  "id": "1521a74af5c2b12aecdd65a8fa216e8061187edfedb6ca8403e5d3a7c1c2e00d",
+  "file": "maneno-yetu-corpora-104-20250609-210104.txt",
+  "bin": 1,
+  "donor": "8bc6cda2120b0a91824ee5553b8e0efc02540dcae6c7bf0155af9d3a5d00aa5b"
+ },
+ {
+  "i": 6855,
+  "id": "a7cda4fb1d134a00e0d8dd1b7879a0acf3a13b8dbcd2b8f6b8de4d58a403c768",
+  "file": "maneno-yetu-corpora-712-20250609-210107.txt",
+  "bin": 1,
+  "donor": "a59a0bc41d7a7442b528f4e4f6532dc0e3fd00c9beff78a2a1ddb45a9c4c7b0e"
+ },
+ {
+  "i": 2856,
+  "id": "d29d7b33b8b63b43368e7c09f4d2eef6884e76d4d3b36838887c48ef29dfe527",
+  "file": "maneno-yetu-corpora-380-20250609-210105.txt",
+  "bin": 1,
+  "donor": "8bc6cda2120b0a91824ee5553b8e0efc02540dcae6c7bf0155af9d3a5d00aa5b"
+ },
+ {
+  "i": 11790,
+  "id": "3a2504b258a557c0cfcd41b66b4f039e497d06fec764759e91e200fddb237da1",
+  "file": "maneno-yetu-corpora-592-20250609-210106.txt",
+  "bin": 1,
+  "donor": "12e35525fc80702ab2fdf298ffd78e87ea213abf6989dcff2bf3efbf11dac4da"
+ },
+ {
+  "i": 7347,
+  "id": "355d42c8cdf5c0762babd1869f0c9a0e1c8411c4b83dbf4dc80ba7ddbce89936",
+  "file": "maneno-yetu-corpora-699-20250609-210107.txt",
+  "bin": 1,
+  "donor": "3dfc4296371e21dd53e0210f89c0200b25e24b910c375503e70b62f178051282"
+ },
+ {
+  "i": 28782,
+  "id": "b7803c112b3bb9db98b3052f5d613899d0251cf7bf5a1673e811d9d4234693e7",
+  "file": "maneno-yetu-corpora-345-20250609-210105.txt",
+  "bin": 1,
+  "donor": "74104b558f0d896328ca88acffd47af197f88047a9c4fe0c5fcf3908b6aa6254"
+ },
+ {
+  "i": 14283,
+  "id": "6b68278fa71f9d25035d6827f45bb05dbb26a9b6e7af596cafc2775b9e2a6956",
+  "file": "maneno-yetu-corpora-634-20250609-210107.txt",
+  "bin": 1,
+  "donor": "67df2777d43b8104bea412b441854309ed960a2a11238f6d3513e67f2dfdd424"
+ },
+ {
+  "i": 4670,
+  "id": "4fb254d2e457f5657e9afec8427d08c0240f4a7bf9dfd55ec53c01afabe208d1",
+  "file": "maneno-yetu-corpora-374-20250609-210105.txt",
+  "bin": 1,
+  "donor": "9c2edb29b118c8127caa7a7ddc34da3129816864c3798e5413ff7eac7990fede"
+ },
+ {
+  "i": 4206,
+  "id": "25f4ba63aa1c8dbb3ef8899237d3671b466c37d23762bee23825db924e597616",
+  "file": "maneno-yetu-corpora-374-20250609-210105.txt",
+  "bin": 1,
+  "donor": "49f70ca1b16f7774e7151a28e6398430fb3351aae9df37cc22b931e196d9d39c"
+ },
+ {
+  "i": 1304,
+  "id": "f8d5540c6e061483afb6a33e0154153346937c11a5bf0de166fb78d36a7d9370",
+  "file": "maneno-yetu-corpora-364-20250609-210105.txt",
+  "bin": 1,
+  "donor": "cdc9bf97854aab3266f4727556abd77d0b7af3db4c78f1bf9bb1a7eb411c67d9"
+ },
+ {
+  "i": 15085,
+  "id": "82565ffb5b26c5da78909a761988885d19378c76e25e899e1fd0c38d13fca901",
+  "file": "maneno-yetu-corpora-644-20250609-210107.txt",
+  "bin": 1,
+  "donor": "49f70ca1b16f7774e7151a28e6398430fb3351aae9df37cc22b931e196d9d39c"
+ },
+ {
+  "i": 14043,
+  "id": "9b4710940c31b3b50c8b63590ccb4fb7b36cce7f1a9cce01a15aeed63401f285",
+  "file": "maneno-yetu-corpora-371-20250609-210105.txt",
+  "bin": 1,
+  "donor": "8ada94a0e4c8f08b031efe7ffd0d99e9ab4c11e758d8ecfeffd9228b7d7c8175"
+ },
+ {
+  "i": 387,
+  "id": "c086711637bdd3cc8095be5be20b00b582b8b90cd4201211b45e0deccb04b0b1",
+  "file": "maneno-yetu-corpora-364-20250609-210105.txt",
+  "bin": 1,
+  "donor": "e87f6fcfa484e06e8c6226d38ef08273645a16df93edb7f58ddbbb030b171420"
+ },
+ {
+  "i": 4765,
+  "id": "76482048882e7b0fef74d2b98f72ad80eb9a33948f52714aa24258061940c253",
+  "file": "maneno-yetu-corpora-374-20250609-210105.txt",
+  "bin": 1,
+  "donor": "cbbb2e7f161b4912021bf329ff32ecafef56ac9a568248a3735edf9ff922e143"
+ },
+ {
+  "i": 20737,
+  "id": "1f10abf96dd7b9246d0064e27b99daf45589ebd547eda57c4cd278cdd6c86f28",
+  "file": "maneno-yetu-corpora-619-20250609-210107.txt",
+  "bin": 1,
+  "donor": "3e56d5b1085fe648cf1c50ff02f29f717cbd18d2037f656038b3bb967d84a81b"
+ },
+ {
+  "i": 7070,
+  "id": "c11a89c738fde0a9e61fd4ab3c40b625b06392dab656e389e214c1d9b5419b0f",
+  "file": "maneno-yetu-corpora-699-20250609-210107.txt",
+  "bin": 1,
+  "donor": "b9e90b18b1be219db683be19f923e072c77d4440c37d17b01615bfe28c903429"
+ },
+ {
+  "i": 15403,
+  "id": "6a044ad88aa0d3078ef652ce830fd8155ce2fc78b4cf21c7a87d9586f87f7cab",
+  "file": "maneno-yetu-corpora-644-20250609-210107.txt",
+  "bin": 1,
+  "donor": "b9e90b18b1be219db683be19f923e072c77d4440c37d17b01615bfe28c903429"
+ },
+ {
+  "i": 10922,
+  "id": "829a1881de62079cc77a40c9a89546b40ef93a7061e1f37e4a93fef9f81aed97",
+  "file": "maneno-yetu-corpora-082-20250609-210103.txt",
+  "bin": 1,
+  "donor": "bafe42550a2c5da556c746e5ffa09fca76ada83dbfc092914b0e0d74ace783c1"
+ },
+ {
+  "i": 17136,
+  "id": "91e8304831553d677248b7b2eb567a14b053f0dc514234a43e0178a2a56244cb",
+  "file": "maneno-yetu-corpora-566-20250609-210106.txt",
+  "bin": 1,
+  "donor": "12e35525fc80702ab2fdf298ffd78e87ea213abf6989dcff2bf3efbf11dac4da"
+ },
+ {
+  "i": 10079,
+  "id": "911ecc31fe10868f9be09b3bb3c88ab998201a934b2aa51dd802a017e9534f41",
+  "file": "maneno-yetu-corpora-729-20250609-210107.txt",
+  "bin": 1,
+  "donor": "17eae2272c9ac312786dba2ad8a09773a8d21a5c4f61b9751f01a2c66078151b"
+ },
+ {
+  "i": 9775,
+  "id": "e601be5b80c20ac59d47be8eccf940359b431f3a7a44128f6b541fc250ec4dcb",
+  "file": "maneno-yetu-corpora-104-20250609-210104.txt",
+  "bin": 1,
+  "donor": "5d62378c5a7b478a10fc43694cf0c30d4bf347f107754a00a8a2fa1530fb305b"
+ },
+ {
+  "i": 1949,
+  "id": "eeaabd01949b849de04a06fc490b25f34724706ae56cb57c0ff10ec6dce7d371",
+  "file": "maneno-yetu-corpora-380-20250609-210105.txt",
+  "bin": 1,
+  "donor": "88db0b08af137bac054019fb69c9267559ce7fb0119a765b63c8c3de0f4d1368"
+ },
+ {
+  "i": 20015,
+  "id": "51a353ee52a3a907915d958932455307d3edb370c643a486e42a2be3a90afc84",
+  "file": "maneno-yetu-corpora-471-20250609-210106.txt",
+  "bin": 1,
+  "donor": "cb33e020a49a86b8b0cd25555fcc15605eee003387936035bfb33b354b620314"
+ },
+ {
+  "i": 14850,
+  "id": "20392060ff06a3ad94787c13ea98f2961d8076e920937dde1197fd022fef33da",
+  "file": "maneno-yetu-corpora-644-20250609-210107.txt",
+  "bin": 1,
+  "donor": "8bc6cda2120b0a91824ee5553b8e0efc02540dcae6c7bf0155af9d3a5d00aa5b"
+ },
+ {
+  "i": 20961,
+  "id": "6aa94bec466368f774c8a441697fb090aaaf058061184f2c8d464578cf9edfac",
+  "file": "maneno-yetu-corpora-619-20250609-210107.txt",
+  "bin": 1,
+  "donor": "51a353ee52a3a907915d958932455307d3edb370c643a486e42a2be3a90afc84"
+ },
+ {
+  "i": 6913,
+  "id": "611d0095a28794ef246ec816c8ec8332387da49dee6a1ee1285b64e91c84582a",
+  "file": "maneno-yetu-corpora-699-20250609-210107.txt",
+  "bin": 1,
+  "donor": "fd1e43231db9bc91636e6113828b3385c633eb061be4cc1e8ee36cff3b80e517"
+ },
+ {
+  "i": 20386,
+  "id": "9c2edb29b118c8127caa7a7ddc34da3129816864c3798e5413ff7eac7990fede",
+  "file": "maneno-yetu-corpora-045-20250609-210103.txt",
+  "bin": 1,
+  "donor": "f8d5540c6e061483afb6a33e0154153346937c11a5bf0de166fb78d36a7d9370"
+ },
+ {
+  "i": 10262,
+  "id": "45aac602f372170420902eeff079436d2fd85e3e12bdcc7b153f877b092c1da6",
+  "file": "maneno-yetu-corpora-729-20250609-210107.txt",
+  "bin": 1,
+  "donor": "8584b62588c18b26def22e500642fd99575c59fcc1b2f932cabc8c12aeb8a5cd"
+ },
+ {
+  "i": 12335,
+  "id": "49aa5c81bc08b1ce655e338f14061c962fff72b438be57d5c92fb52afe210783",
+  "file": "maneno-yetu-corpora-592-20250609-210106.txt",
+  "bin": 1,
+  "donor": "443455117e3d3fcd7e03f12ae7cbdb69c5637bba67e6460c1895a03b1a3259f6"
+ },
+ {
+  "i": 19964,
+  "id": "807db3f0d6b20e9fdc23299182afe8bf04acefe22f9dfad3fa484be95d541ab8",
+  "file": "maneno-yetu-corpora-471-20250609-210106.txt",
+  "bin": 1,
+  "donor": "e950081d628c1a359546fb040712a5b0c9e2ae3ae61e04ff9d3d9aa33959dca8"
+ },
+ {
+  "i": 7756,
+  "id": "c5503089fd6f0f72e1ecd41609af52baa064f6ca8b6909ef11d5267a736a671b",
+  "file": "maneno-yetu-corpora-699-20250609-210107.txt",
+  "bin": 1,
+  "donor": "3412a3bbb2a65fce069b2473da8e498aecb53181649a8df994284bb75cc490b3"
+ },
+ {
+  "i": 10143,
+  "id": "e62112f7b2c0f63777e4bdc1042d91046f69fb996d4fd672f2517914bbde1557",
+  "file": "maneno-yetu-corpora-729-20250609-210107.txt",
+  "bin": 1,
+  "donor": "bb1ff01ae64a6f4c118baa7245751e9c84604feb3ad3637ec2651b89d499bc16"
+ },
+ {
+  "i": 16176,
+  "id": "5cec74a20e4c494ee719bb5f78b3211d3f786dadab90fb4a84444ac007ca1fae",
+  "file": "maneno-yetu-corpora-301-20250609-210105.txt",
+  "bin": 1,
+  "donor": "eeaabd01949b849de04a06fc490b25f34724706ae56cb57c0ff10ec6dce7d371"
+ },
+ {
+  "i": 1979,
+  "id": "d7e811bc5c75af721c6596ad592d9398d0d34beb526ded0ebfdf5b3795eec347",
+  "file": "maneno-yetu-corpora-380-20250609-210105.txt",
+  "bin": 1,
+  "donor": "63147af85f16f74fba56890d236d50a73d814beca641e3b8c0eabc5581404639"
+ },
+ {
+  "i": 24677,
+  "id": "6342d4d25ce59bdf227016a3489693dd9e03a5a6508750fe30086b382ffc73f7",
+  "file": "maneno-yetu-corpora-100-20250609-210103.txt",
+  "bin": 1,
+  "donor": "3b604cdefa80f34e3d50d62b9b4fa34ae472a5d9deb896a348650aa4dc0763b6"
+ },
+ {
+  "i": 28514,
+  "id": "1f7c595581211bd9b36e116541c4221a329feea28d7cb00cb4a35a29bfffa230",
+  "file": "maneno-yetu-corpora-345-20250609-210105.txt",
+  "bin": 1,
+  "donor": "a7cda4fb1d134a00e0d8dd1b7879a0acf3a13b8dbcd2b8f6b8de4d58a403c768"
+ },
+ {
+  "i": 15831,
+  "id": "5c00de480846790646570fef5847821219b2c5f30f49f2f0e4f924c85d6aaa15",
+  "file": "maneno-yetu-corpora-301-20250609-210105.txt",
+  "bin": 1,
+  "donor": "76482048882e7b0fef74d2b98f72ad80eb9a33948f52714aa24258061940c253"
+ },
+ {
+  "i": 13876,
+  "id": "a57c38f16696ca15bac766bbccbdd12c33121309f0e4587717f19bb7059acb6e",
+  "file": "maneno-yetu-corpora-371-20250609-210105.txt",
+  "bin": 1,
+  "donor": "81142c05985557154d2dc46ccb138be9f08e3d23d50b70374aca5149d4582dc1"
+ },
+ {
+  "i": 12040,
+  "id": "3e56d5b1085fe648cf1c50ff02f29f717cbd18d2037f656038b3bb967d84a81b",
+  "file": "maneno-yetu-corpora-592-20250609-210106.txt",
+  "bin": 1,
+  "donor": "611d0095a28794ef246ec816c8ec8332387da49dee6a1ee1285b64e91c84582a"
+ },
+ {
+  "i": 27712,
+  "id": "ddd2fc40ace67bb42a6c3e14e1c230b9f240e4a1edbf3afcbab84f0f8485dba3",
+  "file": "maneno-yetu-corpora-739-20250609-210107.txt",
+  "bin": 1,
+  "donor": "49f70ca1b16f7774e7151a28e6398430fb3351aae9df37cc22b931e196d9d39c"
+ },
+ {
+  "i": 9463,
+  "id": "cc53a29fbc6b3e10e5e10662285b1ceb397ee865bce2b3a59af20c7cda3f5f1f",
+  "file": "maneno-yetu-corpora-104-20250609-210104.txt",
+  "bin": 1,
+  "donor": "b0c4dcb64e0e141fc9269b27f151ff4f08e017032409d9897d10851a8a3db072"
+ },
+ {
+  "i": 29086,
+  "id": "c1bd81ca31b6b252248a5740841be20a9172055bc33435f8ffa1f02339789a17",
+  "file": "maneno-yetu-corpora-345-20250609-210105.txt",
+  "bin": 1,
+  "donor": "03b4facf54d0a42f70c7f2e674e8fac89038ec40e49f54ef35ccecab0bf03f12"
+ },
+ {
+  "i": 20420,
+  "id": "49f70ca1b16f7774e7151a28e6398430fb3351aae9df37cc22b931e196d9d39c",
+  "file": "maneno-yetu-corpora-045-20250609-210103.txt",
+  "bin": 1,
+  "donor": "944c9b3f566b5ab3f2eecb077a0fad123e69322c6eea848f253eda1c76a12b81"
+ },
+ {
+  "i": 24156,
+  "id": "64b6380238fbd928813570de2e2a45f885d25abbd731b287df3d8555717a6943",
+  "file": "maneno-yetu-corpora-368-20250609-210105.txt",
+  "bin": 1,
+  "donor": "d29d7b33b8b63b43368e7c09f4d2eef6884e76d4d3b36838887c48ef29dfe527"
+ },
+ {
+  "i": 15276,
+  "id": "160f8245b2410ab6cc2f4fa592412210c6639321671e8bbde96429780e9c7079",
+  "file": "maneno-yetu-corpora-644-20250609-210107.txt",
+  "bin": 1,
+  "donor": "5d6d51c725712f23f0a63c73a59b8448d0d4bd19d56b1f0f7c91b06e9cbe6f2d"
+ },
+ {
+  "i": 5379,
+  "id": "a168b77106425eed65c6f5a7f48fddaca6c759cee048bc602e32424ac0428ece",
+  "file": "maneno-yetu-corpora-651-20250609-210107.txt",
+  "bin": 1,
+  "donor": "91e8304831553d677248b7b2eb567a14b053f0dc514234a43e0178a2a56244cb"
+ },
+ {
+  "i": 1529,
+  "id": "aea5c895469c50c08ca89145af7d3ca0b36d45d0d4d5846b56be4af2fd9a3cab",
+  "file": "maneno-yetu-corpora-380-20250609-210105.txt",
+  "bin": 1,
+  "donor": "eeaa4ac0a81d3c4d4fd295a174c96a15e658daf1cf0b1157618b6c5ce7597d2d"
+ },
+ {
+  "i": 7380,
+  "id": "88db0b08af137bac054019fb69c9267559ce7fb0119a765b63c8c3de0f4d1368",
+  "file": "maneno-yetu-corpora-699-20250609-210107.txt",
+  "bin": 1,
+  "donor": "21ce462072b9d57600bb9819a79f418a7333cde5b7b743acca13bf8c6b33707b"
+ },
+ {
+  "i": 23279,
+  "id": "c9ca792b2140dc41314780e61f792ae5ab28ed3838f7a1421766f0cc2a8c9d0a",
+  "file": "maneno-yetu-corpora-368-20250609-210105.txt",
+  "bin": 1,
+  "donor": "f44bbf1d6ca791482cadf8842ee4e2d9c039e2fd85d92b2cab72e9887d941a6a"
+ },
+ {
+  "i": 17290,
+  "id": "443455117e3d3fcd7e03f12ae7cbdb69c5637bba67e6460c1895a03b1a3259f6",
+  "file": "maneno-yetu-corpora-081-20250609-210103.txt",
+  "bin": 1,
+  "donor": "0bed822a67fa86d713a9f815e8947b9d958e65a0b356b4c2d4f1447b102dc107"
+ },
+ {
+  "i": 25267,
+  "id": "21ce462072b9d57600bb9819a79f418a7333cde5b7b743acca13bf8c6b33707b",
+  "file": "maneno-yetu-corpora-390-20250609-210105.txt",
+  "bin": 1,
+  "donor": "f4a6af4ab7262c1fcf59de290d680c3433d2f6fccf8dac55816a2435f063b156"
+ },
+ {
+  "i": 13917,
+  "id": "0bed822a67fa86d713a9f815e8947b9d958e65a0b356b4c2d4f1447b102dc107",
+  "file": "maneno-yetu-corpora-371-20250609-210105.txt",
+  "bin": 1,
+  "donor": "26c1332d48ef61cce86649a9a3eb4ec51bdf2a7df8fc37d5a48518df3a03816e"
+ },
+ {
+  "i": 23854,
+  "id": "bb1ff01ae64a6f4c118baa7245751e9c84604feb3ad3637ec2651b89d499bc16",
+  "file": "maneno-yetu-corpora-368-20250609-210105.txt",
+  "bin": 1,
+  "donor": "cfaaa2f96455e8b3d1465e0ce3b8628f0163df5a06324c87ccc7d8a6a74e3665"
+ },
+ {
+  "i": 20427,
+  "id": "1ea52b9e89c732ccb75747a300bebda21d1acf546593fefab0595f63f4ffd444",
+  "file": "maneno-yetu-corpora-045-20250609-210103.txt",
+  "bin": 1,
+  "donor": "5a0694716a46ceafb5b4706d284397204d0d9bc65dc02a04f2d0af37d86d4eda"
+ },
+ {
+  "i": 9308,
+  "id": "b4556130457024635396bcf69f88ff55b96b3291503ce3b2bd9ba312d4a55b8e",
+  "file": "maneno-yetu-corpora-104-20250609-210104.txt",
+  "bin": 1,
+  "donor": "38d2a1976f7e14e14167e39971937ba60ff6ed38c597f178e53eda2b6851cee7"
+ },
+ {
+  "i": 9457,
+  "id": "cb33e020a49a86b8b0cd25555fcc15605eee003387936035bfb33b354b620314",
+  "file": "maneno-yetu-corpora-104-20250609-210104.txt",
+  "bin": 1,
+  "donor": "b624cb6ec65267070b9680befb2c357d87df144d9c13533adce47be49d4f410d"
+ },
+ {
+  "i": 23708,
+  "id": "51b83baa3e421914fce6600aabce53024c301479942cd3068728f6c1119618ae",
+  "file": "maneno-yetu-corpora-368-20250609-210105.txt",
+  "bin": 1,
+  "donor": "d7e811bc5c75af721c6596ad592d9398d0d34beb526ded0ebfdf5b3795eec347"
+ },
+ {
+  "i": 5408,
+  "id": "a59a0bc41d7a7442b528f4e4f6532dc0e3fd00c9beff78a2a1ddb45a9c4c7b0e",
+  "file": "maneno-yetu-corpora-651-20250609-210107.txt",
+  "bin": 1,
+  "donor": "2d01eb8cca13a630189b1c0be5297d6e10c1e18070cf33878b3c84be37cc71a2"
+ },
+ {
+  "i": 15965,
+  "id": "6d2a552d38a5f2c26bd623841a8352ab97e8105454b9b0ef23ef266081e797dd",
+  "file": "maneno-yetu-corpora-301-20250609-210105.txt",
+  "bin": 1,
+  "donor": "d29d7b33b8b63b43368e7c09f4d2eef6884e76d4d3b36838887c48ef29dfe527"
+ },
+ {
+  "i": 23924,
+  "id": "ce49fa87bd0b73d34bcc4d1d816a6c3456abd71942d0d8027f17848d44b6e826",
+  "file": "maneno-yetu-corpora-368-20250609-210105.txt",
+  "bin": 1,
+  "donor": "611d0095a28794ef246ec816c8ec8332387da49dee6a1ee1285b64e91c84582a"
+ },
+ {
+  "i": 23508,
+  "id": "c40838bb33ad3d671accbd164891c50bd23698650d8643d3f60c0d65b5c7aa16",
+  "file": "maneno-yetu-corpora-368-20250609-210105.txt",
+  "bin": 1,
+  "donor": "de7c3b596380f6c52f92d0683510e556dede9ab95c9b7c34ddf49dfdf91caa23"
+ },
+ {
+  "i": 27551,
+  "id": "944c9b3f566b5ab3f2eecb077a0fad123e69322c6eea848f253eda1c76a12b81",
+  "file": "maneno-yetu-corpora-739-20250609-210107.txt",
+  "bin": 1,
+  "donor": "91e8304831553d677248b7b2eb567a14b053f0dc514234a43e0178a2a56244cb"
+ },
+ {
+  "i": 15557,
+  "id": "8d07821102c6af9c03c43228420fc61a52c6ad7a526b53ed1175d4224ac9e1eb",
+  "file": "maneno-yetu-corpora-301-20250609-210105.txt",
+  "bin": 1,
+  "donor": "60d71c67b26a198ef93d6819f6b9d39145e380903ee7e6aa4174033a2d0b7241"
+ },
+ {
+  "i": 2874,
+  "id": "465bd4b34ac4832fa0f716011b284a67d77800d301bd3cf670f52119bc7595a7",
+  "file": "maneno-yetu-corpora-380-20250609-210105.txt",
+  "bin": 1,
+  "donor": "bbef9d3994a4f9e30b07888a550825a4a53a7920151894f7e90f9ca47b8ef1cc"
+ },
+ {
+  "i": 13486,
+  "id": "71a13a08d6472b7ff23f1f59a60042b07ab861e0fd9e957b354f935257e1b9db",
+  "file": "maneno-yetu-corpora-371-20250609-210105.txt",
+  "bin": 1,
+  "donor": "e601be5b80c20ac59d47be8eccf940359b431f3a7a44128f6b541fc250ec4dcb"
+ },
+ {
+  "i": 29519,
+  "id": "519123d9595c11ab9c1e1416dea45802a5e9e5daf5c63d1babd89614618a5f2c",
+  "file": "maneno-yetu-corpora-345-20250609-210105.txt",
+  "bin": 1,
+  "donor": "3257eefbf034ec3d8496534b154f472be1e398768dd2e02cff112c6aae0665a4"
+ },
+ {
+  "i": 5690,
+  "id": "3b7d0c3545f9327dab7c37784f7a3ff3952d8755f15a9306a7446c4ffa6e477b",
+  "file": "maneno-yetu-corpora-651-20250609-210107.txt",
+  "bin": 1,
+  "donor": "688ba06136d410c20cc001e4d75d64531d86fee2941c85889fcd026cd981d4e5"
+ },
+ {
+  "i": 10853,
+  "id": "03b4facf54d0a42f70c7f2e674e8fac89038ec40e49f54ef35ccecab0bf03f12",
+  "file": "maneno-yetu-corpora-082-20250609-210103.txt",
+  "bin": 1,
+  "donor": "91e8304831553d677248b7b2eb567a14b053f0dc514234a43e0178a2a56244cb"
+ },
+ {
+  "i": 26578,
+  "id": "7edb54010472a4a5026cd89a7e306d0441c16a982bfdc2da42399640a8f91e54",
+  "file": "maneno-yetu-corpora-095-20250609-210103.txt",
+  "bin": 1,
+  "donor": "38d2a1976f7e14e14167e39971937ba60ff6ed38c597f178e53eda2b6851cee7"
+ },
+ {
+  "i": 18946,
+  "id": "0ead3cb1c72a11ae9ef22bbd31bc8fc1eef5b4f0d9eb708d52ade03565dc5c29",
+  "file": "maneno-yetu-corpora-550-20250609-210106.txt",
+  "bin": 1,
+  "donor": "638473e5d691941bda6c9501313d7f48de4bc484a06a764160773c8e12751536"
+ },
+ {
+  "i": 1624,
+  "id": "83176d6c6f9505f27a75677c374a484098054846dfaedd7ffc8de85e372fd7f3",
+  "file": "maneno-yetu-corpora-380-20250609-210105.txt",
+  "bin": 1,
+  "donor": "5a0694716a46ceafb5b4706d284397204d0d9bc65dc02a04f2d0af37d86d4eda"
+ },
+ {
+  "i": 22465,
+  "id": "71c122db043a9cfe014338b2511c9a2aa1b7d52dce5b4f92092c22cd96ac7bc5",
+  "file": "maneno-yetu-corpora-353-20250609-210105.txt",
+  "bin": 1,
+  "donor": "20392060ff06a3ad94787c13ea98f2961d8076e920937dde1197fd022fef33da"
+ },
+ {
+  "i": 21395,
+  "id": "ce7455e21267856b4ae8e11a1e7c2fd3d7bf60b0ef713c7ddbe00cbb5eed4e75",
+  "file": "maneno-yetu-corpora-619-20250609-210107.txt",
+  "bin": 1,
+  "donor": "3e56d5b1085fe648cf1c50ff02f29f717cbd18d2037f656038b3bb967d84a81b"
+ },
+ {
+  "i": 12293,
+  "id": "8584b62588c18b26def22e500642fd99575c59fcc1b2f932cabc8c12aeb8a5cd",
+  "file": "maneno-yetu-corpora-592-20250609-210106.txt",
+  "bin": 1,
+  "donor": "7fa531c488b132e788f3a61b7848ebd33da8dcb55cf2e7080f3a7445ad28b05e"
+ },
+ {
+  "i": 11427,
+  "id": "67628632dcc3286b23d9242bdac5e9715117037fa29ed4e6d509f01dfc08d380",
+  "file": "maneno-yetu-corpora-197-20250609-210104.txt",
+  "bin": 1,
+  "donor": "e22ddc68a0ec8f3cf6bbe7d8442b2102f054c18f82a9af94827d49ecec7e71e2"
+ },
+ {
+  "i": 27678,
+  "id": "e381a8489019a19675860d7ea9d990ea7b2d55b04718f2c4b2eee6916ab24e1c",
+  "file": "maneno-yetu-corpora-739-20250609-210107.txt",
+  "bin": 1,
+  "donor": "b7803c112b3bb9db98b3052f5d613899d0251cf7bf5a1673e811d9d4234693e7"
+ },
+ {
+  "i": 21928,
+  "id": "e22ddc68a0ec8f3cf6bbe7d8442b2102f054c18f82a9af94827d49ecec7e71e2",
+  "file": "maneno-yetu-corpora-619-20250609-210107.txt",
+  "bin": 1,
+  "donor": "b7803c112b3bb9db98b3052f5d613899d0251cf7bf5a1673e811d9d4234693e7"
+ },
+ {
+  "i": 23018,
+  "id": "b9e90b18b1be219db683be19f923e072c77d4440c37d17b01615bfe28c903429",
+  "file": "maneno-yetu-corpora-353-20250609-210105.txt",
+  "bin": 1,
+  "donor": "aea5c895469c50c08ca89145af7d3ca0b36d45d0d4d5846b56be4af2fd9a3cab"
+ },
+ {
+  "i": 11860,
+  "id": "1477745f5cac0d374fb0cfe8a774bbaed52bf2ac5216c1fd4cc5013bfc0da071",
+  "file": "maneno-yetu-corpora-592-20250609-210106.txt",
+  "bin": 1,
+  "donor": "ddd2fc40ace67bb42a6c3e14e1c230b9f240e4a1edbf3afcbab84f0f8485dba3"
+ },
+ {
+  "i": 319,
+  "id": "8ada94a0e4c8f08b031efe7ffd0d99e9ab4c11e758d8ecfeffd9228b7d7c8175",
+  "file": "maneno-yetu-corpora-364-20250609-210105.txt",
+  "bin": 1,
+  "donor": "ffb2cd23d4ca44a38c3be116306765e2c2e7a2a1850a0c53147d7e5dfeb3734d"
+ },
+ {
+  "i": 25235,
+  "id": "17eae2272c9ac312786dba2ad8a09773a8d21a5c4f61b9751f01a2c66078151b",
+  "file": "maneno-yetu-corpora-390-20250609-210105.txt",
+  "bin": 1,
+  "donor": "7e6edd6608f03298d0399cdb51a57c8622212b9103a15c36f48213f1972bb7aa"
+ },
+ {
+  "i": 5745,
+  "id": "638473e5d691941bda6c9501313d7f48de4bc484a06a764160773c8e12751536",
+  "file": "maneno-yetu-corpora-651-20250609-210107.txt",
+  "bin": 1,
+  "donor": "355d42c8cdf5c0762babd1869f0c9a0e1c8411c4b83dbf4dc80ba7ddbce89936"
+ },
+ {
+  "i": 17417,
+  "id": "0fb63251672c20d9a9574e37a52dc87e42718507d7e1bb429554c4618e902170",
+  "file": "maneno-yetu-corpora-081-20250609-210103.txt",
+  "bin": 1,
+  "donor": "eeaa4ac0a81d3c4d4fd295a174c96a15e658daf1cf0b1157618b6c5ce7597d2d"
+ },
+ {
+  "i": 13316,
+  "id": "eeaa4ac0a81d3c4d4fd295a174c96a15e658daf1cf0b1157618b6c5ce7597d2d",
+  "file": "maneno-yetu-corpora-371-20250609-210105.txt",
+  "bin": 1,
+  "donor": "ce49fa87bd0b73d34bcc4d1d816a6c3456abd71942d0d8027f17848d44b6e826"
+ },
+ {
+  "i": 28737,
+  "id": "b64507e8d160dd71811897371c93e6d12e2984f510a046d10a3f9c9dca3a0c6c",
+  "file": "maneno-yetu-corpora-345-20250609-210105.txt",
+  "bin": 1,
+  "donor": "38d2a1976f7e14e14167e39971937ba60ff6ed38c597f178e53eda2b6851cee7"
+ },
+ {
+  "i": 22159,
+  "id": "3b604cdefa80f34e3d50d62b9b4fa34ae472a5d9deb896a348650aa4dc0763b6",
+  "file": "maneno-yetu-corpora-353-20250609-210105.txt",
+  "bin": 1,
+  "donor": "c9ca792b2140dc41314780e61f792ae5ab28ed3838f7a1421766f0cc2a8c9d0a"
+ },
+ {
+  "i": 783,
+  "id": "9af7827809e77b326380b39d83bc35e89099b2b3ea01c43081b086b81eabff88",
+  "file": "maneno-yetu-corpora-364-20250609-210105.txt",
+  "bin": 1,
+  "donor": "2aab00879eb4aa4311c08501800887aa8a90f79d2921fbf726339257b4afc998"
+ },
+ {
+  "i": 21731,
+  "id": "63d7488eb4e6e44846b978c9ad802af72bc2922d50fb079d6ca213131d909b10",
+  "file": "maneno-yetu-corpora-619-20250609-210107.txt",
+  "bin": 1,
+  "donor": "5a4cf3d80fdacd1b4057b94f08d1fb7651ca64efdd3efd706719303f3762852b"
+ },
+ {
+  "i": 28924,
+  "id": "586efad78b7fa5d1ee87a74c1b623d8f63144f8bd2856fc32b469c3507c3c701",
+  "file": "maneno-yetu-corpora-345-20250609-210105.txt",
+  "bin": 1,
+  "donor": "2f53f3aff5f4b86405a3bd7f21f7994f6f11892baa3461e65b7ee3ff0b736337"
+ },
+ {
+  "i": 16936,
+  "id": "36b9ee65bb89ac430be19141d710778e1b16e1ef41850782c327ee3f896030ff",
+  "file": "maneno-yetu-corpora-566-20250609-210106.txt",
+  "bin": 1,
+  "donor": "67628632dcc3286b23d9242bdac5e9715117037fa29ed4e6d509f01dfc08d380"
+ },
+ {
+  "i": 11095,
+  "id": "da07017b9ba6eac5951bec915a6e302e697b6c448475ec24832929632ae2a963",
+  "file": "maneno-yetu-corpora-234-20250609-210104.txt",
+  "bin": 1,
+  "donor": "7cac72926adeca70686e333b89402c4e4390dc70f969a2edd16e5f54e66df81d"
+ },
+ {
+  "i": 18781,
+  "id": "50c6bd4d2d93484976ded19d50bba26509454f03ce6092798b92d9f85fa6e7c0",
+  "file": "maneno-yetu-corpora-550-20250609-210106.txt",
+  "bin": 1,
+  "donor": "16ca5e73c70babaac62035ebbd91d60b9337c561ed7e52849adad7d6df97ec4d"
+ },
+ {
+  "i": 15998,
+  "id": "3dd5d5a8f48d0b90bfe78f9b790eb86318c75fd57f89df7969b02756edacc10e",
+  "file": "maneno-yetu-corpora-301-20250609-210105.txt",
+  "bin": 1,
+  "donor": "15a07bac1dfaca2c614b7b82a2829a1f93c0d54eb8720051b5869df6f2f5210f"
+ },
+ {
+  "i": 26532,
+  "id": "0d212e3c03da537dcd3a1bb829b47272cf862945a9ba31417f86c6a2e87a58a7",
+  "file": "maneno-yetu-corpora-095-20250609-210103.txt",
+  "bin": 1,
+  "donor": "3412a3bbb2a65fce069b2473da8e498aecb53181649a8df994284bb75cc490b3"
+ },
+ {
+  "i": 20461,
+  "id": "54f0c89fda982ddd785333cb544392c0101b7b5b577a68490ccbbc35f2f337fd",
+  "file": "maneno-yetu-corpora-045-20250609-210103.txt",
+  "bin": 1,
+  "donor": "cf3745588f6375d10e5af71f520f0f27555dbd3b891f91bfab45e2385204d17e"
+ },
+ {
+  "i": 25371,
+  "id": "f99aec996c3ec096a907f469cb80c52b8dc10db461744b4cc981a8d8fd68faf7",
+  "file": "maneno-yetu-corpora-390-20250609-210105.txt",
+  "bin": 1,
+  "donor": "eeaa4ac0a81d3c4d4fd295a174c96a15e658daf1cf0b1157618b6c5ce7597d2d"
+ },
+ {
+  "i": 27658,
+  "id": "6f4972c66c610364219a34ea289a85d9995433ba3bf77d035325adb62c65ef2c",
+  "file": "maneno-yetu-corpora-739-20250609-210107.txt",
+  "bin": 1,
+  "donor": "7e6edd6608f03298d0399cdb51a57c8622212b9103a15c36f48213f1972bb7aa"
+ },
+ {
+  "i": 26895,
+  "id": "eac6f2447c2a7b2572bc086197b74439b3ebe30eb4bda0949fab26402e1c79a5",
+  "file": "maneno-yetu-corpora-739-20250609-210107.txt",
+  "bin": 1,
+  "donor": "b4556130457024635396bcf69f88ff55b96b3291503ce3b2bd9ba312d4a55b8e"
+ },
+ {
+  "i": 10919,
+  "id": "63147af85f16f74fba56890d236d50a73d814beca641e3b8c0eabc5581404639",
+  "file": "maneno-yetu-corpora-082-20250609-210103.txt",
+  "bin": 1,
+  "donor": "74991a155ab251f0d511288736c9592dfad001c454728314e8205a5ff10b9c2f"
+ },
+ {
+  "i": 28026,
+  "id": "ba074f5be675abe15b8f9d4dd3f74d12496b0b4e370be83f7fa7a3d76e1afde1",
+  "file": "maneno-yetu-corpora-739-20250609-210107.txt",
+  "bin": 1,
+  "donor": "25f4ba63aa1c8dbb3ef8899237d3671b466c37d23762bee23825db924e597616"
+ },
+ {
+  "i": 6151,
+  "id": "bbef9d3994a4f9e30b07888a550825a4a53a7920151894f7e90f9ca47b8ef1cc",
+  "file": "maneno-yetu-corpora-465-20250609-210106.txt",
+  "bin": 1,
+  "donor": "f00fc5c7055fb1b1920febae5b08d09166e31a680cd5410c914481a8f336d7c8"
+ },
+ {
+  "i": 20021,
+  "id": "92e84a546ac0bde0f981c492e47acc6e68e5293dc25a706700d2ce2a68dbdd75",
+  "file": "maneno-yetu-corpora-471-20250609-210106.txt",
+  "bin": 1,
+  "donor": "b243ac02128447107da2b045f6e63622daa39a3094ea5fc446e25f0618049af9"
+ },
+ {
+  "i": 5944,
+  "id": "4d2119bfaf1d0dafed0fc4c26d1d90301c94e367a0f38e53d141dd83ed66e5c2",
+  "file": "maneno-yetu-corpora-651-20250609-210107.txt",
+  "bin": 1,
+  "donor": "7075064df2caf84ae5bca2acf6bbae20366b7206cc81ede7374e8269f7bed39e"
+ },
+ {
+  "i": 21604,
+  "id": "7e6edd6608f03298d0399cdb51a57c8622212b9103a15c36f48213f1972bb7aa",
+  "file": "maneno-yetu-corpora-619-20250609-210107.txt",
+  "bin": 1,
+  "donor": "6a044ad88aa0d3078ef652ce830fd8155ce2fc78b4cf21c7a87d9586f87f7cab"
+ },
+ {
+  "i": 26536,
+  "id": "76d85440f9f4272ac7db8eb8c74ea796e40a00656513d0ed270eaccbe30a87bb",
+  "file": "maneno-yetu-corpora-095-20250609-210103.txt",
+  "bin": 1,
+  "donor": "51a353ee52a3a907915d958932455307d3edb370c643a486e42a2be3a90afc84"
+ },
+ {
+  "i": 11408,
+  "id": "bf5bb74dab66f1157b5a95e593b32f61c11453133643187d41e4f18095a74049",
+  "file": "maneno-yetu-corpora-197-20250609-210104.txt",
+  "bin": 1,
+  "donor": "2d1782d83daa505c5ef981542a23f1a217af4b4ba6c880204f4076bd42453e0e"
+ },
+ {
+  "i": 24731,
+  "id": "ba74ee8d67619ff07b90b912b130d48590e2c0e0f211573390cdd516201d1c42",
+  "file": "maneno-yetu-corpora-100-20250609-210103.txt",
+  "bin": 1,
+  "donor": "1f7a41f3a0f6bd2fbc8b7ae1004c3a06b5220ea65bdd47ad22237a361dba34a1"
+ },
+ {
+  "i": 25930,
+  "id": "16ca5e73c70babaac62035ebbd91d60b9337c561ed7e52849adad7d6df97ec4d",
+  "file": "maneno-yetu-corpora-390-20250609-210105.txt",
+  "bin": 1,
+  "donor": "6e8dc229e004a0ba4fb04a6365f065f57792c18a87a538e323900d65f2469c2a"
+ },
+ {
+  "i": 15453,
+  "id": "f44bbf1d6ca791482cadf8842ee4e2d9c039e2fd85d92b2cab72e9887d941a6a",
+  "file": "maneno-yetu-corpora-644-20250609-210107.txt",
+  "bin": 1,
+  "donor": "38d2a1976f7e14e14167e39971937ba60ff6ed38c597f178e53eda2b6851cee7"
+ },
+ {
+  "i": 10491,
+  "id": "5beb4bc54bcdebfcff8c294e1f7d711c94c013908aff201e27a7bf02ebc225ed",
+  "file": "maneno-yetu-corpora-729-20250609-210107.txt",
+  "bin": 1,
+  "donor": "83176d6c6f9505f27a75677c374a484098054846dfaedd7ffc8de85e372fd7f3"
+ },
+ {
+  "i": 25233,
+  "id": "bafe42550a2c5da556c746e5ffa09fca76ada83dbfc092914b0e0d74ace783c1",
+  "file": "maneno-yetu-corpora-390-20250609-210105.txt",
+  "bin": 1,
+  "donor": "0d212e3c03da537dcd3a1bb829b47272cf862945a9ba31417f86c6a2e87a58a7"
+ },
+ {
+  "i": 14716,
+  "id": "cf684a43e4ee493865f3821eb9d13bd8f21ae3f6910c24ce884ab9d913f68e6f",
+  "file": "maneno-yetu-corpora-634-20250609-210107.txt",
+  "bin": 1,
+  "donor": "3dfc4296371e21dd53e0210f89c0200b25e24b910c375503e70b62f178051282"
+ },
+ {
+  "i": 10279,
+  "id": "cdc9bf97854aab3266f4727556abd77d0b7af3db4c78f1bf9bb1a7eb411c67d9",
+  "file": "maneno-yetu-corpora-729-20250609-210107.txt",
+  "bin": 1,
+  "donor": "b7803c112b3bb9db98b3052f5d613899d0251cf7bf5a1673e811d9d4234693e7"
+ },
+ {
+  "i": 16563,
+  "id": "5d62378c5a7b478a10fc43694cf0c30d4bf347f107754a00a8a2fa1530fb305b",
+  "file": "maneno-yetu-corpora-566-20250609-210106.txt",
+  "bin": 1,
+  "donor": "67628632dcc3286b23d9242bdac5e9715117037fa29ed4e6d509f01dfc08d380"
+ },
+ {
+  "i": 17223,
+  "id": "d3d8bd9791103b79bc6089f1769a427b4c073499f2c75b4432a30f60f38b3d4b",
+  "file": "maneno-yetu-corpora-081-20250609-210103.txt",
+  "bin": 1,
+  "donor": "3b604cdefa80f34e3d50d62b9b4fa34ae472a5d9deb896a348650aa4dc0763b6"
+ },
+ {
+  "i": 14547,
+  "id": "caf6b34c37d1b930101e715de96831e87c1c869a5c52f92c996cdd8683f6a536",
+  "file": "maneno-yetu-corpora-634-20250609-210107.txt",
+  "bin": 1,
+  "donor": "9af7827809e77b326380b39d83bc35e89099b2b3ea01c43081b086b81eabff88"
+ },
+ {
+  "i": 5488,
+  "id": "74991a155ab251f0d511288736c9592dfad001c454728314e8205a5ff10b9c2f",
+  "file": "maneno-yetu-corpora-651-20250609-210107.txt",
+  "bin": 1,
+  "donor": "7075064df2caf84ae5bca2acf6bbae20366b7206cc81ede7374e8269f7bed39e"
+ },
+ {
+  "i": 10742,
+  "id": "c72ee4d12db74e1add7422e72e939174fe8b12fceb08cad7f727edf7642c54e1",
+  "file": "maneno-yetu-corpora-082-20250609-210103.txt",
+  "bin": 1,
+  "donor": "6dbc917f0ba41744adde5617ee568f8d88c47a584cb902698e08536716555ce4"
+ },
+ {
+  "i": 20560,
+  "id": "2e5d6a742fd0ea93e32fe2c7f38f8146c90250221c91749bc7550799d43f575a",
+  "file": "maneno-yetu-corpora-045-20250609-210103.txt",
+  "bin": 1,
+  "donor": "3b7d0c3545f9327dab7c37784f7a3ff3952d8755f15a9306a7446c4ffa6e477b"
+ },
+ {
+  "i": 10677,
+  "id": "26c1332d48ef61cce86649a9a3eb4ec51bdf2a7df8fc37d5a48518df3a03816e",
+  "file": "maneno-yetu-corpora-082-20250609-210103.txt",
+  "bin": 1,
+  "donor": "bc778efc1c5c9dcf37866c2e0497d7f3547b5bc2bd445afda4b35b8eca3e2514"
+ },
+ {
+  "i": 6882,
+  "id": "3412a3bbb2a65fce069b2473da8e498aecb53181649a8df994284bb75cc490b3",
+  "file": "maneno-yetu-corpora-712-20250609-210107.txt",
+  "bin": 1,
+  "donor": "27cb5f28a9793f7f823306ee190ff124c39c41d47dfbba575783ecc76cac1582"
+ },
+ {
+  "i": 6862,
+  "id": "81142c05985557154d2dc46ccb138be9f08e3d23d50b70374aca5149d4582dc1",
+  "file": "maneno-yetu-corpora-712-20250609-210107.txt",
+  "bin": 1,
+  "donor": "12e35525fc80702ab2fdf298ffd78e87ea213abf6989dcff2bf3efbf11dac4da"
+ },
+ {
+  "i": 10891,
+  "id": "3a1c68511e0eaca44ef514606d6ecdc9027371aabf145f45cc9b06b75d89c22f",
+  "file": "maneno-yetu-corpora-082-20250609-210103.txt",
+  "bin": 1,
+  "donor": "1477745f5cac0d374fb0cfe8a774bbaed52bf2ac5216c1fd4cc5013bfc0da071"
+ },
+ {
+  "i": 10422,
+  "id": "b624cb6ec65267070b9680befb2c357d87df144d9c13533adce47be49d4f410d",
+  "file": "maneno-yetu-corpora-729-20250609-210107.txt",
+  "bin": 1,
+  "donor": "3a1c68511e0eaca44ef514606d6ecdc9027371aabf145f45cc9b06b75d89c22f"
+ },
+ {
+  "i": 11616,
+  "id": "67df2777d43b8104bea412b441854309ed960a2a11238f6d3513e67f2dfdd424",
+  "file": "maneno-yetu-corpora-197-20250609-210104.txt",
+  "bin": 1,
+  "donor": "eeaabd01949b849de04a06fc490b25f34724706ae56cb57c0ff10ec6dce7d371"
+ },
+ {
+  "i": 15451,
+  "id": "cbbb2e7f161b4912021bf329ff32ecafef56ac9a568248a3735edf9ff922e143",
+  "file": "maneno-yetu-corpora-644-20250609-210107.txt",
+  "bin": 1,
+  "donor": "519123d9595c11ab9c1e1416dea45802a5e9e5daf5c63d1babd89614618a5f2c"
+ },
+ {
+  "i": 20561,
+  "id": "de7c3b596380f6c52f92d0683510e556dede9ab95c9b7c34ddf49dfdf91caa23",
+  "file": "maneno-yetu-corpora-045-20250609-210103.txt",
+  "bin": 1,
+  "donor": "71e35f15f9becdfe2f1c4e09ebff60a4d76394a2d17ebe202980386e8354cab6"
+ },
+ {
+  "i": 17382,
+  "id": "e950081d628c1a359546fb040712a5b0c9e2ae3ae61e04ff9d3d9aa33959dca8",
+  "file": "maneno-yetu-corpora-081-20250609-210103.txt",
+  "bin": 1,
+  "donor": "8d07821102c6af9c03c43228420fc61a52c6ad7a526b53ed1175d4224ac9e1eb"
+ },
+ {
+  "i": 11329,
+  "id": "ffb2cd23d4ca44a38c3be116306765e2c2e7a2a1850a0c53147d7e5dfeb3734d",
+  "file": "maneno-yetu-corpora-072-20250609-210103.txt",
+  "bin": 1,
+  "donor": "611d0095a28794ef246ec816c8ec8332387da49dee6a1ee1285b64e91c84582a"
+ },
+ {
+  "i": 19071,
+  "id": "a234bae4bacf03a4fa1b22d42485f921d6940e7b5bf336748035f05e9a89c872",
+  "file": "maneno-yetu-corpora-550-20250609-210106.txt",
+  "bin": 1,
+  "donor": "cfecba961f232370cf1a7248433daf2ef7b3aee5184cafe99a8ba29926439cd1"
+ },
+ {
+  "i": 18867,
+  "id": "71e35f15f9becdfe2f1c4e09ebff60a4d76394a2d17ebe202980386e8354cab6",
+  "file": "maneno-yetu-corpora-550-20250609-210106.txt",
+  "bin": 1,
+  "donor": "638473e5d691941bda6c9501313d7f48de4bc484a06a764160773c8e12751536"
+ },
+ {
+  "i": 25932,
+  "id": "d8a045f8f5d719187abe123e65534547449fc12972eb7a7437b1605a04c32b12",
+  "file": "maneno-yetu-corpora-390-20250609-210105.txt",
+  "bin": 2,
+  "donor": "06099e8c18ff0bdbabfaa5667bc43fdc0a894969f7fcdedbdf9d7b86e2c8ef4f"
+ },
+ {
+  "i": 22036,
+  "id": "688ba06136d410c20cc001e4d75d64531d86fee2941c85889fcd026cd981d4e5",
+  "file": "maneno-yetu-corpora-353-20250609-210105.txt",
+  "bin": 1,
+  "donor": "71e35f15f9becdfe2f1c4e09ebff60a4d76394a2d17ebe202980386e8354cab6"
+ },
+ {
+  "i": 17687,
+  "id": "8bc6cda2120b0a91824ee5553b8e0efc02540dcae6c7bf0155af9d3a5d00aa5b",
+  "file": "maneno-yetu-corpora-388-20250609-210105.txt",
+  "bin": 1,
+  "donor": "8ada94a0e4c8f08b031efe7ffd0d99e9ab4c11e758d8ecfeffd9228b7d7c8175"
+ },
+ {
+  "i": 12042,
+  "id": "6e8dc229e004a0ba4fb04a6365f065f57792c18a87a538e323900d65f2469c2a",
+  "file": "maneno-yetu-corpora-592-20250609-210106.txt",
+  "bin": 1,
+  "donor": "cb33e020a49a86b8b0cd25555fcc15605eee003387936035bfb33b354b620314"
+ },
+ {
+  "i": 6414,
+  "id": "7075064df2caf84ae5bca2acf6bbae20366b7206cc81ede7374e8269f7bed39e",
+  "file": "maneno-yetu-corpora-465-20250609-210106.txt",
+  "bin": 1,
+  "donor": "6342d4d25ce59bdf227016a3489693dd9e03a5a6508750fe30086b382ffc73f7"
+ },
+ {
+  "i": 22575,
+  "id": "75ef684842526392a8d0aeea377af9f98c6fbad17eb54038b75578b5254722f6",
+  "file": "maneno-yetu-corpora-353-20250609-210105.txt",
+  "bin": 1,
+  "donor": "944c9b3f566b5ab3f2eecb077a0fad123e69322c6eea848f253eda1c76a12b81"
+ },
+ {
+  "i": 6233,
+  "id": "27cb5f28a9793f7f823306ee190ff124c39c41d47dfbba575783ecc76cac1582",
+  "file": "maneno-yetu-corpora-465-20250609-210106.txt",
+  "bin": 1,
+  "donor": "f00fc5c7055fb1b1920febae5b08d09166e31a680cd5410c914481a8f336d7c8"
+ },
+ {
+  "i": 18787,
+  "id": "7cac72926adeca70686e333b89402c4e4390dc70f969a2edd16e5f54e66df81d",
+  "file": "maneno-yetu-corpora-550-20250609-210106.txt",
+  "bin": 1,
+  "donor": "1f7c595581211bd9b36e116541c4221a329feea28d7cb00cb4a35a29bfffa230"
+ },
+ {
+  "i": 6474,
+  "id": "2c436958d4cfab8a028592b8c47fb2ec748f2f117b684ce42fbdc40bcdb087be",
+  "file": "maneno-yetu-corpora-465-20250609-210106.txt",
+  "bin": 1,
+  "donor": "1e5583157d7e67177f9e485e69db13b7454f42bad22b63db6097863405474977"
+ },
+ {
+  "i": 22289,
+  "id": "3036c7655b3cf9d74337c74ea7b8ee2273ee64bbc36ae98ed35c643f0ccff42e",
+  "file": "maneno-yetu-corpora-353-20250609-210105.txt",
+  "bin": 1,
+  "donor": "8ada94a0e4c8f08b031efe7ffd0d99e9ab4c11e758d8ecfeffd9228b7d7c8175"
+ },
+ {
+  "i": 3195,
+  "id": "39119f843dbfb76f47ea5469af634e34ffb3f7efd5237fb503a8679f1065ac82",
+  "file": "maneno-yetu-corpora-167-20250609-210104.txt",
+  "bin": 1,
+  "donor": "f99aec996c3ec096a907f469cb80c52b8dc10db461744b4cc981a8d8fd68faf7"
+ },
+ {
+  "i": 18641,
+  "id": "0f83b310783ad41a08898c0924b30b15910915b9f467db6b0b9cce192a48b9c8",
+  "file": "maneno-yetu-corpora-550-20250609-210106.txt",
+  "bin": 1,
+  "donor": "f44bbf1d6ca791482cadf8842ee4e2d9c039e2fd85d92b2cab72e9887d941a6a"
+ },
+ {
+  "i": 20139,
+  "id": "6dbc917f0ba41744adde5617ee568f8d88c47a584cb902698e08536716555ce4",
+  "file": "maneno-yetu-corpora-471-20250609-210106.txt",
+  "bin": 1,
+  "donor": "fd1e43231db9bc91636e6113828b3385c633eb061be4cc1e8ee36cff3b80e517"
+ },
+ {
+  "i": 6073,
+  "id": "ce83e52f117d1e01b1b2d3723ab93d0d31f02c5234ce576bf5b9b74b427bb1c0",
+  "file": "maneno-yetu-corpora-465-20250609-210106.txt",
+  "bin": 1,
+  "donor": "3dfc4296371e21dd53e0210f89c0200b25e24b910c375503e70b62f178051282"
+ },
+ {
+  "i": 16625,
+  "id": "5d6d51c725712f23f0a63c73a59b8448d0d4bd19d56b1f0f7c91b06e9cbe6f2d",
+  "file": "maneno-yetu-corpora-566-20250609-210106.txt",
+  "bin": 1,
+  "donor": "c1bd81ca31b6b252248a5740841be20a9172055bc33435f8ffa1f02339789a17"
+ },
+ {
+  "i": 14344,
+  "id": "cf3745588f6375d10e5af71f520f0f27555dbd3b891f91bfab45e2385204d17e",
+  "file": "maneno-yetu-corpora-634-20250609-210107.txt",
+  "bin": 1,
+  "donor": "cfecba961f232370cf1a7248433daf2ef7b3aee5184cafe99a8ba29926439cd1"
+ },
+ {
+  "i": 16677,
+  "id": "cdf4105b1559607c9bc6be929d3552ca77acc515216bd0179f649d240ffebe3d",
+  "file": "maneno-yetu-corpora-566-20250609-210106.txt",
+  "bin": 1,
+  "donor": "eac6f2447c2a7b2572bc086197b74439b3ebe30eb4bda0949fab26402e1c79a5"
+ },
+ {
+  "i": 17895,
+  "id": "b0c4dcb64e0e141fc9269b27f151ff4f08e017032409d9897d10851a8a3db072",
+  "file": "maneno-yetu-corpora-388-20250609-210105.txt",
+  "bin": 1,
+  "donor": "c1bd81ca31b6b252248a5740841be20a9172055bc33435f8ffa1f02339789a17"
+ },
+ {
+  "i": 20164,
+  "id": "38d2a1976f7e14e14167e39971937ba60ff6ed38c597f178e53eda2b6851cee7",
+  "file": "maneno-yetu-corpora-471-20250609-210106.txt",
+  "bin": 1,
+  "donor": "3a1c68511e0eaca44ef514606d6ecdc9027371aabf145f45cc9b06b75d89c22f"
+ },
+ {
+  "i": 16540,
+  "id": "7179d36e3880e8ed349103ee0c3e5b29acc1c4ba6ff005aa473b5cf69d6f35ff",
+  "file": "maneno-yetu-corpora-566-20250609-210106.txt",
+  "bin": 1,
+  "donor": "ba74ee8d67619ff07b90b912b130d48590e2c0e0f211573390cdd516201d1c42"
+ },
+ {
+  "i": 20288,
+  "id": "04ef4cd92f4353f7c8b719b954224b3c46c4b8b2a8496401f6d6cf14fd6e4ae5",
+  "file": "maneno-yetu-corpora-471-20250609-210106.txt",
+  "bin": 1,
+  "donor": "a57c38f16696ca15bac766bbccbdd12c33121309f0e4587717f19bb7059acb6e"
+ },
+ {
+  "i": 17434,
+  "id": "fe103ec78d89d88ee5243525c99eb693e897b47ab224c9379fd000b42dc77b53",
+  "file": "maneno-yetu-corpora-081-20250609-210103.txt",
+  "bin": 1,
+  "donor": "3b604cdefa80f34e3d50d62b9b4fa34ae472a5d9deb896a348650aa4dc0763b6"
+ },
+ {
+  "i": 14368,
+  "id": "7f9f5a9c93af980cbbee2221e2532c1bf0da2a821ccd878b64e3fb387177285b",
+  "file": "maneno-yetu-corpora-634-20250609-210107.txt",
+  "bin": 1,
+  "donor": "d39845ee32ebf0cb5bec5254585ca1811eaaea6c4d24877da8bd6c90a809aefe"
+ },
+ {
+  "i": 6760,
+  "id": "d39845ee32ebf0cb5bec5254585ca1811eaaea6c4d24877da8bd6c90a809aefe",
+  "file": "maneno-yetu-corpora-465-20250609-210106.txt",
+  "bin": 1,
+  "donor": "d29d7b33b8b63b43368e7c09f4d2eef6884e76d4d3b36838887c48ef29dfe527"
+ },
+ {
+  "i": 26305,
+  "id": "b492f82211796a2003205b318618a126f714634566cb151137dbec776ba8765e",
+  "file": "maneno-yetu-corpora-095-20250609-210103.txt",
+  "bin": 1,
+  "donor": "2e5d6a742fd0ea93e32fe2c7f38f8146c90250221c91749bc7550799d43f575a"
+ },
+ {
+  "i": 17285,
+  "id": "bfa546ae8566f5be3a4095706936b595127aa08bbf78c533b4867beda76ddc12",
+  "file": "maneno-yetu-corpora-081-20250609-210103.txt",
+  "bin": 1,
+  "donor": "21ce462072b9d57600bb9819a79f418a7333cde5b7b743acca13bf8c6b33707b"
+ },
+ {
+  "i": 18180,
+  "id": "bc778efc1c5c9dcf37866c2e0497d7f3547b5bc2bd445afda4b35b8eca3e2514",
+  "file": "maneno-yetu-corpora-388-20250609-210105.txt",
+  "bin": 1,
+  "donor": "92e84a546ac0bde0f981c492e47acc6e68e5293dc25a706700d2ce2a68dbdd75"
+ },
+ {
+  "i": 17778,
+  "id": "21f47382942ab6181d194951d914ee56ea1ad0693d3aba597c6b25b6a2ed333a",
+  "file": "maneno-yetu-corpora-388-20250609-210105.txt",
+  "bin": 1,
+  "donor": "82565ffb5b26c5da78909a761988885d19378c76e25e899e1fd0c38d13fca901"
+ },
+ {
+  "i": 24710,
+  "id": "2aab00879eb4aa4311c08501800887aa8a90f79d2921fbf726339257b4afc998",
+  "file": "maneno-yetu-corpora-100-20250609-210103.txt",
+  "bin": 1,
+  "donor": "f00fc5c7055fb1b1920febae5b08d09166e31a680cd5410c914481a8f336d7c8"
+ },
+ {
+  "i": 17967,
+  "id": "1e5583157d7e67177f9e485e69db13b7454f42bad22b63db6097863405474977",
+  "file": "maneno-yetu-corpora-388-20250609-210105.txt",
+  "bin": 1,
+  "donor": "7cac72926adeca70686e333b89402c4e4390dc70f969a2edd16e5f54e66df81d"
+ },
+ {
+  "i": 11022,
+  "id": "3688c1f2bba0fe32e451bc1ce7b0cfcdfcec8f9ddf15df9680b2829137f2f095",
+  "file": "maneno-yetu-corpora-297-20250609-210105.txt",
+  "bin": 1,
+  "donor": "54f0c89fda982ddd785333cb544392c0101b7b5b577a68490ccbbc35f2f337fd"
+ },
+ {
+  "i": 18064,
+  "id": "e87f6fcfa484e06e8c6226d38ef08273645a16df93edb7f58ddbbb030b171420",
+  "file": "maneno-yetu-corpora-388-20250609-210105.txt",
+  "bin": 1,
+  "donor": "c1bd81ca31b6b252248a5740841be20a9172055bc33435f8ffa1f02339789a17"
+ },
+ {
+  "i": 11650,
+  "id": "5a0694716a46ceafb5b4706d284397204d0d9bc65dc02a04f2d0af37d86d4eda",
+  "file": "maneno-yetu-corpora-197-20250609-210104.txt",
+  "bin": 1,
+  "donor": "50c6bd4d2d93484976ded19d50bba26509454f03ce6092798b92d9f85fa6e7c0"
+ },
+ {
+  "i": 11299,
+  "id": "b243ac02128447107da2b045f6e63622daa39a3094ea5fc446e25f0618049af9",
+  "file": "maneno-yetu-corpora-072-20250609-210103.txt",
+  "bin": 1,
+  "donor": "36b9ee65bb89ac430be19141d710778e1b16e1ef41850782c327ee3f896030ff"
+ },
+ {
+  "i": 24591,
+  "id": "7fa531c488b132e788f3a61b7848ebd33da8dcb55cf2e7080f3a7445ad28b05e",
+  "file": "maneno-yetu-corpora-100-20250609-210103.txt",
+  "bin": 1,
+  "donor": "7179d36e3880e8ed349103ee0c3e5b29acc1c4ba6ff005aa473b5cf69d6f35ff"
+ },
+ {
+  "i": 11470,
+  "id": "781cf6484d5e53347e304ef697dbf3a63015f1ccf2112c7b0310d0a37a8dcb70",
+  "file": "maneno-yetu-corpora-197-20250609-210104.txt",
+  "bin": 1,
+  "donor": "1f10abf96dd7b9246d0064e27b99daf45589ebd547eda57c4cd278cdd6c86f28"
+ },
+ {
+  "i": 11030,
+  "id": "326a68485f63bef63e971c8aa0a268af23c77eda19e11a5b803f80e99e0985fe",
+  "file": "maneno-yetu-corpora-297-20250609-210105.txt",
+  "bin": 1,
+  "donor": "ce83e52f117d1e01b1b2d3723ab93d0d31f02c5234ce576bf5b9b74b427bb1c0"
+ },
+ {
+  "i": 11127,
+  "id": "da28930911728cba433a3593acd9bf1c89d052a21432d8f93adfc1b8b44a58df",
+  "file": "maneno-yetu-corpora-047-20250609-210103.txt",
+  "bin": 1,
+  "donor": "3257eefbf034ec3d8496534b154f472be1e398768dd2e02cff112c6aae0665a4"
+ },
+ {
+  "i": 11056,
+  "id": "517ba8da989e5104403a37fd87e496de18dcaf8bbf8db47a08cedf0397a83125",
+  "file": "maneno-yetu-corpora-234-20250609-210104.txt",
+  "bin": 1,
+  "donor": "688ba06136d410c20cc001e4d75d64531d86fee2941c85889fcd026cd981d4e5"
+ },
+ {
+  "i": 26386,
+  "id": "f00fc5c7055fb1b1920febae5b08d09166e31a680cd5410c914481a8f336d7c8",
+  "file": "maneno-yetu-corpora-095-20250609-210103.txt",
+  "bin": 1,
+  "donor": "da07017b9ba6eac5951bec915a6e302e697b6c448475ec24832929632ae2a963"
+ },
+ {
+  "i": 11062,
+  "id": "c3935191ec81ef82da7d650ebd62c00a0b15444748c68bc79d85dd2783b32e5f",
+  "file": "maneno-yetu-corpora-234-20250609-210104.txt",
+  "bin": 1,
+  "donor": "2aab00879eb4aa4311c08501800887aa8a90f79d2921fbf726339257b4afc998"
+ },
+ {
+  "i": 11344,
+  "id": "3dfc4296371e21dd53e0210f89c0200b25e24b910c375503e70b62f178051282",
+  "file": "maneno-yetu-corpora-072-20250609-210103.txt",
+  "bin": 1,
+  "donor": "4d2119bfaf1d0dafed0fc4c26d1d90301c94e367a0f38e53d141dd83ed66e5c2"
+ },
+ {
+  "i": 11505,
+  "id": "68a956672c4a74939101636570d09d585a16072c9eaa921731afde07b07726d1",
+  "file": "maneno-yetu-corpora-197-20250609-210104.txt",
+  "bin": 1,
+  "donor": "d7e811bc5c75af721c6596ad592d9398d0d34beb526ded0ebfdf5b3795eec347"
+ },
+ {
+  "i": 24754,
+  "id": "3257eefbf034ec3d8496534b154f472be1e398768dd2e02cff112c6aae0665a4",
+  "file": "maneno-yetu-corpora-100-20250609-210103.txt",
+  "bin": 1,
+  "donor": "911ecc31fe10868f9be09b3bb3c88ab998201a934b2aa51dd802a017e9534f41"
+ },
+ {
+  "i": 11359,
+  "id": "77e3f7d713823f01fdb604d1a6e4db913a645011ce8f880f6a4a6083016ec9c9",
+  "file": "maneno-yetu-corpora-072-20250609-210103.txt",
+  "bin": 1,
+  "donor": "75ef684842526392a8d0aeea377af9f98c6fbad17eb54038b75578b5254722f6"
+ },
+ {
+  "i": 14496,
+  "id": "22481950cd4ac5d3929575d8d61d2f00c34556743272d66030097ac1052400e5",
+  "file": "maneno-yetu-corpora-634-20250609-210107.txt",
+  "bin": 1,
+  "donor": "25f4ba63aa1c8dbb3ef8899237d3671b466c37d23762bee23825db924e597616"
+ },
+ {
+  "i": 24930,
+  "id": "74104b558f0d896328ca88acffd47af197f88047a9c4fe0c5fcf3908b6aa6254",
+  "file": "maneno-yetu-corpora-100-20250609-210103.txt",
+  "bin": 1,
+  "donor": "67df2777d43b8104bea412b441854309ed960a2a11238f6d3513e67f2dfdd424"
+ },
+ {
+  "i": 11020,
+  "id": "60d71c67b26a198ef93d6819f6b9d39145e380903ee7e6aa4174033a2d0b7241",
+  "file": "maneno-yetu-corpora-297-20250609-210105.txt",
+  "bin": 1,
+  "donor": "74104b558f0d896328ca88acffd47af197f88047a9c4fe0c5fcf3908b6aa6254"
+ },
+ {
+  "i": 26456,
+  "id": "5a4cf3d80fdacd1b4057b94f08d1fb7651ca64efdd3efd706719303f3762852b",
+  "file": "maneno-yetu-corpora-095-20250609-210103.txt",
+  "bin": 1,
+  "donor": "2d01eb8cca13a630189b1c0be5297d6e10c1e18070cf33878b3c84be37cc71a2"
+ },
+ {
+  "i": 11137,
+  "id": "15a07bac1dfaca2c614b7b82a2829a1f93c0d54eb8720051b5869df6f2f5210f",
+  "file": "maneno-yetu-corpora-047-20250609-210103.txt",
+  "bin": 1,
+  "donor": "2e5d6a742fd0ea93e32fe2c7f38f8146c90250221c91749bc7550799d43f575a"
+ },
+ {
+  "i": 3179,
+  "id": "da3b77c0b3c8270a2bb8306b214163105a870925eacb4a10f7fefa560cde5630",
+  "file": "maneno-yetu-corpora-167-20250609-210104.txt",
+  "bin": 1,
+  "donor": "eeaabd01949b849de04a06fc490b25f34724706ae56cb57c0ff10ec6dce7d371"
+ },
+ {
+  "i": 11230,
+  "id": "d7243a56241bd7594b0e951a056a110cebb84908a2b17dbe52ce6c77fbc56407",
+  "file": "maneno-yetu-corpora-047-20250609-210103.txt",
+  "bin": 1,
+  "donor": "519123d9595c11ab9c1e1416dea45802a5e9e5daf5c63d1babd89614618a5f2c"
+ },
+ {
+  "i": 11349,
+  "id": "1f7a41f3a0f6bd2fbc8b7ae1004c3a06b5220ea65bdd47ad22237a361dba34a1",
+  "file": "maneno-yetu-corpora-072-20250609-210103.txt",
+  "bin": 1,
+  "donor": "cbbb2e7f161b4912021bf329ff32ecafef56ac9a568248a3735edf9ff922e143"
+ },
+ {
+  "i": 11087,
+  "id": "2b956bbab1eb7ca3fb7552821212f9f13e9555c4891901e05a7026117b172f0f",
+  "file": "maneno-yetu-corpora-234-20250609-210104.txt",
+  "bin": 1,
+  "donor": "e62112f7b2c0f63777e4bdc1042d91046f69fb996d4fd672f2517914bbde1557"
+ },
+ {
+  "i": 11160,
+  "id": "2d01eb8cca13a630189b1c0be5297d6e10c1e18070cf33878b3c84be37cc71a2",
+  "file": "maneno-yetu-corpora-047-20250609-210103.txt",
+  "bin": 1,
+  "donor": "54f0c89fda982ddd785333cb544392c0101b7b5b577a68490ccbbc35f2f337fd"
+ },
+ {
+  "i": 11324,
+  "id": "2f53f3aff5f4b86405a3bd7f21f7994f6f11892baa3461e65b7ee3ff0b736337",
+  "file": "maneno-yetu-corpora-072-20250609-210103.txt",
+  "bin": 1,
+  "donor": "caf6b34c37d1b930101e715de96831e87c1c869a5c52f92c996cdd8683f6a536"
+ },
+ {
+  "i": 11064,
+  "id": "12e35525fc80702ab2fdf298ffd78e87ea213abf6989dcff2bf3efbf11dac4da",
+  "file": "maneno-yetu-corpora-234-20250609-210104.txt",
+  "bin": 1,
+  "donor": "d3d8bd9791103b79bc6089f1769a427b4c073499f2c75b4432a30f60f38b3d4b"
+ },
+ {
+  "i": 3213,
+  "id": "2d1782d83daa505c5ef981542a23f1a217af4b4ba6c880204f4076bd42453e0e",
+  "file": "maneno-yetu-corpora-167-20250609-210104.txt",
+  "bin": 1,
+  "donor": "81142c05985557154d2dc46ccb138be9f08e3d23d50b70374aca5149d4582dc1"
+ },
+ {
+  "i": 11232,
+  "id": "f4a6af4ab7262c1fcf59de290d680c3433d2f6fccf8dac55816a2435f063b156",
+  "file": "maneno-yetu-corpora-047-20250609-210103.txt",
+  "bin": 1,
+  "donor": "6b68278fa71f9d25035d6827f45bb05dbb26a9b6e7af596cafc2775b9e2a6956"
+ },
+ {
+  "i": 11168,
+  "id": "b5869cf506cddfc75763386b8055137a9d9b1df30fe6869fd22805d95b1b664d",
+  "file": "maneno-yetu-corpora-047-20250609-210103.txt",
+  "bin": 1,
+  "donor": "3b7d0c3545f9327dab7c37784f7a3ff3952d8755f15a9306a7446c4ffa6e477b"
+ }
+]

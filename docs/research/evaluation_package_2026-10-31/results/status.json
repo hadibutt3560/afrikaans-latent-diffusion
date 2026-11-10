@@ -1,0 +1,13 @@
+{
+ "part_d": "no eligible cell; no tuned-AR comparison",
+ "judge_gemma_server_flags": [
+  "--reasoning-budget",
+  "0",
+  "--no-webui"
+ ],
+ "judge_qwen_server_flags": [
+  "--reasoning-budget",
+  "0",
+  "--no-webui"
+ ]
+}

@@ -1,0 +1,5 @@
+# Step 1: frozen autoencoder reconstruction diagnostic
+
+This diagnostic tested whether the final autoencoder (job 56531, step 30500) depended on its input by comparing reconstructions from correct latents with those from latents shuffled between documents in the same length bin. Seed 91427 split the shuffled validation documents into 64 diagnostic and 64 reserved documents, with up to two passages per diagnostic document; decoding was fixed (FP32, batch one, beam 4, max length 128, no_repeat_ngram_size 3), and the contrasts used a paired document bootstrap of 10,000 replicates (seed 91428). There was no training, model selection, decoder tuning or test access.
+
+The protocol also listed the metrics (cross-entropy, exact match, chrF, numeral precision and recall), the review of every correct reconstruction, the input-truncation appendix and the stop rules (10 GiB, 2 GPU-hours). The full protocol as fixed before the run is at the repository tag `as-run`: https://github.com/hadibutt3560/afrikaans-latent-diffusion/blob/as-run/docs/research/reconstruction_audit_2026-10-22/PROTOCOL.md.

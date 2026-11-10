@@ -1,0 +1,14 @@
+{
+  "validation_passages": 4827,
+  "validation_documents": 187,
+  "passages_sharing_12gram": 168,
+  "documents_affected": 64,
+  "longest_span_words": {
+    "p50": 18.0,
+    "p90": 30.0,
+    "max": 46.0
+  },
+  "shared_12grams": 1597,
+  "share_in_5plus_training_documents": 0.023794614902943018,
+  "note": "Test split and reserve documents not read."
+}

@@ -1,0 +1,7 @@
+{
+  "seconds": 11279.462498600013,
+  "peak_allocated_gib": 5.888162136077881,
+  "strict_load": true,
+  "scorer_seconds_per_row": 0.08063493043680312,
+  "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0"
+}

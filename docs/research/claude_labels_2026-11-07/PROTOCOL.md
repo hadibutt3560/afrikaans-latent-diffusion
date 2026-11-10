@@ -1,0 +1,5 @@
+# Claude labels
+
+Fixed on 7 November 2026 before labelling, this protocol set how Claude Opus 5.5 (`claude-opus-5-5`) labelled the 81 B0 reconstructions against three checks (named entities and content words preserved, main clause structure recognisable, no obvious hallucinated material); a row passed only if all three were Yes, and Unsure counted as not passing. The labeller was not blind to the study aims or the earlier total (55 of 81 failing at least one check) but did not open the earlier label file until all 81 labels were saved, and agreement was to be reported as raw agreement and Cohen's kappa. The labels are an AI-assisted reading, not human evaluation.
+
+It also covered a descriptive reading of seed-42 test outputs at indices 0, 25, 50, 75 and 100 from both retrained denoisers, and listed the output files. The full protocol as fixed before the run is at the repository tag `as-run`: https://github.com/hadibutt3560/afrikaans-latent-diffusion/blob/as-run/docs/research/claude_labels_2026-11-07/PROTOCOL.md.

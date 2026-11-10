@@ -1,0 +1,15 @@
+{
+ "protocol_sha256": "9d9472b63097ca0665393f8723e2ef16aebc42b65306023aecb5632224f88493",
+ "script_sha256": "249ac569c7fffb44e8d1c7acff323e1c41687916edd07d7770f7462b39cf3162",
+ "ar_sha256": "ed12edbd82757c6713c05eae442f95407f9ecf01fefaba97821b7a17c4b1d076",
+ "scorer_sha256": "7e6f2a4acae9c938ab5ad72031b9fdeb9f66a9e622dd36ec8e122425dca43e72",
+ "seeds": [
+  120000,
+  120999
+ ],
+ "cap": 127,
+ "torch": "2.11.0+cu128",
+ "transformers": "5.5.0",
+ "gpu": "NVIDIA GeForce RTX 3060",
+ "test_text_read": "human test references (already scored) only"
+}

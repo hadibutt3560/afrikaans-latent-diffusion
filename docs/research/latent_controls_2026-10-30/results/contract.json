@@ -1,0 +1,76 @@
+{
+  "protocol_sha256_lf": "14319d16a373e1d358ace2f779f4f1181260bbb3f3a6cd0033978c184c088994",
+  "protocol_sha256_raw": "14319d16a373e1d358ace2f779f4f1181260bbb3f3a6cd0033978c184c088994",
+  "script_sha256": "9fba75490c0d669226b47b599f139009cda314ce676a96236d729da5114d38b6",
+  "analysis_script_sha256": "bd71f8cd72f42f6153d9cf3b284654fd736d09e26ece89630641ddd816c8770b",
+  "manifest_sha256": "a171e638639e0a50cb754b014032d149fe29122243d00e476c4c7d1db2153d82",
+  "c2_record_sha256": "73456ee65a9919869b04a81781cb825e97075cf4080d278fa4b4e3a352356523",
+  "latent_sha256": {
+    "C1": "7644bab7dad5941e77451e63a8f92cad09def870c1df8991a2013aae68f5fd7f",
+    "C2": "16254cfe7e67809ac425937a94bd3f500c94a3c0c0d1fa4348c29deae044ef10",
+    "C3": "508af2c69b7a5d30e03264bba0ba6281442d747e500922de127bb39ab8040fd2"
+  },
+  "ae_sha256": "123f4508e4aa26967c05a2ad413cebb8f2a2b90fc2420dab757704495dc27f5c",
+  "train_sha256": "2af763380dd2818d40c58345428f42b8bebabbdcf71026c55bd2ea751601f3ab",
+  "valid_sha256": "bdc360a9f2a65f5760830bd5bc1bc335d6ac066ec2087882d941c95255f9a91e",
+  "reference_sha256": "51cca0b60c0d8ece2a7b6e0f39b98177cf60726d36e3defe9f97d9dbd8d52498",
+  "cache_manifest_sha256": "84febf0732cbb5e6b0cb85a607600b97c37cf1108e1137d7de55248ff795b541",
+  "bank_sha256": {
+    "small-seed42": "ef98bc5d50b63ae04317471d66f1468b42967f13c623e434357a5e77fe978e74",
+    "small-seed43": "777cf891ad04e9b6dc0901b9084f1d8ef3bfd88643b1cd4aefaf8f7da5b9fa42",
+    "small-seed44": "f038c2e44fe6eeef90b52f41ad37a1f99018dbbbaa931cb75c93a5feba262743",
+    "small-seed45": "40ea866a625c8766fd1b98ba445bb46bbfabaec4ba1a0b8cc014dd79c5494099",
+    "small-seed46": "7dd1b769cbffd209f33fe32242eabe2a450abdb5ef6ce0b97052820cdca4a281",
+    "published-seed42": "cb3fb2d8d50199a5144d4463c9b91457de8aada604f4983d41cce2c1c153e8a2",
+    "published-seed43": "1c26a7b6a74f7cd0cfed7c0ef0e629d91bfec73942c748efc540ba32f1205cc9",
+    "published-seed44": "699fce97c8a5e16960f90bd934ea2b270c1e81a9276a86406120825275e791e4",
+    "published-seed45": "cf06811aa709413330eef9d5dc8730c814c0ea0fea888c20db71b63aaa86a661",
+    "published-seed46": "69d15ffa310178f707d71245993da1b40404f7a32fddc45d41c904353528225d"
+  },
+  "mgpt": {
+    "revision": "40897bd7c8b47a76802c411108ca6220438b8b40",
+    "weights_sha256": "c45c522411e64dbed6da1ed0ce0839bf03931d3a17b80182d06d4dab8d8b2fbb"
+  },
+  "source_code": {
+    "CONSTANTS.py": "2ed00d54746ec266086c56e5621d2cb2379582cbb6a049698418ffc8693d088d",
+    "dataset_utils/denoising_collator.py": "2d24b8c7f06ebe5e8fcc91f3306890f497fb4b005842636e718e172cdd5932a6",
+    "dataset_utils/flan_collator.py": "cdf12cdcd06a158a41c02940231761fda347bd8038eb746b7697c554abc5f254",
+    "dataset_utils/text_dataset.py": "66b0512cf1fd3d1394dc070d905f19c5e0c89fd9175a6690fdd8c7278afccc5a",
+    "diffusion/constant.py": "a9d1d574ee69ed9b5568ed629ec381b2e1b906d730c1c0889d7b9fcc26e27604",
+    "diffusion/optimizer.py": "82d0283def5d76ac2e4fee1188f20528702445aa078934593494892975a36932",
+    "diffusion/text_denoising_diffusion.py": "15d8f5275f94c52f6cb30e95d34881b26226865f5c9f170a02c9a1ebb9edd06c",
+    "evaluation/evaluation.py": "86c46ab757fcba92be096b6c5b371a7db4f28ae853d927c8b265dd6c33aca322",
+    "latent_models/bart_latent_model.py": "164653f66c299d69fefd1b1c3b15db2e1b8085b3d7e376864efe3e539f9a15d0",
+    "latent_models/latent_finetuning.py": "8b747530edb2b5be61cf303ea4de9e85b91d50e9c6d117d398c24863275b4b68",
+    "latent_models/latent_utils.py": "72a04cb9af0e41f7b1f89b742e5094b52900bfef5236780f760019e6ca02f3d2",
+    "latent_models/perceiver_ae.py": "21ee87191415f2b3fe3a44650158de8bb13c68f551cd200cc5b492a5c5c25aa2",
+    "latent_models/t5_latent_model.py": "117fd82d79dfc61d2b4ac77ab509a9bff4456e473044ca102afc9c83fa65bbdc",
+    "model/diffusion_transformer.py": "a569b291dbea6573d8fb88d09874a6afe5b32aa92123ce90c2a05992753e1d05",
+    "model/x_transformer.py": "61f251a03094942c128fd763a101494f316107ef8da47ebe182e816ad41eccd2",
+    "tools/afrikaans_longrun.py": "d57d9833862250c12a17faedc5276127a4e3337ade80396cb90f687b5f99e81d",
+    "tools/compare_afrikaans_generators.py": "7e6f2a4acae9c938ab5ad72031b9fdeb9f66a9e622dd36ec8e122425dca43e72",
+    "tools/longrun_common.py": "b4877cb397f651ac79c8fa0aab89e4654b6ed5064fcd1f8623a27f66adf1d882",
+    "tools/longrun_training.py": "70158482b2f38de5e5c076d6565fa5ea4cbb4bbac1d65cc95c28cbddd98c91d3",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/file_utils.py": "ab17014ee5ebbe15f7d02e7593dd38ee83e36c6f9214bcce7cee087fc79e412c",
+    "utils/torch_utils.py": "00cfb24034c95ae5b165de07d0308815249b375ee7279c4e9474022748f24830"
+  },
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.5.0",
+    "sacrebleu": "2.6.0",
+    "numpy": "2.4.4"
+  },
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "precision": "FP32",
+  "beam": {
+    "max_length": 128,
+    "min_length": 5,
+    "num_beams": 4,
+    "do_sample": false,
+    "no_repeat_ngram_size": 3,
+    "repetition_penalty": 1.2,
+    "length_penalty": 1.0
+  },
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]"
+}

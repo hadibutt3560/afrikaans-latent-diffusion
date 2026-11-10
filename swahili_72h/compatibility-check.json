@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "torch": "2.7.1+cpu",
+  "transformers": "4.38.2",
+  "tokenizer_parity_rows": 128,
+  "ae_forward_backward_generate": true,
+  "scorer_forward": true,
+  "limitation": "Windows CPU miniature API check; does not validate Linux Apptainer/CUDA 12.8 on Blackwell."
+}

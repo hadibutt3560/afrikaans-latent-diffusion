@@ -18,25 +18,19 @@ from datetime import timedelta
 import torch
 from torch import nn, einsum
 import torch.nn.functional as F
-from torch.utils.data import Dataset, DataLoader
-
-from torch.optim import AdamW
 
 from einops import rearrange, reduce, repeat
 from einops.layers.torch import Rearrange
 
-from PIL import Image
 from tqdm.auto import tqdm
 from ema_pytorch import EMA
 
-from transformers import get_scheduler, AutoTokenizer, PreTrainedTokenizerBase, T5ForConditionalGeneration, MT5ForConditionalGeneration
+from transformers import get_scheduler, AutoTokenizer, T5ForConditionalGeneration, MT5ForConditionalGeneration
 from transformers.modeling_outputs import BaseModelOutput
 from transformers.models.bart.modeling_bart import BartForConditionalGeneration
 
 from accelerate import Accelerator, DistributedDataParallelKwargs, InitProcessGroupKwargs
 import wandb
-from latent_models.bart_latent_model import BARTForConditionalGenerationLatent
-from latent_models.t5_latent_model import T5ForConditionalGenerationLatent
 
 import diffusion.constant as constant
 import diffusion.optimizer as optimizer
@@ -142,9 +136,7 @@ def time_to_alpha(t, alpha_schedule, scale):
     return log_snr_to_alpha(shifted_log_snr)
 
 def set_seeds(seed):
-    random.seed(seed)
-    torch.manual_seed(seed)
-    torch.cuda.manual_seed(seed)
+    file_utils.set_seed(seed)
 
 class GaussianDiffusion(nn.Module):
     def __init__(
@@ -285,6 +277,9 @@ class GaussianDiffusion(nn.Module):
         return x_start*(self.latent_scale.clamp(min=eps))+self.latent_mean
 
     def diffusion_model_predictions(self, z_t, mask, t, *, x_self_cond = None,  class_id=None, seq2seq_cond=None, seq2seq_mask=None, sampling=False, cls_free_guidance=1.0, l2_normalize=False):
+        # Optional train/inference alignment; do not project the sampled state or decoder input.
+        if sampling and getattr(self, 'normalize_sampling_self_condition', False) and x_self_cond is not None:
+            x_self_cond = F.normalize(x_self_cond, dim=-1) * math.sqrt(x_self_cond.shape[-1])
         time_to_alpha = self.sampling_schedule if sampling else self.train_schedule
         time_cond = time_to_alpha(t)
         model_output = self.diffusion_model(z_t, mask, time_cond, x_self_cond, class_id=class_id, seq2seq_cond=seq2seq_cond, seq2seq_mask=seq2seq_mask)
@@ -462,14 +457,13 @@ class GaussianDiffusion(nn.Module):
             h = lambda_next - lambda_now
 
             # calculate x0 and noise
+            x_start = model_output.pred_x_start
             if time_next[0] <= 0:
                 z_t = x_start
                 continue  
 
-            x_start = model_output.pred_x_start
-
             phi_1 = torch.expm1(-h)
-            if len(old_pred_x) < 2:
+            if not old_pred_x:
                 denoised_x = x_start
             else:
                 h = lambda_next - lambda_now
@@ -479,6 +473,9 @@ class GaussianDiffusion(nn.Module):
                 denoised_x = (1-gamma)*x_start + gamma*old_pred_x[-1]
             
             z_t = (sigma_next.sqrt()/sigma.sqrt()) * z_t - alpha_next.sqrt() * phi_1 * denoised_x
+            # Retain the preceding prediction and log-SNR interval for the next step.
+            old_pred_x[:] = [x_start]
+            old_hs[:] = [h]
         return (z_t, mask)
     
 
@@ -590,37 +587,44 @@ class Trainer(object):
         mixed_precision = 'no',
         decoding_loss = False,
         decoding_loss_weight = 1.0,
+        seed = 42,
     ):
         super().__init__()
 
 
-        set_seeds(42)
+        set_seeds(seed)
 
         self.args = args
+        evaluation.set_metric_policy(
+            strict=getattr(args, "strict_evaluation", False),
+            skip_expensive=getattr(args, "skip_expensive_metrics", False),
+        )
 
         ddp_kwargs = DistributedDataParallelKwargs(find_unused_parameters=True)
 
         init_process_kwargs = InitProcessGroupKwargs(timeout=timedelta(minutes=90))
 
+        if args.output_dir is None:
+            args.output_dir = file_utils.get_output_dir(args)
+        results_folder = str(file_utils.ensure_output_dir(args.output_dir))
+
+        tracking_enabled = os.environ.get("WANDB_MODE", "").lower() != "disabled"
         self.accelerator = Accelerator(
             mixed_precision = mixed_precision,
-            log_with='wandb',
+            log_with='wandb' if tracking_enabled else None,
             kwargs_handlers=[ddp_kwargs, init_process_kwargs]
         )
+        self.tracking_enabled = tracking_enabled
         self.num_devices = self.accelerator.num_processes
         args.num_devices = self.num_devices
 
         if self.accelerator.is_main_process:
-            if args.output_dir is None:
-                args.output_dir = file_utils.get_output_dir(args)
-                with open(os.path.join(args.output_dir, 'args.json'), 'w') as f:
-                    json.dump(args.__dict__, f, indent=2)
-            results_folder = args.output_dir
             run = os.path.split(__file__)[-1].split(".")[0]
-            if args.wandb_name:
-                self.accelerator.init_trackers(run, config=args, init_kwargs={"wandb": {"dir": results_folder, "name": args.wandb_name}})
-            else:
-                self.accelerator.init_trackers(run, config=args, init_kwargs={"wandb": {"dir": results_folder}})
+            if tracking_enabled:
+                if args.wandb_name:
+                    self.accelerator.init_trackers(run, config=args, init_kwargs={"wandb": {"dir": results_folder, "name": args.wandb_name}})
+                else:
+                    self.accelerator.init_trackers(run, config=args, init_kwargs={"wandb": {"dir": results_folder}})
 
         
 
@@ -643,17 +647,6 @@ class Trainer(object):
 
         self.enc_dec_model = args.enc_dec_model
 
-        # Init Encoder-decoder model
-        if 'bart' in args.enc_dec_model:
-            self.bart_model = BartForConditionalGeneration.from_pretrained(args.enc_dec_model)
-        elif 'flan-t5' in args.enc_dec_model:
-            self.bart_model = T5ForConditionalGeneration.from_pretrained(args.enc_dec_model, torch_dtype=torch.bfloat16)
-        elif 'mt5' in args.enc_dec_model:
-            self.bart_model = MT5ForConditionalGeneration.from_pretrained(args.enc_dec_model, torch_dtype=torch.bfloat16)
-        else:
-            raise ValueError(f'invalid enc_dec_model {args.enc_dec_model}')
-        self.tokenizer = AutoTokenizer.from_pretrained(args.enc_dec_model)
-
         self.diffusion.using_latent_model = False
         self.seq2seq = self.diffusion.diffusion_model.seq2seq
         self.class_conditional = self.diffusion.diffusion_model.class_conditional
@@ -664,18 +657,11 @@ class Trainer(object):
             device = self.accelerator.device
             with open(os.path.join(args.latent_model_path, 'args.json'), 'rt') as f:
                 latent_model_args = json.load(f)
-            
-            latent_argparse = argparse.Namespace(**latent_model_args)
-            self.diffusion.context_encoder = self.bart_model.get_encoder()
-            self.seq2seq_train_context_encoder = seq2seq_train_context_encoder
-            if seq2seq_train_context_encoder:
-                for param in self.diffusion.context_encoder.parameters():
-                    param.requires_grad = True
-            else:
-                for param in self.diffusion.context_encoder.parameters():
-                    param.requires_grad = False
 
-            self.context_tokenizer = self.tokenizer
+            # Checkpoints can move between hosts; the caller supplies the usable
+            # local model/cache path while the saved architecture stays unchanged.
+            latent_model_args['enc_dec_model'] = args.enc_dec_model
+            latent_argparse = argparse.Namespace(**latent_model_args)
             self.bart_model, self.tokenizer, _ = get_latent_model(latent_argparse)
             data = torch.load(os.path.join(args.latent_model_path, 'model.pt'), map_location=device)
             self.bart_model.load_state_dict(data['model'])
@@ -687,15 +673,35 @@ class Trainer(object):
                 assert not args.normalize_latent
             for param in self.bart_model.parameters():
                 param.requires_grad = False
+            if self.seq2seq:
+                self.diffusion.context_encoder = self.bart_model.get_encoder()
+                self.seq2seq_train_context_encoder = seq2seq_train_context_encoder
+                for param in self.diffusion.context_encoder.parameters():
+                    param.requires_grad = seq2seq_train_context_encoder
+                self.context_tokenizer = self.tokenizer
+        else:
+            if 'bart' in args.enc_dec_model:
+                self.bart_model = BartForConditionalGeneration.from_pretrained(args.enc_dec_model)
+            elif 'flan-t5' in args.enc_dec_model:
+                self.bart_model = T5ForConditionalGeneration.from_pretrained(args.enc_dec_model, torch_dtype=torch.bfloat16)
+            elif 'mt5' in args.enc_dec_model:
+                self.bart_model = MT5ForConditionalGeneration.from_pretrained(args.enc_dec_model, torch_dtype=torch.bfloat16)
+            else:
+                raise ValueError(f'invalid enc_dec_model {args.enc_dec_model}')
+            self.tokenizer = AutoTokenizer.from_pretrained(args.enc_dec_model)
         self.using_latent_model = self.diffusion.using_latent_model
+        args.using_latent_model = self.using_latent_model
         self.bart_model.eval()
             
 
         # dataset and dataloader
         self.dataset_name = dataset_name
-        dataset = text_dataset.get_dataset(dataset_name,)
+        dataset = text_dataset.get_dataset(
+            dataset_name,
+            dataset_dir=getattr(args, "dataset_dir", None),
+        )
 
-        self.dataset = dataset.shuffle(seed=42)
+        self.dataset = dataset.shuffle(seed=args.seed)
         if args.eval_test:
             self.num_samples = min(self.num_samples,len(self.dataset['test']))
             print(f'Using {self.num_samples} samples for evaluation')
@@ -704,14 +710,17 @@ class Trainer(object):
             print(f'Using {self.num_samples} samples for evaluation')
         # Subsample train and val splits for computing language generation during runtime
         
-        self.train_val_dataloader = text_dataset.get_dataloader(args, dataset['train'].select(range(1000)), self.bart_model.config, self.tokenizer, self.max_seq_len, shuffle=False, context_tokenizer=self.context_tokenizer)
-        if args.resume_training:
-            dataset['train'] = dataset['train'].shuffle()
-        self.dataloader = text_dataset.get_dataloader(args, self.dataset['train'], self.bart_model.config, self.tokenizer, self.max_seq_len, context_tokenizer=self.context_tokenizer)
-        self.val_dataloader = text_dataset.get_dataloader(args, self.dataset['valid'], self.bart_model.config, self.tokenizer, self.max_seq_len, shuffle=False, context_tokenizer=self.context_tokenizer)
-        self.test_dataloader = text_dataset.get_dataloader(args, self.dataset['test'], self.bart_model.config, self.tokenizer, self.max_seq_len, shuffle=False, context_tokenizer=self.context_tokenizer)
+        self.train_val_dataloader = text_dataset.get_dataloader(args, dataset['train'].select(range(1000)), self.bart_model.config, self.tokenizer, self.max_seq_len, shuffle=False, context_tokenizer=self.context_tokenizer, is_train=False)
+        self.dataloader = text_dataset.get_dataloader(args, self.dataset['train'], self.bart_model.config, self.tokenizer, self.max_seq_len, context_tokenizer=self.context_tokenizer, is_train=True)
+        self.val_dataloader = text_dataset.get_dataloader(args, self.dataset['valid'], self.bart_model.config, self.tokenizer, self.max_seq_len, shuffle=False, context_tokenizer=self.context_tokenizer, is_train=False)
+        self.test_dataloader = text_dataset.get_dataloader(args, self.dataset['test'], self.bart_model.config, self.tokenizer, self.max_seq_len, shuffle=False, context_tokenizer=self.context_tokenizer, is_train=False)
 
-        if not self.seq2seq:
+        if self.using_latent_model and not self.seq2seq:
+            # Every compressed example has exactly num_encoder_latents slots.
+            probs = torch.zeros(self.num_encoder_latents + 1)
+            probs[self.num_encoder_latents] = 1.0
+            self.length_categorical = torch.distributions.Categorical(probs=probs)
+        elif not self.seq2seq:
             training_lengths = [min(sum(self.dataloader.dataset[idx]['attention_mask']), self.max_seq_len) for idx in range(self.dataloader.dataset.num_rows)]
             length_counts = Counter(training_lengths)
             probs = torch.tensor([length_counts[idx]/self.dataloader.dataset.num_rows for idx in range(self.max_seq_len+1)])
@@ -742,8 +751,8 @@ class Trainer(object):
         if self.accelerator.is_main_process:
             self.ema = EMA(diffusion, beta = ema_decay, update_every = ema_update_every, power=3/4)
 
-            self.results_folder = Path(results_folder)
-            self.results_folder.mkdir(exist_ok = True)
+        self.results_folder = Path(results_folder)
+        self.results_folder.mkdir(parents=True, exist_ok=True)
 
         # step counter state
 
@@ -756,8 +765,54 @@ class Trainer(object):
         self.val_iter = cycle(self.val_dataloader)
         self.reference_dict = {}
 
+        args.gradient_accumulation_steps = self.gradient_accumulate_every
+        if self.accelerator.is_main_process:
+            unwrapped_diffusion = self.accelerator.unwrap_model(self.diffusion)
+            latent_provenance = {
+                "using_latent_model": self.using_latent_model,
+                "latent_model_path": (
+                    str(Path(args.latent_model_path).resolve())
+                    if args.latent_model_path else None
+                ),
+                "latent_checkpoint": (
+                    str((Path(args.latent_model_path) / "model.pt").resolve())
+                    if args.latent_model_path else None
+                ),
+                "latent_length": getattr(self, "num_encoder_latents", None),
+                "latent_dimension": unwrapped_diffusion.diffusion_model.latent_dim,
+            }
+            with open(
+                self.results_folder / "latent_model_provenance.json",
+                "w",
+                encoding="utf-8",
+            ) as handle:
+                json.dump(latent_provenance, handle, indent=2, sort_keys=True)
+            file_utils.write_run_metadata(
+                self.results_folder,
+                args,
+                dataset_counts={split: len(values) for split, values in self.dataset.items()},
+                model_counts={
+                    "diffusion_total": sum(p.numel() for p in self.diffusion.parameters()),
+                    "diffusion_trainable": sum(
+                        p.numel() for p in self.diffusion.parameters() if p.requires_grad
+                    ),
+                },
+                extra={"run_type": "latent_diffusion", "latent_model": latent_provenance},
+            )
+            self.accelerator.print(
+                "Batching: "
+                f"{self.train_batch_size} per GPU x {self.gradient_accumulate_every} accumulation "
+                f"x {self.num_devices} GPU(s) = "
+                f"{self.train_batch_size * self.gradient_accumulate_every * self.num_devices} global"
+            )
+            self.accelerator.print(
+                f"Compressed latent model active: {self.using_latent_model}; "
+                f"shape length={latent_provenance['latent_length']}, "
+                f"dimension={latent_provenance['latent_dimension']}"
+            )
+
     def save(self, best=False):
-        if not self.accelerator.is_local_main_process:
+        if not self.accelerator.is_main_process:
             return
 
         data = {
@@ -767,6 +822,8 @@ class Trainer(object):
             'ema': self.ema.state_dict(),
             'scaler': self.accelerator.scaler.state_dict() if exists(self.accelerator.scaler) else None,
             'scheduler': self.lr_scheduler.state_dict(),
+            'using_latent_model': self.using_latent_model,
+            'latent_model_path': self.args.latent_model_path,
         }
         if best:
             torch.save(data, str(self.results_folder / f'best_model.pt'))
@@ -787,7 +844,7 @@ class Trainer(object):
         # For backwards compatibility with earlier models
         model.load_state_dict(data['model'])
         self.opt.load_state_dict(data['opt'])
-        if self.accelerator.is_local_main_process:
+        if self.accelerator.is_main_process:
             self.ema.load_state_dict(data['ema'])
         if init_only:
             return
@@ -797,7 +854,7 @@ class Trainer(object):
             self.lr_scheduler.load_state_dict(data['scheduler'])
         # For backwards compatibility with earlier models
         
-        if exists(self.accelerator.scaler) and exists(data['scaler']):
+        if exists(self.accelerator.scaler) and exists(data.get('scaler')):
             self.accelerator.scaler.load_state_dict(data['scaler'])
 
     def log_reference_metrics(self, test=False):
@@ -808,13 +865,14 @@ class Trainer(object):
             test_subset = self.dataset['test']['text'][:self.num_samples]
             self.reference_dict['reference/test_perplexity'] = evaluation.compute_perplexity(test_subset)
             for mauve_model_id in ["gpt2-large"]:
-                self.reference_dict[f'reference/{mauve_model_id}_train_test_mauve'], _ = evaluation.compute_mauve(train_subset, test_subset, mauve_model_id)
-                self.reference_dict[f'reference/{mauve_model_id}_train_train_mauve'], _ = evaluation.compute_mauve(train_subset, train_subset2, mauve_model_id)
+                self.reference_dict[f'reference/{mauve_model_id}_train_test_mauve'], _ = evaluation.compute_mauve(train_subset, test_subset, mauve_model_id, strict=False)
+                self.reference_dict[f'reference/{mauve_model_id}_train_train_mauve'], _ = evaluation.compute_mauve(train_subset, train_subset2, mauve_model_id, strict=False)
                 ngram_metrics = evaluation.compute_diversity(test_subset)
             for k, v in ngram_metrics.items():
                 self.reference_dict[f"reference/test_{k}"] = v
             self.reference_dict[f"reference/test_memorization"] = evaluation.compute_memorization(test_subset, self.dataset['train']['text'])
             self.reference_dict['reference/test_unique_wordcount'] = evaluation.compute_wordcount(test_subset)
+            self.reference_dict['reference/test_unique_sentence_count'] = evaluation.compute_unique_sentence_count(test_subset)
             return
 
         val_subset = self.dataset['valid']['text'][:self.num_samples]
@@ -823,8 +881,8 @@ class Trainer(object):
         self.reference_dict['reference/train_perplexity'] = evaluation.compute_perplexity(train_subset)
         self.reference_dict['reference/val_perplexity'] = evaluation.compute_perplexity(val_subset)
         for mauve_model_id in ["gpt2-large"]:
-            self.reference_dict[f'reference/{mauve_model_id}_train_val_mauve'], _ = evaluation.compute_mauve(train_subset, val_subset, mauve_model_id)
-            self.reference_dict[f'reference/{mauve_model_id}_train_train_mauve'], _ = evaluation.compute_mauve(train_subset, train_subset2, mauve_model_id)
+            self.reference_dict[f'reference/{mauve_model_id}_train_val_mauve'], _ = evaluation.compute_mauve(train_subset, val_subset, mauve_model_id, strict=False)
+            self.reference_dict[f'reference/{mauve_model_id}_train_train_mauve'], _ = evaluation.compute_mauve(train_subset, train_subset2, mauve_model_id, strict=False)
         ngram_metrics = evaluation.compute_diversity(val_subset)
         for k, v in ngram_metrics.items():
             self.reference_dict[f"reference/val_{k}"] = v
@@ -882,9 +940,14 @@ class Trainer(object):
                     return torch.tensor([self.diffusion.diffusion_model.num_classes]*n, dtype=torch.long, device=device)
                 return self.class_categorical.sample((n,)).to(device)
             return None
-        # Loop until enough senetences have been generated across all strategies 
+        # Loop until enough sentences have been generated across all strategies.
+        stalled_attempts = 0
         while min([len(all_texts_lists[ele]) for ele in all_texts_lists]) < num_samples:
-            batches = num_to_groups(num_samples-min([len(all_texts_lists[ele]) for ele in all_texts_lists]), max(self.eval_batch_size,self.train_batch_size))
+            previous_minimum = min(len(values) for values in all_texts_lists.values())
+            batches = num_to_groups(
+                num_samples - previous_minimum,
+                self.eval_batch_size,
+            )
             model_outputs = list(map(lambda n: tuple(x.to('cpu') for x in self.ema.ema_model.sample(batch_size=n, length=self.length_categorical.sample((n,)), class_id=get_class_id(n), cls_free_guidance=cls_free_guidance)), batches))
             
             for (latents, mask) in model_outputs:
@@ -902,6 +965,12 @@ class Trainer(object):
                     texts_list = [self.tokenizer.decode(g, skip_special_tokens=True, clean_up_tokenization_spaces=True) for g in sample_ids]
                     texts_list = [text.strip() for text in texts_list if len(text.strip())>0]
                     all_texts_lists[k].extend(texts_list)
+            current_minimum = min(len(values) for values in all_texts_lists.values())
+            stalled_attempts = stalled_attempts + 1 if current_minimum == previous_minimum else 0
+            if stalled_attempts >= 10:
+                raise RuntimeError(
+                    "Generation produced no non-empty samples for 10 consecutive attempts"
+                )
         
         assert min([len(all_texts_lists[ele]) for ele in all_texts_lists]) >= num_samples
         text_generations = {k:v[:num_samples] for k,v in all_texts_lists.items()} 
@@ -915,34 +984,78 @@ class Trainer(object):
             file_utils.save_text_samples(all_texts_list, os.path.join(self.results_folder, f'{"eval-" if self.args.eval else ""}{f"eval{seed}-" if self.args.eval_test else ""}{class_id_prefix}{strategy}-sample-{milestone}.txt'))
             metrics[f"model/{strategy}/{class_id_prefix}perplexity"] = evaluation.compute_perplexity(all_texts_list)
             metrics[f"model/{strategy}/{class_id_prefix}unique_wordcount"] = evaluation.compute_wordcount(all_texts_list)
+            metrics[f"model/{strategy}/{class_id_prefix}unique_sentence_count"] = evaluation.compute_unique_sentence_count(all_texts_list)
             ngram_metrics = evaluation.compute_diversity(all_texts_list)
             for k, v in ngram_metrics.items():
                 metrics[f"model/{strategy}/{class_id_prefix}{k}"] = v
             metrics[f"model/{strategy}/{class_id_prefix}memorization"] = evaluation.compute_memorization(all_texts_list, self.dataset['train']['text'])
-            table = wandb.Table( 
-                columns=['Samples'], data=[[text] for text in all_texts_list])
-            accelerator.log({f"model/{strategy}/{class_id_prefix}samples": table}, self.step)
+            if self.tracking_enabled:
+                table = wandb.Table(
+                    columns=['Samples'], data=[[text] for text in all_texts_list])
+                accelerator.log({f"model/{strategy}/{class_id_prefix}samples": table}, self.step)
 
             # Only evaluate MAUVE if generations are reasonable to speed up validation early on
-            if metrics[f"model/{strategy}/{class_id_prefix}perplexity"] > 5000:
+            if not np.isfinite(metrics[f"model/{strategy}/{class_id_prefix}perplexity"]) or metrics[f"model/{strategy}/{class_id_prefix}perplexity"] > 5000:
                 continue
 
             for mauve_model_id in ["gpt2-large"]:
                 for key, reference_text in reference_texts.items():
-                    metrics[f"model/{strategy}/{mauve_model_id}_{class_id_prefix}{key}_mauve"], _ = evaluation.compute_mauve(all_texts_list, reference_text, mauve_model_id)
+                    metrics[f"model/{strategy}/{mauve_model_id}_{class_id_prefix}{key}_mauve"], _ = evaluation.compute_mauve(all_texts_list, reference_text, mauve_model_id, strict=False)
 
-        if len(self.reference_dict) == 0 or test:
+        if len(self.reference_dict) == 0:
             self.log_reference_metrics(test)
+        combined_metrics = {**metrics, **self.reference_dict}
         if test:
-            metrics_dict = {**metrics,**self.reference_dict}
-            metrics_dict = {f'{k}_seed{seed}':v for k,v in metrics_dict.items()}
-            accelerator.log(metrics_dict, self.step)
-            print(metrics_dict)
+            metrics_dict = {f'{k}_seed{seed}':v for k,v in combined_metrics.items()}
         else:
-            accelerator.log({**metrics,**self.reference_dict}, self.step)
+            metrics_dict = combined_metrics
+        accelerator.log(metrics_dict, self.step)
+        if test:
+            print(metrics_dict)
+
+        serializable_metrics = {
+            key: (
+                None
+                if isinstance(value, (float, np.floating)) and not np.isfinite(value)
+                else float(value) if isinstance(value, np.floating) else value
+            )
+            for key, value in metrics_dict.items()
+        }
+        evaluation_prefix = "test" if test else "validation"
+        metrics_stem = f"diffusion-{evaluation_prefix}-metrics-seed-{seed}-step-{self.step}"
+        with open(self.results_folder / f"{metrics_stem}.json", "w", encoding="utf-8") as handle:
+            json.dump(serializable_metrics, handle, indent=2, sort_keys=True)
+        with open(
+            self.results_folder / f"{metrics_stem}.csv",
+            "w",
+            newline="",
+            encoding="utf-8",
+        ) as handle:
+            writer = csv.writer(handle)
+            writer.writerow(["metric", "value"])
+            writer.writerows(sorted(serializable_metrics.items()))
         torch.cuda.empty_cache() 
         self.diffusion.to(device)
         self.ema.to(device)
+        return serializable_metrics
+
+    def safe_sampling(self):
+        try:
+            if self.seq2seq:
+                if 'wmt' in self.args.dataset_name:
+                    for guidance_strength in [1.0, 2.0]:
+                        self.sample_seq2seq(cls_free_guidance=guidance_strength, incremental=False)
+                else:
+                    self.sample_seq2seq()
+                self.sample_seq2seq(split='train')
+            else:
+                self.sample()
+            if self.class_conditional:
+                for class_id in range(self.diffusion.diffusion_model.num_classes):
+                    self.sample(num_samples=100, class_id=class_id)
+        except Exception as exc:
+            if self.accelerator.is_main_process:
+                self.accelerator.print(f'Sampling failed at step {self.step}: {exc}')
 
     @torch.no_grad()
     def sample_seq2seq(self, num_samples=None, split='val', seed=42, num_candidates=None, cls_free_guidance=1.0,):
@@ -1269,23 +1382,12 @@ class Trainer(object):
                             logs["val_ema_loss"] = total_val_ema_loss
                             pbar.set_postfix(**logs)  
                         self.diffusion.train()
-                    accelerator.log(logs, step=self.step)              
+                    accelerator.log(logs, step=self.step)
                     if self.step % self.save_and_sample_every == 0:
-                        if self.seq2seq:
-                            if 'wmt' in self.args.dataset_name:
-                                for guidance_strength in [1.0, 2.0]:
-                                    self.sample_seq2seq(cls_free_guidance=guidance_strength, incremental=False)
-                            else:
-                                self.sample_seq2seq()
-                            self.sample_seq2seq(split='train')
-                        else:
-                            self.sample()
-                        if self.class_conditional:
-                            for class_id in range(self.diffusion.diffusion_model.num_classes):
-                                self.sample(num_samples=100, class_id=class_id)
                         self.save()
-                        
-                        self.diffusion.train() 
+                        self.safe_sampling()
+
+                        self.diffusion.train()
                 pbar.update(1)
             accelerator.wait_for_everyone()
         self.save()

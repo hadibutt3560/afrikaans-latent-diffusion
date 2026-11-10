@@ -1,0 +1,21 @@
+# Prefer the existing cluster environment after import/smoke checks.
+# This separate environment specification retains the demonstrated Blackwell stack.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.7.1+cu128
+transformers==4.38.2
+accelerate==0.27.2
+datasets==2.17.1
+numpy==1.26.4
+einops==0.7.0
+ema-pytorch==0.4.5
+evaluate==0.4.1
+sentencepiece==0.2.0
+wandb==0.16.4
+x-transformers==1.27.16
+nltk==3.8.1
+tqdm==4.66.2
+pytest==8.1.1
+protobuf==4.25.3
+# datasets 2.17 uses PyExtensionType, removed in later pyarrow versions.
+pyarrow==15.0.2
+matplotlib==3.8.3

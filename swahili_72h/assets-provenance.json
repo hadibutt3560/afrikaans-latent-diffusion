@@ -1,0 +1,34 @@
+{
+  "mt5-base": {
+    "repository": "google/mt5-base",
+    "upstream_revision_at_verification": "2eb15465c5dd7f72a8f7984306ad05ebc3dd1e1f",
+    "upstream_weight": {
+      "rfilename": "pytorch_model.bin",
+      "blobId": "acde7d37eee702837b7d9c09e1bf3c445b45b694",
+      "size": 2329735129,
+      "lfs": {
+        "sha256": "180573b534144580f04af026da62bf71bc976ee1b7eb311b8945e2fefde8d614",
+        "size": 2329735129,
+        "pointerSize": 135
+      }
+    },
+    "local_sha256": "180573b534144580f04af026da62bf71bc976ee1b7eb311b8945e2fefde8d614",
+    "weights_match_upstream": true
+  },
+  "mgpt": {
+    "repository": "ai-forever/mGPT",
+    "upstream_revision_at_verification": "40897bd7c8b47a76802c411108ca6220438b8b40",
+    "upstream_weight": {
+      "rfilename": "pytorch_model.bin",
+      "blobId": "bddeb7ce989c71404171fc2ff04869c7f5859929",
+      "size": 3446232428,
+      "lfs": {
+        "sha256": "c45c522411e64dbed6da1ed0ce0839bf03931d3a17b80182d06d4dab8d8b2fbb",
+        "size": 3446232428,
+        "pointerSize": 135
+      }
+    },
+    "local_sha256": "c45c522411e64dbed6da1ed0ce0839bf03931d3a17b80182d06d4dab8d8b2fbb",
+    "weights_match_upstream": true
+  }
+}

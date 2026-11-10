@@ -1,0 +1,5 @@
+# Stage 4: proposal-aligned final evaluation
+
+Fixed on 23 October 2026, this stage reanalysed the existing benchmark outputs on CPU, with no new training or generation and no participant-based human evaluation. It kept the ten 1,000-sample diffusion test banks separate from the 256-per-run validation AR comparison, used 10,000 bootstrap replicates (RNG 20261023), took the large-minus-small run perplexity as the primary descriptive capacity contrast (exploratory with five runs per group) and defined the AR ratio as the equal-weight mean of five run perplexities over the single AR perplexity.
+
+The protocol also covered the per-run diversity, copying and length tables, mGPT scoring of the 81 saved reconstructions and their sources, and exploratory associations of tokeniser fertility with reconstruction loss. The full protocol as fixed before the run is at the repository tag `as-run`: https://github.com/hadibutt3560/afrikaans-latent-diffusion/blob/as-run/docs/research/stage4_final_evaluation_2026-10-23/PROTOCOL.md.

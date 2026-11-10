@@ -1,0 +1,45 @@
+{
+  "hardware": {
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "capability": [
+      8,
+      6
+    ],
+    "memory": 12884377600
+  },
+  "checks": {
+    "ae": {
+      "batch": 16,
+      "micro_batch": 2,
+      "accumulation": 8,
+      "loss": 62.531665325164795,
+      "gradient": 326757.3125,
+      "seconds": 2.9501413999823853,
+      "peak_vram": 5116367360
+    },
+    "small": {
+      "batch": 64,
+      "micro_batch": 16,
+      "accumulation": 4,
+      "loss": 1.0039871484041214,
+      "gradient": 0.08869076520204544,
+      "seconds": 0.36564760003238916,
+      "peak_vram": 1201071104
+    },
+    "published": {
+      "batch": 64,
+      "micro_batch": 16,
+      "accumulation": 4,
+      "loss": 1.0032833218574524,
+      "gradient": 0.15359234809875488,
+      "seconds": 0.7299501000670716,
+      "peak_vram": 4541758976
+    }
+  },
+  "published_DDPM250_beam4": {
+    "passed": true,
+    "output_tokens": 192
+  }
+}

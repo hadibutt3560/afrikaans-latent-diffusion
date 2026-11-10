@@ -1,0 +1,23 @@
+{
+ "hashes": {
+  "ae": "6fd6ef4250823e79f0a56e74236cd9d2ad82111c64fae01fecdd72566fed30a4",
+  "small-42": "debf7041d78e570a303ed9cdd1de44ae5c25c244873638be9a6ff78cb161056c",
+  "small-43": "7533e05559f5fa1bf12f0dde0f8fbb5bb8ddeee562f4482b331a4bf40ab29da0",
+  "published-42": "ef8e77efe2c3253cd8e7f5c8ef6ddee164fd9d3d9a052189cd7e865fdfeb219d",
+  "published-43": "8f85ffa6115c57dc78104fe1a643044e943108915aa4aa08a6a5fb87f76eddaf",
+  "engine": "33e306cec6b0e4d9c404b864da85e41da16c57c6af69170b1258d6d70ec21cfe",
+  "config": "d42b8ea8eff0860bb899b3af0207ccca45f9d878d076d180119f0c25f70bfe5e",
+  "valid": "39971340b4ddf9fbfc643fd5e3f016910cbcab2673f402ae790e211b26b0b46d",
+  "train": "e871b8991a80d25b64392211c0507bd6931f8259f0f7803243c33a612cc8daeb",
+  "glotlid": "a818b6bd42a628ab47d3dfc1578c7ea615c45381f3494c42535e31e8c4cafc9e",
+  "protocol": "505a14a0fab03f10f9796d6fd6b7016c9ad3eebd6596a99b4d09285b8e1de5f9",
+  "runner": "d0fea3d214255e2249d1f098e9255d84445d4068abbd2d68f44c532adc5a8111"
+ },
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.5.0",
+  "sacrebleu": "2.6.0",
+  "numpy": "2.4.4"
+ },
+ "gpu": "NVIDIA GeForce RTX 3060"
+}

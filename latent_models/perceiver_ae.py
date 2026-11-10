@@ -61,17 +61,17 @@ class Attention(nn.Module):
     ):
         super().__init__()
         hidden_dim = dim
-        heads = dim // dim_head
+        heads = max(1, dim // dim_head)
         assert divisible_by(dim, heads), 'dimension must be divisible by number of heads'
+        actual_dim_head = dim // heads
 
-
-        self.scale = dim_head ** -0.5
+        self.scale = actual_dim_head ** -0.5
         self.heads = heads
 
         self.norm = nn.LayerNorm(dim) 
 
-        self.query_norm = RMSNorm(dim_head) if qk_norm else nn.Identity()
-        self.key_norm = RMSNorm(dim_head) if qk_norm else nn.Identity()
+        self.query_norm = RMSNorm(actual_dim_head) if qk_norm else nn.Identity()
+        self.key_norm = RMSNorm(actual_dim_head) if qk_norm else nn.Identity()
 
         self.to_q = nn.Linear(dim, hidden_dim, bias = False)
         self.to_k = nn.Linear(dim, hidden_dim, bias = False)
@@ -111,16 +111,18 @@ class PerceiverAttention(nn.Module):
         qk_norm=True,
     ):
         super().__init__()
-        self.scale = dim_head ** -0.5
-
         inner_dim = max(dim_latent, dim)
-        self.heads = inner_dim // dim_head
+        self.heads = max(1, inner_dim // dim_head)
+        if not divisible_by(inner_dim, self.heads):
+            raise ValueError('attention dimension must be divisible by number of heads')
+        actual_dim_head = inner_dim // self.heads
+        self.scale = actual_dim_head ** -0.5
 
         self.norm = nn.LayerNorm(dim)
         self.norm_latents = nn.LayerNorm(dim_latent)
 
-        self.query_norm = RMSNorm(dim_head) if qk_norm else nn.Identity()
-        self.key_norm = RMSNorm(dim_head) if qk_norm else nn.Identity()
+        self.query_norm = RMSNorm(actual_dim_head) if qk_norm else nn.Identity()
+        self.key_norm = RMSNorm(actual_dim_head) if qk_norm else nn.Identity()
 
         self.to_q = nn.Linear(dim_latent, inner_dim, bias=False)
         if dim_latent != dim:

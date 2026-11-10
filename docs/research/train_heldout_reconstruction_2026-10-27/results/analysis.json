@@ -1,0 +1,398 @@
+{
+  "outcome": "I",
+  "point": {
+    "delta_exact": 0.11340206185567012,
+    "ratio_exact": 1.8461538461538463,
+    "delta_ce": 0.4748825343679421,
+    "delta_chrf": 11.97877741968081,
+    "delta_exact_bin_reweighted": 0.11340206185567009,
+    "exact_T": 0.24742268041237114,
+    "exact_V": 0.13402061855670103
+  },
+  "bootstrap_95": {
+    "delta_exact": {
+      "low": 0.03525773195876286,
+      "high": 0.19095864438914562,
+      "non_finite_replicates": 0
+    },
+    "ratio_exact": {
+      "low": 1.2123711340206185,
+      "high": 2.999765698219306,
+      "non_finite_replicates": 0
+    },
+    "delta_ce": {
+      "low": 0.3071327553619724,
+      "high": 0.6566276150969144,
+      "non_finite_replicates": 0
+    },
+    "delta_chrf": {
+      "low": 7.420273105669239,
+      "high": 16.702133601402494,
+      "non_finite_replicates": 0
+    },
+    "delta_exact_bin_reweighted": {
+      "low": 0.04182981522235446,
+      "high": 0.18398520177283534,
+      "non_finite_replicates": 0
+    }
+  },
+  "bootstrap": {
+    "seed": 91431,
+    "replicates": 10000,
+    "unit": "document, independently within each panel"
+  },
+  "bin_weights_from_V": {
+    "short": 0.4381443298969072,
+    "medium": 0.3917525773195876,
+    "long": 0.17010309278350516
+  },
+  "arms": {
+    "T": {
+      "correct_beam": {
+        "n": 194,
+        "documents": 194,
+        "tokens": 8195,
+        "ce": 0.45435023229696064,
+        "accuracy": 0.8937156802928615,
+        "exact_count": 48,
+        "exact_rate": 0.24742268041237114,
+        "chrf": 81.23480362288242,
+        "similarity": 0.8666856636911534,
+        "number_expected": 84,
+        "number_recall": 0.8095238095238095,
+        "number_precision": 0.9577464788732394,
+        "eos_count": 193,
+        "cap_count": 1
+      },
+      "shuffled_beam": {
+        "n": 194,
+        "documents": 194,
+        "tokens": 8195,
+        "ce": 7.218613676300421,
+        "accuracy": 0.23929225137278828,
+        "exact_count": 0,
+        "exact_rate": 0.0,
+        "chrf": 18.093775793198972,
+        "similarity": 0.2541961592428265,
+        "number_expected": 84,
+        "number_recall": 0.011904761904761904,
+        "number_precision": 0.014084507042253521,
+        "eos_count": 193,
+        "cap_count": 1
+      },
+      "correct_greedy": {
+        "n": 194,
+        "documents": 194,
+        "tokens": 8195,
+        "ce": 0.45435023229696064,
+        "accuracy": 0.8937156802928615,
+        "exact_count": 54,
+        "exact_rate": 0.27835051546391754,
+        "chrf": 79.84403176489712,
+        "similarity": 0.8514627831530557,
+        "number_expected": 84,
+        "number_recall": 0.8095238095238095,
+        "number_precision": 0.8947368421052632,
+        "eos_count": 192,
+        "cap_count": 2
+      },
+      "correct_beam_source_view": {
+        "n": 194,
+        "documents": 194,
+        "tokens": 8195,
+        "ce": 0.45435023229696064,
+        "accuracy": 0.8937156802928615,
+        "exact_count": 48,
+        "exact_rate": 0.24742268041237114,
+        "chrf": 81.23480362288242,
+        "similarity": 0.8666856636911534,
+        "number_expected": 84,
+        "number_recall": 0.8095238095238095,
+        "number_precision": 0.9577464788732394,
+        "eos_count": 193,
+        "cap_count": 1
+      }
+    },
+    "V": {
+      "correct_beam": {
+        "n": 194,
+        "documents": 123,
+        "tokens": 7733,
+        "ce": 0.9292327666649027,
+        "accuracy": 0.8124919177550757,
+        "exact_count": 26,
+        "exact_rate": 0.13402061855670103,
+        "chrf": 69.25602620320163,
+        "similarity": 0.788837602430898,
+        "number_expected": 71,
+        "number_recall": 0.6197183098591549,
+        "number_precision": 0.7457627118644068,
+        "eos_count": 194,
+        "cap_count": 0
+      },
+      "shuffled_beam": {
+        "n": 194,
+        "documents": 123,
+        "tokens": 7733,
+        "ce": 7.480427223760777,
+        "accuracy": 0.22746670115091167,
+        "exact_count": 0,
+        "exact_rate": 0.0,
+        "chrf": 15.841041512510461,
+        "similarity": 0.2427176207901655,
+        "number_expected": 71,
+        "number_recall": 0.0,
+        "number_precision": 0.0,
+        "eos_count": 194,
+        "cap_count": 0
+      },
+      "correct_greedy": {
+        "n": 194,
+        "documents": 123,
+        "tokens": 7733,
+        "ce": 0.9292327666649027,
+        "accuracy": 0.8124919177550757,
+        "exact_count": 28,
+        "exact_rate": 0.14432989690721648,
+        "chrf": 68.13348415649939,
+        "similarity": 0.7690200763662003,
+        "number_expected": 71,
+        "number_recall": 0.6197183098591549,
+        "number_precision": 0.7096774193548387,
+        "eos_count": 191,
+        "cap_count": 3
+      },
+      "correct_beam_source_view": {
+        "n": 194,
+        "documents": 123,
+        "tokens": 7733,
+        "ce": 0.9292327666649027,
+        "accuracy": 0.8124919177550757,
+        "exact_count": 26,
+        "exact_rate": 0.13402061855670103,
+        "chrf": 69.25602620320163,
+        "similarity": 0.788837602430898,
+        "number_expected": 71,
+        "number_recall": 0.6197183098591549,
+        "number_precision": 0.7457627118644068,
+        "eos_count": 194,
+        "cap_count": 0
+      }
+    }
+  },
+  "length_bins": {
+    "T": {
+      "short": {
+        "correct_beam": {
+          "n": 85,
+          "documents": 85,
+          "tokens": 1868,
+          "ce": 0.33038886138769646,
+          "accuracy": 0.933083511777302,
+          "exact_count": 39,
+          "exact_rate": 0.4588235294117647,
+          "chrf": 84.50441214210299,
+          "similarity": 0.9062505126990501,
+          "number_expected": 35,
+          "number_recall": 0.9714285714285714,
+          "number_precision": 1.0,
+          "eos_count": 85,
+          "cap_count": 0
+        },
+        "shuffled_beam": {
+          "n": 85,
+          "documents": 85,
+          "tokens": 1868,
+          "ce": 9.172846804083798,
+          "accuracy": 0.19914346895074947,
+          "exact_count": 0,
+          "exact_rate": 0.0,
+          "chrf": 15.217935970365048,
+          "similarity": 0.2623647070444486,
+          "number_expected": 35,
+          "number_recall": 0.0,
+          "number_precision": 0.0,
+          "eos_count": 85,
+          "cap_count": 0
+        }
+      },
+      "medium": {
+        "correct_beam": {
+          "n": 76,
+          "documents": 76,
+          "tokens": 3675,
+          "ce": 0.3766462074429253,
+          "accuracy": 0.9159183673469388,
+          "exact_count": 9,
+          "exact_rate": 0.11842105263157894,
+          "chrf": 83.39259452499202,
+          "similarity": 0.8964782778182369,
+          "number_expected": 30,
+          "number_recall": 0.7666666666666667,
+          "number_precision": 0.8846153846153846,
+          "eos_count": 76,
+          "cap_count": 0
+        },
+        "shuffled_beam": {
+          "n": 76,
+          "documents": 76,
+          "tokens": 3675,
+          "ce": 7.272460847711887,
+          "accuracy": 0.24027210884353742,
+          "exact_count": 0,
+          "exact_rate": 0.0,
+          "chrf": 19.726179912444262,
+          "similarity": 0.2561170012421744,
+          "number_expected": 30,
+          "number_recall": 0.03333333333333333,
+          "number_precision": 0.038461538461538464,
+          "eos_count": 76,
+          "cap_count": 0
+        }
+      },
+      "long": {
+        "correct_beam": {
+          "n": 33,
+          "documents": 33,
+          "tokens": 2652,
+          "ce": 0.6493434948147152,
+          "accuracy": 0.8352187028657617,
+          "exact_count": 0,
+          "exact_rate": 0.0,
+          "chrf": 67.84362687457703,
+          "similarity": 0.6961629109841972,
+          "number_expected": 19,
+          "number_recall": 0.5789473684210527,
+          "number_precision": 1.0,
+          "eos_count": 32,
+          "cap_count": 1
+        },
+        "shuffled_beam": {
+          "n": 33,
+          "documents": 33,
+          "tokens": 2652,
+          "ce": 5.767484024099635,
+          "accuracy": 0.26621417797888386,
+          "exact_count": 0,
+          "exact_rate": 0.0,
+          "chrf": 21.741765850115385,
+          "similarity": 0.228732203028029,
+          "number_expected": 19,
+          "number_recall": 0.0,
+          "number_precision": 0.0,
+          "eos_count": 32,
+          "cap_count": 1
+        }
+      }
+    },
+    "V": {
+      "short": {
+        "correct_beam": {
+          "n": 85,
+          "documents": 69,
+          "tokens": 1566,
+          "ce": 0.9050854036115202,
+          "accuracy": 0.855683269476373,
+          "exact_count": 21,
+          "exact_rate": 0.24705882352941178,
+          "chrf": 68.80412077940275,
+          "similarity": 0.8154661952138463,
+          "number_expected": 22,
+          "number_recall": 0.6818181818181818,
+          "number_precision": 0.75,
+          "eos_count": 85,
+          "cap_count": 0
+        },
+        "shuffled_beam": {
+          "n": 85,
+          "documents": 69,
+          "tokens": 1566,
+          "ce": 10.014745134960188,
+          "accuracy": 0.18773946360153257,
+          "exact_count": 0,
+          "exact_rate": 0.0,
+          "chrf": 11.521851677810984,
+          "similarity": 0.23176112995106138,
+          "number_expected": 22,
+          "number_recall": 0.0,
+          "number_precision": 0.0,
+          "eos_count": 85,
+          "cap_count": 0
+        }
+      },
+      "medium": {
+        "correct_beam": {
+          "n": 76,
+          "documents": 69,
+          "tokens": 3597,
+          "ce": 0.7862842103845963,
+          "accuracy": 0.837086460939672,
+          "exact_count": 5,
+          "exact_rate": 0.06578947368421052,
+          "chrf": 73.23627677435961,
+          "similarity": 0.8193968639000131,
+          "number_expected": 31,
+          "number_recall": 0.6129032258064516,
+          "number_precision": 0.76,
+          "eos_count": 76,
+          "cap_count": 0
+        },
+        "shuffled_beam": {
+          "n": 76,
+          "documents": 69,
+          "tokens": 3597,
+          "ce": 7.037753914275499,
+          "accuracy": 0.24353628023352794,
+          "exact_count": 0,
+          "exact_rate": 0.0,
+          "chrf": 18.627934694021395,
+          "similarity": 0.2620046663259545,
+          "number_expected": 31,
+          "number_recall": 0.0,
+          "number_precision": 0.0,
+          "eos_count": 76,
+          "cap_count": 0
+        }
+      },
+      "long": {
+        "correct_beam": {
+          "n": 33,
+          "documents": 28,
+          "tokens": 2570,
+          "ce": 1.144019041949673,
+          "accuracy": 0.7517509727626459,
+          "exact_count": 0,
+          "exact_rate": 0.0,
+          "chrf": 61.253387343046995,
+          "similarity": 0.6498698976368572,
+          "number_expected": 18,
+          "number_recall": 0.5555555555555556,
+          "number_precision": 0.7142857142857143,
+          "eos_count": 33,
+          "cap_count": 0
+        },
+        "shuffled_beam": {
+          "n": 33,
+          "documents": 28,
+          "tokens": 2570,
+          "ce": 6.555740081846482,
+          "accuracy": 0.2291828793774319,
+          "exact_count": 0,
+          "exact_rate": 0.0,
+          "chrf": 20.547928002044536,
+          "similarity": 0.226520234747859,
+          "number_expected": 18,
+          "number_recall": 0.0,
+          "number_precision": 0.0,
+          "eos_count": 33,
+          "cap_count": 0
+        }
+      }
+    }
+  },
+  "gate_G3": {
+    "shuffled_exact_T": 0.0,
+    "shuffled_chrf_T_minus_V": 2.252734280688511
+  },
+  "note": "Thresholds from PROTOCOL.md section 7; not to be changed after this report."
+}

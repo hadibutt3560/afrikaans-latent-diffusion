@@ -1,0 +1,15 @@
+# Existing ld4lg-blackwell environment; install only if preflight fails.
+# Torch 2.2.2/cu121 is NOT suitable for the observed sm_120 Blackwell node.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.7.1+cu128
+transformers==4.38.2
+accelerate==0.27.2
+datasets==2.17.1
+numpy==1.26.4
+einops==0.7.0
+ema-pytorch==0.4.5
+evaluate==0.4.1
+sentencepiece==0.2.0
+wandb==0.16.4
+x-transformers==1.27.16
+# Install torch separately from https://download.pytorch.org/whl/cu128.

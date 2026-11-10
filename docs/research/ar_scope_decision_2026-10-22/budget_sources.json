@@ -1,0 +1,66 @@
+[
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\cluster-results\\ar-baseline-57759\\best_selection.json",
+    "sha256": "fc03538e43897d7616738eaf31d181c8b85b40eddae89697f8b0cb210d0d1219"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\cluster-results\\ar-baseline-57759\\protocol.json",
+    "sha256": "a1d42d85c694e4ec5000e0602e2ccd695be2484ec529a9fa3aa8ad1c7bed3d2d"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\cluster-results\\ar-baseline-57759\\summary.json",
+    "sha256": "02825de0a03ae64b46b0892e75880e3b79324b14b8b6f740d3556038df120079"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\cluster-results\\ar-baseline-57759\\training_metrics.jsonl",
+    "sha256": "9e74ec340636ba7514c28c4d1ce3e06733b9c83deeff27d4de6797b18bab3a5d"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\cluster-results\\diffusion-50k-retry-20260920\\run_metadata.json",
+    "sha256": "57d68c2677c037930146b8317dffa9c0a5bec01105b63182793d1feb2854dbe9"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\longrun-local-inputs\\plan.json",
+    "sha256": "a53fe7638c7f016e5c3ff6dea210c2b7b22dadd89e2a41c63f3720393309ed81"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\longrun-local-inputs\\runs\\published-seed42\\status.json",
+    "sha256": "6572a6c326f37d10e78a61787c4b4d98d1b76eb32773177b470732e6432c31fb"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\longrun-local-inputs\\runs\\published-seed43\\status.json",
+    "sha256": "54d3d9ef564b4569ff49fd1855cf91360878d166ac87e5bed7b133c2449bb153"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\longrun-local-inputs\\runs\\published-seed44\\status.json",
+    "sha256": "38e0ce9907139d63d8beb103bd33b7b8134ae5ff5d5c1ddd69c5818a457a215b"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\longrun-local-inputs\\runs\\published-seed45\\status.json",
+    "sha256": "c56cdcedfcda6eeb824128d45aaf0ed926b51b9d81cfe347462bac3b7fd8a971"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\longrun-local-inputs\\runs\\published-seed46\\status.json",
+    "sha256": "2a9bd878865a8ed309ec6eb64164c9e9dfb6b3df31d1980e0f0717c5e87cd936"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\longrun-local-inputs\\runs\\small-seed42\\status.json",
+    "sha256": "f6f2c9b627225c47c0fa1fedb879727f89ce6341023d651b8d153027493d3139"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\longrun-local-inputs\\runs\\small-seed43\\status.json",
+    "sha256": "36d95980cd65a1aca6d71511608e85d3bd77f68ef6ae595878aeffd93febaeee"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\longrun-local-inputs\\runs\\small-seed44\\status.json",
+    "sha256": "b38082e8293cab3e793b3c8eeb221b7c6cfe7805351433754c735d4d7e811c13"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\longrun-local-inputs\\runs\\small-seed45\\status.json",
+    "sha256": "4b5624570a12bdda73eb4b471dd2c224064f360ea11aeb7a345be613c196e914"
+  },
+  {
+    "path": "C:\\Users\\SCIENTIST\\Documents\\GitHub\\research\\outputs\\longrun-local-inputs\\runs\\small-seed46\\status.json",
+    "sha256": "51a09b931d31d65abadd6be73910abf6b2a177300191dd6c7d4aec1922676294"
+  }
+]
