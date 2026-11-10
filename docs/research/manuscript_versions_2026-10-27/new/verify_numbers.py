@@ -131,7 +131,7 @@ cl = load('claude_labels_2026-11-07/agreement.json')
 CHECKS.update({
     'claude labels: pass count': f"All content checks (Claude) & {cl['claude_counts']['pass']}/81",
     'claude labels: fail count': f"Claude marked {cl['claude_counts']['fail']} of 81 passages ({100 * cl['claude_counts']['fail'] / 81:.0f}\\%)",
-    'claude labels: agreement': f"on {cl['agreement']['result']['agree']} of 81 ($\\kappa={cl['agreement']['result']['kappa']:.2f}$)",
+    'claude labels: agreement': f"on {cl['agreement']['result']['agree']} of 81 (Cohen's $\\kappa={cl['agreement']['result']['kappa']:.2f}$, agreement corrected for chance)",
 })
 
 # Decoder learning curves (jobs 74177 and 75003, research workspace outputs)
