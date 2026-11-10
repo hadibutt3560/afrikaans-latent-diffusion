@@ -32,7 +32,7 @@ Repeated n-grams here are case-sensitive whitespace-word tuples, counted within 
 
 ## Inspection and interpretation
 
-Thirty pairs changed in token sequence;29 changed in decoded text. All are documented in [AI-assisted inspection](AI_ASSISTED_INSPECTION.md) and [changed-pair text](CHANGED_PAIRS.md). The other51 are token-identical and retain the Stage1 inspection. No human ratings are claimed.
+Thirty pairs changed in token sequence;29 changed in decoded text. All are listed in [changed-pair text](CHANGED_PAIRS.md). The other51 are token-identical and retain the Stage1 inspection. No human ratings are claimed.
 
 Useful corrections occur: row11 restores an apostrophe, row21 restores the second PHONE placeholder, and row56 restores the trauma/psychological-assessment sentence exactly. These explain the increase in exact copies. However, row41 repeats `I mfpamba:`, row48 repeats `Zola`, and row57 loses all clock-time content while repeating a weekday phrase. Other overlap gains retain wrong names, conditions or clause meanings. A progress message prematurely said repetition continued to the output limit; the completed measurements correct that: **all outputs terminated before the cap**.
 

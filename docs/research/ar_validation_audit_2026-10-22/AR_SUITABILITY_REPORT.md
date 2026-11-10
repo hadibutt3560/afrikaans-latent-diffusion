@@ -83,7 +83,7 @@ The fixed random20 inspection contains recognisable Afrikaans administrative/que
 
 Exact matches include short administrative or list-like strings such as “Rente op desentralisasie-voordele.” and “Dui u antwoord met 'n X in paragraaf F 13 aan.” The count is 11 generated outputs, including repeated outputs; it is not a count of unique memorised facts. All remain in the primary scores. No private-information memorisation claim is made.
 
-These observations are **AI-assisted**, not human ratings. See [labelled inspection](AI_ASSISTED_INSPECTION.md) and [fixed sample with targeted examples](SAMPLES_FOR_INSPECTION.md). The 60-item blind review sheet (`outputs/ar-validation-audit-20261022/unrated-blind-review.csv` in the research repository, not included here) has blank ratings and is only a preparation artifact; its key (`outputs/ar-validation-audit-20261022/review-key.csv` in the research repository, not included here) must be withheld from prospective evaluators. It does not replace the previously proposed full human-evaluation protocol or institutional determination.
+These observations are **AI-assisted**, not human ratings. The [fixed sample with targeted examples](SAMPLES_FOR_INSPECTION.md) holds the texts. The 60-item blind review sheet (`outputs/ar-validation-audit-20261022/unrated-blind-review.csv` in the research repository, not included here) has blank ratings and is only a preparation artifact; its key (`outputs/ar-validation-audit-20261022/review-key.csv` in the research repository, not included here) must be withheld from prospective evaluators. It does not replace the previously proposed full human-evaluation protocol or institutional determination.
 
 ## 5. Reuse versus retrain
 

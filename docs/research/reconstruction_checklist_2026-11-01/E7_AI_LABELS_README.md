@@ -1,6 +1,8 @@
 # E7 labels: provenance
 
-`E7_ai_labels.csv` holds the labels behind the manuscript's E7 figures: 26 of 81 passages pass all three checks, and 55 fail at least one.
+`E7_ai_labels.csv` holds the earlier labels: 26 of 81 passages pass all three checks, and 55 fail at least one.
+
+**Superseded on 7 November 2026.** The manuscript now reports a relabelling by Claude Opus 5.5, in `../claude_labels_2026-11-07/`: 19 pass and 62 fail. That relabelling agrees with these labels on 74 of 81 passages (κ 0.79). These labels are kept only for the agreement comparison.
 
 ## Who produced them
 

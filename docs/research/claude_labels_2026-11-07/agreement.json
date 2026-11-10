@@ -1,0 +1,47 @@
+{
+ "labeller": "Claude Opus 5.5 (claude-opus-5-5), 7 November 2026",
+ "earlier_labels": "../reconstruction_checklist_2026-11-01/E7_ai_labels.csv (assistant not recorded)",
+ "claude_counts": {
+  "pass": 19,
+  "fail": 62,
+  "check1_no": 61,
+  "check2_no": 18,
+  "check3_no": 54
+ },
+ "agreement": {
+  "check1": {
+   "agree": 72,
+   "kappa": 0.7405
+  },
+  "check2": {
+   "agree": 80,
+   "kappa": 0.965
+  },
+  "check3": {
+   "agree": 80,
+   "kappa": 0.972
+  },
+  "result": {
+   "agree": 74,
+   "kappa": 0.7866,
+   "disagree_items": [
+    7,
+    9,
+    10,
+    29,
+    45,
+    68,
+    78
+   ]
+  },
+  "result_vs_earlier_strict_rule": {
+   "agree": 79,
+   "kappa": 0.9312,
+   "disagree_items": [
+    16,
+    78
+   ]
+  }
+ },
+ "n": 81
+}

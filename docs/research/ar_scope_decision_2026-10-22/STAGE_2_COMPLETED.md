@@ -6,7 +6,7 @@ Keep the existing trained AR baseline and retain the original research question.
 
 Use the final **small diffusion configuration as the primary resource-context comparison** with AR, and large diffusion as a separate higher-cost comparison. This is a retrospective reporting choice based on the audited resource records, not a prospectively budget-matched experiment or a new model-selection result. Report all five small and all five large seeds; do not pick the best seed or mix validation results with historical test-bank results.
 
-This supersedes the earlier recommendation in `STEP_2_SCOPE_DECISION.md`. No research question has been rewritten, no hypothesis silently relaxed, and no supervisor approval assumed. A qualified answer to the original question is permissible; claiming the original composite criterion has been demonstrated is not supported by the present evidence.
+No research question has been rewritten, no hypothesis silently relaxed, and no supervisor approval assumed. A qualified answer to the original question is permissible; claiming the original composite criterion has been demonstrated is not supported by the present evidence.
 
 ## What the proposal actually required
 

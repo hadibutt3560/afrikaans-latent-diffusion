@@ -1,8 +1,4 @@
 {
-  "docs/research/ar_validation_audit_2026-10-22/AI_ASSISTED_INSPECTION.md": {
-    "bytes": 4444,
-    "sha256": "7dbdb8565531ecfb871f7d25e1c69b9e5e9444882197969e0d1c0dba2a9dc54a"
-  },
   "docs/research/ar_validation_audit_2026-10-22/analysis.log": {
     "bytes": 5757,
     "sha256": "1e411eca315df3da61ff7bc4f3239849156e8ca18449eef1109070794bf5c0db"
@@ -10,10 +6,6 @@
   "docs/research/ar_validation_audit_2026-10-22/analyze_audit.py": {
     "bytes": 9802,
     "sha256": "0c195e567bc3e323b24ef19df23de4bbee5fe738e59c06089d24ca5575c2424e"
-  },
-  "docs/research/ar_validation_audit_2026-10-22/AR_METHODS_RESULTS_INSERT.md": {
-    "bytes": 5471,
-    "sha256": "3095276692bd3e9d6b92de5817f51d814b5d1d76f9c7cc5670b042a2cd7ef4ec"
   },
   "docs/research/ar_validation_audit_2026-10-22/AR_SUITABILITY_REPORT.md": {
     "bytes": 18137,

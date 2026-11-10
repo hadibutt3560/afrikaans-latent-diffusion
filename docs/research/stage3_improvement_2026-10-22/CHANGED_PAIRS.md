@@ -1,6 +1,6 @@
 # Changed pairs
 
-All token-changed pairs, in frozen manifest order. AI-assisted interpretation is separate.
+All token-changed pairs, in frozen manifest order.
 
 ## 0 — nchlt-afr-seg-8b93e49464f87631eb2e51d1353339659464be9ce983c2f9b707c8a333621116
 

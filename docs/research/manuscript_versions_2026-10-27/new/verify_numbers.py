@@ -126,6 +126,14 @@ CHECKS.update({
     'diversity: validation distinct-1 and AR': f"diffusion distinct-1 is {vd1[0]:.2f} to {vd1[-1]:.2f} per run against {float(var['distinct_1']):.3f} for AR, whose outputs repeat {100 * float(var['mean_repeat_3']):.2f}\\% of their 3-grams",
 })
 
+# Claude content labels (claude_labels_2026-11-07)
+cl = load('claude_labels_2026-11-07/agreement.json')
+CHECKS.update({
+    'claude labels: pass count': f"All content checks (Claude) & {cl['claude_counts']['pass']}/81",
+    'claude labels: fail count': f"Claude marked {cl['claude_counts']['fail']} of 81 passages ({100 * cl['claude_counts']['fail'] / 81:.0f}\\%)",
+    'claude labels: agreement': f"on {cl['agreement']['result']['agree']} of 81 ($\\kappa={cl['agreement']['result']['kappa']:.2f}$)",
+})
+
 failed = [name for name, text in CHECKS.items() if text not in TEX]
 for name, text in CHECKS.items():
     print(('FAIL ' if name in failed else 'ok   ') + name + ('' if name not in failed else f'  expected: {text}'))

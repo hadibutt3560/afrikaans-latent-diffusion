@@ -36,7 +36,7 @@ Correct-latent chrF by source length is66.45 (44 short),71.87 (32 medium),51.998
 
 ## Content preservation
 
-[AI-assisted inspection](AI_ASSISTED_REVIEW.md) covers every correct reconstruction, with full text in [ALL_RECONSTRUCTIONS.md](ALL_RECONSTRUCTIONS.md). No fluent-human evaluation was conducted. Observed problems include:
+Full text of every reconstruction is in [ALL_RECONSTRUCTIONS.md](ALL_RECONSTRUCTIONS.md); the content checks reported in the paper are in [claude_labels_2026-11-07](../claude_labels_2026-11-07/). No fluent-human evaluation was conducted. Observed problems include:
 
 - Row20: competitor name, dates and venue changed; unsupported World Bank wording added.
 - Row27: annual payment changed to monthly payment and one negation marker omitted.

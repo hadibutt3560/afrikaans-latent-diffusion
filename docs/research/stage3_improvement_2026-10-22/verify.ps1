@@ -27,10 +27,8 @@ foreach ($arm in @('baseline','treatment')) {
     if ([math]::Abs($mean-$analysis.arms.$arm.mean_chrf) -gt 1e-9) { throw 'Mean mismatch' }
     if (($values.number_matched | Measure-Object -Sum).Sum -ne $analysis.arms.$arm.number_matched) { throw 'Number counts mismatch' }
 }
-$notes=Get-Content (Join-Path $PSScriptRoot 'AI_ASSISTED_INSPECTION.md') -Raw
-foreach ($i in $changed) { if ($notes -notmatch "(?m)^\| $i \|") { throw "Missing inspection: $i" } }
-$lines=@('# Changed pairs', '', 'All token-changed pairs, in frozen manifest order. AI-assisted interpretation is separate.', '')
+$lines=@('# Changed pairs', '', 'All token-changed pairs, in frozen manifest order.', '')
 foreach ($i in $changed) { $p=$pairs[$i]; $lines+=@("## $i — $($p.id)", '', "Source: $($p.source)", '', "Baseline: $($p.baseline.text)", '', "Treatment: $($p.treatment.text)", '') }
 $lines | Set-Content (Join-Path $PSScriptRoot 'CHANGED_PAIRS.md') -Encoding utf8
-[ordered]@{status='passed';count=81;token_changed=$changed.Count;text_changed=$textChanged;parent_outputs_reproduced=$true;frozen_inputs_unchanged=$true;summary_recomputed=$true;all_changed_pairs_inspected=$true;automatic_gate_pass=$analysis.automatic_gate_pass} | ConvertTo-Json | Set-Content (Join-Path $out 'checks.json') -Encoding utf8
+[ordered]@{status='passed';count=81;token_changed=$changed.Count;text_changed=$textChanged;parent_outputs_reproduced=$true;frozen_inputs_unchanged=$true;summary_recomputed=$true;automatic_gate_pass=$analysis.automatic_gate_pass} | ConvertTo-Json | Set-Content (Join-Path $out 'checks.json') -Encoding utf8
 Get-Content (Join-Path $out 'checks.json')

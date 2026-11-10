@@ -1,0 +1,82 @@
+item,passage_id,check1_entities,check2_clause,check3_no_hallucination,result,note
+1,nchlt-afr-seg-8b93e49464f87631eb2e51d1353339659464be9ce983c2f9b707c8a333621116,No,Yes,No,Fail,Regeringsdepartement -> Regeringskommissie; regulering -> betaling; regulating body changed
+2,nchlt-afr-seg-554c31ff1dc9496a98484351acf082d2a2233d7880b0c7eacaf307a569ea88c1,No,No,No,Fail,unrelated content (openbare webwerf)
+3,nchlt-afr-seg-571dc1ff8601a1a102df18096fe6d55868618b39b2e2fb5832b5be4ad948b4dd,Yes,Yes,Yes,Pass,only corrects the source typo ingevloge -> ingevolge
+4,nchlt-afr-seg-24fbe35d7280d6fda4f08948c256fd3866ab56ff34788613b3d23591f8f779a3,No,No,No,Fail,contact person -> Tel na
+5,nchlt-afr-seg-70d678c43cf89c4331520240a8f22cff59967486a467ae3a519583e0a53ded41,No,Yes,No,Fail,department renamed; 24 and 20 lost; voltydse studie lost; vroue and Lewensbeurse added
+6,nchlt-afr-seg-495b7b1900f4fcca45494042fcf5b398328ddc6fa55ffea51effb7206c3af1f4,No,Yes,No,Fail,institutions merged; Stellenbosch dropped; UNESCO added
+7,nchlt-afr-seg-5bd17402334d939130ff9b2f259742da6a189c95f618bedc07d2ce40bdf68286,No,Yes,Yes,Fail,Ministerie (ministry) -> Minister
+8,nchlt-afr-seg-052948580d08f9201431fb1c39fb630a8ad2cddee740552f440a6534e17c85bc,No,Yes,No,Fail,padwoede (road rage) -> padbou (road building)
+9,nchlt-afr-seg-e74bac5033cdbe08716ec8738d04b8982bed1c608e41b73455b30ef454fe0bdb,No,Yes,Yes,Fail,Ministerie (ministry) -> Minister
+10,nchlt-afr-seg-cd0e40cdfa1909a26b9c3bf05f630f2170c7dece12a043d86ba7e6bdc7128756,No,Yes,Yes,Fail,"""teen, of aansoek"" dropped; appeal against / application for review merged"
+11,nchlt-afr-seg-0d5e56128c8d2d59f6c1f8bc9d0afa4ed071818be6dbfd4b9c11cc8332d3e821,No,Yes,No,Fail,invordering (collection) added; hierdie lost
+12,nchlt-afr-seg-7614fee52e0617e8845ca5e715b3cb49e934912a82906945a0734a3eabc93f46,Yes,Yes,Yes,Pass,apostrophe style only
+13,nchlt-afr-seg-971487d7267abba358acd06e677c5d81fb3111112aa8f2d42e0478b8007cae47,Yes,Yes,Yes,Pass,identical
+14,nchlt-afr-seg-59c61fae15dcb49c5b0b9540a09e199a8cc5184f8914f8bc6116e7208bf52382,No,Yes,No,Fail,Thabo dropped; UOWP -> OPS; Kaapstad added
+15,nchlt-afr-seg-7e569efbc2e0b12856e627f139f2599375c0228ff9f198e38259e865a297d2b5,No,No,No,Fail,unrelated content
+16,nchlt-afr-seg-1c0e7c2025b762ef5714f1f92089fc416db1bb0e5699a8618d7c97fabcaa218a,Yes,Yes,Yes,Pass,"ek -> u in the conditional clause and typo ""ne""; entities, act and numbers kept"
+17,nchlt-afr-seg-9662fa86624be24dc03559ef540f4578a1c337073f57ed48d7c5ca6a657575b9,No,No,No,Fail,contact person -> Office; title duplicated
+18,nchlt-afr-seg-eeecd6f2cd0fa3bf3140a54389349ecaf2c36958ccc954bd8a5970a2fece9faa,No,Yes,No,Fail,"Mossel Bay, Langeberg and Southern Cape changed; South African Region added"
+19,nchlt-afr-seg-4818b6b007bfd1b58126e0139af7fdf143a90fafebc32c351213030bc43388fc,Yes,Yes,Yes,Pass,identical
+20,nchlt-afr-seg-b4f9a8b9b2a635f798e4d4b4cdcf8407b42d099ad2560eceb41f0c5fbdf85494,No,Yes,No,Fail,Tshepo -> Tshopho; Tshoane added; team make-up lost; kompetisie -> jaar
+21,nchlt-afr-seg-15e4f5183d15920592df01b8b568c659f6bffb27170a9e565f9fffded3b0b557,No,Yes,No,Fail,"name garbled; age, weight class and dates changed; Springboks and World Bank added"
+22,nchlt-afr-seg-8b434350312874aa58eec2db2612eb8f58d0c08a826f75d23243b6ce77a8b44e,No,Yes,No,Fail,second <PHONE> -> <EMAIL>
+23,nchlt-afr-seg-f7bcfd4425ba43611822cc035136c7a4ba715721f247cc4c785015732affce9c,No,No,No,Fail,unrelated content
+24,nchlt-afr-seg-f20a443a4da7d601b7a452ff9d2aa9f8a201b3313bc94646a136ba40c2cbaddc,No,Yes,No,Fail,Vuurwapens -> Vaste Reglement; Act No 60 -> No. 1
+25,nchlt-afr-seg-cf6e051110d954df07b80c588d1d83aa236ed226e5b6d15118ca32c56cb0535f,Yes,Yes,Yes,Pass,identical
+26,nchlt-afr-seg-16892c0c89092ac70764b981e5482e6c73304a5174f8d3ba6e7c866a856c5624,No,Yes,No,Fail,alle ure -> alle lande; trailing code characters
+27,nchlt-afr-seg-d204f4427e8691593b1bfae00abd939285c0583744a5db8c085b0568cfe64811,No,Yes,No,Fail,menslike lost; duurzame added; goeie -> gelyke
+28,nchlt-afr-seg-db857bf9b70e0206af154f3ccb43558d1c5883643420478279582323dbb9ae0f,No,Yes,No,Fail,per jaar -> per maand; salarisse lost; negation lost
+29,nchlt-afr-seg-1f9ee1d9208b8edbe89bbf67e7fad1159b0d3e88faa454cd10e671039abce6ea,No,Yes,Yes,Fail,Ministerie (ministry) -> Minister
+30,nchlt-afr-seg-05d93625fe6c326f8c37c28304fcacfaa7059702e0da4299199fe14d53925a49,No,Yes,No,Fail,moeder -> kind; sy -> hy; termination garbled
+31,nchlt-afr-seg-2f05664fb1c357dfd4eb9a626600ed6fd8db7717926306ac2798a5061ef85fb5,No,No,No,Fail,breadcrumb and question garbled
+32,nchlt-afr-seg-981117d33e3d8f665ad71b749d5b870b5e66d756f64c99dc09823a51284220de,No,No,No,Fail,pyn in die testikel -> unrelated sentence
+33,nchlt-afr-seg-59794b6c371f7bec13ae3f7cfb93056af6334b363e89172231618168646060e5,No,Yes,No,Fail,Home -> U; my dogter lost; Graad 19 added
+34,nchlt-afr-seg-f4e5e6c55d8f874e30238f4b83f12f886d4fbff2e6b42f8e6fa7a98cefb0dc74,No,Yes,No,Fail,Iemand -> Ek; Haar Aanstel -> My Opstel
+35,nchlt-afr-seg-954a90a5a728f4d94851bf91d38353a8e787e47a7921af89af316176549b2645,No,No,No,Fail,isiXhosa passage garbled
+36,nchlt-afr-seg-ec6be394e0e96dc32af9e6448f228c0ded515cc72d3173d8df0169730f5beade,Yes,Yes,Yes,Pass,spacing and preposition only
+37,nchlt-afr-seg-c2ba33dbea9ec51b28abd74ffded6b3291e70a8bdbaa332532e66478ca293810,Yes,Yes,Yes,Pass,identical
+38,nchlt-afr-seg-d3d0c1b314e21d03030d8e0e98b0c8d095f335bf4d0de950e3b6d0e862c71103,Yes,Yes,Yes,Pass,identical
+39,nchlt-afr-seg-9393eaaa4be54ed48cec574648fbde4fdc5f5fdac07e7b14706af8ad70c80f23,Yes,Yes,Yes,Pass,identical
+40,nchlt-afr-seg-6d21405f8f135f48cef9a40cf0d3fb1f7dafc1fed1bf17c04bec9ce8dd3e5b4e,Yes,Yes,Yes,Pass,comma -> colon
+41,nchlt-afr-seg-76b7dfc545f616d5e67fd434752797cb553aabd4ac4bcddc88ce703ff1d07374,No,No,No,Fail,registration requirement lost; opvolger and Omgewingskapsbestuur added
+42,nchlt-afr-seg-55d2e97c2465fa8b4a5ee9f2d499727d904457ba38cf8247100c713cc8091a98,No,No,No,Fail,breadcrumb and question garbled
+43,nchlt-afr-seg-6fae93a39053eefda23954f33b1cc647a5df1af50f6074b362b0418b3d26a2cb,Yes,Yes,Yes,Pass,"""of pdf"" repeated; content kept"
+44,nchlt-afr-seg-390f017426e358c5c02bdccbbfd9e90cb6db28ac89e41211cbb4a543a8a7c30e,Yes,Yes,No,Fail,Office of ... added
+45,nchlt-afr-seg-8173ab49f9d71fe6b173105046421ccf3b771456ea92891fb6d7f7cd5c0c409c,No,Yes,Yes,Fail,opleiding (training) dropped
+46,nchlt-afr-seg-842ad5f5aae5ed08059191bb914ae5eb2593a51ad3aca28c2d0231177084363b,No,Yes,No,Fail,purpose clause dropped; Toergids databasis -> Wes-Kaap sentrum
+47,nchlt-afr-seg-4483d8f958fa35d9a57e1393494c5a3e05f344762c20b72e75bd9b7f2870de5d,Yes,Yes,Yes,Pass,identical
+48,nchlt-afr-seg-4ec1ae6b3cc5025c83daf2a43c670787b4bebdd335d64d8bb7bd3a68903dff3a,No,Yes,No,Fail,leerplanleweringsproses -> webplanleweringsproses; material added
+49,nchlt-afr-seg-bcabb15760b1cca6da485f1be76af043dcf772f19ef6578b7709cbe1d431eccf,No,No,No,Fail,question garbled
+50,nchlt-afr-seg-c685c1caf0cc36a90b2c95d686a5e33ed0ab0b065c5cc45a888d4628ee0f714d,No,Yes,No,Fail,"""wat jou onderneming raak"" -> ""aanmoedig""; klein ondernemings -> kleinboere"
+51,nchlt-afr-seg-540e622fcd074338cc43ce2037e98859cf9c825703c8634fb8f860a3aa39c2da,No,No,No,Fail,hospitals and hearing aids lost
+52,nchlt-afr-seg-7c69150b1680ca0f020cd3b16a830190b67569f1827ca2e4ae9abb897ec40457,No,Yes,No,Fail,company names changed; hoenders -> entoesias; Elsenburg contact lost
+53,nchlt-afr-seg-3760913c8966bbe7dae8ac3e079688083a5eec7c41bb86747c1c2046cbe83000,No,Yes,No,Fail,Hoofdirekteur -> Hoofrektor; gebeurlikheidsplanne -> gebeurtenisse; beheer dropped
+54,nchlt-afr-seg-1442816d5ad2d262322dad63e6d43d78668666a4163a04f5965f2b20c88336d9,Yes,Yes,Yes,Pass,identical
+55,nchlt-afr-seg-9a449b8dcd7fcff3aa429076b39c466aea104ed9c2a192e2c6bc8d94043009c7,No,Yes,No,Fail,KLUIS (safe) -> GEMEENSCHAP
+56,nchlt-afr-seg-7f967cf63af9f4ed412e246b0e9ec3d6e391d5ab6a1d8612932ddb409f4145a8,No,Yes,No,Fail,Winsmotief (OSW) -> Winsigheid van Swem
+57,nchlt-afr-seg-d8edcbcbbb4db2bd4349edcc6eb541a254b94ed43dcd6e9ff1c2d322de445f93,No,Yes,No,Fail,trauma and psychological assessment -> aanval of siekte
+58,nchlt-afr-seg-eecb4d1aa0b218b191f4b0494a05dc19411ca8d69b623c487dbc74d3be6f785f,No,No,No,Fail,hours and lunch closure lost
+59,nchlt-afr-seg-dae2b91908cb17c4cbc0537211859d7af666dee1f50b8917a438007debd969ce,Yes,Yes,Yes,Pass,identical
+60,nchlt-afr-seg-1628c75cafebad4250040a035c3c6b371255f8296b71dbb2494dd32ab3f752b1,No,Yes,No,Fail,volgens kategorie -> data-infrastruktuur
+61,nchlt-afr-seg-a14d33c601c0e0c229b2da0bf3f532796d52c15f325d6044fe6af8b35182a455,No,Yes,Yes,Fail,spesialisfunksies -> hulpfunksies; norme dropped; beleid moved
+62,nchlt-afr-seg-d2eccda6b29723e3664cdc95073ec585e4a8bf91352cffa6e8c43b4c25a58a4c,No,No,No,Fail,contact person lost
+63,nchlt-afr-seg-cdc7c97ec88486f6dc25331cfe477558ec887ec4955adfd7006e97ab60518eb6,No,Yes,No,Fail,EMDC -> EOI; Winelands -> Winslow
+64,nchlt-afr-seg-b6ddaace73de48f89a3c5eea528e8d558afdb59105a776e0214f94b2b172ece0,No,Yes,No,Fail,department name garbled; ukubhalisela (register) added
+65,nchlt-afr-seg-486e3c1b4c49673170bfa2de4c3ef8cc7f791bcdbc04a7f69db850c2f807a151,No,Yes,No,Fail,section letter and question replaced
+66,nchlt-afr-seg-2287849e3cb0881add9c0b7ad6699c7f0fa4e2a576bc773860473435330d0366,No,No,No,Fail,isiXhosa passage garbled
+67,nchlt-afr-seg-ffa93f0aeeb1e66ac7b69922493a92fc709ebdb765f61685327a4cedb3a791a8,No,No,No,Fail,isiXhosa source replaced by unrelated Afrikaans
+68,nchlt-afr-seg-809d3eade8b7bf78295931c298563f232337b2409543b6427dd53a101fab0a21,No,Yes,Yes,Fail,met MIV (HIV) dropped
+69,nchlt-afr-seg-3878dd16b9630bdd78b0861cda3b23253c587ed6a433baba9be924127ab831ee,No,Yes,No,Fail,in die maat se mond -> in die omgewing
+70,nchlt-afr-seg-cb4f00eb564dc5a4eb46cf2a56bb504f29e1a89c9ed824b5066b6dc00adcfc6a,Yes,Yes,Yes,Pass,identical
+71,nchlt-afr-seg-8d583dd6e3bc270f92e02f8865d5945138df45e57466c8473ebcaabbd13604b9,No,Yes,No,Fail,identifikasie/dokumentasie changed; elektriese -> elektroniese; items merged
+72,nchlt-afr-seg-6ecd675b6a5149941fa6030de72a828a1f9e3af6f2218a354378c56d0addb33c,No,Yes,No,Fail,skole -> skool; meer as vyftig ingesamel lost
+73,nchlt-afr-seg-f7be36723b3f1ec5f918079434142d9eba33ae64a1539c90dfec2c7a8a0216a8,No,Yes,No,Fail,"PUKfm, Blikkieskosdag and Kansa changed; pancakes lost"
+74,nchlt-afr-seg-99694ced56ed716b7d805c6e94cba760d86284b9f825fec0c6e0618258b47e6d,Yes,Yes,Yes,Pass,daarna repeated
+75,nchlt-afr-seg-fd1c38fa3c2356f29b587fe1550da8a37fa28c692cab14005184dc0758e0044f,Yes,Yes,Yes,Pass,plural -> singular
+76,nchlt-afr-seg-37fd1f11a3d05ef391f2ef34bc886e4dca51ee237f9ecfc5d70f6800da75e3d3,No,Yes,No,Fail,Kind lost; Nkquba Zola added
+77,nchlt-afr-seg-ccd870b049645681490b9adf065bcc127b1dc855220d6532d4e83b6730fc94f7,No,No,No,Fail,address replaced
+78,nchlt-afr-seg-ac65c11f3e18aec4fec254362e75c7e8db0af004f4b7137a5f1cffa1dfeae62f,No,Yes,Yes,Fail,besondere -> nodige; gemeenskappe -> groepe
+79,nchlt-afr-seg-3360fa771dad9c4f0b7f68f6872a206313f2797db4918c8e9407771d7ba2e959,Yes,Yes,Yes,Pass,identical
+80,nchlt-afr-seg-c73d742c02ab3eaa3ea1aa889e7b1f3bd25f62bad50c7376e040113fed498168,No,No,No,Fail,unrelated content
+81,nchlt-afr-seg-ac4d18af7188f274a83ffdd058794687637f85c6f8564ba6ea2eb484d651236f,No,Yes,No,Fail,verpersoonlikte (personalised) -> vervaardigde (manufactured)
